@@ -1,0 +1,1428 @@
+GAS LISTING /tmp/ccygZnTD.s 			page 1
+
+
+   1               		.file	"lcm_so1602dtr_m.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/prophete/PROJETFINALINF1995/robot-poly/lib_dir/",100,0,4,.Ltext0
+   8               		.stabs	"lcm_so1602dtr_m.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/ccygZnTD.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,121,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,122,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,123,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,124,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,125,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,126,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,128,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,129,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,142,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,147,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,159,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,164,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,169,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,174,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,179,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,184,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,192,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,199,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,213,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,218,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,223,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,228,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,233,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,238,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,246,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,253,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,273,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,278,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
+ 104               		.stabs	"_ZL12_lcm_fast_enPVh:f(0,4)",36,0,44,_ZL12_lcm_fast_enPVh
+ 105               		.stabs	"port:P(0,89)=*(0,90)=B(0,59)",64,0,44,30
+ 106               		.type	_ZL12_lcm_fast_enPVh, @function
+ 107               	_ZL12_lcm_fast_enPVh:
+ 108               		.stabd	46,0,0
+   1:lcm_so1602dtr_m.cpp **** /*
+   2:lcm_so1602dtr_m.cpp ****  LCM-SO1602DTR/M driver for the ATmega16 (or any other compatible AVR chip).
+   3:lcm_so1602dtr_m.cpp ****  Copyright (C) 2009  Philippe Proulx (philippe.proulx@polymtl.ca)
+   4:lcm_so1602dtr_m.cpp ****  
+   5:lcm_so1602dtr_m.cpp ****  2012-02-08 - Ajout:
+   6:lcm_so1602dtr_m.cpp ****  Broche 0 ˆ 0V reliŽe ˆ VO pour un contraste maximal. - L. Tremblay
+GAS LISTING /tmp/ccygZnTD.s 			page 3
+
+
+   7:lcm_so1602dtr_m.cpp ****  
+   8:lcm_so1602dtr_m.cpp ****  This program is free software: you can redistribute it and/or modify
+   9:lcm_so1602dtr_m.cpp ****  it under the terms of the GNU Lesser General Public License as published by
+  10:lcm_so1602dtr_m.cpp ****  the Free Software Foundation, either version 3 of the License, or
+  11:lcm_so1602dtr_m.cpp ****  (at your option) any later version.
+  12:lcm_so1602dtr_m.cpp ****  
+  13:lcm_so1602dtr_m.cpp ****  This program is distributed in the hope that it will be useful,
+  14:lcm_so1602dtr_m.cpp ****  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  15:lcm_so1602dtr_m.cpp ****  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  16:lcm_so1602dtr_m.cpp ****  GNU Lesser General Public License for more details.
+  17:lcm_so1602dtr_m.cpp ****  
+  18:lcm_so1602dtr_m.cpp ****  You should have received a copy of the GNU Lesser General Public License
+  19:lcm_so1602dtr_m.cpp ****  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  20:lcm_so1602dtr_m.cpp ****  */
+  21:lcm_so1602dtr_m.cpp **** 
+  22:lcm_so1602dtr_m.cpp **** #include <avr/io.h>
+  23:lcm_so1602dtr_m.cpp **** #include <util/delay.h>
+  24:lcm_so1602dtr_m.cpp **** 
+  25:lcm_so1602dtr_m.cpp **** #include "lcm_so1602dtr_m.h"
+  26:lcm_so1602dtr_m.cpp **** 
+  27:lcm_so1602dtr_m.cpp **** #define LCM_CL		~(_BV(LCM_RS) | _BV(LCM_RW) | _BV(LCM_DB7) | \
+  28:lcm_so1602dtr_m.cpp **** _BV(LCM_DB6) | _BV(LCM_DB5) | _BV(LCM_DB4))
+  29:lcm_so1602dtr_m.cpp **** 
+  30:lcm_so1602dtr_m.cpp **** /**
+  31:lcm_so1602dtr_m.cpp ****  * Remet à 0 les broches occupées par l'afficheur LCD sur un port.
+  32:lcm_so1602dtr_m.cpp ****  *
+  33:lcm_so1602dtr_m.cpp ****  * @param port	Port AVR occupé par l'afficheur
+  34:lcm_so1602dtr_m.cpp ****  */
+  35:lcm_so1602dtr_m.cpp **** static inline void _lcm_cp(volatile uint8_t* port) {
+  36:lcm_so1602dtr_m.cpp **** 	*port &= LCM_CL;
+  37:lcm_so1602dtr_m.cpp **** }
+  38:lcm_so1602dtr_m.cpp **** 
+  39:lcm_so1602dtr_m.cpp **** /**
+  40:lcm_so1602dtr_m.cpp ****  * Active, attend et désactive la ligne EN.
+  41:lcm_so1602dtr_m.cpp ****  *
+  42:lcm_so1602dtr_m.cpp ****  * @param port	Port AVR occupé par l'afficheur
+  43:lcm_so1602dtr_m.cpp ****  */
+  44:lcm_so1602dtr_m.cpp **** static void _lcm_fast_en(volatile uint8_t* port) {
+ 109               		.stabn	68,0,44,.LM0-.LFBB1
+ 110               	.LM0:
+ 111               	.LFBB1:
+ 112               	/* prologue: function */
+ 113               	/* frame size = 0 */
+ 114               	/* stack size = 0 */
+ 115               	.L__stack_usage = 0
+ 116 0000 FC01      		movw r30,r24
+  45:lcm_so1602dtr_m.cpp **** 	*port |= _BV(LCM_EN);
+ 117               		.stabn	68,0,45,.LM1-.LFBB1
+ 118               	.LM1:
+ 119 0002 8081      		ld r24,Z
+ 120 0004 8062      		ori r24,lo8(32)
+ 121 0006 8083      		st Z,r24
+ 122               	.LBB40:
+ 123               	.LBB41:
+ 124               		.stabs	"/usr/lib/avr/include/util/delay_basic.h",132,0,0,.Ltext1
+ 125               	.Ltext1:
+   1:/usr/lib/avr/include/util/delay_basic.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+GAS LISTING /tmp/ccygZnTD.s 			page 4
+
+
+   2:/usr/lib/avr/include/util/delay_basic.h ****    Copyright (c) 2007 Joerg Wunsch
+   3:/usr/lib/avr/include/util/delay_basic.h ****    All rights reserved.
+   4:/usr/lib/avr/include/util/delay_basic.h **** 
+   5:/usr/lib/avr/include/util/delay_basic.h ****    Redistribution and use in source and binary forms, with or without
+   6:/usr/lib/avr/include/util/delay_basic.h ****    modification, are permitted provided that the following conditions are met:
+   7:/usr/lib/avr/include/util/delay_basic.h **** 
+   8:/usr/lib/avr/include/util/delay_basic.h ****    * Redistributions of source code must retain the above copyright
+   9:/usr/lib/avr/include/util/delay_basic.h ****      notice, this list of conditions and the following disclaimer.
+  10:/usr/lib/avr/include/util/delay_basic.h **** 
+  11:/usr/lib/avr/include/util/delay_basic.h ****    * Redistributions in binary form must reproduce the above copyright
+  12:/usr/lib/avr/include/util/delay_basic.h ****      notice, this list of conditions and the following disclaimer in
+  13:/usr/lib/avr/include/util/delay_basic.h ****      the documentation and/or other materials provided with the
+  14:/usr/lib/avr/include/util/delay_basic.h ****      distribution.
+  15:/usr/lib/avr/include/util/delay_basic.h **** 
+  16:/usr/lib/avr/include/util/delay_basic.h ****    * Neither the name of the copyright holders nor the names of
+  17:/usr/lib/avr/include/util/delay_basic.h ****      contributors may be used to endorse or promote products derived
+  18:/usr/lib/avr/include/util/delay_basic.h ****      from this software without specific prior written permission.
+  19:/usr/lib/avr/include/util/delay_basic.h **** 
+  20:/usr/lib/avr/include/util/delay_basic.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  21:/usr/lib/avr/include/util/delay_basic.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  22:/usr/lib/avr/include/util/delay_basic.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  23:/usr/lib/avr/include/util/delay_basic.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  24:/usr/lib/avr/include/util/delay_basic.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  25:/usr/lib/avr/include/util/delay_basic.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  26:/usr/lib/avr/include/util/delay_basic.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  27:/usr/lib/avr/include/util/delay_basic.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  28:/usr/lib/avr/include/util/delay_basic.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  29:/usr/lib/avr/include/util/delay_basic.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  30:/usr/lib/avr/include/util/delay_basic.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  31:/usr/lib/avr/include/util/delay_basic.h **** 
+  32:/usr/lib/avr/include/util/delay_basic.h **** /* $Id: delay_basic.h 2143 2010-06-08 21:19:51Z joerg_wunsch $ */
+  33:/usr/lib/avr/include/util/delay_basic.h **** 
+  34:/usr/lib/avr/include/util/delay_basic.h **** #ifndef _UTIL_DELAY_BASIC_H_
+  35:/usr/lib/avr/include/util/delay_basic.h **** #define _UTIL_DELAY_BASIC_H_ 1
+  36:/usr/lib/avr/include/util/delay_basic.h **** 
+  37:/usr/lib/avr/include/util/delay_basic.h **** #include <inttypes.h>
+  38:/usr/lib/avr/include/util/delay_basic.h **** 
+  39:/usr/lib/avr/include/util/delay_basic.h **** #if !defined(__DOXYGEN__)
+  40:/usr/lib/avr/include/util/delay_basic.h **** static inline void _delay_loop_1(uint8_t __count) __attribute__((always_inline));
+  41:/usr/lib/avr/include/util/delay_basic.h **** static inline void _delay_loop_2(uint16_t __count) __attribute__((always_inline));
+  42:/usr/lib/avr/include/util/delay_basic.h **** #endif
+  43:/usr/lib/avr/include/util/delay_basic.h **** 
+  44:/usr/lib/avr/include/util/delay_basic.h **** /** \file */
+  45:/usr/lib/avr/include/util/delay_basic.h **** /** \defgroup util_delay_basic <util/delay_basic.h>: Basic busy-wait delay loops
+  46:/usr/lib/avr/include/util/delay_basic.h ****     \code
+  47:/usr/lib/avr/include/util/delay_basic.h ****     #include <util/delay_basic.h>
+  48:/usr/lib/avr/include/util/delay_basic.h ****     \endcode
+  49:/usr/lib/avr/include/util/delay_basic.h **** 
+  50:/usr/lib/avr/include/util/delay_basic.h ****     The functions in this header file implement simple delay loops
+  51:/usr/lib/avr/include/util/delay_basic.h ****     that perform a busy-waiting.  They are typically used to
+  52:/usr/lib/avr/include/util/delay_basic.h ****     facilitate short delays in the program execution.  They are
+  53:/usr/lib/avr/include/util/delay_basic.h ****     implemented as count-down loops with a well-known CPU cycle
+  54:/usr/lib/avr/include/util/delay_basic.h ****     count per loop iteration.  As such, no other processing can
+  55:/usr/lib/avr/include/util/delay_basic.h ****     occur simultaneously.  It should be kept in mind that the
+  56:/usr/lib/avr/include/util/delay_basic.h ****     functions described here do not disable interrupts.
+  57:/usr/lib/avr/include/util/delay_basic.h **** 
+  58:/usr/lib/avr/include/util/delay_basic.h ****     In general, for long delays, the use of hardware timers is
+GAS LISTING /tmp/ccygZnTD.s 			page 5
+
+
+  59:/usr/lib/avr/include/util/delay_basic.h ****     much preferrable, as they free the CPU, and allow for
+  60:/usr/lib/avr/include/util/delay_basic.h ****     concurrent processing of other events while the timer is
+  61:/usr/lib/avr/include/util/delay_basic.h ****     running.  However, in particular for very short delays, the
+  62:/usr/lib/avr/include/util/delay_basic.h ****     overhead of setting up a hardware timer is too much compared
+  63:/usr/lib/avr/include/util/delay_basic.h ****     to the overall delay time.
+  64:/usr/lib/avr/include/util/delay_basic.h **** 
+  65:/usr/lib/avr/include/util/delay_basic.h ****     Two inline functions are provided for the actual delay algorithms.
+  66:/usr/lib/avr/include/util/delay_basic.h **** 
+  67:/usr/lib/avr/include/util/delay_basic.h **** */
+  68:/usr/lib/avr/include/util/delay_basic.h **** 
+  69:/usr/lib/avr/include/util/delay_basic.h **** /** \ingroup util_delay_basic
+  70:/usr/lib/avr/include/util/delay_basic.h **** 
+  71:/usr/lib/avr/include/util/delay_basic.h ****     Delay loop using an 8-bit counter \c __count, so up to 256
+  72:/usr/lib/avr/include/util/delay_basic.h ****     iterations are possible.  (The value 256 would have to be passed
+  73:/usr/lib/avr/include/util/delay_basic.h ****     as 0.)  The loop executes three CPU cycles per iteration, not
+  74:/usr/lib/avr/include/util/delay_basic.h ****     including the overhead the compiler needs to setup the counter
+  75:/usr/lib/avr/include/util/delay_basic.h ****     register.
+  76:/usr/lib/avr/include/util/delay_basic.h **** 
+  77:/usr/lib/avr/include/util/delay_basic.h ****     Thus, at a CPU speed of 1 MHz, delays of up to 768 microseconds
+  78:/usr/lib/avr/include/util/delay_basic.h ****     can be achieved.
+  79:/usr/lib/avr/include/util/delay_basic.h **** */
+  80:/usr/lib/avr/include/util/delay_basic.h **** void
+  81:/usr/lib/avr/include/util/delay_basic.h **** _delay_loop_1(uint8_t __count)
+  82:/usr/lib/avr/include/util/delay_basic.h **** {
+  83:/usr/lib/avr/include/util/delay_basic.h **** 	__asm__ volatile (
+  84:/usr/lib/avr/include/util/delay_basic.h **** 		"1: dec %0" "\n\t"
+  85:/usr/lib/avr/include/util/delay_basic.h **** 		"brne 1b"
+  86:/usr/lib/avr/include/util/delay_basic.h **** 		: "=r" (__count)
+  87:/usr/lib/avr/include/util/delay_basic.h **** 		: "0" (__count)
+  88:/usr/lib/avr/include/util/delay_basic.h **** 	);
+ 126               		.stabn	68,0,88,.LM2-.LFBB1
+ 127               	.LM2:
+ 128 0008 84E0      		ldi r24,lo8(4)
+ 129               	/* #APP */
+ 130               	 ;  88 "/usr/lib/avr/include/util/delay_basic.h" 1
+ 131 000a 8A95      		1: dec r24
+ 132 000c 01F4      		brne 1b
+ 133               	 ;  0 "" 2
+ 134               	/* #NOAPP */
+ 135               	.LBE41:
+ 136               	.LBE40:
+ 137               		.stabs	"lcm_so1602dtr_m.cpp",132,0,0,.Ltext2
+ 138               	.Ltext2:
+  46:lcm_so1602dtr_m.cpp **** 	_delay_loop_1(4); // Laisser le temps à l'afficheur de comprendre EN
+  47:lcm_so1602dtr_m.cpp **** 	*port &= ~_BV(LCM_EN);
+ 139               		.stabn	68,0,47,.LM3-.LFBB1
+ 140               	.LM3:
+ 141 000e 8081      		ld r24,Z
+ 142 0010 8F7D      		andi r24,lo8(-33)
+ 143 0012 8083      		st Z,r24
+ 144 0014 0895      		ret
+ 145               		.size	_ZL12_lcm_fast_enPVh, .-_ZL12_lcm_fast_enPVh
+ 146               	.Lscope1:
+ 147               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 148               		.stabd	78,0,0
+ 149               		.stabs	"_ZL13_lcm_functionhhhhPVh.constprop.0:f(0,4)",36,0,59,_ZL13_lcm_functionhhhhPVh.constprop.
+ 150               		.stabs	"rs:P(0,91)=k(0,59)",64,0,59,24
+GAS LISTING /tmp/ccygZnTD.s 			page 6
+
+
+ 151               		.stabs	"db:P(0,91)",64,0,60,22
+ 152               		.stabs	"w_10us:P(0,91)",64,0,60,20
+ 153               		.stabs	"port:P(0,89)",64,0,60,14
+ 154               		.type	_ZL13_lcm_functionhhhhPVh.constprop.0, @function
+ 155               	_ZL13_lcm_functionhhhhPVh.constprop.0:
+ 156               		.stabd	46,0,0
+  48:lcm_so1602dtr_m.cpp **** }
+  49:lcm_so1602dtr_m.cpp **** 
+  50:lcm_so1602dtr_m.cpp **** /**
+  51:lcm_so1602dtr_m.cpp ****  * Envoie une fonction à l'afficheur LCD.
+  52:lcm_so1602dtr_m.cpp ****  *
+  53:lcm_so1602dtr_m.cpp ****  * @param rs		Valeur de la ligne RS
+  54:lcm_so1602dtr_m.cpp ****  * @param rw		Valeur de la ligne R/W
+  55:lcm_so1602dtr_m.cpp ****  * @param db		Valeur du `data bus' (DB7-DB0)
+  56:lcm_so1602dtr_m.cpp ****  * @param w_10us	Nombre de (10 µs) à attendre après l'envoi
+  57:lcm_so1602dtr_m.cpp ****  * @param port		Port AVR occupé par l'afficheur
+  58:lcm_so1602dtr_m.cpp ****  */
+  59:lcm_so1602dtr_m.cpp **** static void _lcm_function(const uint8_t rs, const uint8_t rw,
+ 157               		.stabn	68,0,59,.LM4-.LFBB2
+ 158               	.LM4:
+ 159               	.LFBB2:
+ 160 0016 EF92      		push r14
+ 161 0018 FF92      		push r15
+ 162 001a 0F93      		push r16
+ 163 001c 1F93      		push r17
+ 164 001e CF93      		push r28
+ 165 0020 DF93      		push r29
+ 166 0022 00D0      		rcall .
+ 167 0024 CDB7      		in r28,__SP_L__
+ 168 0026 DEB7      		in r29,__SP_H__
+ 169               	/* prologue: function */
+ 170               	/* frame size = 2 */
+ 171               	/* stack size = 8 */
+ 172               	.L__stack_usage = 8
+ 173 0028 7901      		movw r14,r18
+ 174               	.LBB42:
+  60:lcm_so1602dtr_m.cpp ****                           const uint8_t db, const uint8_t w_10us, volatile uint8_t* port) {
+  61:lcm_so1602dtr_m.cpp **** 	uint8_t low_bits, high_bits, i;
+  62:lcm_so1602dtr_m.cpp **** 	
+  63:lcm_so1602dtr_m.cpp **** 	low_bits = ((db & 0x0f) << LCM_DB4) | (rs << LCM_RS) | (rw << LCM_RW);
+ 175               		.stabn	68,0,63,.LM5-.LFBB2
+ 176               	.LM5:
+ 177 002a 90E8      		ldi r25,lo8(-128)
+ 178 002c 899F      		mul r24,r25
+ 179 002e 8001      		movw r16,r0
+ 180 0030 1124      		clr __zero_reg__
+ 181               	.LBB43:
+ 182               	.LBB44:
+  36:lcm_so1602dtr_m.cpp **** 	*port &= LCM_CL;
+ 183               		.stabn	68,0,36,.LM6-.LFBB2
+ 184               	.LM6:
+ 185 0032 F901      		movw r30,r18
+ 186 0034 8081      		ld r24,Z
+ 187 0036 8172      		andi r24,lo8(33)
+ 188 0038 8083      		st Z,r24
+ 189               	.LBE44:
+ 190               	.LBE43:
+GAS LISTING /tmp/ccygZnTD.s 			page 7
+
+
+  64:lcm_so1602dtr_m.cpp **** 	high_bits = ((db >> 4) << LCM_DB4) | (rs << LCM_RS) | (rw << LCM_RW);
+  65:lcm_so1602dtr_m.cpp **** 	
+  66:lcm_so1602dtr_m.cpp **** 	_lcm_cp(port);
+  67:lcm_so1602dtr_m.cpp **** 	*port |= high_bits;
+ 191               		.stabn	68,0,67,.LM7-.LFBB2
+ 192               	.LM7:
+ 193 003a 8081      		ld r24,Z
+  64:lcm_so1602dtr_m.cpp **** 	high_bits = ((db >> 4) << LCM_DB4) | (rs << LCM_RS) | (rw << LCM_RW);
+ 194               		.stabn	68,0,64,.LM8-.LFBB2
+ 195               	.LM8:
+ 196 003c 262F      		mov r18,r22
+ 197 003e 30E0      		ldi r19,0
+ 198 0040 94E0      		ldi r25,4
+ 199               		1:
+ 200 0042 3595      		asr r19
+ 201 0044 2795      		ror r18
+ 202 0046 9A95      		dec r25
+ 203 0048 01F4      		brne 1b
+ 204 004a 220F      		lsl r18
+ 205 004c 331F      		rol r19
+ 206 004e 202B      		or r18,r16
+ 207               		.stabn	68,0,67,.LM9-.LFBB2
+ 208               	.LM9:
+ 209 0050 282B      		or r18,r24
+ 210 0052 2083      		st Z,r18
+  68:lcm_so1602dtr_m.cpp **** 	_lcm_fast_en(port);
+ 211               		.stabn	68,0,68,.LM10-.LFBB2
+ 212               	.LM10:
+ 213 0054 C701      		movw r24,r14
+ 214 0056 4A83      		std Y+2,r20
+ 215 0058 6983      		std Y+1,r22
+ 216 005a 0E94 0000 		call _ZL12_lcm_fast_enPVh
+ 217               	.LBB45:
+ 218               	.LBB46:
+  36:lcm_so1602dtr_m.cpp **** 	*port &= LCM_CL;
+ 219               		.stabn	68,0,36,.LM11-.LFBB2
+ 220               	.LM11:
+ 221 005e F701      		movw r30,r14
+ 222 0060 8081      		ld r24,Z
+ 223 0062 8172      		andi r24,lo8(33)
+ 224 0064 8083      		st Z,r24
+ 225               	.LBE46:
+ 226               	.LBE45:
+  69:lcm_so1602dtr_m.cpp **** 	
+  70:lcm_so1602dtr_m.cpp **** 	_lcm_cp(port);
+  71:lcm_so1602dtr_m.cpp **** 	*port |= low_bits;
+ 227               		.stabn	68,0,71,.LM12-.LFBB2
+ 228               	.LM12:
+ 229 0066 8081      		ld r24,Z
+  63:lcm_so1602dtr_m.cpp **** 	low_bits = ((db & 0x0f) << LCM_DB4) | (rs << LCM_RS) | (rw << LCM_RW);
+ 230               		.stabn	68,0,63,.LM13-.LFBB2
+ 231               	.LM13:
+ 232 0068 6981      		ldd r22,Y+1
+ 233 006a 6F70      		andi r22,lo8(15)
+ 234 006c 660F      		lsl r22
+ 235 006e 602B      		or r22,r16
+ 236               		.stabn	68,0,71,.LM14-.LFBB2
+GAS LISTING /tmp/ccygZnTD.s 			page 8
+
+
+ 237               	.LM14:
+ 238 0070 682B      		or r22,r24
+ 239 0072 6083      		st Z,r22
+  72:lcm_so1602dtr_m.cpp **** 	_lcm_fast_en(port);
+ 240               		.stabn	68,0,72,.LM15-.LFBB2
+ 241               	.LM15:
+ 242 0074 C701      		movw r24,r14
+ 243 0076 0E94 0000 		call _ZL12_lcm_fast_enPVh
+  73:lcm_so1602dtr_m.cpp **** 	
+  74:lcm_so1602dtr_m.cpp **** 	for (i = 0; i < w_10us; ++i) {
+ 244               		.stabn	68,0,74,.LM16-.LFBB2
+ 245               	.LM16:
+ 246 007a 80E0      		ldi r24,0
+ 247 007c 4A81      		ldd r20,Y+2
+ 248               	.L3:
+ 249 007e 8417      		cp r24,r20
+ 250 0080 01F0      		breq .L6
+ 251               	.LBB47:
+ 252               	.LBB48:
+ 253               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext3
+ 254               	.Ltext3:
+   1:/usr/lib/avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/lib/avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:/usr/lib/avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   4:/usr/lib/avr/include/util/delay.h ****    All rights reserved.
+   5:/usr/lib/avr/include/util/delay.h **** 
+   6:/usr/lib/avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:/usr/lib/avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:/usr/lib/avr/include/util/delay.h **** 
+   9:/usr/lib/avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+  10:/usr/lib/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:/usr/lib/avr/include/util/delay.h **** 
+  12:/usr/lib/avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:/usr/lib/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:/usr/lib/avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  15:/usr/lib/avr/include/util/delay.h ****      distribution.
+  16:/usr/lib/avr/include/util/delay.h **** 
+  17:/usr/lib/avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:/usr/lib/avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  19:/usr/lib/avr/include/util/delay.h ****      from this software without specific prior written permission.
+  20:/usr/lib/avr/include/util/delay.h **** 
+  21:/usr/lib/avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:/usr/lib/avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:/usr/lib/avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:/usr/lib/avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:/usr/lib/avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:/usr/lib/avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:/usr/lib/avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:/usr/lib/avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:/usr/lib/avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:/usr/lib/avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:/usr/lib/avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:/usr/lib/avr/include/util/delay.h **** 
+  33:/usr/lib/avr/include/util/delay.h **** /* $Id: delay.h.in 2251 2011-09-14 08:20:33Z joerg_wunsch $ */
+  34:/usr/lib/avr/include/util/delay.h **** 
+  35:/usr/lib/avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  36:/usr/lib/avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+GAS LISTING /tmp/ccygZnTD.s 			page 9
+
+
+  37:/usr/lib/avr/include/util/delay.h **** 
+  38:/usr/lib/avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
+  39:/usr/lib/avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 1
+  40:/usr/lib/avr/include/util/delay.h **** #endif
+  41:/usr/lib/avr/include/util/delay.h **** 
+  42:/usr/lib/avr/include/util/delay.h **** #include <inttypes.h>
+  43:/usr/lib/avr/include/util/delay.h **** #include <util/delay_basic.h>
+  44:/usr/lib/avr/include/util/delay.h **** #include <math.h>
+  45:/usr/lib/avr/include/util/delay.h **** 
+  46:/usr/lib/avr/include/util/delay.h **** /** \file */
+  47:/usr/lib/avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  48:/usr/lib/avr/include/util/delay.h ****     \code
+  49:/usr/lib/avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  50:/usr/lib/avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  51:/usr/lib/avr/include/util/delay.h ****     #include <util/delay.h>
+  52:/usr/lib/avr/include/util/delay.h ****     \endcode
+  53:/usr/lib/avr/include/util/delay.h **** 
+  54:/usr/lib/avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  55:/usr/lib/avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  56:/usr/lib/avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  57:/usr/lib/avr/include/util/delay.h ****     used.
+  58:/usr/lib/avr/include/util/delay.h **** 
+  59:/usr/lib/avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  60:/usr/lib/avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  61:/usr/lib/avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+  62:/usr/lib/avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  63:/usr/lib/avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  64:/usr/lib/avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  65:/usr/lib/avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  66:/usr/lib/avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  67:/usr/lib/avr/include/util/delay.h **** 
+  68:/usr/lib/avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  69:/usr/lib/avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  70:/usr/lib/avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+  71:/usr/lib/avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  72:/usr/lib/avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  73:/usr/lib/avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  74:/usr/lib/avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  75:/usr/lib/avr/include/util/delay.h ****     routines linked into the application.
+  76:/usr/lib/avr/include/util/delay.h **** 
+  77:/usr/lib/avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  78:/usr/lib/avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  79:/usr/lib/avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  80:/usr/lib/avr/include/util/delay.h **** 
+  81:/usr/lib/avr/include/util/delay.h **** */
+  82:/usr/lib/avr/include/util/delay.h **** 
+  83:/usr/lib/avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  84:/usr/lib/avr/include/util/delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
+  85:/usr/lib/avr/include/util/delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
+  86:/usr/lib/avr/include/util/delay.h **** #endif
+  87:/usr/lib/avr/include/util/delay.h **** 
+  88:/usr/lib/avr/include/util/delay.h **** #ifndef F_CPU
+  89:/usr/lib/avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  90:/usr/lib/avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  91:/usr/lib/avr/include/util/delay.h **** # define F_CPU 1000000UL
+  92:/usr/lib/avr/include/util/delay.h **** #endif
+  93:/usr/lib/avr/include/util/delay.h **** 
+GAS LISTING /tmp/ccygZnTD.s 			page 10
+
+
+  94:/usr/lib/avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+  95:/usr/lib/avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+  96:/usr/lib/avr/include/util/delay.h **** #endif
+  97:/usr/lib/avr/include/util/delay.h **** 
+  98:/usr/lib/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+  99:/usr/lib/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 100:/usr/lib/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 101:/usr/lib/avr/include/util/delay.h **** #  include <math.h>
+ 102:/usr/lib/avr/include/util/delay.h **** #endif
+ 103:/usr/lib/avr/include/util/delay.h **** 
+ 104:/usr/lib/avr/include/util/delay.h **** /**
+ 105:/usr/lib/avr/include/util/delay.h ****    \ingroup util_delay
+ 106:/usr/lib/avr/include/util/delay.h **** 
+ 107:/usr/lib/avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 108:/usr/lib/avr/include/util/delay.h **** 
+ 109:/usr/lib/avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 110:/usr/lib/avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 111:/usr/lib/avr/include/util/delay.h **** 
+ 112:/usr/lib/avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 113:/usr/lib/avr/include/util/delay.h **** 
+ 114:/usr/lib/avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 115:/usr/lib/avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 116:/usr/lib/avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 117:/usr/lib/avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 118:/usr/lib/avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+ 119:/usr/lib/avr/include/util/delay.h **** 
+ 120:/usr/lib/avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 121:/usr/lib/avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 122:/usr/lib/avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 123:/usr/lib/avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 124:/usr/lib/avr/include/util/delay.h **** 
+ 125:/usr/lib/avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 126:/usr/lib/avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 127:/usr/lib/avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+ 128:/usr/lib/avr/include/util/delay.h **** 
+ 129:/usr/lib/avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 130:/usr/lib/avr/include/util/delay.h ****    to round down and round to closest integer.
+ 131:/usr/lib/avr/include/util/delay.h **** 
+ 132:/usr/lib/avr/include/util/delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
+ 133:/usr/lib/avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
+ 134:/usr/lib/avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 135:/usr/lib/avr/include/util/delay.h ****    Also, the backward compatible
+ 136:/usr/lib/avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 137:/usr/lib/avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 138:/usr/lib/avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
+ 139:/usr/lib/avr/include/util/delay.h **** 
+ 140:/usr/lib/avr/include/util/delay.h ****  */
+ 141:/usr/lib/avr/include/util/delay.h **** void
+ 142:/usr/lib/avr/include/util/delay.h **** _delay_ms(double __ms)
+ 143:/usr/lib/avr/include/util/delay.h **** {
+ 144:/usr/lib/avr/include/util/delay.h **** 	uint16_t __ticks;
+ 145:/usr/lib/avr/include/util/delay.h **** 	double __tmp ; 
+ 146:/usr/lib/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 147:/usr/lib/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 148:/usr/lib/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 149:/usr/lib/avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 150:/usr/lib/avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+GAS LISTING /tmp/ccygZnTD.s 			page 11
+
+
+ 151:/usr/lib/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 152:/usr/lib/avr/include/util/delay.h **** 
+ 153:/usr/lib/avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 154:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 155:/usr/lib/avr/include/util/delay.h **** 
+ 156:/usr/lib/avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 157:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 158:/usr/lib/avr/include/util/delay.h **** 
+ 159:/usr/lib/avr/include/util/delay.h **** 	#else
+ 160:/usr/lib/avr/include/util/delay.h **** 		//round up by default
+ 161:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 162:/usr/lib/avr/include/util/delay.h **** 	#endif
+ 163:/usr/lib/avr/include/util/delay.h **** 
+ 164:/usr/lib/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 165:/usr/lib/avr/include/util/delay.h **** 
+ 166:/usr/lib/avr/include/util/delay.h **** #else
+ 167:/usr/lib/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 4e3) * __ms;
+ 168:/usr/lib/avr/include/util/delay.h **** 	if (__tmp < 1.0)
+ 169:/usr/lib/avr/include/util/delay.h **** 		__ticks = 1;
+ 170:/usr/lib/avr/include/util/delay.h **** 	else if (__tmp > 65535)
+ 171:/usr/lib/avr/include/util/delay.h **** 	{
+ 172:/usr/lib/avr/include/util/delay.h **** 		//	__ticks = requested delay in 1/10 ms
+ 173:/usr/lib/avr/include/util/delay.h **** 		__ticks = (uint16_t) (__ms * 10.0);
+ 174:/usr/lib/avr/include/util/delay.h **** 		while(__ticks)
+ 175:/usr/lib/avr/include/util/delay.h **** 		{
+ 176:/usr/lib/avr/include/util/delay.h **** 			// wait 1/10 ms
+ 177:/usr/lib/avr/include/util/delay.h **** 			_delay_loop_2(((F_CPU) / 4e3) / 10);
+ 178:/usr/lib/avr/include/util/delay.h **** 			__ticks --;
+ 179:/usr/lib/avr/include/util/delay.h **** 		}
+ 180:/usr/lib/avr/include/util/delay.h **** 		return;
+ 181:/usr/lib/avr/include/util/delay.h **** 	}
+ 182:/usr/lib/avr/include/util/delay.h **** 	else
+ 183:/usr/lib/avr/include/util/delay.h **** 		__ticks = (uint16_t)__tmp;
+ 184:/usr/lib/avr/include/util/delay.h **** 	_delay_loop_2(__ticks);
+ 185:/usr/lib/avr/include/util/delay.h **** #endif
+ 186:/usr/lib/avr/include/util/delay.h **** }
+ 187:/usr/lib/avr/include/util/delay.h **** 
+ 188:/usr/lib/avr/include/util/delay.h **** /**
+ 189:/usr/lib/avr/include/util/delay.h ****    \ingroup util_delay
+ 190:/usr/lib/avr/include/util/delay.h **** 
+ 191:/usr/lib/avr/include/util/delay.h ****    Perform a delay of \c __us microseconds, using _delay_loop_1().
+ 192:/usr/lib/avr/include/util/delay.h **** 
+ 193:/usr/lib/avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 194:/usr/lib/avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 195:/usr/lib/avr/include/util/delay.h **** 
+ 196:/usr/lib/avr/include/util/delay.h ****    The maximal possible delay is 768 us / F_CPU in MHz.
+ 197:/usr/lib/avr/include/util/delay.h **** 
+ 198:/usr/lib/avr/include/util/delay.h ****    If the user requests a delay greater than the maximal possible one,
+ 199:/usr/lib/avr/include/util/delay.h ****    _delay_us() will automatically call _delay_ms() instead.  The user
+ 200:/usr/lib/avr/include/util/delay.h ****    will not be informed about this case.
+ 201:/usr/lib/avr/include/util/delay.h **** 
+ 202:/usr/lib/avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 203:/usr/lib/avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 us/ F_CPU in MHz. For
+ 204:/usr/lib/avr/include/util/delay.h ****    values greater than the maximal possible delay, overflow results in
+ 205:/usr/lib/avr/include/util/delay.h ****    no delay i.e., 0us.
+ 206:/usr/lib/avr/include/util/delay.h ****   
+ 207:/usr/lib/avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+GAS LISTING /tmp/ccygZnTD.s 			page 12
+
+
+ 208:/usr/lib/avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 209:/usr/lib/avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+ 210:/usr/lib/avr/include/util/delay.h **** 
+ 211:/usr/lib/avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 212:/usr/lib/avr/include/util/delay.h ****    to round down and round to closest integer.
+ 213:/usr/lib/avr/include/util/delay.h ****  
+ 214:/usr/lib/avr/include/util/delay.h ****    Note: The new implementation of _delay_us(double __us) with 
+ 215:/usr/lib/avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible.
+ 216:/usr/lib/avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 217:/usr/lib/avr/include/util/delay.h ****    Also, the backward compatible
+ 218:/usr/lib/avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 219:/usr/lib/avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 220:/usr/lib/avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
+ 221:/usr/lib/avr/include/util/delay.h **** 
+ 222:/usr/lib/avr/include/util/delay.h ****  */
+ 223:/usr/lib/avr/include/util/delay.h **** void
+ 224:/usr/lib/avr/include/util/delay.h **** _delay_us(double __us)
+ 225:/usr/lib/avr/include/util/delay.h **** {
+ 226:/usr/lib/avr/include/util/delay.h **** 	uint8_t __ticks;
+ 227:/usr/lib/avr/include/util/delay.h **** 	double __tmp ; 
+ 228:/usr/lib/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 229:/usr/lib/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 230:/usr/lib/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 231:/usr/lib/avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 232:/usr/lib/avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 233:/usr/lib/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e6) * __us;
+ 234:/usr/lib/avr/include/util/delay.h **** 
+ 235:/usr/lib/avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 236:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 237:/usr/lib/avr/include/util/delay.h **** 
+ 238:/usr/lib/avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 239:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 240:/usr/lib/avr/include/util/delay.h **** 
+ 241:/usr/lib/avr/include/util/delay.h **** 	#else
+ 242:/usr/lib/avr/include/util/delay.h **** 		//round up by default
+ 243:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 244:/usr/lib/avr/include/util/delay.h **** 	#endif
+ 245:/usr/lib/avr/include/util/delay.h **** 
+ 246:/usr/lib/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 255               		.stabn	68,0,246,.LM17-.LFBB2
+ 256               	.LM17:
+ 257 0082 FAE1      		ldi r31,lo8(26)
+ 258 0084 FA95      		1: dec r31
+ 259 0086 01F4      		brne 1b
+ 260 0088 00C0      		rjmp .
+ 261               	.LBE48:
+ 262               	.LBE47:
+ 263               		.stabs	"lcm_so1602dtr_m.cpp",132,0,0,.Ltext4
+ 264               	.Ltext4:
+ 265               		.stabn	68,0,74,.LM18-.LFBB2
+ 266               	.LM18:
+ 267 008a 8F5F      		subi r24,lo8(-(1))
+ 268 008c 00C0      		rjmp .L3
+ 269               	.L6:
+ 270               	/* epilogue start */
+ 271               	.LBE42:
+  75:lcm_so1602dtr_m.cpp **** 		_delay_us(10.0);
+GAS LISTING /tmp/ccygZnTD.s 			page 13
+
+
+  76:lcm_so1602dtr_m.cpp **** 	}
+  77:lcm_so1602dtr_m.cpp **** }
+ 272               		.stabn	68,0,77,.LM19-.LFBB2
+ 273               	.LM19:
+ 274 008e 0F90      		pop __tmp_reg__
+ 275 0090 0F90      		pop __tmp_reg__
+ 276 0092 DF91      		pop r29
+ 277 0094 CF91      		pop r28
+ 278 0096 1F91      		pop r17
+ 279 0098 0F91      		pop r16
+ 280 009a FF90      		pop r15
+ 281 009c EF90      		pop r14
+ 282 009e 0895      		ret
+ 283               		.size	_ZL13_lcm_functionhhhhPVh.constprop.0, .-_ZL13_lcm_functionhhhhPVh.constprop.0
+ 284               		.stabs	"i:r(0,59)",64,0,61,24
+ 285               		.stabn	192,0,0,.LBB42-.LFBB2
+ 286               		.stabn	224,0,0,.LBE42-.LFBB2
+ 287               	.Lscope2:
+ 288               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 289               		.stabd	78,0,0
+ 290               		.stabs	"_Z15lcmd_disp_clearPVh:F(0,4)",36,0,84,_Z15lcmd_disp_clearPVh
+ 291               		.stabs	"port:P(0,89)",64,0,84,24
+ 292               	.global	_Z15lcmd_disp_clearPVh
+ 293               		.type	_Z15lcmd_disp_clearPVh, @function
+ 294               	_Z15lcmd_disp_clearPVh:
+ 295               		.stabd	46,0,0
+  78:lcm_so1602dtr_m.cpp **** 
+  79:lcm_so1602dtr_m.cpp **** /**
+  80:lcm_so1602dtr_m.cpp ****  * Pilote - efface l'affichage en cours avec le caractère 0x20.
+  81:lcm_so1602dtr_m.cpp ****  *
+  82:lcm_so1602dtr_m.cpp ****  * @param port		Port AVR occupé par l'afficheur
+  83:lcm_so1602dtr_m.cpp ****  */
+  84:lcm_so1602dtr_m.cpp **** void lcmd_disp_clear(volatile uint8_t* port) {
+ 296               		.stabn	68,0,84,.LM20-.LFBB3
+ 297               	.LM20:
+ 298               	.LFBB3:
+ 299               	/* prologue: function */
+ 300               	/* frame size = 0 */
+ 301               	/* stack size = 0 */
+ 302               	.L__stack_usage = 0
+  85:lcm_so1602dtr_m.cpp **** 	_lcm_function(0, 0, 0x01, 164, port);
+ 303               		.stabn	68,0,85,.LM21-.LFBB3
+ 304               	.LM21:
+ 305 00a0 9C01      		movw r18,r24
+ 306 00a2 44EA      		ldi r20,lo8(-92)
+ 307 00a4 61E0      		ldi r22,lo8(1)
+ 308 00a6 80E0      		ldi r24,0
+ 309 00a8 0C94 0000 		jmp _ZL13_lcm_functionhhhhPVh.constprop.0
+ 310               		.size	_Z15lcmd_disp_clearPVh, .-_Z15lcmd_disp_clearPVh
+ 311               	.Lscope3:
+ 312               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 313               		.stabd	78,0,0
+ 314               		.stabs	"_Z14lcmd_disp_homePVh:F(0,4)",36,0,93,_Z14lcmd_disp_homePVh
+ 315               		.stabs	"port:P(0,89)",64,0,93,24
+ 316               	.global	_Z14lcmd_disp_homePVh
+ 317               		.type	_Z14lcmd_disp_homePVh, @function
+ 318               	_Z14lcmd_disp_homePVh:
+GAS LISTING /tmp/ccygZnTD.s 			page 14
+
+
+ 319               		.stabd	46,0,0
+  86:lcm_so1602dtr_m.cpp **** }
+  87:lcm_so1602dtr_m.cpp **** 
+  88:lcm_so1602dtr_m.cpp **** /**
+  89:lcm_so1602dtr_m.cpp ****  * Pilote - effectue un `home' sur l'afficheur.
+  90:lcm_so1602dtr_m.cpp ****  *
+  91:lcm_so1602dtr_m.cpp ****  * @param port		Port AVR occupé par l'afficheur
+  92:lcm_so1602dtr_m.cpp ****  */
+  93:lcm_so1602dtr_m.cpp **** void lcmd_disp_home(volatile uint8_t* port) {
+ 320               		.stabn	68,0,93,.LM22-.LFBB4
+ 321               	.LM22:
+ 322               	.LFBB4:
+ 323               	/* prologue: function */
+ 324               	/* frame size = 0 */
+ 325               	/* stack size = 0 */
+ 326               	.L__stack_usage = 0
+  94:lcm_so1602dtr_m.cpp **** 	_lcm_function(0, 0, 0x02, 164, port);
+ 327               		.stabn	68,0,94,.LM23-.LFBB4
+ 328               	.LM23:
+ 329 00ac 9C01      		movw r18,r24
+ 330 00ae 44EA      		ldi r20,lo8(-92)
+ 331 00b0 62E0      		ldi r22,lo8(2)
+ 332 00b2 80E0      		ldi r24,0
+ 333 00b4 0C94 0000 		jmp _ZL13_lcm_functionhhhhPVh.constprop.0
+ 334               		.size	_Z14lcmd_disp_homePVh, .-_Z14lcmd_disp_homePVh
+ 335               	.Lscope4:
+ 336               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 337               		.stabd	78,0,0
+ 338               		.stabs	"_Z13lcmd_entry_smhhPVh:F(0,4)",36,0,104,_Z13lcmd_entry_smhhPVh
+ 339               		.stabs	"id:P(0,91)",64,0,104,24
+ 340               		.stabs	"s:P(0,91)",64,0,104,22
+ 341               		.stabs	"port:P(0,89)",64,0,104,18
+ 342               	.global	_Z13lcmd_entry_smhhPVh
+ 343               		.type	_Z13lcmd_entry_smhhPVh, @function
+ 344               	_Z13lcmd_entry_smhhPVh:
+ 345               		.stabd	46,0,0
+  95:lcm_so1602dtr_m.cpp **** }
+  96:lcm_so1602dtr_m.cpp **** 
+  97:lcm_so1602dtr_m.cpp **** /**
+  98:lcm_so1602dtr_m.cpp ****  * Pilote - fixe le `Entry Mode' de l'afficheur.
+  99:lcm_so1602dtr_m.cpp ****  *
+ 100:lcm_so1602dtr_m.cpp ****  * @param id		Incrémentation ou décrémentation des adresses
+ 101:lcm_so1602dtr_m.cpp ****  * @param s		Activation du décalage d'affichage
+ 102:lcm_so1602dtr_m.cpp ****  * @param port		Port AVR occupé par l'afficheur
+ 103:lcm_so1602dtr_m.cpp ****  */
+ 104:lcm_so1602dtr_m.cpp **** void lcmd_entry_sm(const uint8_t id, const uint8_t s, volatile uint8_t* port) {
+ 346               		.stabn	68,0,104,.LM24-.LFBB5
+ 347               	.LM24:
+ 348               	.LFBB5:
+ 349               	/* prologue: function */
+ 350               	/* frame size = 0 */
+ 351               	/* stack size = 0 */
+ 352               	.L__stack_usage = 0
+ 353 00b8 9A01      		movw r18,r20
+ 354               	.LBB49:
+ 105:lcm_so1602dtr_m.cpp **** 	const uint8_t db = (0x04 | (id << 1) | s);
+ 355               		.stabn	68,0,105,.LM25-.LFBB5
+GAS LISTING /tmp/ccygZnTD.s 			page 15
+
+
+ 356               	.LM25:
+ 357 00ba 6460      		ori r22,lo8(4)
+ 358 00bc 880F      		lsl r24
+ 359 00be 862B      		or r24,r22
+ 106:lcm_so1602dtr_m.cpp **** 	_lcm_function(0, 0, db, 4, port);
+ 360               		.stabn	68,0,106,.LM26-.LFBB5
+ 361               	.LM26:
+ 362 00c0 44E0      		ldi r20,lo8(4)
+ 363 00c2 682F      		mov r22,r24
+ 364 00c4 80E0      		ldi r24,0
+ 365 00c6 0C94 0000 		jmp _ZL13_lcm_functionhhhhPVh.constprop.0
+ 366               	.LBE49:
+ 367               		.size	_Z13lcmd_entry_smhhPVh, .-_Z13lcmd_entry_smhhPVh
+ 368               	.Lscope5:
+ 369               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 370               		.stabd	78,0,0
+ 371               		.stabs	"_Z16lcmd_disp_on_offhhhPVh:F(0,4)",36,0,117,_Z16lcmd_disp_on_offhhhPVh
+ 372               		.stabs	"d:P(0,91)",64,0,117,24
+ 373               		.stabs	"c:P(0,91)",64,0,117,22
+ 374               		.stabs	"b:P(0,91)",64,0,117,20
+ 375               		.stabs	"port:P(0,89)",64,0,118,18
+ 376               	.global	_Z16lcmd_disp_on_offhhhPVh
+ 377               		.type	_Z16lcmd_disp_on_offhhhPVh, @function
+ 378               	_Z16lcmd_disp_on_offhhhPVh:
+ 379               		.stabd	46,0,0
+ 107:lcm_so1602dtr_m.cpp **** }
+ 108:lcm_so1602dtr_m.cpp **** 
+ 109:lcm_so1602dtr_m.cpp **** /**
+ 110:lcm_so1602dtr_m.cpp ****  * Pilote - ajuste certains paramètres d'affichage.
+ 111:lcm_so1602dtr_m.cpp ****  *
+ 112:lcm_so1602dtr_m.cpp ****  * @param d		Activation de l'affichage
+ 113:lcm_so1602dtr_m.cpp ****  * @param c		Activation du curseur
+ 114:lcm_so1602dtr_m.cpp ****  * @param b		Activation du `blink'
+ 115:lcm_so1602dtr_m.cpp ****  * @param port		Port AVR occupé par l'afficheur
+ 116:lcm_so1602dtr_m.cpp ****  */
+ 117:lcm_so1602dtr_m.cpp **** void lcmd_disp_on_off(const uint8_t d, const uint8_t c, const uint8_t b,
+ 118:lcm_so1602dtr_m.cpp ****                       volatile uint8_t* port) {
+ 380               		.stabn	68,0,118,.LM27-.LFBB6
+ 381               	.LM27:
+ 382               	.LFBB6:
+ 383               	/* prologue: function */
+ 384               	/* frame size = 0 */
+ 385               	/* stack size = 0 */
+ 386               	.L__stack_usage = 0
+ 387               	.LBB50:
+ 119:lcm_so1602dtr_m.cpp **** 	const uint8_t db = (0x08 | (d << 2) | (c << 1) | b);
+ 388               		.stabn	68,0,119,.LM28-.LFBB6
+ 389               	.LM28:
+ 390 00ca 4860      		ori r20,lo8(8)
+ 391 00cc 660F      		lsl r22
+ 392 00ce 642B      		or r22,r20
+ 393 00d0 44E0      		ldi r20,lo8(4)
+ 394 00d2 849F      		mul r24,r20
+ 395 00d4 C001      		movw r24,r0
+ 396 00d6 1124      		clr __zero_reg__
+ 397 00d8 682B      		or r22,r24
+ 120:lcm_so1602dtr_m.cpp **** 	_lcm_function(0, 0, db, 4, port);
+GAS LISTING /tmp/ccygZnTD.s 			page 16
+
+
+ 398               		.stabn	68,0,120,.LM29-.LFBB6
+ 399               	.LM29:
+ 400 00da 44E0      		ldi r20,lo8(4)
+ 401 00dc 80E0      		ldi r24,0
+ 402 00de 0C94 0000 		jmp _ZL13_lcm_functionhhhhPVh.constprop.0
+ 403               	.LBE50:
+ 404               		.size	_Z16lcmd_disp_on_offhhhPVh, .-_Z16lcmd_disp_on_offhhhPVh
+ 405               	.Lscope6:
+ 406               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 407               		.stabd	78,0,0
+ 408               		.stabs	"_Z19lcmd_disp_cur_shifthhPVh:F(0,4)",36,0,130,_Z19lcmd_disp_cur_shifthhPVh
+ 409               		.stabs	"sc:P(0,91)",64,0,130,24
+ 410               		.stabs	"rl:P(0,91)",64,0,130,22
+ 411               		.stabs	"port:P(0,89)",64,0,131,18
+ 412               	.global	_Z19lcmd_disp_cur_shifthhPVh
+ 413               		.type	_Z19lcmd_disp_cur_shifthhPVh, @function
+ 414               	_Z19lcmd_disp_cur_shifthhPVh:
+ 415               		.stabd	46,0,0
+ 121:lcm_so1602dtr_m.cpp **** }
+ 122:lcm_so1602dtr_m.cpp **** 
+ 123:lcm_so1602dtr_m.cpp **** /**
+ 124:lcm_so1602dtr_m.cpp ****  * Pilote - décale l'affichage complet vers la gauche ou vers la droite.
+ 125:lcm_so1602dtr_m.cpp ****  *
+ 126:lcm_so1602dtr_m.cpp ****  * @param sc		Décaler l'affichage ou déplacer le curseur
+ 127:lcm_so1602dtr_m.cpp ****  * @param rl		Droite ou gauche
+ 128:lcm_so1602dtr_m.cpp ****  * @param port		Port AVR occupé par l'afficheur
+ 129:lcm_so1602dtr_m.cpp ****  */
+ 130:lcm_so1602dtr_m.cpp **** void lcmd_disp_cur_shift(const uint8_t sc, const uint8_t rl,
+ 131:lcm_so1602dtr_m.cpp ****                          volatile uint8_t* port) {
+ 416               		.stabn	68,0,131,.LM30-.LFBB7
+ 417               	.LM30:
+ 418               	.LFBB7:
+ 419               	/* prologue: function */
+ 420               	/* frame size = 0 */
+ 421               	/* stack size = 0 */
+ 422               	.L__stack_usage = 0
+ 423 00e2 9A01      		movw r18,r20
+ 424               	.LBB51:
+ 132:lcm_so1602dtr_m.cpp **** 	const uint8_t db = (0x10 | (sc << 3) | (rl << 2));
+ 425               		.stabn	68,0,132,.LM31-.LFBB7
+ 426               	.LM31:
+ 427 00e4 44E0      		ldi r20,lo8(4)
+ 428 00e6 649F      		mul r22,r20
+ 429 00e8 B001      		movw r22,r0
+ 430 00ea 1124      		clr __zero_reg__
+ 431 00ec 6061      		ori r22,lo8(16)
+ 432 00ee 48E0      		ldi r20,lo8(8)
+ 433 00f0 849F      		mul r24,r20
+ 434 00f2 C001      		movw r24,r0
+ 435 00f4 1124      		clr __zero_reg__
+ 436 00f6 682B      		or r22,r24
+ 133:lcm_so1602dtr_m.cpp **** 	_lcm_function(0, 0, db, 4, port);
+ 437               		.stabn	68,0,133,.LM32-.LFBB7
+ 438               	.LM32:
+ 439 00f8 44E0      		ldi r20,lo8(4)
+ 440 00fa 80E0      		ldi r24,0
+ 441 00fc 0C94 0000 		jmp _ZL13_lcm_functionhhhhPVh.constprop.0
+GAS LISTING /tmp/ccygZnTD.s 			page 17
+
+
+ 442               	.LBE51:
+ 443               		.size	_Z19lcmd_disp_cur_shifthhPVh, .-_Z19lcmd_disp_cur_shifthhPVh
+ 444               	.Lscope7:
+ 445               		.stabs	"",36,0,0,.Lscope7-.LFBB7
+ 446               		.stabd	78,0,0
+ 447               		.stabs	"_Z13lcmd_func_sethhPVh:F(0,4)",36,0,143,_Z13lcmd_func_sethhPVh
+ 448               		.stabs	"dl:P(0,91)",64,0,143,24
+ 449               		.stabs	"n:P(0,91)",64,0,143,22
+ 450               		.stabs	"port:P(0,89)",64,0,143,18
+ 451               	.global	_Z13lcmd_func_sethhPVh
+ 452               		.type	_Z13lcmd_func_sethhPVh, @function
+ 453               	_Z13lcmd_func_sethhPVh:
+ 454               		.stabd	46,0,0
+ 134:lcm_so1602dtr_m.cpp **** }
+ 135:lcm_so1602dtr_m.cpp **** 
+ 136:lcm_so1602dtr_m.cpp **** /**
+ 137:lcm_so1602dtr_m.cpp ****  * Pilote - fixe certains paramètres de l'afficheur LCD.
+ 138:lcm_so1602dtr_m.cpp ****  *
+ 139:lcm_so1602dtr_m.cpp ****  * @param dl		`Data Length' de 8 ou 4 bits
+ 140:lcm_so1602dtr_m.cpp ****  * @param n		`Dual Line' ou `Single Line'
+ 141:lcm_so1602dtr_m.cpp ****  * @param port		Port AVR occupé par l'afficheur
+ 142:lcm_so1602dtr_m.cpp ****  */
+ 143:lcm_so1602dtr_m.cpp **** void lcmd_func_set(const uint8_t dl, const uint8_t n, volatile uint8_t* port) {
+ 455               		.stabn	68,0,143,.LM33-.LFBB8
+ 456               	.LM33:
+ 457               	.LFBB8:
+ 458               	/* prologue: function */
+ 459               	/* frame size = 0 */
+ 460               	/* stack size = 0 */
+ 461               	.L__stack_usage = 0
+ 462 0100 9A01      		movw r18,r20
+ 463               	.LBB52:
+ 144:lcm_so1602dtr_m.cpp **** 	const uint8_t db = (0x20 | (dl << 4) | (n << 3));
+ 464               		.stabn	68,0,144,.LM34-.LFBB8
+ 465               	.LM34:
+ 466 0102 48E0      		ldi r20,lo8(8)
+ 467 0104 649F      		mul r22,r20
+ 468 0106 B001      		movw r22,r0
+ 469 0108 1124      		clr __zero_reg__
+ 470 010a 6062      		ori r22,lo8(32)
+ 471 010c 40E1      		ldi r20,lo8(16)
+ 472 010e 849F      		mul r24,r20
+ 473 0110 C001      		movw r24,r0
+ 474 0112 1124      		clr __zero_reg__
+ 475 0114 682B      		or r22,r24
+ 145:lcm_so1602dtr_m.cpp **** 	_lcm_function(0, 0, db, 4, port);
+ 476               		.stabn	68,0,145,.LM35-.LFBB8
+ 477               	.LM35:
+ 478 0116 44E0      		ldi r20,lo8(4)
+ 479 0118 80E0      		ldi r24,0
+ 480 011a 0C94 0000 		jmp _ZL13_lcm_functionhhhhPVh.constprop.0
+ 481               	.LBE52:
+ 482               		.size	_Z13lcmd_func_sethhPVh, .-_Z13lcmd_func_sethhPVh
+ 483               	.Lscope8:
+ 484               		.stabs	"",36,0,0,.Lscope8-.LFBB8
+ 485               		.stabd	78,0,0
+ 486               		.stabs	"_Z17lcmd_cgr_set_addrhPVh:F(0,4)",36,0,154,_Z17lcmd_cgr_set_addrhPVh
+GAS LISTING /tmp/ccygZnTD.s 			page 18
+
+
+ 487               		.stabs	"addr:P(0,91)",64,0,154,24
+ 488               		.stabs	"port:P(0,89)",64,0,154,18
+ 489               	.global	_Z17lcmd_cgr_set_addrhPVh
+ 490               		.type	_Z17lcmd_cgr_set_addrhPVh, @function
+ 491               	_Z17lcmd_cgr_set_addrhPVh:
+ 492               		.stabd	46,0,0
+ 146:lcm_so1602dtr_m.cpp **** }
+ 147:lcm_so1602dtr_m.cpp **** 
+ 148:lcm_so1602dtr_m.cpp **** /**
+ 149:lcm_so1602dtr_m.cpp ****  * Pilote - fixe l'adresse en cours de la CG RAM.
+ 150:lcm_so1602dtr_m.cpp ****  *
+ 151:lcm_so1602dtr_m.cpp ****  * @param addr		Adresse de la CG RAM (0x00 à 0x3f)
+ 152:lcm_so1602dtr_m.cpp ****  * @param port		Port AVR occupé par l'afficheur
+ 153:lcm_so1602dtr_m.cpp ****  */
+ 154:lcm_so1602dtr_m.cpp **** void lcmd_cgr_set_addr(const uint8_t addr, volatile uint8_t* port) {
+ 493               		.stabn	68,0,154,.LM36-.LFBB9
+ 494               	.LM36:
+ 495               	.LFBB9:
+ 496               	/* prologue: function */
+ 497               	/* frame size = 0 */
+ 498               	/* stack size = 0 */
+ 499               	.L__stack_usage = 0
+ 500 011e 9B01      		movw r18,r22
+ 501               	.LBB53:
+ 155:lcm_so1602dtr_m.cpp **** 	const uint8_t db = (0x40 | addr) & ~_BV(7);
+ 502               		.stabn	68,0,155,.LM37-.LFBB9
+ 503               	.LM37:
+ 504 0120 682F      		mov r22,r24
+ 505 0122 6F73      		andi r22,lo8(63)
+ 506 0124 6064      		ori r22,lo8(64)
+ 156:lcm_so1602dtr_m.cpp **** 	_lcm_function(0, 0, db, 4, port);
+ 507               		.stabn	68,0,156,.LM38-.LFBB9
+ 508               	.LM38:
+ 509 0126 44E0      		ldi r20,lo8(4)
+ 510 0128 80E0      		ldi r24,0
+ 511 012a 0C94 0000 		jmp _ZL13_lcm_functionhhhhPVh.constprop.0
+ 512               	.LBE53:
+ 513               		.size	_Z17lcmd_cgr_set_addrhPVh, .-_Z17lcmd_cgr_set_addrhPVh
+ 514               	.Lscope9:
+ 515               		.stabs	"",36,0,0,.Lscope9-.LFBB9
+ 516               		.stabd	78,0,0
+ 517               		.stabs	"_Z17lcmd_ddr_set_addrhPVh:F(0,4)",36,0,165,_Z17lcmd_ddr_set_addrhPVh
+ 518               		.stabs	"addr:P(0,91)",64,0,165,24
+ 519               		.stabs	"port:P(0,89)",64,0,165,18
+ 520               	.global	_Z17lcmd_ddr_set_addrhPVh
+ 521               		.type	_Z17lcmd_ddr_set_addrhPVh, @function
+ 522               	_Z17lcmd_ddr_set_addrhPVh:
+ 523               		.stabd	46,0,0
+ 157:lcm_so1602dtr_m.cpp **** }
+ 158:lcm_so1602dtr_m.cpp **** 
+ 159:lcm_so1602dtr_m.cpp **** /**
+ 160:lcm_so1602dtr_m.cpp ****  * Pilote - fixe l'adresse en cours de la DD RAM.
+ 161:lcm_so1602dtr_m.cpp ****  *
+ 162:lcm_so1602dtr_m.cpp ****  * @param addr		Adresse de la DD RAM (0x00 à 0x27 et 0x40 à 0x67)
+ 163:lcm_so1602dtr_m.cpp ****  * @param port		Port AVR occupé par l'afficheur
+ 164:lcm_so1602dtr_m.cpp ****  */
+ 165:lcm_so1602dtr_m.cpp **** void lcmd_ddr_set_addr(const uint8_t addr, volatile uint8_t* port) {
+GAS LISTING /tmp/ccygZnTD.s 			page 19
+
+
+ 524               		.stabn	68,0,165,.LM39-.LFBB10
+ 525               	.LM39:
+ 526               	.LFBB10:
+ 527               	/* prologue: function */
+ 528               	/* frame size = 0 */
+ 529               	/* stack size = 0 */
+ 530               	.L__stack_usage = 0
+ 531 012e 9B01      		movw r18,r22
+ 532               	.LBB54:
+ 166:lcm_so1602dtr_m.cpp **** 	const uint8_t db = (0x80 | addr);
+ 533               		.stabn	68,0,166,.LM40-.LFBB10
+ 534               	.LM40:
+ 535 0130 682F      		mov r22,r24
+ 536 0132 6068      		ori r22,lo8(-128)
+ 167:lcm_so1602dtr_m.cpp **** 	_lcm_function(0, 0, db, 4, port);
+ 537               		.stabn	68,0,167,.LM41-.LFBB10
+ 538               	.LM41:
+ 539 0134 44E0      		ldi r20,lo8(4)
+ 540 0136 80E0      		ldi r24,0
+ 541 0138 0C94 0000 		jmp _ZL13_lcm_functionhhhhPVh.constprop.0
+ 542               	.LBE54:
+ 543               		.size	_Z17lcmd_ddr_set_addrhPVh, .-_Z17lcmd_ddr_set_addrhPVh
+ 544               	.Lscope10:
+ 545               		.stabs	"",36,0,0,.Lscope10-.LFBB10
+ 546               		.stabd	78,0,0
+ 547               		.stabs	"_Z10lcmd_writehPVh:F(0,4)",36,0,176,_Z10lcmd_writehPVh
+ 548               		.stabs	"data:P(0,91)",64,0,176,24
+ 549               		.stabs	"port:P(0,89)",64,0,176,18
+ 550               	.global	_Z10lcmd_writehPVh
+ 551               		.type	_Z10lcmd_writehPVh, @function
+ 552               	_Z10lcmd_writehPVh:
+ 553               		.stabd	46,0,0
+ 168:lcm_so1602dtr_m.cpp **** }
+ 169:lcm_so1602dtr_m.cpp **** 
+ 170:lcm_so1602dtr_m.cpp **** /**
+ 171:lcm_so1602dtr_m.cpp ****  * Pilote - écrit un octet à l'adresse en cours de la CG RAM ou de la DD RAM.
+ 172:lcm_so1602dtr_m.cpp ****  *
+ 173:lcm_so1602dtr_m.cpp ****  * @param data		Octet à écrire
+ 174:lcm_so1602dtr_m.cpp ****  * @param port		Port AVR occupé par l'afficheur
+ 175:lcm_so1602dtr_m.cpp ****  */
+ 176:lcm_so1602dtr_m.cpp **** void lcmd_write(const uint8_t data, volatile uint8_t* port) {
+ 554               		.stabn	68,0,176,.LM42-.LFBB11
+ 555               	.LM42:
+ 556               	.LFBB11:
+ 557               	/* prologue: function */
+ 558               	/* frame size = 0 */
+ 559               	/* stack size = 0 */
+ 560               	.L__stack_usage = 0
+ 561 013c 9B01      		movw r18,r22
+ 177:lcm_so1602dtr_m.cpp **** 	_lcm_function(1, 0, data, 4, port);
+ 562               		.stabn	68,0,177,.LM43-.LFBB11
+ 563               	.LM43:
+ 564 013e 44E0      		ldi r20,lo8(4)
+ 565 0140 682F      		mov r22,r24
+ 566 0142 81E0      		ldi r24,lo8(1)
+ 567 0144 0C94 0000 		jmp _ZL13_lcm_functionhhhhPVh.constprop.0
+ 568               		.size	_Z10lcmd_writehPVh, .-_Z10lcmd_writehPVh
+GAS LISTING /tmp/ccygZnTD.s 			page 20
+
+
+ 569               	.Lscope11:
+ 570               		.stabs	"",36,0,0,.Lscope11-.LFBB11
+ 571               		.stabd	78,0,0
+ 572               		.stabs	"_Z14lcmd_init_4bitPVhS0_:F(0,4)",36,0,186,_Z14lcmd_init_4bitPVhS0_
+ 573               		.stabs	"ddr:P(0,89)",64,0,186,30
+ 574               		.stabs	"port:P(0,89)",64,0,186,28
+ 575               	.global	_Z14lcmd_init_4bitPVhS0_
+ 576               		.type	_Z14lcmd_init_4bitPVhS0_, @function
+ 577               	_Z14lcmd_init_4bitPVhS0_:
+ 578               		.stabd	46,0,0
+ 178:lcm_so1602dtr_m.cpp **** }
+ 179:lcm_so1602dtr_m.cpp **** 
+ 180:lcm_so1602dtr_m.cpp **** /**
+ 181:lcm_so1602dtr_m.cpp ****  * Pilote - initialise l'afficheur LCD avec une interface 4-bit et `Dual Line'.
+ 182:lcm_so1602dtr_m.cpp ****  *
+ 183:lcm_so1602dtr_m.cpp ****  * @param ddr		`Data Direction Register' AVR occupé par l'afficheur
+ 184:lcm_so1602dtr_m.cpp ****  * @param port		Port AVR occupé par l'afficheur
+ 185:lcm_so1602dtr_m.cpp ****  */
+ 186:lcm_so1602dtr_m.cpp **** void lcmd_init_4bit(volatile uint8_t* ddr, volatile uint8_t* port) {
+ 579               		.stabn	68,0,186,.LM44-.LFBB12
+ 580               	.LM44:
+ 581               	.LFBB12:
+ 582 0148 CF93      		push r28
+ 583 014a DF93      		push r29
+ 584               	/* prologue: function */
+ 585               	/* frame size = 0 */
+ 586               	/* stack size = 2 */
+ 587               	.L__stack_usage = 2
+ 588 014c FC01      		movw r30,r24
+ 589 014e EB01      		movw r28,r22
+ 590               	.LBB55:
+ 591               	.LBB56:
+ 592               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext5
+ 593               	.Ltext5:
+ 164:/usr/lib/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 594               		.stabn	68,0,164,.LM45-.LFBB12
+ 595               	.LM45:
+ 596 0150 8FE2      		ldi r24,lo8(29999)
+ 597 0152 95E7      		ldi r25,hi8(29999)
+ 598 0154 0197      		1: sbiw r24,1
+ 599 0156 01F4      		brne 1b
+ 600 0158 00C0      		rjmp .
+ 601 015a 0000      		nop
+ 602               	.LBE56:
+ 603               	.LBE55:
+ 604               	.LBB57:
+ 605               	.LBB58:
+ 606               		.stabs	"lcm_so1602dtr_m.cpp",132,0,0,.Ltext6
+ 607               	.Ltext6:
+  36:lcm_so1602dtr_m.cpp **** 	*port &= LCM_CL;
+ 608               		.stabn	68,0,36,.LM46-.LFBB12
+ 609               	.LM46:
+ 610 015c 8081      		ld r24,Z
+ 611 015e 8172      		andi r24,lo8(33)
+ 612 0160 8083      		st Z,r24
+ 613               	.LBE58:
+ 614               	.LBE57:
+GAS LISTING /tmp/ccygZnTD.s 			page 21
+
+
+ 187:lcm_so1602dtr_m.cpp **** 	_delay_ms(15.0);
+ 188:lcm_so1602dtr_m.cpp **** 	
+ 189:lcm_so1602dtr_m.cpp **** 	_lcm_cp(ddr);
+ 190:lcm_so1602dtr_m.cpp **** 	*ddr |= ~LCM_CL | _BV(LCM_EN) | _BV(LCM_VO);
+ 615               		.stabn	68,0,190,.LM47-.LFBB12
+ 616               	.LM47:
+ 617 0162 8081      		ld r24,Z
+ 618 0164 8FEF      		ldi r24,lo8(-1)
+ 619 0166 8083      		st Z,r24
+ 620               	.LBB59:
+ 621               	.LBB60:
+  36:lcm_so1602dtr_m.cpp **** 	*port &= LCM_CL;
+ 622               		.stabn	68,0,36,.LM48-.LFBB12
+ 623               	.LM48:
+ 624 0168 8881      		ld r24,Y
+ 625 016a 8172      		andi r24,lo8(33)
+ 626 016c 8883      		st Y,r24
+ 627               	.LBE60:
+ 628               	.LBE59:
+ 191:lcm_so1602dtr_m.cpp **** 	
+ 192:lcm_so1602dtr_m.cpp **** 	_lcm_cp(port);
+ 193:lcm_so1602dtr_m.cpp **** 	*port |= _BV(LCM_DB5) | _BV(LCM_DB4);
+ 629               		.stabn	68,0,193,.LM49-.LFBB12
+ 630               	.LM49:
+ 631 016e 8881      		ld r24,Y
+ 632 0170 8660      		ori r24,lo8(6)
+ 633 0172 8883      		st Y,r24
+ 194:lcm_so1602dtr_m.cpp **** 	*port &= ~_BV(LCM_VO);
+ 634               		.stabn	68,0,194,.LM50-.LFBB12
+ 635               	.LM50:
+ 636 0174 8881      		ld r24,Y
+ 637 0176 8E7F      		andi r24,lo8(-2)
+ 638 0178 8883      		st Y,r24
+ 195:lcm_so1602dtr_m.cpp **** 	_lcm_fast_en(port);
+ 639               		.stabn	68,0,195,.LM51-.LFBB12
+ 640               	.LM51:
+ 641 017a CB01      		movw r24,r22
+ 642 017c 0E94 0000 		call _ZL12_lcm_fast_enPVh
+ 643               	.LBB61:
+ 644               	.LBB62:
+ 645               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext7
+ 646               	.Ltext7:
+ 164:/usr/lib/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 647               		.stabn	68,0,164,.LM52-.LFBB12
+ 648               	.LM52:
+ 649 0180 87E0      		ldi r24,lo8(8199)
+ 650 0182 90E2      		ldi r25,hi8(8199)
+ 651 0184 0197      		1: sbiw r24,1
+ 652 0186 01F4      		brne 1b
+ 653 0188 00C0      		rjmp .
+ 654 018a 0000      		nop
+ 655               	.LBE62:
+ 656               	.LBE61:
+ 657               		.stabs	"lcm_so1602dtr_m.cpp",132,0,0,.Ltext8
+ 658               	.Ltext8:
+ 196:lcm_so1602dtr_m.cpp **** 	_delay_ms(4.1);
+ 197:lcm_so1602dtr_m.cpp ****     
+GAS LISTING /tmp/ccygZnTD.s 			page 22
+
+
+ 198:lcm_so1602dtr_m.cpp **** 	_lcm_fast_en(port);
+ 659               		.stabn	68,0,198,.LM53-.LFBB12
+ 660               	.LM53:
+ 661 018c CE01      		movw r24,r28
+ 662 018e 0E94 0000 		call _ZL12_lcm_fast_enPVh
+ 663               	.LBB63:
+ 664               	.LBB64:
+ 665               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext9
+ 666               	.Ltext9:
+ 164:/usr/lib/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 667               		.stabn	68,0,164,.LM54-.LFBB12
+ 668               	.LM54:
+ 669 0192 87EC      		ldi r24,lo8(199)
+ 670 0194 90E0      		ldi r25,hi8(199)
+ 671 0196 0197      		1: sbiw r24,1
+ 672 0198 01F4      		brne 1b
+ 673 019a 00C0      		rjmp .
+ 674 019c 0000      		nop
+ 675               	.LBE64:
+ 676               	.LBE63:
+ 677               		.stabs	"lcm_so1602dtr_m.cpp",132,0,0,.Ltext10
+ 678               	.Ltext10:
+ 199:lcm_so1602dtr_m.cpp **** 	_delay_ms(0.1);
+ 200:lcm_so1602dtr_m.cpp ****     
+ 201:lcm_so1602dtr_m.cpp **** 	_lcm_fast_en(port);
+ 679               		.stabn	68,0,201,.LM55-.LFBB12
+ 680               	.LM55:
+ 681 019e CE01      		movw r24,r28
+ 682 01a0 0E94 0000 		call _ZL12_lcm_fast_enPVh
+ 683               	.LBB65:
+ 684               	.LBB66:
+ 685               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext11
+ 686               	.Ltext11:
+ 687               		.stabn	68,0,246,.LM56-.LFBB12
+ 688               	.LM56:
+ 689 01a4 9AE6      		ldi r25,lo8(106)
+ 690 01a6 9A95      		1: dec r25
+ 691 01a8 01F4      		brne 1b
+ 692 01aa 00C0      		rjmp .
+ 693               	.LBE66:
+ 694               	.LBE65:
+ 695               	.LBB67:
+ 696               	.LBB68:
+ 697               		.stabs	"lcm_so1602dtr_m.cpp",132,0,0,.Ltext12
+ 698               	.Ltext12:
+  36:lcm_so1602dtr_m.cpp **** 	*port &= LCM_CL;
+ 699               		.stabn	68,0,36,.LM57-.LFBB12
+ 700               	.LM57:
+ 701 01ac 8881      		ld r24,Y
+ 702 01ae 8172      		andi r24,lo8(33)
+ 703 01b0 8883      		st Y,r24
+ 704               	.LBE68:
+ 705               	.LBE67:
+ 202:lcm_so1602dtr_m.cpp **** 	_delay_us(40.0);
+ 203:lcm_so1602dtr_m.cpp ****     
+ 204:lcm_so1602dtr_m.cpp **** 	_lcm_cp(port);
+ 205:lcm_so1602dtr_m.cpp **** 	*port |= _BV(LCM_DB5);
+GAS LISTING /tmp/ccygZnTD.s 			page 23
+
+
+ 706               		.stabn	68,0,205,.LM58-.LFBB12
+ 707               	.LM58:
+ 708 01b2 8881      		ld r24,Y
+ 709 01b4 8460      		ori r24,lo8(4)
+ 710 01b6 8883      		st Y,r24
+ 206:lcm_so1602dtr_m.cpp **** 	_lcm_fast_en(port);
+ 711               		.stabn	68,0,206,.LM59-.LFBB12
+ 712               	.LM59:
+ 713 01b8 CE01      		movw r24,r28
+ 714 01ba 0E94 0000 		call _ZL12_lcm_fast_enPVh
+ 715               	.LBB69:
+ 716               	.LBB70:
+ 717               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext13
+ 718               	.Ltext13:
+ 719               		.stabn	68,0,246,.LM60-.LFBB12
+ 720               	.LM60:
+ 721 01be 8AE6      		ldi r24,lo8(106)
+ 722 01c0 8A95      		1: dec r24
+ 723 01c2 01F4      		brne 1b
+ 724 01c4 00C0      		rjmp .
+ 725               	.LBE70:
+ 726               	.LBE69:
+ 727               		.stabs	"lcm_so1602dtr_m.cpp",132,0,0,.Ltext14
+ 728               	.Ltext14:
+ 207:lcm_so1602dtr_m.cpp **** 	_delay_us(40.0);
+ 208:lcm_so1602dtr_m.cpp **** 	
+ 209:lcm_so1602dtr_m.cpp **** 	_lcm_function(0, 0, 0x2c, 4, port);
+ 729               		.stabn	68,0,209,.LM61-.LFBB12
+ 730               	.LM61:
+ 731 01c6 9E01      		movw r18,r28
+ 732 01c8 44E0      		ldi r20,lo8(4)
+ 733 01ca 6CE2      		ldi r22,lo8(44)
+ 734 01cc 80E0      		ldi r24,0
+ 735 01ce 0E94 0000 		call _ZL13_lcm_functionhhhhPVh.constprop.0
+ 210:lcm_so1602dtr_m.cpp **** 	lcmd_disp_on_off(LCM_D_OFF, LCM_C_OFF, LCM_B_OFF, port);
+ 736               		.stabn	68,0,210,.LM62-.LFBB12
+ 737               	.LM62:
+ 738 01d2 9E01      		movw r18,r28
+ 739 01d4 40E0      		ldi r20,0
+ 740 01d6 60E0      		ldi r22,0
+ 741 01d8 80E0      		ldi r24,0
+ 742 01da 0E94 0000 		call _Z16lcmd_disp_on_offhhhPVh
+ 211:lcm_so1602dtr_m.cpp **** 	lcmd_disp_clear(port);
+ 743               		.stabn	68,0,211,.LM63-.LFBB12
+ 744               	.LM63:
+ 745 01de CE01      		movw r24,r28
+ 746 01e0 0E94 0000 		call _Z15lcmd_disp_clearPVh
+ 212:lcm_so1602dtr_m.cpp **** 	lcmd_entry_sm(LCM_ID_INC, LCM_S_OFF, port);
+ 747               		.stabn	68,0,212,.LM64-.LFBB12
+ 748               	.LM64:
+ 749 01e4 AE01      		movw r20,r28
+ 750 01e6 60E0      		ldi r22,0
+ 751 01e8 81E0      		ldi r24,lo8(1)
+ 752 01ea 0E94 0000 		call _Z13lcmd_entry_smhhPVh
+ 213:lcm_so1602dtr_m.cpp **** 	lcmd_disp_on_off(LCM_D_ON, LCM_C_OFF, LCM_B_OFF, port);
+ 753               		.stabn	68,0,213,.LM65-.LFBB12
+ 754               	.LM65:
+GAS LISTING /tmp/ccygZnTD.s 			page 24
+
+
+ 755 01ee 9E01      		movw r18,r28
+ 756 01f0 40E0      		ldi r20,0
+ 757 01f2 60E0      		ldi r22,0
+ 758 01f4 81E0      		ldi r24,lo8(1)
+ 759               	/* epilogue start */
+ 214:lcm_so1602dtr_m.cpp **** }
+ 760               		.stabn	68,0,214,.LM66-.LFBB12
+ 761               	.LM66:
+ 762 01f6 DF91      		pop r29
+ 763 01f8 CF91      		pop r28
+ 213:lcm_so1602dtr_m.cpp **** 	lcmd_disp_on_off(LCM_D_ON, LCM_C_OFF, LCM_B_OFF, port);
+ 764               		.stabn	68,0,213,.LM67-.LFBB12
+ 765               	.LM67:
+ 766 01fa 0C94 0000 		jmp _Z16lcmd_disp_on_offhhhPVh
+ 767               		.size	_Z14lcmd_init_4bitPVhS0_, .-_Z14lcmd_init_4bitPVhS0_
+ 768               	.Lscope12:
+ 769               		.stabs	"",36,0,0,.Lscope12-.LFBB12
+ 770               		.stabd	78,0,0
+ 771               		.stabs	"",100,0,0,.Letext0
+ 772               	.Letext0:
+ 773               		.ident	"GCC: (GNU) 4.8.2"
+GAS LISTING /tmp/ccygZnTD.s 			page 25
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 lcm_so1602dtr_m.cpp
+     /tmp/ccygZnTD.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccygZnTD.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccygZnTD.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccygZnTD.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccygZnTD.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccygZnTD.s:107    .text:0000000000000000 _ZL12_lcm_fast_enPVh
+     /tmp/ccygZnTD.s:155    .text:0000000000000016 _ZL13_lcm_functionhhhhPVh.constprop.0
+     /tmp/ccygZnTD.s:294    .text:00000000000000a0 _Z15lcmd_disp_clearPVh
+     /tmp/ccygZnTD.s:318    .text:00000000000000ac _Z14lcmd_disp_homePVh
+     /tmp/ccygZnTD.s:344    .text:00000000000000b8 _Z13lcmd_entry_smhhPVh
+     /tmp/ccygZnTD.s:378    .text:00000000000000ca _Z16lcmd_disp_on_offhhhPVh
+     /tmp/ccygZnTD.s:414    .text:00000000000000e2 _Z19lcmd_disp_cur_shifthhPVh
+     /tmp/ccygZnTD.s:453    .text:0000000000000100 _Z13lcmd_func_sethhPVh
+     /tmp/ccygZnTD.s:491    .text:000000000000011e _Z17lcmd_cgr_set_addrhPVh
+     /tmp/ccygZnTD.s:522    .text:000000000000012e _Z17lcmd_ddr_set_addrhPVh
+     /tmp/ccygZnTD.s:552    .text:000000000000013c _Z10lcmd_writehPVh
+     /tmp/ccygZnTD.s:577    .text:0000000000000148 _Z14lcmd_init_4bitPVhS0_
+
+NO UNDEFINED SYMBOLS

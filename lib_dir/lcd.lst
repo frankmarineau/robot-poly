@@ -1,0 +1,565 @@
+GAS LISTING /tmp/ccHH0d7x.s 			page 1
+
+
+   1               		.file	"lcd.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/prophete/PROJETFINALINF1995/robot-poly/lib_dir/",100,0,4,.Ltext0
+   8               		.stabs	"lcd.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/ccHH0d7x.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,121,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,122,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,123,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,124,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,125,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,126,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,128,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,129,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,142,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,147,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,159,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,164,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,169,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,174,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,179,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,184,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,192,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,199,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,213,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,218,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,223,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,228,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,233,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,238,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,246,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,253,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,273,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,278,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
+ 104               		.stabs	"LCM:Tt(0,89)=s10_last_index:/0(0,59),0,8;_last_bc_index:/0(0,59),8,8;_blink_en:/0(0,54),16
+ 105               		.stabs	"state:t(0,115)=@s8;emode1:0,mode2:1,mode3:2,mode4:3,mode5:4,mode6:5,;",128,0,27,0
+ 106               		.stabs	"Menu:Tt(0,116)=s3menuState:/0(0,115),0,8;disp:/0(0,94),8,16;afficherMenu::(0,117)=#(0,116)
+ 107               		.stabs	"_ZN4MenuD2Ev:F(0,4)",36,0,15,_ZN4MenuD2Ev
+ 108               		.stabs	"this:P(0,121)=k(0,118)",64,0,15,24
+ 109               	.global	_ZN4MenuD2Ev
+ 110               		.type	_ZN4MenuD2Ev, @function
+ 111               	_ZN4MenuD2Ev:
+ 112               		.stabd	46,0,0
+   1:lcd.cpp       **** 
+   2:lcd.cpp       **** 
+GAS LISTING /tmp/ccHH0d7x.s 			page 3
+
+
+   3:lcd.cpp       **** 
+   4:lcd.cpp       **** #include "lcd.h"
+   5:lcd.cpp       **** 
+   6:lcd.cpp       **** 
+   7:lcd.cpp       **** Menu::Menu(LCM *display)
+   8:lcd.cpp       **** {
+   9:lcd.cpp       ****        menuState = mode1;
+  10:lcd.cpp       ****        disp =  display;
+  11:lcd.cpp       ****        afficherMenu();        
+  12:lcd.cpp       **** }
+  13:lcd.cpp       **** 
+  14:lcd.cpp       **** 
+  15:lcd.cpp       **** Menu::~Menu()
+ 113               		.stabn	68,0,15,.LM0-.LFBB1
+ 114               	.LM0:
+ 115               	.LFBB1:
+ 116               	/* prologue: function */
+ 117               	/* frame size = 0 */
+ 118               	/* stack size = 0 */
+ 119               	.L__stack_usage = 0
+ 120 0000 0895      		ret
+ 121               		.size	_ZN4MenuD2Ev, .-_ZN4MenuD2Ev
+ 122               	.Lscope1:
+ 123               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 124               		.stabd	78,0,0
+ 125               	.global	_ZN4MenuD1Ev
+ 126               		.set	_ZN4MenuD1Ev,_ZN4MenuD2Ev
+ 127               		.section	.rodata.str1.1,"aMS",@progbits,1
+ 128               	.LC0:
+ 129 0000 4D6F 6465 		.string	"Mode 1"
+ 129      2031 00
+ 130               	.LC1:
+ 131 0007 4D6F 6465 		.string	"Mode 2"
+ 131      2032 00
+ 132               	.LC2:
+ 133 000e 4D6F 6465 		.string	"Mode 3"
+ 133      2033 00
+ 134               		.text
+ 135               		.stabs	"_ZN4Menu12afficherMenuEv:F(0,4)",36,0,58,_ZN4Menu12afficherMenuEv
+ 136               		.stabs	"this:P(0,121)",64,0,58,28
+ 137               	.global	_ZN4Menu12afficherMenuEv
+ 138               		.type	_ZN4Menu12afficherMenuEv, @function
+ 139               	_ZN4Menu12afficherMenuEv:
+ 140               		.stabd	46,0,0
+  16:lcd.cpp       **** {
+  17:lcd.cpp       **** 
+  18:lcd.cpp       **** }
+  19:lcd.cpp       **** 
+  20:lcd.cpp       **** void Menu::changeState()
+  21:lcd.cpp       **** {
+  22:lcd.cpp       ****         switch(menuState)
+  23:lcd.cpp       ****         {
+  24:lcd.cpp       ****                 case mode1:
+  25:lcd.cpp       ****                         {       
+  26:lcd.cpp       ****                                 menuState = mode2;
+  27:lcd.cpp       ****                                 break;
+  28:lcd.cpp       ****                         }
+GAS LISTING /tmp/ccHH0d7x.s 			page 4
+
+
+  29:lcd.cpp       ****                 case mode2:
+  30:lcd.cpp       ****                         {
+  31:lcd.cpp       ****                                 menuState = mode3;
+  32:lcd.cpp       ****                                 break;
+  33:lcd.cpp       ****                         }
+  34:lcd.cpp       ****                 case mode3:
+  35:lcd.cpp       ****                         {
+  36:lcd.cpp       ****                                 menuState = mode4;
+  37:lcd.cpp       ****                                 break;
+  38:lcd.cpp       ****                         }
+  39:lcd.cpp       ****                 case mode4:
+  40:lcd.cpp       ****                         {
+  41:lcd.cpp       ****                                 menuState = mode5;
+  42:lcd.cpp       ****                                 break;
+  43:lcd.cpp       ****                         }
+  44:lcd.cpp       ****                 case mode5:
+  45:lcd.cpp       ****                         {
+  46:lcd.cpp       ****                                 menuState = mode6;
+  47:lcd.cpp       ****                                 break;
+  48:lcd.cpp       ****                         }
+  49:lcd.cpp       ****                 case mode6:
+  50:lcd.cpp       ****                         {
+  51:lcd.cpp       ****                                 menuState = mode1;
+  52:lcd.cpp       ****                                 break;    
+  53:lcd.cpp       ****                         }
+  54:lcd.cpp       ****         }  
+  55:lcd.cpp       ****         afficherMenu();
+  56:lcd.cpp       **** }
+  57:lcd.cpp       **** 
+  58:lcd.cpp       **** void Menu::afficherMenu()
+  59:lcd.cpp       **** {
+ 141               		.stabn	68,0,59,.LM1-.LFBB2
+ 142               	.LM1:
+ 143               	.LFBB2:
+ 144               		.stabn	68,0,59,.LM2-.LFBB2
+ 145               	.LM2:
+ 146 0002 CF93      		push r28
+ 147 0004 DF93      		push r29
+ 148               	/* prologue: function */
+ 149               	/* frame size = 0 */
+ 150               	/* stack size = 2 */
+ 151               	.L__stack_usage = 2
+ 152 0006 EC01      		movw r28,r24
+  60:lcd.cpp       ****         
+  61:lcd.cpp       ****         disp->clear();
+ 153               		.stabn	68,0,61,.LM3-.LFBB2
+ 154               	.LM3:
+ 155 0008 8981      		ldd r24,Y+1
+ 156 000a 9A81      		ldd r25,Y+2
+ 157 000c 0E94 0000 		call _ZN3LCM5clearEv
+  62:lcd.cpp       ****         switch(menuState)
+ 158               		.stabn	68,0,62,.LM4-.LFBB2
+ 159               	.LM4:
+ 160 0010 2881      		ld r18,Y
+ 161 0012 2430      		cpi r18,lo8(4)
+ 162 0014 00F4      		brsh .L5
+ 163 0016 8981      		ldd r24,Y+1
+GAS LISTING /tmp/ccHH0d7x.s 			page 5
+
+
+ 164 0018 9A81      		ldd r25,Y+2
+ 165 001a 2230      		cpi r18,lo8(2)
+ 166 001c 00F4      		brsh .L13
+ 167               	.LBB4:
+ 168               	.LBB5:
+  63:lcd.cpp       ****         {
+  64:lcd.cpp       ****              case mode1:
+  65:lcd.cpp       ****              case mode2:
+  66:lcd.cpp       ****                    {
+  67:lcd.cpp       ****                            disp->write("Mode 1");
+ 169               		.stabn	68,0,67,.LM5-.LFBB2
+ 170               	.LM5:
+ 171 001e 20E0      		ldi r18,0
+ 172 0020 40E0      		ldi r20,0
+ 173 0022 60E0      		ldi r22,lo8(.LC0)
+ 174 0024 70E0      		ldi r23,hi8(.LC0)
+ 175 0026 00C0      		rjmp .L11
+ 176               	.L5:
+ 177               	.LBE5:
+ 178               	.LBE4:
+  62:lcd.cpp       ****         switch(menuState)
+ 179               		.stabn	68,0,62,.LM6-.LFBB2
+ 180               	.LM6:
+ 181 0028 2630      		cpi r18,lo8(6)
+ 182 002a 00F4      		brsh .L14
+  68:lcd.cpp       ****                            break;
+  69:lcd.cpp       ****                    }
+  70:lcd.cpp       ****              case mode3:
+  71:lcd.cpp       ****              case mode4:
+  72:lcd.cpp       ****                    {
+  73:lcd.cpp       ****                            disp->write("Mode 2");
+  74:lcd.cpp       ****                            break;
+  75:lcd.cpp       ****                    }
+  76:lcd.cpp       ****              case mode5:
+  77:lcd.cpp       ****              case mode6:
+  78:lcd.cpp       ****                    {
+  79:lcd.cpp       ****                             disp->write("Mode 3");
+ 183               		.stabn	68,0,79,.LM7-.LFBB2
+ 184               	.LM7:
+ 185 002c 20E0      		ldi r18,0
+ 186 002e 40E0      		ldi r20,0
+ 187 0030 60E0      		ldi r22,lo8(.LC2)
+ 188 0032 70E0      		ldi r23,hi8(.LC2)
+ 189 0034 8981      		ldd r24,Y+1
+ 190 0036 9A81      		ldd r25,Y+2
+ 191 0038 00C0      		rjmp .L11
+ 192               	.L13:
+  73:lcd.cpp       ****                            disp->write("Mode 2");
+ 193               		.stabn	68,0,73,.LM8-.LFBB2
+ 194               	.LM8:
+ 195 003a 20E0      		ldi r18,0
+ 196 003c 40E0      		ldi r20,0
+ 197 003e 60E0      		ldi r22,lo8(.LC1)
+ 198 0040 70E0      		ldi r23,hi8(.LC1)
+ 199               	.L11:
+ 200               	/* epilogue start */
+  80:lcd.cpp       ****                             break;
+GAS LISTING /tmp/ccHH0d7x.s 			page 6
+
+
+  81:lcd.cpp       ****                    }
+  82:lcd.cpp       ****         }
+  83:lcd.cpp       **** }
+ 201               		.stabn	68,0,83,.LM9-.LFBB2
+ 202               	.LM9:
+ 203 0042 DF91      		pop r29
+ 204 0044 CF91      		pop r28
+  79:lcd.cpp       ****                             disp->write("Mode 3");
+ 205               		.stabn	68,0,79,.LM10-.LFBB2
+ 206               	.LM10:
+ 207 0046 0C94 0000 		jmp _ZN3LCM5writeEPKchb
+ 208               	.L14:
+ 209               	/* epilogue start */
+ 210               		.stabn	68,0,83,.LM11-.LFBB2
+ 211               	.LM11:
+ 212 004a DF91      		pop r29
+ 213 004c CF91      		pop r28
+ 214 004e 0895      		ret
+ 215               		.size	_ZN4Menu12afficherMenuEv, .-_ZN4Menu12afficherMenuEv
+ 216               	.Lscope2:
+ 217               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 218               		.stabd	78,0,0
+ 219               		.stabs	"_ZN4MenuC2EP3LCM:F(0,4)",36,0,7,_ZN4MenuC2EP3LCM
+ 220               		.stabs	"this:P(0,121)",64,0,7,24
+ 221               		.stabs	"display:P(0,94)",64,0,7,22
+ 222               	.global	_ZN4MenuC2EP3LCM
+ 223               		.type	_ZN4MenuC2EP3LCM, @function
+ 224               	_ZN4MenuC2EP3LCM:
+ 225               		.stabd	46,0,0
+   7:lcd.cpp       **** Menu::Menu(LCM *display)
+ 226               		.stabn	68,0,7,.LM12-.LFBB3
+ 227               	.LM12:
+ 228               	.LFBB3:
+ 229               	/* prologue: function */
+ 230               	/* frame size = 0 */
+ 231               	/* stack size = 0 */
+ 232               	.L__stack_usage = 0
+ 233               	.LBB6:
+   9:lcd.cpp       ****        menuState = mode1;
+ 234               		.stabn	68,0,9,.LM13-.LFBB3
+ 235               	.LM13:
+ 236 0050 FC01      		movw r30,r24
+ 237 0052 1082      		st Z,__zero_reg__
+  10:lcd.cpp       ****        disp =  display;
+ 238               		.stabn	68,0,10,.LM14-.LFBB3
+ 239               	.LM14:
+ 240 0054 7283      		std Z+2,r23
+ 241 0056 6183      		std Z+1,r22
+  11:lcd.cpp       ****        afficherMenu();        
+ 242               		.stabn	68,0,11,.LM15-.LFBB3
+ 243               	.LM15:
+ 244 0058 0C94 0000 		jmp _ZN4Menu12afficherMenuEv
+ 245               	.LBE6:
+ 246               		.size	_ZN4MenuC2EP3LCM, .-_ZN4MenuC2EP3LCM
+ 247               	.Lscope3:
+ 248               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 249               		.stabd	78,0,0
+GAS LISTING /tmp/ccHH0d7x.s 			page 7
+
+
+ 250               	.global	_ZN4MenuC1EP3LCM
+ 251               		.set	_ZN4MenuC1EP3LCM,_ZN4MenuC2EP3LCM
+ 252               		.stabs	"_ZN4Menu11changeStateEv:F(0,4)",36,0,20,_ZN4Menu11changeStateEv
+ 253               		.stabs	"this:P(0,121)",64,0,20,30
+ 254               	.global	_ZN4Menu11changeStateEv
+ 255               		.type	_ZN4Menu11changeStateEv, @function
+ 256               	_ZN4Menu11changeStateEv:
+ 257               		.stabd	46,0,0
+  21:lcd.cpp       **** {
+ 258               		.stabn	68,0,21,.LM16-.LFBB4
+ 259               	.LM16:
+ 260               	.LFBB4:
+ 261               	/* prologue: function */
+ 262               	/* frame size = 0 */
+ 263               	/* stack size = 0 */
+ 264               	.L__stack_usage = 0
+ 265 005c FC01      		movw r30,r24
+  22:lcd.cpp       ****         switch(menuState)
+ 266               		.stabn	68,0,22,.LM17-.LFBB4
+ 267               	.LM17:
+ 268 005e 8081      		ld r24,Z
+ 269 0060 8230      		cpi r24,lo8(2)
+ 270 0062 01F0      		breq .L18
+ 271 0064 00F4      		brsh .L19
+ 272 0066 8823      		tst r24
+ 273 0068 01F0      		breq .L20
+ 274 006a 8130      		cpi r24,lo8(1)
+ 275 006c 01F4      		brne .L17
+  31:lcd.cpp       ****                                 menuState = mode3;
+ 276               		.stabn	68,0,31,.LM18-.LFBB4
+ 277               	.LM18:
+ 278 006e 82E0      		ldi r24,lo8(2)
+ 279 0070 00C0      		rjmp .L25
+ 280               	.L19:
+  22:lcd.cpp       ****         switch(menuState)
+ 281               		.stabn	68,0,22,.LM19-.LFBB4
+ 282               	.LM19:
+ 283 0072 8430      		cpi r24,lo8(4)
+ 284 0074 01F0      		breq .L22
+ 285 0076 00F0      		brlo .L23
+ 286 0078 8530      		cpi r24,lo8(5)
+ 287 007a 01F4      		brne .L17
+  51:lcd.cpp       ****                                 menuState = mode1;
+ 288               		.stabn	68,0,51,.LM20-.LFBB4
+ 289               	.LM20:
+ 290 007c 1082      		st Z,__zero_reg__
+  52:lcd.cpp       ****                                 break;    
+ 291               		.stabn	68,0,52,.LM21-.LFBB4
+ 292               	.LM21:
+ 293 007e 00C0      		rjmp .L17
+ 294               	.L20:
+  26:lcd.cpp       ****                                 menuState = mode2;
+ 295               		.stabn	68,0,26,.LM22-.LFBB4
+ 296               	.LM22:
+ 297 0080 81E0      		ldi r24,lo8(1)
+ 298 0082 00C0      		rjmp .L25
+ 299               	.L18:
+GAS LISTING /tmp/ccHH0d7x.s 			page 8
+
+
+  36:lcd.cpp       ****                                 menuState = mode4;
+ 300               		.stabn	68,0,36,.LM23-.LFBB4
+ 301               	.LM23:
+ 302 0084 83E0      		ldi r24,lo8(3)
+ 303               	.L25:
+  31:lcd.cpp       ****                                 menuState = mode3;
+ 304               		.stabn	68,0,31,.LM24-.LFBB4
+ 305               	.LM24:
+ 306 0086 8083      		st Z,r24
+  32:lcd.cpp       ****                                 break;
+ 307               		.stabn	68,0,32,.LM25-.LFBB4
+ 308               	.LM25:
+ 309 0088 00C0      		rjmp .L17
+ 310               	.L23:
+  41:lcd.cpp       ****                                 menuState = mode5;
+ 311               		.stabn	68,0,41,.LM26-.LFBB4
+ 312               	.LM26:
+ 313 008a 84E0      		ldi r24,lo8(4)
+ 314 008c 00C0      		rjmp .L25
+ 315               	.L22:
+  46:lcd.cpp       ****                                 menuState = mode6;
+ 316               		.stabn	68,0,46,.LM27-.LFBB4
+ 317               	.LM27:
+ 318 008e 85E0      		ldi r24,lo8(5)
+ 319 0090 00C0      		rjmp .L25
+ 320               	.L17:
+  55:lcd.cpp       ****         afficherMenu();
+ 321               		.stabn	68,0,55,.LM28-.LFBB4
+ 322               	.LM28:
+ 323 0092 CF01      		movw r24,r30
+ 324 0094 0C94 0000 		jmp _ZN4Menu12afficherMenuEv
+ 325               		.size	_ZN4Menu11changeStateEv, .-_ZN4Menu11changeStateEv
+ 326               	.Lscope4:
+ 327               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 328               		.stabd	78,0,0
+ 329               		.stabs	"_ZN4Menu10validationEv:F(0,59)",36,0,85,_ZN4Menu10validationEv
+ 330               		.stabs	"this:P(0,121)",64,0,85,24
+ 331               	.global	_ZN4Menu10validationEv
+ 332               		.type	_ZN4Menu10validationEv, @function
+ 333               	_ZN4Menu10validationEv:
+ 334               		.stabd	46,0,0
+  84:lcd.cpp       **** 
+  85:lcd.cpp       **** uint8_t Menu::validation()
+  86:lcd.cpp       **** {
+ 335               		.stabn	68,0,86,.LM29-.LFBB5
+ 336               	.LM29:
+ 337               	.LFBB5:
+ 338               	/* prologue: function */
+ 339               	/* frame size = 0 */
+ 340               	/* stack size = 0 */
+ 341               	.L__stack_usage = 0
+  87:lcd.cpp       ****         switch(menuState)
+ 342               		.stabn	68,0,87,.LM30-.LFBB5
+ 343               	.LM30:
+ 344 0098 FC01      		movw r30,r24
+ 345 009a 8081      		ld r24,Z
+ 346 009c 8430      		cpi r24,lo8(4)
+GAS LISTING /tmp/ccHH0d7x.s 			page 9
+
+
+ 347 009e 00F4      		brsh .L28
+ 348 00a0 8230      		cpi r24,lo8(2)
+ 349 00a2 00F4      		brsh .L34
+  88:lcd.cpp       ****         {
+  89:lcd.cpp       ****              case mode1:
+  90:lcd.cpp       ****              case mode2:
+  91:lcd.cpp       ****                    {
+  92:lcd.cpp       ****                            return 1;
+ 350               		.stabn	68,0,92,.LM31-.LFBB5
+ 351               	.LM31:
+ 352 00a4 81E0      		ldi r24,lo8(1)
+ 353 00a6 0895      		ret
+ 354               	.L28:
+  87:lcd.cpp       ****         switch(menuState)
+ 355               		.stabn	68,0,87,.LM32-.LFBB5
+ 356               	.LM32:
+ 357 00a8 8630      		cpi r24,lo8(6)
+ 358 00aa 00F4      		brsh .L27
+  93:lcd.cpp       ****                            break;
+  94:lcd.cpp       ****                    }
+  95:lcd.cpp       ****              case mode3:
+  96:lcd.cpp       ****              case mode4:
+  97:lcd.cpp       ****                    {
+  98:lcd.cpp       ****                            return 2;
+  99:lcd.cpp       ****                            break;
+ 100:lcd.cpp       ****                    }
+ 101:lcd.cpp       ****              case mode5:
+ 102:lcd.cpp       ****              case mode6:
+ 103:lcd.cpp       ****                    {
+ 104:lcd.cpp       ****                             return 3;
+ 359               		.stabn	68,0,104,.LM33-.LFBB5
+ 360               	.LM33:
+ 361 00ac 83E0      		ldi r24,lo8(3)
+ 362 00ae 0895      		ret
+ 363               	.L27:
+ 364 00b0 0895      		ret
+ 365               	.L34:
+  98:lcd.cpp       ****                            return 2;
+ 366               		.stabn	68,0,98,.LM34-.LFBB5
+ 367               	.LM34:
+ 368 00b2 82E0      		ldi r24,lo8(2)
+ 105:lcd.cpp       ****                             break;
+ 106:lcd.cpp       ****                    }
+ 107:lcd.cpp       ****         }
+ 108:lcd.cpp       ****         
+ 109:lcd.cpp       **** }
+ 369               		.stabn	68,0,109,.LM35-.LFBB5
+ 370               	.LM35:
+ 371 00b4 0895      		ret
+ 372               		.size	_ZN4Menu10validationEv, .-_ZN4Menu10validationEv
+ 373               	.Lscope5:
+ 374               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 375               		.stabd	78,0,0
+ 376               		.stabs	"",100,0,0,.Letext0
+ 377               	.Letext0:
+ 378               		.ident	"GCC: (GNU) 4.8.2"
+ 379               	.global __do_copy_data
+GAS LISTING /tmp/ccHH0d7x.s 			page 10
+
+
+GAS LISTING /tmp/ccHH0d7x.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 lcd.cpp
+     /tmp/ccHH0d7x.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccHH0d7x.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccHH0d7x.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccHH0d7x.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccHH0d7x.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccHH0d7x.s:111    .text:0000000000000000 _ZN4MenuD2Ev
+     /tmp/ccHH0d7x.s:111    .text:0000000000000000 _ZN4MenuD1Ev
+     /tmp/ccHH0d7x.s:139    .text:0000000000000002 _ZN4Menu12afficherMenuEv
+     /tmp/ccHH0d7x.s:224    .text:0000000000000050 _ZN4MenuC2EP3LCM
+     /tmp/ccHH0d7x.s:224    .text:0000000000000050 _ZN4MenuC1EP3LCM
+     /tmp/ccHH0d7x.s:256    .text:000000000000005c _ZN4Menu11changeStateEv
+     /tmp/ccHH0d7x.s:333    .text:0000000000000098 _ZN4Menu10validationEv
+
+UNDEFINED SYMBOLS
+_ZN3LCM5clearEv
+_ZN3LCM5writeEPKchb
+__do_copy_data

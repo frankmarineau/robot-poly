@@ -1,0 +1,1599 @@
+GAS LISTING /tmp/ccvZEsUJ.s 			page 1
+
+
+   1               		.file	"lcm_so1602dtr_m_fw.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/prophete/PROJETFINALINF1995/robot-poly/lib_dir/",100,0,4,.Ltext0
+   8               		.stabs	"lcm_so1602dtr_m_fw.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/ccvZEsUJ.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"size_t:t(0,58)=(0,12)",128,0,212,0
+  73               		.stabs	"._0:Tt(0,59)=s4quot:(0,9),0,16;rem:(0,9),16,16;;",128,0,68,0
+  74               		.stabs	"div_t:t(0,59)",128,0,71,0
+  75               		.stabs	"._1:Tt(0,60)=s8quot:(0,15),0,32;rem:(0,15),32,32;;",128,0,74,0
+  76               		.stabs	"ldiv_t:t(0,60)",128,0,77,0
+  77               		.stabs	"__compar_fn_t:t(0,61)=(0,62)=*(0,63)=f(0,9)",128,0,80,0
+  78               		.stabs	"int8_t:t(0,64)=(0,16)",128,0,121,0
+  79               		.stabs	"uint8_t:t(0,65)=(0,13)",128,0,122,0
+  80               		.stabs	"int16_t:t(0,66)=(0,9)",128,0,123,0
+  81               		.stabs	"uint16_t:t(0,67)=(0,12)",128,0,124,0
+  82               		.stabs	"int32_t:t(0,68)=(0,15)",128,0,125,0
+  83               		.stabs	"uint32_t:t(0,69)=(0,11)",128,0,126,0
+  84               		.stabs	"int64_t:t(0,70)=(0,14)",128,0,128,0
+  85               		.stabs	"uint64_t:t(0,71)=(0,10)",128,0,129,0
+  86               		.stabs	"intptr_t:t(0,72)=(0,66)",128,0,142,0
+  87               		.stabs	"uintptr_t:t(0,73)=(0,67)",128,0,147,0
+  88               		.stabs	"int_least8_t:t(0,74)=(0,64)",128,0,159,0
+  89               		.stabs	"uint_least8_t:t(0,75)=(0,65)",128,0,164,0
+  90               		.stabs	"int_least16_t:t(0,76)=(0,66)",128,0,169,0
+  91               		.stabs	"uint_least16_t:t(0,77)=(0,67)",128,0,174,0
+  92               		.stabs	"int_least32_t:t(0,78)=(0,68)",128,0,179,0
+  93               		.stabs	"uint_least32_t:t(0,79)=(0,69)",128,0,184,0
+  94               		.stabs	"int_least64_t:t(0,80)=(0,70)",128,0,192,0
+  95               		.stabs	"uint_least64_t:t(0,81)=(0,71)",128,0,199,0
+  96               		.stabs	"int_fast8_t:t(0,82)=(0,64)",128,0,213,0
+  97               		.stabs	"uint_fast8_t:t(0,83)=(0,65)",128,0,218,0
+  98               		.stabs	"int_fast16_t:t(0,84)=(0,66)",128,0,223,0
+  99               		.stabs	"uint_fast16_t:t(0,85)=(0,67)",128,0,228,0
+ 100               		.stabs	"int_fast32_t:t(0,86)=(0,68)",128,0,233,0
+ 101               		.stabs	"uint_fast32_t:t(0,87)=(0,69)",128,0,238,0
+ 102               		.stabs	"int_fast64_t:t(0,88)=(0,70)",128,0,246,0
+ 103               		.stabs	"uint_fast64_t:t(0,89)=(0,71)",128,0,253,0
+ 104               		.stabs	"intmax_t:t(0,90)=(0,70)",128,0,273,0
+ 105               		.stabs	"uintmax_t:t(0,91)=(0,71)",128,0,278,0
+ 106               		.stabs	"int_farptr_t:t(0,92)=(0,68)",128,0,77,0
+ 107               		.stabs	"uint_farptr_t:t(0,93)=(0,69)",128,0,81,0
+ 108               		.stabs	"__gnuc_va_list:t(0,94)=(0,3)",128,0,40,0
+ 109               		.stabs	"va_list:t(0,95)=(0,94)",128,0,98,0
+ 110               		.stabs	"__file:Tt(0,96)=s14buf:(0,97)=*(0,17),0,16;unget:(0,13),16,8;flags:(0,65),24,8;size:(0,9),
+ 111               		.stabs	"._2:Tt(0,103)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 112               		.stabs	"__fuse_t:t(0,103)",128,0,244,0
+ 113               		.stabs	"LCM:Tt(0,104)=s10_last_index:/0(0,65),0,8;_last_bc_index:/0(0,65),8,8;_blink_en:/0(0,54),1
+ 114               		.stabs	"_ZN3LCMC2EPVhS1_:F(0,4)",36,0,36,_ZN3LCMC2EPVhS1_
+GAS LISTING /tmp/ccvZEsUJ.s 			page 3
+
+
+ 115               		.stabs	"this:P(0,129)=k(0,108)",64,0,36,28
+ 116               		.stabs	"ddr:P(0,105)",64,0,36,24
+ 117               		.stabs	"port:P(0,105)",64,0,36,20
+ 118               	.global	_ZN3LCMC2EPVhS1_
+ 119               		.type	_ZN3LCMC2EPVhS1_, @function
+ 120               	_ZN3LCMC2EPVhS1_:
+ 121               		.stabd	46,0,0
+   1:lcm_so1602dtr_m_fw.cpp **** /*
+   2:lcm_so1602dtr_m_fw.cpp **** C++ framework wrapping the LCM-SO1602DTR/M driver.
+   3:lcm_so1602dtr_m_fw.cpp **** Copyright (C) 2009  Philippe Proulx (philippe.proulx@polymtl.ca)
+   4:lcm_so1602dtr_m_fw.cpp **** 
+   5:lcm_so1602dtr_m_fw.cpp **** This program is free software: you can redistribute it and/or modify
+   6:lcm_so1602dtr_m_fw.cpp **** it under the terms of the GNU Lesser General Public License as published by
+   7:lcm_so1602dtr_m_fw.cpp **** the Free Software Foundation, either version 3 of the License, or
+   8:lcm_so1602dtr_m_fw.cpp **** (at your option) any later version.
+   9:lcm_so1602dtr_m_fw.cpp **** 
+  10:lcm_so1602dtr_m_fw.cpp **** This program is distributed in the hope that it will be useful,
+  11:lcm_so1602dtr_m_fw.cpp **** but WITHOUT ANY WARRANTY; without even the implied warranty of
+  12:lcm_so1602dtr_m_fw.cpp **** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  13:lcm_so1602dtr_m_fw.cpp **** GNU Lesser General Public License for more details.
+  14:lcm_so1602dtr_m_fw.cpp **** 
+  15:lcm_so1602dtr_m_fw.cpp **** You should have received a copy of the GNU Lesser General Public License
+  16:lcm_so1602dtr_m_fw.cpp **** along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  17:lcm_so1602dtr_m_fw.cpp **** */
+  18:lcm_so1602dtr_m_fw.cpp **** 
+  19:lcm_so1602dtr_m_fw.cpp **** #include <stdlib.h>
+  20:lcm_so1602dtr_m_fw.cpp **** #include <stdio.h>
+  21:lcm_so1602dtr_m_fw.cpp **** #include <avr/io.h>
+  22:lcm_so1602dtr_m_fw.cpp **** #include <util/delay.h>
+  23:lcm_so1602dtr_m_fw.cpp **** 
+  24:lcm_so1602dtr_m_fw.cpp **** #include "lcm_so1602dtr_m_fw.h"
+  25:lcm_so1602dtr_m_fw.cpp **** #include "lcm_so1602dtr_m.h"
+  26:lcm_so1602dtr_m_fw.cpp **** #include "customprocs.h"
+  27:lcm_so1602dtr_m_fw.cpp **** 
+  28:lcm_so1602dtr_m_fw.cpp **** #define LCM_FW_BUF_SIZE		16 // Taille du buffer local
+  29:lcm_so1602dtr_m_fw.cpp **** 
+  30:lcm_so1602dtr_m_fw.cpp **** /**
+  31:lcm_so1602dtr_m_fw.cpp ****  * Construit un objet LCM.
+  32:lcm_so1602dtr_m_fw.cpp ****  *
+  33:lcm_so1602dtr_m_fw.cpp ****  * @param ddr	`Data Direction Register' AVR utilisé par l'afficheur
+  34:lcm_so1602dtr_m_fw.cpp ****  * @param port	Port AVR occupé par l'afficheur
+  35:lcm_so1602dtr_m_fw.cpp ****  */
+  36:lcm_so1602dtr_m_fw.cpp **** LCM::LCM(volatile uint8_t* ddr, volatile uint8_t* port) : _last_index(0),
+ 122               		.stabn	68,0,36,.LM0-.LFBB1
+ 123               	.LM0:
+ 124               	.LFBB1:
+ 125 0000 CF93      		push r28
+ 126 0002 DF93      		push r29
+ 127               	/* prologue: function */
+ 128               	/* frame size = 0 */
+ 129               	/* stack size = 2 */
+ 130               	.L__stack_usage = 2
+ 131 0004 EC01      		movw r28,r24
+ 132 0006 CB01      		movw r24,r22
+ 133               	.LBB2:
+  37:lcm_so1602dtr_m_fw.cpp **** _last_bc_index(0), _blink_en(LCM_FW_DEF_BLINK_EN), _cur_en(LCM_FW_DEF_CUR_EN),
+  38:lcm_so1602dtr_m_fw.cpp **** _port(port), _lib(false), _li(0) {	
+GAS LISTING /tmp/ccvZEsUJ.s 			page 4
+
+
+ 134               		.stabn	68,0,38,.LM1-.LFBB1
+ 135               	.LM1:
+ 136 0008 1882      		st Y,__zero_reg__
+ 137 000a 1982      		std Y+1,__zero_reg__
+ 138 000c 1A82      		std Y+2,__zero_reg__
+ 139 000e 1B82      		std Y+3,__zero_reg__
+ 140 0010 5D83      		std Y+5,r21
+ 141 0012 4C83      		std Y+4,r20
+ 142 0014 1886      		std Y+8,__zero_reg__
+ 143 0016 1986      		std Y+9,__zero_reg__
+  39:lcm_so1602dtr_m_fw.cpp **** 	lcmd_init_4bit(ddr, port); // Initialisation
+ 144               		.stabn	68,0,39,.LM2-.LFBB1
+ 145               	.LM2:
+ 146 0018 BA01      		movw r22,r20
+ 147 001a 0E94 0000 		call _Z14lcmd_init_4bitPVhS0_
+  40:lcm_so1602dtr_m_fw.cpp **** 	lcmd_entry_sm(LCM_ID_INC, LCM_S_OFF, _port);
+ 148               		.stabn	68,0,40,.LM3-.LFBB1
+ 149               	.LM3:
+ 150 001e 4C81      		ldd r20,Y+4
+ 151 0020 5D81      		ldd r21,Y+5
+ 152 0022 60E0      		ldi r22,0
+ 153 0024 81E0      		ldi r24,lo8(1)
+ 154 0026 0E94 0000 		call _Z13lcmd_entry_smhhPVh
+  41:lcm_so1602dtr_m_fw.cpp **** 	
+  42:lcm_so1602dtr_m_fw.cpp **** 	_buf = (char*) malloc(LCM_FW_BUF_SIZE); // Allocation du buffer local
+ 155               		.stabn	68,0,42,.LM4-.LFBB1
+ 156               	.LM4:
+ 157 002a 80E1      		ldi r24,lo8(16)
+ 158 002c 90E0      		ldi r25,0
+ 159 002e 0E94 0000 		call malloc
+ 160 0032 9F83      		std Y+7,r25
+ 161 0034 8E83      		std Y+6,r24
+ 162               	/* epilogue start */
+ 163               	.LBE2:
+  43:lcm_so1602dtr_m_fw.cpp **** }
+ 164               		.stabn	68,0,43,.LM5-.LFBB1
+ 165               	.LM5:
+ 166 0036 DF91      		pop r29
+ 167 0038 CF91      		pop r28
+ 168 003a 0895      		ret
+ 169               		.size	_ZN3LCMC2EPVhS1_, .-_ZN3LCMC2EPVhS1_
+ 170               	.Lscope1:
+ 171               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 172               		.stabd	78,0,0
+ 173               	.global	_ZN3LCMC1EPVhS1_
+ 174               		.set	_ZN3LCMC1EPVhS1_,_ZN3LCMC2EPVhS1_
+ 175               		.stabs	"_ZN3LCMD2Ev:F(0,4)",36,0,49,_ZN3LCMD2Ev
+ 176               		.stabs	"this:P(0,129)",64,0,49,24
+ 177               	.global	_ZN3LCMD2Ev
+ 178               		.type	_ZN3LCMD2Ev, @function
+ 179               	_ZN3LCMD2Ev:
+ 180               		.stabd	46,0,0
+  44:lcm_so1602dtr_m_fw.cpp **** 
+  45:lcm_so1602dtr_m_fw.cpp **** /**
+  46:lcm_so1602dtr_m_fw.cpp ****  * Détruit proprement un objet LCM.
+  47:lcm_so1602dtr_m_fw.cpp ****  *
+  48:lcm_so1602dtr_m_fw.cpp ****  */
+GAS LISTING /tmp/ccvZEsUJ.s 			page 5
+
+
+  49:lcm_so1602dtr_m_fw.cpp **** LCM::~LCM(void) {
+ 181               		.stabn	68,0,49,.LM6-.LFBB2
+ 182               	.LM6:
+ 183               	.LFBB2:
+ 184               	/* prologue: function */
+ 185               	/* frame size = 0 */
+ 186               	/* stack size = 0 */
+ 187               	.L__stack_usage = 0
+ 188               	.LBB3:
+  50:lcm_so1602dtr_m_fw.cpp **** 	free(_buf);
+ 189               		.stabn	68,0,50,.LM7-.LFBB2
+ 190               	.LM7:
+ 191 003c FC01      		movw r30,r24
+ 192 003e 8681      		ldd r24,Z+6
+ 193 0040 9781      		ldd r25,Z+7
+ 194 0042 0C94 0000 		jmp free
+ 195               	.LBE3:
+ 196               		.size	_ZN3LCMD2Ev, .-_ZN3LCMD2Ev
+ 197               	.Lscope2:
+ 198               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 199               		.stabd	78,0,0
+ 200               	.global	_ZN3LCMD1Ev
+ 201               		.set	_ZN3LCMD1Ev,_ZN3LCMD2Ev
+ 202               		.stabs	"_ZN3LCM8en_blinkEb:F(0,4)",36,0,142,_ZN3LCM8en_blinkEb
+ 203               		.stabs	"this:P(0,129)",64,0,142,28
+ 204               		.stabs	"state:P(0,130)=k(0,54)",64,0,142,17
+ 205               	.global	_ZN3LCM8en_blinkEb
+ 206               		.type	_ZN3LCM8en_blinkEb, @function
+ 207               	_ZN3LCM8en_blinkEb:
+ 208               		.stabd	46,0,0
+  51:lcm_so1602dtr_m_fw.cpp **** }
+  52:lcm_so1602dtr_m_fw.cpp **** 
+  53:lcm_so1602dtr_m_fw.cpp **** /**
+  54:lcm_so1602dtr_m_fw.cpp ****  * Ajoute un caractère et positionne le curseur après.
+  55:lcm_so1602dtr_m_fw.cpp ****  *
+  56:lcm_so1602dtr_m_fw.cpp ****  * @param ch	Caractère (du jeu de caractères de l'afficheur)
+  57:lcm_so1602dtr_m_fw.cpp ****  * @return	Auto-référence
+  58:lcm_so1602dtr_m_fw.cpp ****  */
+  59:lcm_so1602dtr_m_fw.cpp **** LCM& LCM::put(const char ch) {
+  60:lcm_so1602dtr_m_fw.cpp **** 	char buf [2] = {ch, '\0'};
+  61:lcm_so1602dtr_m_fw.cpp **** 	*this << buf;
+  62:lcm_so1602dtr_m_fw.cpp **** 	
+  63:lcm_so1602dtr_m_fw.cpp **** 	return *this;
+  64:lcm_so1602dtr_m_fw.cpp **** }
+  65:lcm_so1602dtr_m_fw.cpp **** 
+  66:lcm_so1602dtr_m_fw.cpp **** /**
+  67:lcm_so1602dtr_m_fw.cpp ****  * Écrit une chaîne à l'index désiré, en effaçant tout avant ou non.
+  68:lcm_so1602dtr_m_fw.cpp ****  *
+  69:lcm_so1602dtr_m_fw.cpp ****  * @param msg	Message à écrire (chaîne ASCIIZ composée du jeu de l'afficheur)
+  70:lcm_so1602dtr_m_fw.cpp ****  * @param index	Index où écrire le message (0 à 31)
+  71:lcm_so1602dtr_m_fw.cpp ****  * @param cb	Effacer tout le contenu affiché avant
+  72:lcm_so1602dtr_m_fw.cpp ****  */
+  73:lcm_so1602dtr_m_fw.cpp **** void LCM::write(const char* msg, const uint8_t index, const bool cb) {
+  74:lcm_so1602dtr_m_fw.cpp **** 	if (msg == NULL) {
+  75:lcm_so1602dtr_m_fw.cpp **** 		return;
+  76:lcm_so1602dtr_m_fw.cpp **** 	}
+  77:lcm_so1602dtr_m_fw.cpp **** 	uint8_t msg_len = cp_strlen(msg), // Taille totale de la chaîne
+GAS LISTING /tmp/ccvZEsUJ.s 			page 6
+
+
+  78:lcm_so1602dtr_m_fw.cpp **** 		up_len = 0, // Taille de la sous-chaîne sur la première ligne
+  79:lcm_so1602dtr_m_fw.cpp **** 		i;
+  80:lcm_so1602dtr_m_fw.cpp **** 
+  81:lcm_so1602dtr_m_fw.cpp **** 	// Désactiver le `blink'/curseur pendant l'ajout (esthétique)
+  82:lcm_so1602dtr_m_fw.cpp **** 	const bool blink_en_bkup = _blink_en, cur_en_bkup = _cur_en;
+  83:lcm_so1602dtr_m_fw.cpp **** 	en_blink(false);
+  84:lcm_so1602dtr_m_fw.cpp **** 	en_cur(false);
+  85:lcm_so1602dtr_m_fw.cpp **** 	
+  86:lcm_so1602dtr_m_fw.cpp **** 	if (cb) {
+  87:lcm_so1602dtr_m_fw.cpp **** 		clear();
+  88:lcm_so1602dtr_m_fw.cpp **** 	}
+  89:lcm_so1602dtr_m_fw.cpp **** 	if (index >= LCM_FW_TOT_CH || LCM_FW_TOT_CH - index < msg_len) {
+  90:lcm_so1602dtr_m_fw.cpp **** 		return;
+  91:lcm_so1602dtr_m_fw.cpp **** 	}
+  92:lcm_so1602dtr_m_fw.cpp **** 	
+  93:lcm_so1602dtr_m_fw.cpp **** 	
+  94:lcm_so1602dtr_m_fw.cpp **** 	if (index < LCM_FW_HALF_CH) {
+  95:lcm_so1602dtr_m_fw.cpp **** 		if (msg_len + index < LCM_LINE1_ADR + LCM_FW_HALF_CH) {
+  96:lcm_so1602dtr_m_fw.cpp **** 			up_len = msg_len;
+  97:lcm_so1602dtr_m_fw.cpp **** 		} else {
+  98:lcm_so1602dtr_m_fw.cpp **** 			up_len = LCM_FW_HALF_CH - index;
+  99:lcm_so1602dtr_m_fw.cpp **** 		}
+ 100:lcm_so1602dtr_m_fw.cpp **** 		
+ 101:lcm_so1602dtr_m_fw.cpp **** 		lcmd_ddr_set_addr(index + LCM_LINE1_ADR, _port);
+ 102:lcm_so1602dtr_m_fw.cpp **** 		for (i = 0; i < up_len; ++i) {
+ 103:lcm_so1602dtr_m_fw.cpp **** 			lcmd_write(msg[i], _port);
+ 104:lcm_so1602dtr_m_fw.cpp **** 		}
+ 105:lcm_so1602dtr_m_fw.cpp **** 		
+ 106:lcm_so1602dtr_m_fw.cpp **** 		lcmd_ddr_set_addr(LCM_LINE2_ADR, _port);
+ 107:lcm_so1602dtr_m_fw.cpp **** 		for (i = up_len; i < msg_len; ++i) {
+ 108:lcm_so1602dtr_m_fw.cpp **** 			lcmd_write(msg[i], _port);
+ 109:lcm_so1602dtr_m_fw.cpp **** 		}
+ 110:lcm_so1602dtr_m_fw.cpp **** 	} else {
+ 111:lcm_so1602dtr_m_fw.cpp **** 		lcmd_ddr_set_addr(index + LCM_LINE2_ADR - LCM_FW_HALF_CH,
+ 112:lcm_so1602dtr_m_fw.cpp **** 			_port);
+ 113:lcm_so1602dtr_m_fw.cpp **** 		for (i = 0; i < msg_len; ++i) {
+ 114:lcm_so1602dtr_m_fw.cpp **** 			lcmd_write(msg[i], _port);
+ 115:lcm_so1602dtr_m_fw.cpp **** 		}
+ 116:lcm_so1602dtr_m_fw.cpp **** 	}
+ 117:lcm_so1602dtr_m_fw.cpp **** 
+ 118:lcm_so1602dtr_m_fw.cpp **** 	// Réactiver le `blink'/curseur
+ 119:lcm_so1602dtr_m_fw.cpp **** 	set_bc_index(_last_bc_index);
+ 120:lcm_so1602dtr_m_fw.cpp **** 	en_blink(blink_en_bkup);
+ 121:lcm_so1602dtr_m_fw.cpp **** 	en_cur(cur_en_bkup);
+ 122:lcm_so1602dtr_m_fw.cpp **** 	
+ 123:lcm_so1602dtr_m_fw.cpp **** 	// Ajuster l'index virtuel
+ 124:lcm_so1602dtr_m_fw.cpp **** 	_last_index = index + msg_len;
+ 125:lcm_so1602dtr_m_fw.cpp **** }
+ 126:lcm_so1602dtr_m_fw.cpp **** 
+ 127:lcm_so1602dtr_m_fw.cpp **** /**
+ 128:lcm_so1602dtr_m_fw.cpp ****  * Efface le contenu de l'afficheur LCD.
+ 129:lcm_so1602dtr_m_fw.cpp ****  *
+ 130:lcm_so1602dtr_m_fw.cpp ****  */
+ 131:lcm_so1602dtr_m_fw.cpp **** void LCM::clear() {
+ 132:lcm_so1602dtr_m_fw.cpp **** 	lcmd_disp_clear(_port); // `Display Clear' matériel
+ 133:lcm_so1602dtr_m_fw.cpp **** 	_last_index = 0; // Réinitialiser l'index virtuel
+ 134:lcm_so1602dtr_m_fw.cpp **** 	set_bc_index(_last_bc_index); // Fixer la position du `blink'/curseur
+GAS LISTING /tmp/ccvZEsUJ.s 			page 7
+
+
+ 135:lcm_so1602dtr_m_fw.cpp **** }
+ 136:lcm_so1602dtr_m_fw.cpp **** 
+ 137:lcm_so1602dtr_m_fw.cpp **** /**
+ 138:lcm_so1602dtr_m_fw.cpp ****  * Active le `blink' (clignotement noir d'un caractère).
+ 139:lcm_so1602dtr_m_fw.cpp ****  *
+ 140:lcm_so1602dtr_m_fw.cpp ****  * @param state		Nouvel état
+ 141:lcm_so1602dtr_m_fw.cpp ****  */
+ 142:lcm_so1602dtr_m_fw.cpp **** void LCM::en_blink(const bool state) {
+ 209               		.stabn	68,0,142,.LM8-.LFBB3
+ 210               	.LM8:
+ 211               	.LFBB3:
+ 212 0046 1F93      		push r17
+ 213 0048 CF93      		push r28
+ 214 004a DF93      		push r29
+ 215               	/* prologue: function */
+ 216               	/* frame size = 0 */
+ 217               	/* stack size = 3 */
+ 218               	.L__stack_usage = 3
+ 219 004c EC01      		movw r28,r24
+ 220 004e 162F      		mov r17,r22
+ 143:lcm_so1602dtr_m_fw.cpp **** 	lcmd_disp_on_off(LCM_C_ON, _cur_en ? LCM_C_ON : LCM_C_OFF,
+ 144:lcm_so1602dtr_m_fw.cpp **** 		state ? LCM_B_ON : LCM_B_OFF, _port);
+ 221               		.stabn	68,0,144,.LM9-.LFBB3
+ 222               	.LM9:
+ 223 0050 2C81      		ldd r18,Y+4
+ 224 0052 3D81      		ldd r19,Y+5
+ 225 0054 462F      		mov r20,r22
+ 226 0056 6B81      		ldd r22,Y+3
+ 227 0058 81E0      		ldi r24,lo8(1)
+ 228 005a 0E94 0000 		call _Z16lcmd_disp_on_offhhhPVh
+ 145:lcm_so1602dtr_m_fw.cpp **** 	_blink_en = state;
+ 229               		.stabn	68,0,145,.LM10-.LFBB3
+ 230               	.LM10:
+ 231 005e 1A83      		std Y+2,r17
+ 232               	/* epilogue start */
+ 146:lcm_so1602dtr_m_fw.cpp **** }
+ 233               		.stabn	68,0,146,.LM11-.LFBB3
+ 234               	.LM11:
+ 235 0060 DF91      		pop r29
+ 236 0062 CF91      		pop r28
+ 237 0064 1F91      		pop r17
+ 238 0066 0895      		ret
+ 239               		.size	_ZN3LCM8en_blinkEb, .-_ZN3LCM8en_blinkEb
+ 240               	.Lscope3:
+ 241               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 242               		.stabd	78,0,0
+ 243               		.stabs	"_ZN3LCM6en_curEb:F(0,4)",36,0,153,_ZN3LCM6en_curEb
+ 244               		.stabs	"this:P(0,129)",64,0,153,28
+ 245               		.stabs	"state:P(0,130)",64,0,153,17
+ 246               	.global	_ZN3LCM6en_curEb
+ 247               		.type	_ZN3LCM6en_curEb, @function
+ 248               	_ZN3LCM6en_curEb:
+ 249               		.stabd	46,0,0
+ 147:lcm_so1602dtr_m_fw.cpp **** 
+ 148:lcm_so1602dtr_m_fw.cpp **** /**
+ 149:lcm_so1602dtr_m_fw.cpp ****  * Active le curseur "réel" (curseur sous un caractère).
+ 150:lcm_so1602dtr_m_fw.cpp ****  *
+GAS LISTING /tmp/ccvZEsUJ.s 			page 8
+
+
+ 151:lcm_so1602dtr_m_fw.cpp ****  * @param state		Nouvel état
+ 152:lcm_so1602dtr_m_fw.cpp ****  */
+ 153:lcm_so1602dtr_m_fw.cpp **** void LCM::en_cur(const bool state) {
+ 250               		.stabn	68,0,153,.LM12-.LFBB4
+ 251               	.LM12:
+ 252               	.LFBB4:
+ 253 0068 1F93      		push r17
+ 254 006a CF93      		push r28
+ 255 006c DF93      		push r29
+ 256               	/* prologue: function */
+ 257               	/* frame size = 0 */
+ 258               	/* stack size = 3 */
+ 259               	.L__stack_usage = 3
+ 260 006e EC01      		movw r28,r24
+ 261 0070 162F      		mov r17,r22
+ 154:lcm_so1602dtr_m_fw.cpp **** 	lcmd_disp_on_off(LCM_C_ON, state ? LCM_C_ON : LCM_C_OFF,
+ 155:lcm_so1602dtr_m_fw.cpp **** 		_blink_en ? LCM_B_ON : LCM_B_OFF, _port);
+ 262               		.stabn	68,0,155,.LM13-.LFBB4
+ 263               	.LM13:
+ 264 0072 2C81      		ldd r18,Y+4
+ 265 0074 3D81      		ldd r19,Y+5
+ 266 0076 4A81      		ldd r20,Y+2
+ 267 0078 81E0      		ldi r24,lo8(1)
+ 268 007a 0E94 0000 		call _Z16lcmd_disp_on_offhhhPVh
+ 156:lcm_so1602dtr_m_fw.cpp **** 	_cur_en = state;
+ 269               		.stabn	68,0,156,.LM14-.LFBB4
+ 270               	.LM14:
+ 271 007e 1B83      		std Y+3,r17
+ 272               	/* epilogue start */
+ 157:lcm_so1602dtr_m_fw.cpp **** }
+ 273               		.stabn	68,0,157,.LM15-.LFBB4
+ 274               	.LM15:
+ 275 0080 DF91      		pop r29
+ 276 0082 CF91      		pop r28
+ 277 0084 1F91      		pop r17
+ 278 0086 0895      		ret
+ 279               		.size	_ZN3LCM6en_curEb, .-_ZN3LCM6en_curEb
+ 280               	.Lscope4:
+ 281               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 282               		.stabd	78,0,0
+ 283               		.stabs	"_ZN3LCM12set_bc_indexEh:F(0,4)",36,0,164,_ZN3LCM12set_bc_indexEh
+ 284               		.stabs	"this:P(0,129)",64,0,164,30
+ 285               		.stabs	"index:P(0,117)",64,0,164,24
+ 286               	.global	_ZN3LCM12set_bc_indexEh
+ 287               		.type	_ZN3LCM12set_bc_indexEh, @function
+ 288               	_ZN3LCM12set_bc_indexEh:
+ 289               		.stabd	46,0,0
+ 158:lcm_so1602dtr_m_fw.cpp **** 
+ 159:lcm_so1602dtr_m_fw.cpp **** /**
+ 160:lcm_so1602dtr_m_fw.cpp ****  * Fixe l'index du `blink'/curseur (partagée).
+ 161:lcm_so1602dtr_m_fw.cpp ****  *
+ 162:lcm_so1602dtr_m_fw.cpp ****  * @param index		Nouvel index
+ 163:lcm_so1602dtr_m_fw.cpp ****  */
+ 164:lcm_so1602dtr_m_fw.cpp **** void LCM::set_bc_index(const uint8_t index) {
+ 290               		.stabn	68,0,164,.LM16-.LFBB5
+ 291               	.LM16:
+ 292               	.LFBB5:
+GAS LISTING /tmp/ccvZEsUJ.s 			page 9
+
+
+ 293               	/* prologue: function */
+ 294               	/* frame size = 0 */
+ 295               	/* stack size = 0 */
+ 296               	.L__stack_usage = 0
+ 297 0088 FC01      		movw r30,r24
+ 298 008a 862F      		mov r24,r22
+ 165:lcm_so1602dtr_m_fw.cpp **** 	if (index >= LCM_FW_TOT_CH) {
+ 299               		.stabn	68,0,165,.LM17-.LFBB5
+ 300               	.LM17:
+ 301 008c 6032      		cpi r22,lo8(32)
+ 302 008e 00F4      		brsh .L5
+ 166:lcm_so1602dtr_m_fw.cpp **** 		return;
+ 167:lcm_so1602dtr_m_fw.cpp **** 	}
+ 168:lcm_so1602dtr_m_fw.cpp **** 	_last_bc_index = index;
+ 303               		.stabn	68,0,168,.LM18-.LFBB5
+ 304               	.LM18:
+ 305 0090 6183      		std Z+1,r22
+ 306 0092 6481      		ldd r22,Z+4
+ 307 0094 7581      		ldd r23,Z+5
+ 169:lcm_so1602dtr_m_fw.cpp **** 	
+ 170:lcm_so1602dtr_m_fw.cpp **** 	if (index < LCM_FW_HALF_CH) {
+ 308               		.stabn	68,0,170,.LM19-.LFBB5
+ 309               	.LM19:
+ 310 0096 8031      		cpi r24,lo8(16)
+ 311 0098 00F0      		brlo .L8
+ 312               	.LBB6:
+ 313               	.LBB7:
+ 171:lcm_so1602dtr_m_fw.cpp **** 		lcmd_ddr_set_addr(index + LCM_LINE1_ADR, _port);
+ 172:lcm_so1602dtr_m_fw.cpp **** 	} else {
+ 173:lcm_so1602dtr_m_fw.cpp **** 		lcmd_ddr_set_addr(index + LCM_LINE2_ADR - LCM_FW_HALF_CH,
+ 174:lcm_so1602dtr_m_fw.cpp **** 			_port);
+ 314               		.stabn	68,0,174,.LM20-.LFBB5
+ 315               	.LM20:
+ 316 009a 805D      		subi r24,lo8(-(48))
+ 317               	.L8:
+ 318 009c 0C94 0000 		jmp _Z17lcmd_ddr_set_addrhPVh
+ 319               	.L5:
+ 320 00a0 0895      		ret
+ 321               	.LBE7:
+ 322               	.LBE6:
+ 323               		.size	_ZN3LCM12set_bc_indexEh, .-_ZN3LCM12set_bc_indexEh
+ 324               	.Lscope5:
+ 325               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 326               		.stabd	78,0,0
+ 327               		.stabs	"_ZN3LCM5clearEv:F(0,4)",36,0,131,_ZN3LCM5clearEv
+ 328               		.stabs	"this:P(0,129)",64,0,131,28
+ 329               	.global	_ZN3LCM5clearEv
+ 330               		.type	_ZN3LCM5clearEv, @function
+ 331               	_ZN3LCM5clearEv:
+ 332               		.stabd	46,0,0
+ 131:lcm_so1602dtr_m_fw.cpp **** void LCM::clear() {
+ 333               		.stabn	68,0,131,.LM21-.LFBB6
+ 334               	.LM21:
+ 335               	.LFBB6:
+ 336 00a2 CF93      		push r28
+ 337 00a4 DF93      		push r29
+ 338               	/* prologue: function */
+GAS LISTING /tmp/ccvZEsUJ.s 			page 10
+
+
+ 339               	/* frame size = 0 */
+ 340               	/* stack size = 2 */
+ 341               	.L__stack_usage = 2
+ 342 00a6 EC01      		movw r28,r24
+ 132:lcm_so1602dtr_m_fw.cpp **** 	lcmd_disp_clear(_port); // `Display Clear' matériel
+ 343               		.stabn	68,0,132,.LM22-.LFBB6
+ 344               	.LM22:
+ 345 00a8 8C81      		ldd r24,Y+4
+ 346 00aa 9D81      		ldd r25,Y+5
+ 347 00ac 0E94 0000 		call _Z15lcmd_disp_clearPVh
+ 133:lcm_so1602dtr_m_fw.cpp **** 	_last_index = 0; // Réinitialiser l'index virtuel
+ 348               		.stabn	68,0,133,.LM23-.LFBB6
+ 349               	.LM23:
+ 350 00b0 1882      		st Y,__zero_reg__
+ 134:lcm_so1602dtr_m_fw.cpp **** 	set_bc_index(_last_bc_index); // Fixer la position du `blink'/curseur
+ 351               		.stabn	68,0,134,.LM24-.LFBB6
+ 352               	.LM24:
+ 353 00b2 6981      		ldd r22,Y+1
+ 354 00b4 CE01      		movw r24,r28
+ 355               	/* epilogue start */
+ 135:lcm_so1602dtr_m_fw.cpp **** }
+ 356               		.stabn	68,0,135,.LM25-.LFBB6
+ 357               	.LM25:
+ 358 00b6 DF91      		pop r29
+ 359 00b8 CF91      		pop r28
+ 134:lcm_so1602dtr_m_fw.cpp **** 	set_bc_index(_last_bc_index); // Fixer la position du `blink'/curseur
+ 360               		.stabn	68,0,134,.LM26-.LFBB6
+ 361               	.LM26:
+ 362 00ba 0C94 0000 		jmp _ZN3LCM12set_bc_indexEh
+ 363               		.size	_ZN3LCM5clearEv, .-_ZN3LCM5clearEv
+ 364               	.Lscope6:
+ 365               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 366               		.stabd	78,0,0
+ 367               		.stabs	"_ZN3LCM5writeEPKchb:F(0,4)",36,0,73,_ZN3LCM5writeEPKchb
+ 368               		.stabs	"this:P(0,129)",64,0,73,4
+ 369               		.stabs	"msg:P(0,113)",64,0,73,16
+ 370               		.stabs	"index:P(0,117)",64,0,73,11
+ 371               		.stabs	"cb:P(0,130)",64,0,73,18
+ 372               	.global	_ZN3LCM5writeEPKchb
+ 373               		.type	_ZN3LCM5writeEPKchb, @function
+ 374               	_ZN3LCM5writeEPKchb:
+ 375               		.stabd	46,0,0
+  73:lcm_so1602dtr_m_fw.cpp **** void LCM::write(const char* msg, const uint8_t index, const bool cb) {
+ 376               		.stabn	68,0,73,.LM27-.LFBB7
+ 377               	.LM27:
+ 378               	.LFBB7:
+ 379 00be 4F92      		push r4
+ 380 00c0 5F92      		push r5
+ 381 00c2 6F92      		push r6
+ 382 00c4 7F92      		push r7
+ 383 00c6 8F92      		push r8
+ 384 00c8 9F92      		push r9
+ 385 00ca AF92      		push r10
+ 386 00cc BF92      		push r11
+ 387 00ce CF92      		push r12
+ 388 00d0 DF92      		push r13
+ 389 00d2 EF92      		push r14
+GAS LISTING /tmp/ccvZEsUJ.s 			page 11
+
+
+ 390 00d4 FF92      		push r15
+ 391 00d6 0F93      		push r16
+ 392 00d8 1F93      		push r17
+ 393 00da CF93      		push r28
+ 394 00dc DF93      		push r29
+ 395 00de 1F92      		push __zero_reg__
+ 396 00e0 CDB7      		in r28,__SP_L__
+ 397 00e2 DEB7      		in r29,__SP_H__
+ 398               	/* prologue: function */
+ 399               	/* frame size = 1 */
+ 400               	/* stack size = 17 */
+ 401               	.L__stack_usage = 17
+ 402 00e4 2C01      		movw r4,r24
+ 403 00e6 8B01      		movw r16,r22
+ 404 00e8 B42E      		mov r11,r20
+ 405               	.LBB8:
+  74:lcm_so1602dtr_m_fw.cpp **** 	if (msg == NULL) {
+ 406               		.stabn	68,0,74,.LM28-.LFBB7
+ 407               	.LM28:
+ 408 00ea 6115      		cp r22,__zero_reg__
+ 409 00ec 7105      		cpc r23,__zero_reg__
+ 410 00ee 01F4      		brne .+2
+ 411 00f0 00C0      		rjmp .L11
+  77:lcm_so1602dtr_m_fw.cpp **** 	uint8_t msg_len = cp_strlen(msg), // Taille totale de la chaîne
+ 412               		.stabn	68,0,77,.LM29-.LFBB7
+ 413               	.LM29:
+ 414 00f2 CB01      		movw r24,r22
+ 415 00f4 2983      		std Y+1,r18
+ 416 00f6 0E94 0000 		call _Z9cp_strlenPKc
+ 417 00fa 6C01      		movw r12,r24
+  82:lcm_so1602dtr_m_fw.cpp **** 	const bool blink_en_bkup = _blink_en, cur_en_bkup = _cur_en;
+ 418               		.stabn	68,0,82,.LM30-.LFBB7
+ 419               	.LM30:
+ 420 00fc F201      		movw r30,r4
+ 421 00fe A280      		ldd r10,Z+2
+ 422 0100 9380      		ldd r9,Z+3
+  83:lcm_so1602dtr_m_fw.cpp **** 	en_blink(false);
+ 423               		.stabn	68,0,83,.LM31-.LFBB7
+ 424               	.LM31:
+ 425 0102 60E0      		ldi r22,0
+ 426 0104 C201      		movw r24,r4
+ 427 0106 0E94 0000 		call _ZN3LCM8en_blinkEb
+  84:lcm_so1602dtr_m_fw.cpp **** 	en_cur(false);
+ 428               		.stabn	68,0,84,.LM32-.LFBB7
+ 429               	.LM32:
+ 430 010a 60E0      		ldi r22,0
+ 431 010c C201      		movw r24,r4
+ 432 010e 0E94 0000 		call _ZN3LCM6en_curEb
+  86:lcm_so1602dtr_m_fw.cpp **** 	if (cb) {
+ 433               		.stabn	68,0,86,.LM33-.LFBB7
+ 434               	.LM33:
+ 435 0112 2981      		ldd r18,Y+1
+ 436 0114 2223      		tst r18
+ 437 0116 01F0      		breq .L14
+  87:lcm_so1602dtr_m_fw.cpp **** 		clear();
+ 438               		.stabn	68,0,87,.LM34-.LFBB7
+ 439               	.LM34:
+GAS LISTING /tmp/ccvZEsUJ.s 			page 12
+
+
+ 440 0118 C201      		movw r24,r4
+ 441 011a 0E94 0000 		call _ZN3LCM5clearEv
+ 442               	.L14:
+  89:lcm_so1602dtr_m_fw.cpp **** 	if (index >= LCM_FW_TOT_CH || LCM_FW_TOT_CH - index < msg_len) {
+ 443               		.stabn	68,0,89,.LM35-.LFBB7
+ 444               	.LM35:
+ 445 011e FFE1      		ldi r31,lo8(31)
+ 446 0120 FB15      		cp r31,r11
+ 447 0122 00F4      		brsh .+2
+ 448 0124 00C0      		rjmp .L11
+  89:lcm_so1602dtr_m_fw.cpp **** 	if (index >= LCM_FW_TOT_CH || LCM_FW_TOT_CH - index < msg_len) {
+ 449               		.stabn	68,0,89,.LM36-.LFBB7
+ 450               	.LM36:
+ 451 0126 8B2D      		mov r24,r11
+ 452 0128 90E0      		ldi r25,0
+ 453 012a A601      		movw r20,r12
+ 454 012c 5527      		clr r21
+ 455 012e 20E2      		ldi r18,lo8(32)
+ 456 0130 30E0      		ldi r19,0
+ 457 0132 281B      		sub r18,r24
+ 458 0134 390B      		sbc r19,r25
+ 459 0136 2417      		cp r18,r20
+ 460 0138 3507      		cpc r19,r21
+ 461 013a 04F4      		brge .+2
+ 462 013c 00C0      		rjmp .L11
+  77:lcm_so1602dtr_m_fw.cpp **** 	uint8_t msg_len = cp_strlen(msg), // Taille totale de la chaîne
+ 463               		.stabn	68,0,77,.LM37-.LFBB7
+ 464               	.LM37:
+ 465 013e 8C2C      		mov r8,r12
+ 466 0140 F201      		movw r30,r4
+ 467 0142 6481      		ldd r22,Z+4
+ 468 0144 7581      		ldd r23,Z+5
+  94:lcm_so1602dtr_m_fw.cpp **** 	if (index < LCM_FW_HALF_CH) {
+ 469               		.stabn	68,0,94,.LM38-.LFBB7
+ 470               	.LM38:
+ 471 0146 FFE0      		ldi r31,lo8(15)
+ 472 0148 FB15      		cp r31,r11
+ 473 014a 00F0      		brlo .L16
+  95:lcm_so1602dtr_m_fw.cpp **** 		if (msg_len + index < LCM_LINE1_ADR + LCM_FW_HALF_CH) {
+ 474               		.stabn	68,0,95,.LM39-.LFBB7
+ 475               	.LM39:
+ 476 014c 840F      		add r24,r20
+ 477 014e 951F      		adc r25,r21
+ 478 0150 4097      		sbiw r24,16
+ 479 0152 04F0      		brlt .L25
+  98:lcm_so1602dtr_m_fw.cpp **** 			up_len = LCM_FW_HALF_CH - index;
+ 480               		.stabn	68,0,98,.LM40-.LFBB7
+ 481               	.LM40:
+ 482 0154 80E1      		ldi r24,lo8(16)
+ 483 0156 782E      		mov r7,r24
+ 484 0158 7B18      		sub r7,r11
+ 485 015a 00C0      		rjmp .L17
+ 486               	.L25:
+  77:lcm_so1602dtr_m_fw.cpp **** 	uint8_t msg_len = cp_strlen(msg), // Taille totale de la chaîne
+ 487               		.stabn	68,0,77,.LM41-.LFBB7
+ 488               	.LM41:
+ 489 015c 7C2C      		mov r7,r12
+GAS LISTING /tmp/ccvZEsUJ.s 			page 13
+
+
+ 490               	.L17:
+ 101:lcm_so1602dtr_m_fw.cpp **** 		lcmd_ddr_set_addr(index + LCM_LINE1_ADR, _port);
+ 491               		.stabn	68,0,101,.LM42-.LFBB7
+ 492               	.LM42:
+ 493 015e 8B2D      		mov r24,r11
+ 494 0160 0E94 0000 		call _Z17lcmd_ddr_set_addrhPVh
+ 495 0164 602E      		mov r6,r16
+ 102:lcm_so1602dtr_m_fw.cpp **** 		for (i = 0; i < up_len; ++i) {
+ 496               		.stabn	68,0,102,.LM43-.LFBB7
+ 497               	.LM43:
+ 498 0166 7801      		movw r14,r16
+ 499               	.L18:
+ 500 0168 F201      		movw r30,r4
+ 501 016a 6481      		ldd r22,Z+4
+ 502 016c 7581      		ldd r23,Z+5
+ 102:lcm_so1602dtr_m_fw.cpp **** 		for (i = 0; i < up_len; ++i) {
+ 503               		.stabn	68,0,102,.LM44-.LFBB7
+ 504               	.LM44:
+ 505 016e 8E2D      		mov r24,r14
+ 506 0170 8619      		sub r24,r6
+ 507 0172 8715      		cp r24,r7
+ 508 0174 00F4      		brsh .L29
+ 103:lcm_so1602dtr_m_fw.cpp **** 			lcmd_write(msg[i], _port);
+ 509               		.stabn	68,0,103,.LM45-.LFBB7
+ 510               	.LM45:
+ 511 0176 F701      		movw r30,r14
+ 512 0178 8191      		ld r24,Z+
+ 513 017a 7F01      		movw r14,r30
+ 514 017c 0E94 0000 		call _Z10lcmd_writehPVh
+ 515 0180 00C0      		rjmp .L18
+ 516               	.L29:
+ 106:lcm_so1602dtr_m_fw.cpp **** 		lcmd_ddr_set_addr(LCM_LINE2_ADR, _port);
+ 517               		.stabn	68,0,106,.LM46-.LFBB7
+ 518               	.LM46:
+ 519 0182 80E4      		ldi r24,lo8(64)
+ 520 0184 0E94 0000 		call _Z17lcmd_ddr_set_addrhPVh
+ 521               	.L20:
+ 107:lcm_so1602dtr_m_fw.cpp **** 		for (i = up_len; i < msg_len; ++i) {
+ 522               		.stabn	68,0,107,.LM47-.LFBB7
+ 523               	.LM47:
+ 524 0188 7814      		cp r7,r8
+ 525 018a 00F4      		brsh .L24
+ 108:lcm_so1602dtr_m_fw.cpp **** 			lcmd_write(msg[i], _port);
+ 526               		.stabn	68,0,108,.LM48-.LFBB7
+ 527               	.LM48:
+ 528 018c F201      		movw r30,r4
+ 529 018e 6481      		ldd r22,Z+4
+ 530 0190 7581      		ldd r23,Z+5
+ 531 0192 F801      		movw r30,r16
+ 532 0194 E70D      		add r30,r7
+ 533 0196 F11D      		adc r31,__zero_reg__
+ 534 0198 8081      		ld r24,Z
+ 535 019a 0E94 0000 		call _Z10lcmd_writehPVh
+ 107:lcm_so1602dtr_m_fw.cpp **** 		for (i = up_len; i < msg_len; ++i) {
+ 536               		.stabn	68,0,107,.LM49-.LFBB7
+ 537               	.LM49:
+ 538 019e 7394      		inc r7
+GAS LISTING /tmp/ccvZEsUJ.s 			page 14
+
+
+ 539 01a0 00C0      		rjmp .L20
+ 540               	.L24:
+ 119:lcm_so1602dtr_m_fw.cpp **** 	set_bc_index(_last_bc_index);
+ 541               		.stabn	68,0,119,.LM50-.LFBB7
+ 542               	.LM50:
+ 543 01a2 F201      		movw r30,r4
+ 544 01a4 6181      		ldd r22,Z+1
+ 545 01a6 C201      		movw r24,r4
+ 546 01a8 0E94 0000 		call _ZN3LCM12set_bc_indexEh
+ 120:lcm_so1602dtr_m_fw.cpp **** 	en_blink(blink_en_bkup);
+ 547               		.stabn	68,0,120,.LM51-.LFBB7
+ 548               	.LM51:
+ 549 01ac 6A2D      		mov r22,r10
+ 550 01ae C201      		movw r24,r4
+ 551 01b0 0E94 0000 		call _ZN3LCM8en_blinkEb
+ 121:lcm_so1602dtr_m_fw.cpp **** 	en_cur(cur_en_bkup);
+ 552               		.stabn	68,0,121,.LM52-.LFBB7
+ 553               	.LM52:
+ 554 01b4 692D      		mov r22,r9
+ 555 01b6 C201      		movw r24,r4
+ 556 01b8 0E94 0000 		call _ZN3LCM6en_curEb
+ 124:lcm_so1602dtr_m_fw.cpp **** 	_last_index = index + msg_len;
+ 557               		.stabn	68,0,124,.LM53-.LFBB7
+ 558               	.LM53:
+ 559 01bc CB0C      		add r12,r11
+ 560 01be F201      		movw r30,r4
+ 561 01c0 C082      		st Z,r12
+ 562 01c2 00C0      		rjmp .L11
+ 563               	.L16:
+ 112:lcm_so1602dtr_m_fw.cpp **** 			_port);
+ 564               		.stabn	68,0,112,.LM54-.LFBB7
+ 565               	.LM54:
+ 566 01c4 80E3      		ldi r24,lo8(48)
+ 567 01c6 8B0D      		add r24,r11
+ 568 01c8 0E94 0000 		call _Z17lcmd_ddr_set_addrhPVh
+ 569 01cc 702E      		mov r7,r16
+ 113:lcm_so1602dtr_m_fw.cpp **** 		for (i = 0; i < msg_len; ++i) {
+ 570               		.stabn	68,0,113,.LM55-.LFBB7
+ 571               	.LM55:
+ 572 01ce 7801      		movw r14,r16
+ 573               	.L22:
+ 574 01d0 8E2D      		mov r24,r14
+ 575 01d2 8719      		sub r24,r7
+ 113:lcm_so1602dtr_m_fw.cpp **** 		for (i = 0; i < msg_len; ++i) {
+ 576               		.stabn	68,0,113,.LM56-.LFBB7
+ 577               	.LM56:
+ 578 01d4 8815      		cp r24,r8
+ 579 01d6 00F4      		brsh .L24
+ 114:lcm_so1602dtr_m_fw.cpp **** 			lcmd_write(msg[i], _port);
+ 580               		.stabn	68,0,114,.LM57-.LFBB7
+ 581               	.LM57:
+ 582 01d8 F201      		movw r30,r4
+ 583 01da 6481      		ldd r22,Z+4
+ 584 01dc 7581      		ldd r23,Z+5
+ 585 01de F701      		movw r30,r14
+ 586 01e0 8191      		ld r24,Z+
+ 587 01e2 7F01      		movw r14,r30
+GAS LISTING /tmp/ccvZEsUJ.s 			page 15
+
+
+ 588 01e4 0E94 0000 		call _Z10lcmd_writehPVh
+ 589 01e8 00C0      		rjmp .L22
+ 590               	.L11:
+ 591               	/* epilogue start */
+ 592               	.LBE8:
+ 125:lcm_so1602dtr_m_fw.cpp **** }
+ 593               		.stabn	68,0,125,.LM58-.LFBB7
+ 594               	.LM58:
+ 595 01ea 0F90      		pop __tmp_reg__
+ 596 01ec DF91      		pop r29
+ 597 01ee CF91      		pop r28
+ 598 01f0 1F91      		pop r17
+ 599 01f2 0F91      		pop r16
+ 600 01f4 FF90      		pop r15
+ 601 01f6 EF90      		pop r14
+ 602 01f8 DF90      		pop r13
+ 603 01fa CF90      		pop r12
+ 604 01fc BF90      		pop r11
+ 605 01fe AF90      		pop r10
+ 606 0200 9F90      		pop r9
+ 607 0202 8F90      		pop r8
+ 608 0204 7F90      		pop r7
+ 609 0206 6F90      		pop r6
+ 610 0208 5F90      		pop r5
+ 611 020a 4F90      		pop r4
+ 612 020c 0895      		ret
+ 613               		.size	_ZN3LCM5writeEPKchb, .-_ZN3LCM5writeEPKchb
+ 614               		.stabs	"blink_en_bkup:r(0,130)",64,0,82,10
+ 615               		.stabs	"cur_en_bkup:r(0,130)",64,0,82,9
+ 616               		.stabn	192,0,0,.LBB8-.LFBB7
+ 617               		.stabn	224,0,0,.LBE8-.LFBB7
+ 618               	.Lscope7:
+ 619               		.stabs	"",36,0,0,.Lscope7-.LFBB7
+ 620               		.stabd	78,0,0
+ 621               		.stabs	"_ZN3LCM8build_ccEhPKh:F(0,4)",36,0,187,_ZN3LCM8build_ccEhPKh
+ 622               		.stabs	"this:P(0,129)",64,0,187,28
+ 623               		.stabs	"index:P(0,117)",64,0,187,24
+ 624               		.stabs	"rows:P(0,116)",64,0,187,16
+ 625               	.global	_ZN3LCM8build_ccEhPKh
+ 626               		.type	_ZN3LCM8build_ccEhPKh, @function
+ 627               	_ZN3LCM8build_ccEhPKh:
+ 628               		.stabd	46,0,0
+ 175:lcm_so1602dtr_m_fw.cpp **** 	}
+ 176:lcm_so1602dtr_m_fw.cpp **** }
+ 177:lcm_so1602dtr_m_fw.cpp **** 
+ 178:lcm_so1602dtr_m_fw.cpp **** /**
+ 179:lcm_so1602dtr_m_fw.cpp ****  * Construit un nouveau caractère personnalisé.
+ 180:lcm_so1602dtr_m_fw.cpp ****  *
+ 181:lcm_so1602dtr_m_fw.cpp ****  * @param index		Index du nouveau caractère dans la CG RAM (0 à 7)
+ 182:lcm_so1602dtr_m_fw.cpp ****  * @param rows		Tableau des rangées (8 entiers dont les 5 LSBs sont
+ 183:lcm_so1602dtr_m_fw.cpp ****  *			les 5 pixels d'une rangée, le premier pixel de chaque
+ 184:lcm_so1602dtr_m_fw.cpp ****  *			rangée étant le LSB et la première rangée étant le
+ 185:lcm_so1602dtr_m_fw.cpp ****  *			premier entier)
+ 186:lcm_so1602dtr_m_fw.cpp ****  */
+ 187:lcm_so1602dtr_m_fw.cpp **** void LCM::build_cc(const uint8_t index, const uint8_t* rows) {
+ 629               		.stabn	68,0,187,.LM59-.LFBB8
+ 630               	.LM59:
+GAS LISTING /tmp/ccvZEsUJ.s 			page 16
+
+
+ 631               	.LFBB8:
+ 632 020e FF92      		push r15
+ 633 0210 0F93      		push r16
+ 634 0212 1F93      		push r17
+ 635 0214 CF93      		push r28
+ 636 0216 DF93      		push r29
+ 637               	/* prologue: function */
+ 638               	/* frame size = 0 */
+ 639               	/* stack size = 5 */
+ 640               	.L__stack_usage = 5
+ 641 0218 EC01      		movw r28,r24
+ 642 021a 862F      		mov r24,r22
+ 643 021c 8A01      		movw r16,r20
+ 644               	.LBB9:
+ 188:lcm_so1602dtr_m_fw.cpp **** 	if (index > 7 || rows == NULL) {
+ 645               		.stabn	68,0,188,.LM60-.LFBB8
+ 646               	.LM60:
+ 647 021e 6830      		cpi r22,lo8(8)
+ 648 0220 00F4      		brsh .L30
+ 649               		.stabn	68,0,188,.LM61-.LFBB8
+ 650               	.LM61:
+ 651 0222 4115      		cp r20,__zero_reg__
+ 652 0224 5105      		cpc r21,__zero_reg__
+ 653 0226 01F0      		breq .L30
+ 189:lcm_so1602dtr_m_fw.cpp **** 		return;
+ 190:lcm_so1602dtr_m_fw.cpp **** 	}
+ 191:lcm_so1602dtr_m_fw.cpp **** 	lcmd_cgr_set_addr(index << 3, _port);
+ 654               		.stabn	68,0,191,.LM62-.LFBB8
+ 655               	.LM62:
+ 656 0228 6C81      		ldd r22,Y+4
+ 657 022a 7D81      		ldd r23,Y+5
+ 658 022c 880F      		lsl r24
+ 659 022e 880F      		lsl r24
+ 660 0230 880F      		lsl r24
+ 661 0232 0E94 0000 		call _Z17lcmd_cgr_set_addrhPVh
+ 662 0236 98E0      		ldi r25,lo8(8)
+ 663 0238 F92E      		mov r15,r25
+ 664               	.L33:
+ 665               	.LBB10:
+ 192:lcm_so1602dtr_m_fw.cpp **** 
+ 193:lcm_so1602dtr_m_fw.cpp **** 	for (uint8_t i = 0; i < 8; ++i) {
+ 194:lcm_so1602dtr_m_fw.cpp **** 		lcmd_write(rows[i], _port); // Écrire la rangée actuelle
+ 666               		.stabn	68,0,194,.LM63-.LFBB8
+ 667               	.LM63:
+ 668 023a 6C81      		ldd r22,Y+4
+ 669 023c 7D81      		ldd r23,Y+5
+ 670 023e F801      		movw r30,r16
+ 671 0240 8191      		ld r24,Z+
+ 672 0242 8F01      		movw r16,r30
+ 673 0244 0E94 0000 		call _Z10lcmd_writehPVh
+ 674 0248 FA94      		dec r15
+ 193:lcm_so1602dtr_m_fw.cpp **** 	for (uint8_t i = 0; i < 8; ++i) {
+ 675               		.stabn	68,0,193,.LM64-.LFBB8
+ 676               	.LM64:
+ 677 024a 01F4      		brne .L33
+ 678               	.L30:
+ 679               	/* epilogue start */
+GAS LISTING /tmp/ccvZEsUJ.s 			page 17
+
+
+ 680               	.LBE10:
+ 681               	.LBE9:
+ 195:lcm_so1602dtr_m_fw.cpp **** 	}
+ 196:lcm_so1602dtr_m_fw.cpp **** }
+ 682               		.stabn	68,0,196,.LM65-.LFBB8
+ 683               	.LM65:
+ 684 024c DF91      		pop r29
+ 685 024e CF91      		pop r28
+ 686 0250 1F91      		pop r17
+ 687 0252 0F91      		pop r16
+ 688 0254 FF90      		pop r15
+ 689 0256 0895      		ret
+ 690               		.size	_ZN3LCM8build_ccEhPKh, .-_ZN3LCM8build_ccEhPKh
+ 691               	.Lscope8:
+ 692               		.stabs	"",36,0,0,.Lscope8-.LFBB8
+ 693               		.stabd	78,0,0
+ 694               		.stabs	"_ZN3LCMlsEPKc:F(0,111)",36,0,204,_ZN3LCMlsEPKc
+ 695               		.stabs	"this:P(0,129)",64,0,204,28
+ 696               		.stabs	"msg:P(0,113)",64,0,204,22
+ 697               	.global	_ZN3LCMlsEPKc
+ 698               		.type	_ZN3LCMlsEPKc, @function
+ 699               	_ZN3LCMlsEPKc:
+ 700               		.stabd	46,0,0
+ 197:lcm_so1602dtr_m_fw.cpp **** 
+ 198:lcm_so1602dtr_m_fw.cpp **** /**
+ 199:lcm_so1602dtr_m_fw.cpp ****  * Raccourci pour ajouter une sous-chaîne à l'index en cours.
+ 200:lcm_so1602dtr_m_fw.cpp ****  *
+ 201:lcm_so1602dtr_m_fw.cpp ****  * @param msg	Sous-chaîne à joindre (voir "LCM::write")
+ 202:lcm_so1602dtr_m_fw.cpp ****  * @return	Auto-référence
+ 203:lcm_so1602dtr_m_fw.cpp ****  */
+ 204:lcm_so1602dtr_m_fw.cpp **** LCM& LCM::operator<<(const char* msg) {
+ 701               		.stabn	68,0,204,.LM66-.LFBB9
+ 702               	.LM66:
+ 703               	.LFBB9:
+ 704 0258 CF93      		push r28
+ 705 025a DF93      		push r29
+ 706               	/* prologue: function */
+ 707               	/* frame size = 0 */
+ 708               	/* stack size = 2 */
+ 709               	.L__stack_usage = 2
+ 710 025c EC01      		movw r28,r24
+ 205:lcm_so1602dtr_m_fw.cpp **** 	if (msg == NULL) {
+ 711               		.stabn	68,0,205,.LM67-.LFBB9
+ 712               	.LM67:
+ 713 025e 6115      		cp r22,__zero_reg__
+ 714 0260 7105      		cpc r23,__zero_reg__
+ 715 0262 01F0      		breq .L41
+ 206:lcm_so1602dtr_m_fw.cpp **** 		return *this;
+ 207:lcm_so1602dtr_m_fw.cpp **** 	}
+ 208:lcm_so1602dtr_m_fw.cpp **** 	write(msg, _last_index, false);
+ 716               		.stabn	68,0,208,.LM68-.LFBB9
+ 717               	.LM68:
+ 718 0264 20E0      		ldi r18,0
+ 719 0266 4881      		ld r20,Y
+ 720 0268 0E94 0000 		call _ZN3LCM5writeEPKchb
+ 721               	.L41:
+ 209:lcm_so1602dtr_m_fw.cpp **** 	
+GAS LISTING /tmp/ccvZEsUJ.s 			page 18
+
+
+ 210:lcm_so1602dtr_m_fw.cpp **** 	return *this;
+ 211:lcm_so1602dtr_m_fw.cpp **** }
+ 722               		.stabn	68,0,211,.LM69-.LFBB9
+ 723               	.LM69:
+ 724 026c CE01      		movw r24,r28
+ 725               	/* epilogue start */
+ 726 026e DF91      		pop r29
+ 727 0270 CF91      		pop r28
+ 728 0272 0895      		ret
+ 729               		.size	_ZN3LCMlsEPKc, .-_ZN3LCMlsEPKc
+ 730               	.Lscope9:
+ 731               		.stabs	"",36,0,0,.Lscope9-.LFBB9
+ 732               		.stabd	78,0,0
+ 733               		.stabs	"_ZN3LCM3putEc:F(0,111)",36,0,59,_ZN3LCM3putEc
+ 734               		.stabs	"this:P(0,129)",64,0,59,16
+ 735               		.stabs	"ch:P(0,114)",64,0,59,22
+ 736               	.global	_ZN3LCM3putEc
+ 737               		.type	_ZN3LCM3putEc, @function
+ 738               	_ZN3LCM3putEc:
+ 739               		.stabd	46,0,0
+  59:lcm_so1602dtr_m_fw.cpp **** LCM& LCM::put(const char ch) {
+ 740               		.stabn	68,0,59,.LM70-.LFBB10
+ 741               	.LM70:
+ 742               	.LFBB10:
+ 743 0274 0F93      		push r16
+ 744 0276 1F93      		push r17
+ 745 0278 CF93      		push r28
+ 746 027a DF93      		push r29
+ 747 027c 00D0      		rcall .
+ 748 027e CDB7      		in r28,__SP_L__
+ 749 0280 DEB7      		in r29,__SP_H__
+ 750               	/* prologue: function */
+ 751               	/* frame size = 2 */
+ 752               	/* stack size = 6 */
+ 753               	.L__stack_usage = 6
+ 754 0282 8C01      		movw r16,r24
+ 755               	.LBB11:
+  60:lcm_so1602dtr_m_fw.cpp **** 	char buf [2] = {ch, '\0'};
+ 756               		.stabn	68,0,60,.LM71-.LFBB10
+ 757               	.LM71:
+ 758 0284 1A82      		std Y+2,__zero_reg__
+ 759 0286 1982      		std Y+1,__zero_reg__
+ 760 0288 6983      		std Y+1,r22
+  61:lcm_so1602dtr_m_fw.cpp **** 	*this << buf;
+ 761               		.stabn	68,0,61,.LM72-.LFBB10
+ 762               	.LM72:
+ 763 028a BE01      		movw r22,r28
+ 764 028c 6F5F      		subi r22,-1
+ 765 028e 7F4F      		sbci r23,-1
+ 766 0290 0E94 0000 		call _ZN3LCMlsEPKc
+ 767               	.LBE11:
+  64:lcm_so1602dtr_m_fw.cpp **** }
+ 768               		.stabn	68,0,64,.LM73-.LFBB10
+ 769               	.LM73:
+ 770 0294 C801      		movw r24,r16
+ 771               	/* epilogue start */
+ 772 0296 0F90      		pop __tmp_reg__
+GAS LISTING /tmp/ccvZEsUJ.s 			page 19
+
+
+ 773 0298 0F90      		pop __tmp_reg__
+ 774 029a DF91      		pop r29
+ 775 029c CF91      		pop r28
+ 776 029e 1F91      		pop r17
+ 777 02a0 0F91      		pop r16
+ 778 02a2 0895      		ret
+ 779               		.size	_ZN3LCM3putEc, .-_ZN3LCM3putEc
+ 780               		.stabs	"buf:(0,131)=ar(0,132)=r(0,132);0;0177777;;0;1;(0,17)",128,0,60,1
+ 781               		.stabn	192,0,0,.LBB11-.LFBB10
+ 782               		.stabn	224,0,0,.LBE11-.LFBB10
+ 783               	.Lscope10:
+ 784               		.stabs	"",36,0,0,.Lscope10-.LFBB10
+ 785               		.stabd	78,0,0
+ 786               		.section	.rodata.str1.1,"aMS",@progbits,1
+ 787               	.LC0:
+ 788 0000 2575 00   		.string	"%u"
+ 789               		.text
+ 790               		.stabs	"_ZN3LCMlsEj:F(0,111)",36,0,219,_ZN3LCMlsEj
+ 791               		.stabs	"this:P(0,129)",64,0,219,28
+ 792               	.global	_ZN3LCMlsEj
+ 793               		.type	_ZN3LCMlsEj, @function
+ 794               	_ZN3LCMlsEj:
+ 795               		.stabd	46,0,0
+ 212:lcm_so1602dtr_m_fw.cpp **** 
+ 213:lcm_so1602dtr_m_fw.cpp **** /**
+ 214:lcm_so1602dtr_m_fw.cpp ****  * Raccourci pour ajouter un entier non signé à l'index en cours.
+ 215:lcm_so1602dtr_m_fw.cpp ****  *
+ 216:lcm_so1602dtr_m_fw.cpp ****  * @param u	Entier non signé à joindre (voir "LCM::write")
+ 217:lcm_so1602dtr_m_fw.cpp ****  * @return	Auto-référence
+ 218:lcm_so1602dtr_m_fw.cpp ****  */
+ 219:lcm_so1602dtr_m_fw.cpp **** LCM& LCM::operator<<(const uint16_t u) {
+ 796               		.stabn	68,0,219,.LM74-.LFBB11
+ 797               	.LM74:
+ 798               	.LFBB11:
+ 799 02a4 CF93      		push r28
+ 800 02a6 DF93      		push r29
+ 801               	/* prologue: function */
+ 802               	/* frame size = 0 */
+ 803               	/* stack size = 2 */
+ 804               	.L__stack_usage = 2
+ 805 02a8 EC01      		movw r28,r24
+ 220:lcm_so1602dtr_m_fw.cpp **** 	sprintf(_buf, LCM_FW_UINT_DEFFORMAT, u);
+ 806               		.stabn	68,0,220,.LM75-.LFBB11
+ 807               	.LM75:
+ 808 02aa 7F93      		push r23
+ 809 02ac 6F93      		push r22
+ 810 02ae 80E0      		ldi r24,lo8(.LC0)
+ 811 02b0 90E0      		ldi r25,hi8(.LC0)
+ 812 02b2 9F93      		push r25
+ 813 02b4 8F93      		push r24
+ 814 02b6 8F81      		ldd r24,Y+7
+ 815 02b8 8F93      		push r24
+ 816 02ba 8E81      		ldd r24,Y+6
+ 817 02bc 8F93      		push r24
+ 818 02be 0E94 0000 		call sprintf
+ 221:lcm_so1602dtr_m_fw.cpp **** 	*this << _buf;
+ 819               		.stabn	68,0,221,.LM76-.LFBB11
+GAS LISTING /tmp/ccvZEsUJ.s 			page 20
+
+
+ 820               	.LM76:
+ 821 02c2 6E81      		ldd r22,Y+6
+ 822 02c4 7F81      		ldd r23,Y+7
+ 823 02c6 CE01      		movw r24,r28
+ 824 02c8 0E94 0000 		call _ZN3LCMlsEPKc
+ 222:lcm_so1602dtr_m_fw.cpp **** 	
+ 223:lcm_so1602dtr_m_fw.cpp **** 	return *this;
+ 825               		.stabn	68,0,223,.LM77-.LFBB11
+ 826               	.LM77:
+ 827 02cc 0F90      		pop __tmp_reg__
+ 828 02ce 0F90      		pop __tmp_reg__
+ 829 02d0 0F90      		pop __tmp_reg__
+ 830 02d2 0F90      		pop __tmp_reg__
+ 831 02d4 0F90      		pop __tmp_reg__
+ 832 02d6 0F90      		pop __tmp_reg__
+ 224:lcm_so1602dtr_m_fw.cpp **** }
+ 833               		.stabn	68,0,224,.LM78-.LFBB11
+ 834               	.LM78:
+ 835 02d8 CE01      		movw r24,r28
+ 836               	/* epilogue start */
+ 837 02da DF91      		pop r29
+ 838 02dc CF91      		pop r28
+ 839 02de 0895      		ret
+ 840               		.size	_ZN3LCMlsEj, .-_ZN3LCMlsEj
+ 841               	.Lscope11:
+ 842               		.stabs	"",36,0,0,.Lscope11-.LFBB11
+ 843               		.stabd	78,0,0
+ 844               		.section	.rodata.str1.1
+ 845               	.LC1:
+ 846 0003 2569 00   		.string	"%i"
+ 847               		.text
+ 848               		.stabs	"_ZN3LCMlsEi:F(0,111)",36,0,232,_ZN3LCMlsEi
+ 849               		.stabs	"this:P(0,129)",64,0,232,28
+ 850               	.global	_ZN3LCMlsEi
+ 851               		.type	_ZN3LCMlsEi, @function
+ 852               	_ZN3LCMlsEi:
+ 853               		.stabd	46,0,0
+ 225:lcm_so1602dtr_m_fw.cpp **** 
+ 226:lcm_so1602dtr_m_fw.cpp **** /**
+ 227:lcm_so1602dtr_m_fw.cpp ****  * Raccourci pour ajouter un entier signé à l'index en cours.
+ 228:lcm_so1602dtr_m_fw.cpp ****  *
+ 229:lcm_so1602dtr_m_fw.cpp ****  * @param i	Entier non signé à joindre (voir "LCM::write")
+ 230:lcm_so1602dtr_m_fw.cpp ****  * @return	Auto-référence
+ 231:lcm_so1602dtr_m_fw.cpp ****  */
+ 232:lcm_so1602dtr_m_fw.cpp **** LCM& LCM::operator<<(const int16_t i) {
+ 854               		.stabn	68,0,232,.LM79-.LFBB12
+ 855               	.LM79:
+ 856               	.LFBB12:
+ 857 02e0 CF93      		push r28
+ 858 02e2 DF93      		push r29
+ 859               	/* prologue: function */
+ 860               	/* frame size = 0 */
+ 861               	/* stack size = 2 */
+ 862               	.L__stack_usage = 2
+ 863 02e4 EC01      		movw r28,r24
+ 233:lcm_so1602dtr_m_fw.cpp **** 	sprintf(_buf, LCM_FW_INT_DEFFORMAT, i);
+ 864               		.stabn	68,0,233,.LM80-.LFBB12
+GAS LISTING /tmp/ccvZEsUJ.s 			page 21
+
+
+ 865               	.LM80:
+ 866 02e6 7F93      		push r23
+ 867 02e8 6F93      		push r22
+ 868 02ea 80E0      		ldi r24,lo8(.LC1)
+ 869 02ec 90E0      		ldi r25,hi8(.LC1)
+ 870 02ee 9F93      		push r25
+ 871 02f0 8F93      		push r24
+ 872 02f2 8F81      		ldd r24,Y+7
+ 873 02f4 8F93      		push r24
+ 874 02f6 8E81      		ldd r24,Y+6
+ 875 02f8 8F93      		push r24
+ 876 02fa 0E94 0000 		call sprintf
+ 234:lcm_so1602dtr_m_fw.cpp **** 	*this << _buf;
+ 877               		.stabn	68,0,234,.LM81-.LFBB12
+ 878               	.LM81:
+ 879 02fe 6E81      		ldd r22,Y+6
+ 880 0300 7F81      		ldd r23,Y+7
+ 881 0302 CE01      		movw r24,r28
+ 882 0304 0E94 0000 		call _ZN3LCMlsEPKc
+ 235:lcm_so1602dtr_m_fw.cpp **** 	
+ 236:lcm_so1602dtr_m_fw.cpp **** 	return *this;
+ 883               		.stabn	68,0,236,.LM82-.LFBB12
+ 884               	.LM82:
+ 885 0308 0F90      		pop __tmp_reg__
+ 886 030a 0F90      		pop __tmp_reg__
+ 887 030c 0F90      		pop __tmp_reg__
+ 888 030e 0F90      		pop __tmp_reg__
+ 889 0310 0F90      		pop __tmp_reg__
+ 890 0312 0F90      		pop __tmp_reg__
+ 237:lcm_so1602dtr_m_fw.cpp **** }
+ 891               		.stabn	68,0,237,.LM83-.LFBB12
+ 892               	.LM83:
+ 893 0314 CE01      		movw r24,r28
+ 894               	/* epilogue start */
+ 895 0316 DF91      		pop r29
+ 896 0318 CF91      		pop r28
+ 897 031a 0895      		ret
+ 898               		.size	_ZN3LCMlsEi, .-_ZN3LCMlsEi
+ 899               	.Lscope12:
+ 900               		.stabs	"",36,0,0,.Lscope12-.LFBB12
+ 901               		.stabd	78,0,0
+ 902               		.section	.rodata.str1.1
+ 903               	.LC2:
+ 904 0006 2563 00   		.string	"%c"
+ 905               		.text
+ 906               		.stabs	"_ZN3LCMlsEc:F(0,111)",36,0,245,_ZN3LCMlsEc
+ 907               		.stabs	"this:P(0,129)",64,0,245,28
+ 908               		.stabs	"c:P(0,114)",64,0,245,22
+ 909               	.global	_ZN3LCMlsEc
+ 910               		.type	_ZN3LCMlsEc, @function
+ 911               	_ZN3LCMlsEc:
+ 912               		.stabd	46,0,0
+ 238:lcm_so1602dtr_m_fw.cpp **** 
+ 239:lcm_so1602dtr_m_fw.cpp **** /**
+ 240:lcm_so1602dtr_m_fw.cpp ****  * Raccourci pour ajouter un entier signé à l'index en cours.
+ 241:lcm_so1602dtr_m_fw.cpp ****  *
+ 242:lcm_so1602dtr_m_fw.cpp ****  * @param i	Entier non signé à joindre (voir "LCM::write")
+GAS LISTING /tmp/ccvZEsUJ.s 			page 22
+
+
+ 243:lcm_so1602dtr_m_fw.cpp ****  * @return	Auto-référence
+ 244:lcm_so1602dtr_m_fw.cpp ****  */
+ 245:lcm_so1602dtr_m_fw.cpp **** LCM& LCM::operator<<(const char c) {
+ 913               		.stabn	68,0,245,.LM84-.LFBB13
+ 914               	.LM84:
+ 915               	.LFBB13:
+ 916 031c CF93      		push r28
+ 917 031e DF93      		push r29
+ 918               	/* prologue: function */
+ 919               	/* frame size = 0 */
+ 920               	/* stack size = 2 */
+ 921               	.L__stack_usage = 2
+ 922 0320 EC01      		movw r28,r24
+ 246:lcm_so1602dtr_m_fw.cpp **** 	sprintf(_buf, "%c", c);
+ 923               		.stabn	68,0,246,.LM85-.LFBB13
+ 924               	.LM85:
+ 925 0322 1F92      		push __zero_reg__
+ 926 0324 6F93      		push r22
+ 927 0326 80E0      		ldi r24,lo8(.LC2)
+ 928 0328 90E0      		ldi r25,hi8(.LC2)
+ 929 032a 9F93      		push r25
+ 930 032c 8F93      		push r24
+ 931 032e 8F81      		ldd r24,Y+7
+ 932 0330 8F93      		push r24
+ 933 0332 8E81      		ldd r24,Y+6
+ 934 0334 8F93      		push r24
+ 935 0336 0E94 0000 		call sprintf
+ 247:lcm_so1602dtr_m_fw.cpp **** 	*this << _buf;
+ 936               		.stabn	68,0,247,.LM86-.LFBB13
+ 937               	.LM86:
+ 938 033a 6E81      		ldd r22,Y+6
+ 939 033c 7F81      		ldd r23,Y+7
+ 940 033e CE01      		movw r24,r28
+ 941 0340 0E94 0000 		call _ZN3LCMlsEPKc
+ 248:lcm_so1602dtr_m_fw.cpp **** 	
+ 249:lcm_so1602dtr_m_fw.cpp **** 	return *this;
+ 942               		.stabn	68,0,249,.LM87-.LFBB13
+ 943               	.LM87:
+ 944 0344 0F90      		pop __tmp_reg__
+ 945 0346 0F90      		pop __tmp_reg__
+ 946 0348 0F90      		pop __tmp_reg__
+ 947 034a 0F90      		pop __tmp_reg__
+ 948 034c 0F90      		pop __tmp_reg__
+ 949 034e 0F90      		pop __tmp_reg__
+ 250:lcm_so1602dtr_m_fw.cpp **** }
+ 950               		.stabn	68,0,250,.LM88-.LFBB13
+ 951               	.LM88:
+ 952 0350 CE01      		movw r24,r28
+ 953               	/* epilogue start */
+ 954 0352 DF91      		pop r29
+ 955 0354 CF91      		pop r28
+ 956 0356 0895      		ret
+ 957               		.size	_ZN3LCMlsEc, .-_ZN3LCMlsEc
+ 958               	.Lscope13:
+ 959               		.stabs	"",36,0,0,.Lscope13-.LFBB13
+ 960               		.stabd	78,0,0
+ 961               		.stabs	"_ZN3LCMaSEPKc:F(0,113)",36,0,259,_ZN3LCMaSEPKc
+GAS LISTING /tmp/ccvZEsUJ.s 			page 23
+
+
+ 962               		.stabs	"this:P(0,129)",64,0,259,28
+ 963               		.stabs	"msg:P(0,113)",64,0,259,16
+ 964               	.global	_ZN3LCMaSEPKc
+ 965               		.type	_ZN3LCMaSEPKc, @function
+ 966               	_ZN3LCMaSEPKc:
+ 967               		.stabd	46,0,0
+ 251:lcm_so1602dtr_m_fw.cpp **** 
+ 252:lcm_so1602dtr_m_fw.cpp **** /**
+ 253:lcm_so1602dtr_m_fw.cpp ****  * Raccourci pour remplacer le contenu actuel par une chaîne (index 0) ou par
+ 254:lcm_so1602dtr_m_fw.cpp ****  * une chaîne spécifique selon la valeur de `_lpos' et `_lib'.
+ 255:lcm_so1602dtr_m_fw.cpp ****  *
+ 256:lcm_so1602dtr_m_fw.cpp ****  * @param msg	Chaîne à écrire (voir "LCM::write")
+ 257:lcm_so1602dtr_m_fw.cpp ****  * @return	Sous-chaîne à ajouter
+ 258:lcm_so1602dtr_m_fw.cpp ****  */
+ 259:lcm_so1602dtr_m_fw.cpp **** const char* LCM::operator=(const char* msg) {
+ 968               		.stabn	68,0,259,.LM89-.LFBB14
+ 969               	.LM89:
+ 970               	.LFBB14:
+ 971 0358 0F93      		push r16
+ 972 035a 1F93      		push r17
+ 973 035c CF93      		push r28
+ 974 035e DF93      		push r29
+ 975               	/* prologue: function */
+ 976               	/* frame size = 0 */
+ 977               	/* stack size = 4 */
+ 978               	.L__stack_usage = 4
+ 979 0360 EC01      		movw r28,r24
+ 980 0362 8B01      		movw r16,r22
+ 260:lcm_so1602dtr_m_fw.cpp **** 	if (msg == NULL) {
+ 981               		.stabn	68,0,260,.LM90-.LFBB14
+ 982               	.LM90:
+ 983 0364 6115      		cp r22,__zero_reg__
+ 984 0366 7105      		cpc r23,__zero_reg__
+ 985 0368 01F0      		breq .L51
+ 261:lcm_so1602dtr_m_fw.cpp **** 		return msg;
+ 262:lcm_so1602dtr_m_fw.cpp **** 	}
+ 263:lcm_so1602dtr_m_fw.cpp **** 	
+ 264:lcm_so1602dtr_m_fw.cpp **** 	write(msg, _li, !_lib);
+ 986               		.stabn	68,0,264,.LM91-.LFBB14
+ 987               	.LM91:
+ 988 036a 2885      		ldd r18,Y+8
+ 989 036c 81E0      		ldi r24,lo8(1)
+ 990 036e 2827      		eor r18,r24
+ 991 0370 4985      		ldd r20,Y+9
+ 992 0372 CE01      		movw r24,r28
+ 993 0374 0E94 0000 		call _ZN3LCM5writeEPKchb
+ 265:lcm_so1602dtr_m_fw.cpp **** 	if (_lib) {
+ 994               		.stabn	68,0,265,.LM92-.LFBB14
+ 995               	.LM92:
+ 996 0378 8885      		ldd r24,Y+8
+ 997 037a 8823      		tst r24
+ 998 037c 01F0      		breq .L51
+ 266:lcm_so1602dtr_m_fw.cpp **** 		_lib = false;
+ 999               		.stabn	68,0,266,.LM93-.LFBB14
+ 1000               	.LM93:
+ 1001 037e 1886      		std Y+8,__zero_reg__
+ 267:lcm_so1602dtr_m_fw.cpp **** 		_li = 0;
+GAS LISTING /tmp/ccvZEsUJ.s 			page 24
+
+
+ 1002               		.stabn	68,0,267,.LM94-.LFBB14
+ 1003               	.LM94:
+ 1004 0380 1986      		std Y+9,__zero_reg__
+ 1005               	.L51:
+ 268:lcm_so1602dtr_m_fw.cpp **** 	}
+ 269:lcm_so1602dtr_m_fw.cpp **** 	
+ 270:lcm_so1602dtr_m_fw.cpp **** 	return msg;
+ 271:lcm_so1602dtr_m_fw.cpp **** }
+ 1006               		.stabn	68,0,271,.LM95-.LFBB14
+ 1007               	.LM95:
+ 1008 0382 C801      		movw r24,r16
+ 1009               	/* epilogue start */
+ 1010 0384 DF91      		pop r29
+ 1011 0386 CF91      		pop r28
+ 1012 0388 1F91      		pop r17
+ 1013 038a 0F91      		pop r16
+ 1014 038c 0895      		ret
+ 1015               		.size	_ZN3LCMaSEPKc, .-_ZN3LCMaSEPKc
+ 1016               	.Lscope14:
+ 1017               		.stabs	"",36,0,0,.Lscope14-.LFBB14
+ 1018               		.stabd	78,0,0
+ 1019               		.stabs	"_ZN3LCMixEh:F(0,111)",36,0,279,_ZN3LCMixEh
+ 1020               		.stabs	"this:P(0,129)",64,0,279,24
+ 1021               		.stabs	"index:P(0,117)",64,0,279,22
+ 1022               	.global	_ZN3LCMixEh
+ 1023               		.type	_ZN3LCMixEh, @function
+ 1024               	_ZN3LCMixEh:
+ 1025               		.stabd	46,0,0
+ 272:lcm_so1602dtr_m_fw.cpp **** 
+ 273:lcm_so1602dtr_m_fw.cpp **** /**
+ 274:lcm_so1602dtr_m_fw.cpp ****  * Fait en sorte que le prochain operator= appelé écrira à un index spécifique.
+ 275:lcm_so1602dtr_m_fw.cpp ****  *
+ 276:lcm_so1602dtr_m_fw.cpp ****  * @param index		Index d'écriture pour le prochain operator=
+ 277:lcm_so1602dtr_m_fw.cpp ****  * @return		Auto-référence
+ 278:lcm_so1602dtr_m_fw.cpp ****  */
+ 279:lcm_so1602dtr_m_fw.cpp **** LCM& LCM::operator[](const uint8_t index) {
+ 1026               		.stabn	68,0,279,.LM96-.LFBB15
+ 1027               	.LM96:
+ 1028               	.LFBB15:
+ 1029               	/* prologue: function */
+ 1030               	/* frame size = 0 */
+ 1031               	/* stack size = 0 */
+ 1032               	.L__stack_usage = 0
+ 280:lcm_so1602dtr_m_fw.cpp **** 	if (index >= LCM_FW_TOT_CH) {
+ 1033               		.stabn	68,0,280,.LM97-.LFBB15
+ 1034               	.LM97:
+ 1035 038e 6032      		cpi r22,lo8(32)
+ 1036 0390 00F4      		brsh .L57
+ 281:lcm_so1602dtr_m_fw.cpp **** 		return *this;
+ 282:lcm_so1602dtr_m_fw.cpp **** 	}
+ 283:lcm_so1602dtr_m_fw.cpp **** 	
+ 284:lcm_so1602dtr_m_fw.cpp **** 	_li = index;
+ 1037               		.stabn	68,0,284,.LM98-.LFBB15
+ 1038               	.LM98:
+ 1039 0392 FC01      		movw r30,r24
+ 1040 0394 6187      		std Z+9,r22
+ 285:lcm_so1602dtr_m_fw.cpp **** 	_lib = true;
+GAS LISTING /tmp/ccvZEsUJ.s 			page 25
+
+
+ 1041               		.stabn	68,0,285,.LM99-.LFBB15
+ 1042               	.LM99:
+ 1043 0396 21E0      		ldi r18,lo8(1)
+ 1044 0398 2087      		std Z+8,r18
+ 1045               	.L57:
+ 286:lcm_so1602dtr_m_fw.cpp **** 	
+ 287:lcm_so1602dtr_m_fw.cpp **** 	return *this;
+ 288:lcm_so1602dtr_m_fw.cpp **** }
+ 1046               		.stabn	68,0,288,.LM100-.LFBB15
+ 1047               	.LM100:
+ 1048 039a 0895      		ret
+ 1049               		.size	_ZN3LCMixEh, .-_ZN3LCMixEh
+ 1050               	.Lscope15:
+ 1051               		.stabs	"",36,0,0,.Lscope15-.LFBB15
+ 1052               		.stabd	78,0,0
+ 1053               		.stabs	"_ZN3LCMmIEh:F(0,4)",36,0,296,_ZN3LCMmIEh
+ 1054               		.stabs	"this:P(0,129)",64,0,296,28
+ 1055               		.stabs	"rem:P(0,65)",64,0,296,22
+ 1056               	.global	_ZN3LCMmIEh
+ 1057               		.type	_ZN3LCMmIEh, @function
+ 1058               	_ZN3LCMmIEh:
+ 1059               		.stabd	46,0,0
+ 289:lcm_so1602dtr_m_fw.cpp **** 
+ 290:lcm_so1602dtr_m_fw.cpp **** /**
+ 291:lcm_so1602dtr_m_fw.cpp ****  * Efface un ou plusieurs caractères avant l'index virtuel en utilisant le
+ 292:lcm_so1602dtr_m_fw.cpp ****  * caractère LCM_FW_CL_DEFCHAR.
+ 293:lcm_so1602dtr_m_fw.cpp ****  *
+ 294:lcm_so1602dtr_m_fw.cpp ****  * @param rem	Nombre de caractères à effacer.
+ 295:lcm_so1602dtr_m_fw.cpp ****  */
+ 296:lcm_so1602dtr_m_fw.cpp **** void LCM::operator-=(uint8_t rem) {
+ 1060               		.stabn	68,0,296,.LM101-.LFBB16
+ 1061               	.LM101:
+ 1062               	.LFBB16:
+ 1063 039c 0F93      		push r16
+ 1064 039e 1F93      		push r17
+ 1065 03a0 CF93      		push r28
+ 1066 03a2 DF93      		push r29
+ 1067               	/* prologue: function */
+ 1068               	/* frame size = 0 */
+ 1069               	/* stack size = 4 */
+ 1070               	.L__stack_usage = 4
+ 1071 03a4 EC01      		movw r28,r24
+ 1072               	.LBB12:
+ 297:lcm_so1602dtr_m_fw.cpp **** 	if (rem > _last_index) {
+ 1073               		.stabn	68,0,297,.LM102-.LFBB16
+ 1074               	.LM102:
+ 1075 03a6 8881      		ld r24,Y
+ 1076 03a8 062F      		mov r16,r22
+ 1077 03aa 8617      		cp r24,r22
+ 1078 03ac 00F4      		brsh .L59
+ 1079 03ae 082F      		mov r16,r24
+ 1080               	.L59:
+ 298:lcm_so1602dtr_m_fw.cpp **** 		rem = _last_index;
+ 299:lcm_so1602dtr_m_fw.cpp **** 	}
+ 300:lcm_so1602dtr_m_fw.cpp **** 	
+ 301:lcm_so1602dtr_m_fw.cpp **** 	_last_index -= rem;
+ 1081               		.stabn	68,0,301,.LM103-.LFBB16
+GAS LISTING /tmp/ccvZEsUJ.s 			page 26
+
+
+ 1082               	.LM103:
+ 1083 03b0 801B      		sub r24,r16
+ 1084 03b2 8883      		st Y,r24
+ 1085               	.LBB13:
+ 302:lcm_so1602dtr_m_fw.cpp **** 	for (uint8_t i = 0; i < rem; ++i) {
+ 1086               		.stabn	68,0,302,.LM104-.LFBB16
+ 1087               	.LM104:
+ 1088 03b4 10E0      		ldi r17,0
+ 1089               	.L60:
+ 1090               		.stabn	68,0,302,.LM105-.LFBB16
+ 1091               	.LM105:
+ 1092 03b6 1017      		cp r17,r16
+ 1093 03b8 01F0      		breq .L62
+ 303:lcm_so1602dtr_m_fw.cpp **** 		put(LCM_FW_CL_DEFCHAR);
+ 1094               		.stabn	68,0,303,.LM106-.LFBB16
+ 1095               	.LM106:
+ 1096 03ba 60E2      		ldi r22,lo8(32)
+ 1097 03bc CE01      		movw r24,r28
+ 1098 03be 0E94 0000 		call _ZN3LCM3putEc
+ 302:lcm_so1602dtr_m_fw.cpp **** 	for (uint8_t i = 0; i < rem; ++i) {
+ 1099               		.stabn	68,0,302,.LM107-.LFBB16
+ 1100               	.LM107:
+ 1101 03c2 1F5F      		subi r17,lo8(-(1))
+ 1102 03c4 00C0      		rjmp .L60
+ 1103               	.L62:
+ 1104               	.LBE13:
+ 304:lcm_so1602dtr_m_fw.cpp **** 	}
+ 305:lcm_so1602dtr_m_fw.cpp **** 	_last_index -= rem;
+ 1105               		.stabn	68,0,305,.LM108-.LFBB16
+ 1106               	.LM108:
+ 1107 03c6 8881      		ld r24,Y
+ 1108 03c8 811B      		sub r24,r17
+ 1109 03ca 8883      		st Y,r24
+ 1110               	/* epilogue start */
+ 1111               	.LBE12:
+ 306:lcm_so1602dtr_m_fw.cpp **** }
+ 1112               		.stabn	68,0,306,.LM109-.LFBB16
+ 1113               	.LM109:
+ 1114 03cc DF91      		pop r29
+ 1115 03ce CF91      		pop r28
+ 1116 03d0 1F91      		pop r17
+ 1117 03d2 0F91      		pop r16
+ 1118 03d4 0895      		ret
+ 1119               		.size	_ZN3LCMmIEh, .-_ZN3LCMmIEh
+ 1120               		.stabs	"i:r(0,65)",64,0,302,17
+ 1121               		.stabn	192,0,0,.LBB13-.LFBB16
+ 1122               		.stabn	224,0,0,.LBE13-.LFBB16
+ 1123               	.Lscope16:
+ 1124               		.stabs	"",36,0,0,.Lscope16-.LFBB16
+ 1125               		.stabd	78,0,0
+ 1126               		.stabs	"",100,0,0,.Letext0
+ 1127               	.Letext0:
+ 1128               		.ident	"GCC: (GNU) 4.8.2"
+ 1129               	.global __do_copy_data
+GAS LISTING /tmp/ccvZEsUJ.s 			page 27
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 lcm_so1602dtr_m_fw.cpp
+     /tmp/ccvZEsUJ.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccvZEsUJ.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccvZEsUJ.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccvZEsUJ.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccvZEsUJ.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccvZEsUJ.s:120    .text:0000000000000000 _ZN3LCMC2EPVhS1_
+     /tmp/ccvZEsUJ.s:120    .text:0000000000000000 _ZN3LCMC1EPVhS1_
+     /tmp/ccvZEsUJ.s:179    .text:000000000000003c _ZN3LCMD2Ev
+     /tmp/ccvZEsUJ.s:179    .text:000000000000003c _ZN3LCMD1Ev
+     /tmp/ccvZEsUJ.s:207    .text:0000000000000046 _ZN3LCM8en_blinkEb
+     /tmp/ccvZEsUJ.s:248    .text:0000000000000068 _ZN3LCM6en_curEb
+     /tmp/ccvZEsUJ.s:288    .text:0000000000000088 _ZN3LCM12set_bc_indexEh
+     /tmp/ccvZEsUJ.s:331    .text:00000000000000a2 _ZN3LCM5clearEv
+     /tmp/ccvZEsUJ.s:374    .text:00000000000000be _ZN3LCM5writeEPKchb
+     /tmp/ccvZEsUJ.s:627    .text:000000000000020e _ZN3LCM8build_ccEhPKh
+     /tmp/ccvZEsUJ.s:699    .text:0000000000000258 _ZN3LCMlsEPKc
+     /tmp/ccvZEsUJ.s:738    .text:0000000000000274 _ZN3LCM3putEc
+     /tmp/ccvZEsUJ.s:794    .text:00000000000002a4 _ZN3LCMlsEj
+     /tmp/ccvZEsUJ.s:852    .text:00000000000002e0 _ZN3LCMlsEi
+     /tmp/ccvZEsUJ.s:911    .text:000000000000031c _ZN3LCMlsEc
+     /tmp/ccvZEsUJ.s:966    .text:0000000000000358 _ZN3LCMaSEPKc
+     /tmp/ccvZEsUJ.s:1024   .text:000000000000038e _ZN3LCMixEh
+     /tmp/ccvZEsUJ.s:1058   .text:000000000000039c _ZN3LCMmIEh
+
+UNDEFINED SYMBOLS
+_Z14lcmd_init_4bitPVhS0_
+_Z13lcmd_entry_smhhPVh
+malloc
+free
+_Z16lcmd_disp_on_offhhhPVh
+_Z17lcmd_ddr_set_addrhPVh
+_Z15lcmd_disp_clearPVh
+_Z9cp_strlenPKc
+_Z10lcmd_writehPVh
+_Z17lcmd_cgr_set_addrhPVh
+sprintf
+__do_copy_data

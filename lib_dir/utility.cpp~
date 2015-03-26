@@ -41,7 +41,7 @@ void Utility::transmissionUSART ( uint8_t donnee ) {
 	UDR0 = donnee;
 }
 
-unsigned char Utility::usart_receive( void )
+unsigned char usart_receive( void )
 {
   unsigned char data;
   while ((UCSR0A & 0x80) == 0x00); // Wait for till the data arrives data

@@ -1,0 +1,1557 @@
+GAS LISTING /tmp/cczpOvZM.s 			page 1
+
+
+   1               		.file	"memoire_24.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/prophete/PROJETFINALINF1995/robot-poly/lib_dir/",100,0,4,.Ltext0
+   8               		.stabs	"memoire_24.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/cczpOvZM.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,121,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,122,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,123,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,124,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,125,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,126,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,128,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,129,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,142,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,147,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,159,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,164,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,169,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,174,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,179,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,184,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,192,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,199,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,213,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,218,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,223,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,228,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,233,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,238,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,246,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,253,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,273,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,278,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
+ 104               		.stabs	"Memoire24CXXX:Tt(0,89)=s1m_adresse_peripherique:/0(0,59):_ZN13Memoire24CXXX22m_adresse_per
+ 105               		.stabs	"_ZN13Memoire24CXXXD2Ev:F(0,4)",36,0,64,_ZN13Memoire24CXXXD2Ev
+ 106               		.stabs	"this:P(0,98)=k(0,92)",64,0,64,24
+ 107               	.global	_ZN13Memoire24CXXXD2Ev
+ 108               		.type	_ZN13Memoire24CXXXD2Ev, @function
+ 109               	_ZN13Memoire24CXXXD2Ev:
+ 110               		.stabd	46,0,0
+   1:memoire_24.cpp **** /******************************************************************************/
+   2:memoire_24.cpp **** /*                                                                            */
+   3:memoire_24.cpp **** /* Ce code a ete modifie par Matthew Khouzam et Jerome Collin                 */
+   4:memoire_24.cpp **** /* Pour le cours de INF1995                                                   */
+GAS LISTING /tmp/cczpOvZM.s 			page 3
+
+
+   5:memoire_24.cpp **** /*                                                                            */
+   6:memoire_24.cpp **** /******************************************************************************/
+   7:memoire_24.cpp **** 
+   8:memoire_24.cpp **** /******************************************************************************/
+   9:memoire_24.cpp **** /*                                                                            */
+  10:memoire_24.cpp **** /*                               memoire_24.cpp                               */
+  11:memoire_24.cpp **** /*                                                                            */
+  12:memoire_24.cpp **** /* Exemple de lecture sequentielle et aleatoire et d'eriture aleatoire et en  */
+  13:memoire_24.cpp **** /* mode page en utilisant une memoire I2C 24LC256 avec l'interface materiel   */
+  14:memoire_24.cpp **** /* d'un microcontroleur Atmel atmega16. Les broches d'adresses A0, A1 et A2   */
+  15:memoire_24.cpp **** /* de la memoire sont reliees a la masse. SDA est relie a la broche PC1 du    */
+  16:memoire_24.cpp **** /* microcontroleur, SCL a PC0 et WP n'est pas relie.                          */
+  17:memoire_24.cpp **** /*                                                                            */
+  18:memoire_24.cpp **** /* Le code de l'eeprom est : bits 7, 6, 5 et 4 = 1 0 1 0                      */
+  19:memoire_24.cpp **** /* L'adresse physique est  : bits 3, 2, 1 = 0 0 0                             */
+  20:memoire_24.cpp **** /* Le code d'ecriture est   : bit 0 a 1 = lecture et bit 0 a 0 = ecriture     */
+  21:memoire_24.cpp **** /* Le code de controle est 0xa1 pour une lecture et 0xa0 pour une ecriture    */
+  22:memoire_24.cpp **** /*                                                                            */
+  23:memoire_24.cpp **** /*  Pour les microcontroleurs Atmel, l'interface I2C est appelee TWI.         */
+  24:memoire_24.cpp **** /*                                                                            */
+  25:memoire_24.cpp **** /*     Compilateur            AVR-GCC                                         */
+  26:memoire_24.cpp **** /*     Microcontroleur        Atmel atmega16                                  */
+  27:memoire_24.cpp **** /*                                                                            */
+  28:memoire_24.cpp **** /******************************************************************************/
+  29:memoire_24.cpp **** 
+  30:memoire_24.cpp **** #ifndef F_CPU
+  31:memoire_24.cpp **** /* fournir un avertissement mais non une erreur */
+  32:memoire_24.cpp **** # warning "F_CPU pas defini pour 'memoire_24.cpp'"
+  33:memoire_24.cpp **** # define F_CPU 8000000UL
+  34:memoire_24.cpp **** #endif
+  35:memoire_24.cpp **** 
+  36:memoire_24.cpp **** #include "memoire_24.h"
+  37:memoire_24.cpp **** 
+  38:memoire_24.cpp **** uint8_t Memoire24CXXX::m_adresse_peripherique = 0xA0;
+  39:memoire_24.cpp **** 
+  40:memoire_24.cpp **** /******************************************************************************/
+  41:memoire_24.cpp **** /* void Memoire24CXXX::Memoire24CXXX()                                        */
+  42:memoire_24.cpp **** /*                                                                            */
+  43:memoire_24.cpp **** /*      Constructeur: ajuste la taille de la page et procede a                */
+  44:memoire_24.cpp **** /*                    l'initialisation                                        */
+  45:memoire_24.cpp **** /*                                                                            */
+  46:memoire_24.cpp **** /* Parametre d'entree  : aucun                                                */
+  47:memoire_24.cpp **** /* Parametre de sortie : aucun                                                */
+  48:memoire_24.cpp **** /******************************************************************************/
+  49:memoire_24.cpp **** Memoire24CXXX::Memoire24CXXX()
+  50:memoire_24.cpp ****   : PAGE_SIZE(128)
+  51:memoire_24.cpp **** {
+  52:memoire_24.cpp ****    init();
+  53:memoire_24.cpp **** }
+  54:memoire_24.cpp **** 
+  55:memoire_24.cpp **** 
+  56:memoire_24.cpp **** /******************************************************************************/
+  57:memoire_24.cpp **** /* void Memoire24CXXX::~Memoire24CXXX()                                       */
+  58:memoire_24.cpp **** /*                                                                            */
+  59:memoire_24.cpp **** /*      Destructeur: ne fait rien                                             */
+  60:memoire_24.cpp **** /*                                                                            */
+  61:memoire_24.cpp **** /* Parametre d'entree  : aucun                                                */
+GAS LISTING /tmp/cczpOvZM.s 			page 4
+
+
+  62:memoire_24.cpp **** /* Parametre de sortie : aucun                                                */
+  63:memoire_24.cpp **** /******************************************************************************/
+  64:memoire_24.cpp **** Memoire24CXXX::~Memoire24CXXX()
+ 111               		.stabn	68,0,64,.LM0-.LFBB1
+ 112               	.LM0:
+ 113               	.LFBB1:
+ 114               	/* prologue: function */
+ 115               	/* frame size = 0 */
+ 116               	/* stack size = 0 */
+ 117               	.L__stack_usage = 0
+ 118 0000 0895      		ret
+ 119               		.size	_ZN13Memoire24CXXXD2Ev, .-_ZN13Memoire24CXXXD2Ev
+ 120               	.Lscope1:
+ 121               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 122               		.stabd	78,0,0
+ 123               	.global	_ZN13Memoire24CXXXD1Ev
+ 124               		.set	_ZN13Memoire24CXXXD1Ev,_ZN13Memoire24CXXXD2Ev
+ 125               		.stabs	"_ZN13Memoire24CXXX4initEv:F(0,4)",36,0,78,_ZN13Memoire24CXXX4initEv
+ 126               		.stabs	"this:P(0,98)",64,0,78,24
+ 127               	.global	_ZN13Memoire24CXXX4initEv
+ 128               		.type	_ZN13Memoire24CXXX4initEv, @function
+ 129               	_ZN13Memoire24CXXX4initEv:
+ 130               		.stabd	46,0,0
+  65:memoire_24.cpp **** {
+  66:memoire_24.cpp ****    // rien a faire... 
+  67:memoire_24.cpp **** }
+  68:memoire_24.cpp **** 
+  69:memoire_24.cpp **** 
+  70:memoire_24.cpp **** /******************************************************************************/
+  71:memoire_24.cpp **** /* void Memoire24CXXX::init(void)                                             */
+  72:memoire_24.cpp **** /*                                                                            */
+  73:memoire_24.cpp **** /*      Initialisation du port serie et de l'horloge de l'interface I2C       */
+  74:memoire_24.cpp **** /*                                                                            */
+  75:memoire_24.cpp **** /* Parametre d'entree  : aucun                                                */
+  76:memoire_24.cpp **** /* Parametre de sortie : aucun                                                */
+  77:memoire_24.cpp **** /******************************************************************************/
+  78:memoire_24.cpp **** void Memoire24CXXX::init()
+  79:memoire_24.cpp **** {
+ 131               		.stabn	68,0,79,.LM1-.LFBB2
+ 132               	.LM1:
+ 133               	.LFBB2:
+ 134               	/* prologue: function */
+ 135               	/* frame size = 0 */
+ 136               	/* stack size = 0 */
+ 137               	.L__stack_usage = 0
+ 138               	.LBB5:
+ 139               	.LBB6:
+  80:memoire_24.cpp ****    choisir_banc(0);
+  81:memoire_24.cpp ****    // Initialisation de l'horloge de l'interface I2C
+  82:memoire_24.cpp ****    TWSR = 0;
+  83:memoire_24.cpp ****    // prediviseur
+  84:memoire_24.cpp ****    TWBR =  (F_CPU / 100000UL - 16) / 2;
+  85:memoire_24.cpp **** 
+  86:memoire_24.cpp **** }
+  87:memoire_24.cpp **** 
+  88:memoire_24.cpp **** /******************************************************************************/
+  89:memoire_24.cpp **** /* uint8_t Memoire24CXXX::choisir_banc(const uint8_t banc)                    */
+GAS LISTING /tmp/cczpOvZM.s 			page 5
+
+
+  90:memoire_24.cpp **** /*                                                                            */
+  91:memoire_24.cpp **** /*      Choisir un banc de memoire                                            */
+  92:memoire_24.cpp **** /*                                                                            */
+  93:memoire_24.cpp **** /* Parametre d'entree  : uint8_t banc - le banc de memoire a choisir          */
+  94:memoire_24.cpp **** /* Parametre de sortie : uint8_t      - rv si c'est un succes, 255 si echec   */
+  95:memoire_24.cpp **** /******************************************************************************/
+  96:memoire_24.cpp **** uint8_t Memoire24CXXX::choisir_banc(const uint8_t banc)
+  97:memoire_24.cpp **** {
+  98:memoire_24.cpp ****    uint8_t temp = banc & 0x03;
+  99:memoire_24.cpp ****    uint8_t rv = 255;
+ 100:memoire_24.cpp ****    if(banc == temp)
+ 101:memoire_24.cpp ****    {
+ 102:memoire_24.cpp ****       Memoire24CXXX::m_adresse_peripherique = (0xA0 | ( banc << 1 ));
+ 140               		.stabn	68,0,102,.LM2-.LFBB2
+ 141               	.LM2:
+ 142 0002 80EA      		ldi r24,lo8(-96)
+ 143 0004 8093 0000 		sts _ZN13Memoire24CXXX22m_adresse_peripheriqueE,r24
+ 144               	.LBE6:
+ 145               	.LBE5:
+  82:memoire_24.cpp ****    TWSR = 0;
+ 146               		.stabn	68,0,82,.LM3-.LFBB2
+ 147               	.LM3:
+ 148 0008 1092 B900 		sts 185,__zero_reg__
+  84:memoire_24.cpp ****    TWBR =  (F_CPU / 100000UL - 16) / 2;
+ 149               		.stabn	68,0,84,.LM4-.LFBB2
+ 150               	.LM4:
+ 151 000c 80E2      		ldi r24,lo8(32)
+ 152 000e 8093 B800 		sts 184,r24
+ 153 0012 0895      		ret
+ 154               		.size	_ZN13Memoire24CXXX4initEv, .-_ZN13Memoire24CXXX4initEv
+ 155               	.Lscope2:
+ 156               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 157               		.stabd	78,0,0
+ 158               		.stabs	"_ZN13Memoire24CXXXC2Ev:F(0,4)",36,0,49,_ZN13Memoire24CXXXC2Ev
+ 159               		.stabs	"this:P(0,98)",64,0,49,24
+ 160               	.global	_ZN13Memoire24CXXXC2Ev
+ 161               		.type	_ZN13Memoire24CXXXC2Ev, @function
+ 162               	_ZN13Memoire24CXXXC2Ev:
+ 163               		.stabd	46,0,0
+  49:memoire_24.cpp **** Memoire24CXXX::Memoire24CXXX()
+ 164               		.stabn	68,0,49,.LM5-.LFBB3
+ 165               	.LM5:
+ 166               	.LFBB3:
+ 167               	/* prologue: function */
+ 168               	/* frame size = 0 */
+ 169               	/* stack size = 0 */
+ 170               	.L__stack_usage = 0
+ 171               	.LBB7:
+  50:memoire_24.cpp ****   : PAGE_SIZE(128)
+ 172               		.stabn	68,0,50,.LM6-.LFBB3
+ 173               	.LM6:
+ 174 0014 20E8      		ldi r18,lo8(-128)
+ 175 0016 FC01      		movw r30,r24
+ 176 0018 2083      		st Z,r18
+  52:memoire_24.cpp ****    init();
+ 177               		.stabn	68,0,52,.LM7-.LFBB3
+ 178               	.LM7:
+GAS LISTING /tmp/cczpOvZM.s 			page 6
+
+
+ 179 001a 0C94 0000 		jmp _ZN13Memoire24CXXX4initEv
+ 180               	.LBE7:
+ 181               		.size	_ZN13Memoire24CXXXC2Ev, .-_ZN13Memoire24CXXXC2Ev
+ 182               	.Lscope3:
+ 183               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 184               		.stabd	78,0,0
+ 185               	.global	_ZN13Memoire24CXXXC1Ev
+ 186               		.set	_ZN13Memoire24CXXXC1Ev,_ZN13Memoire24CXXXC2Ev
+ 187               		.stabs	"_ZN13Memoire24CXXX12choisir_bancEh:F(0,59)",36,0,96,_ZN13Memoire24CXXX12choisir_bancEh
+ 188               		.stabs	"banc:P(0,90)",64,0,96,24
+ 189               	.global	_ZN13Memoire24CXXX12choisir_bancEh
+ 190               		.type	_ZN13Memoire24CXXX12choisir_bancEh, @function
+ 191               	_ZN13Memoire24CXXX12choisir_bancEh:
+ 192               		.stabd	46,0,0
+  97:memoire_24.cpp **** {
+ 193               		.stabn	68,0,97,.LM8-.LFBB4
+ 194               	.LM8:
+ 195               	.LFBB4:
+ 196               	/* prologue: function */
+ 197               	/* frame size = 0 */
+ 198               	/* stack size = 0 */
+ 199               	.L__stack_usage = 0
+ 200               	.LBB8:
+  98:memoire_24.cpp ****    uint8_t temp = banc & 0x03;
+ 201               		.stabn	68,0,98,.LM9-.LFBB4
+ 202               	.LM9:
+ 203 001e 982F      		mov r25,r24
+ 204 0020 9370      		andi r25,lo8(3)
+ 100:memoire_24.cpp ****    if(banc == temp)
+ 205               		.stabn	68,0,100,.LM10-.LFBB4
+ 206               	.LM10:
+ 207 0022 8913      		cpse r24,r25
+ 208 0024 00C0      		rjmp .L7
+ 209               		.stabn	68,0,102,.LM11-.LFBB4
+ 210               	.LM11:
+ 211 0026 880F      		lsl r24
+ 212 0028 806A      		ori r24,lo8(-96)
+ 213 002a 8093 0000 		sts _ZN13Memoire24CXXX22m_adresse_peripheriqueE,r24
+ 214 002e 0895      		ret
+ 215               	.L7:
+  99:memoire_24.cpp ****    uint8_t rv = 255;
+ 216               		.stabn	68,0,99,.LM12-.LFBB4
+ 217               	.LM12:
+ 218 0030 8FEF      		ldi r24,lo8(-1)
+ 219               	.LBE8:
+ 103:memoire_24.cpp ****       rv = Memoire24CXXX::m_adresse_peripherique;
+ 104:memoire_24.cpp ****    }
+ 105:memoire_24.cpp ****    return rv;
+ 106:memoire_24.cpp **** }
+ 220               		.stabn	68,0,106,.LM13-.LFBB4
+ 221               	.LM13:
+ 222 0032 0895      		ret
+ 223               		.size	_ZN13Memoire24CXXX12choisir_bancEh, .-_ZN13Memoire24CXXX12choisir_bancEh
+ 224               		.stabs	"rv:r(0,59)",64,0,99,24
+ 225               		.stabn	192,0,0,.LBB8-.LFBB4
+ 226               		.stabn	224,0,0,.LBE8-.LFBB4
+ 227               	.Lscope4:
+GAS LISTING /tmp/cczpOvZM.s 			page 7
+
+
+ 228               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 229               		.stabd	78,0,0
+ 230               		.stabs	"_ZN13Memoire24CXXX7lectureEjPh:F(0,59)",36,0,150,_ZN13Memoire24CXXX7lectureEjPh
+ 231               		.stabs	"this:P(0,98)",64,0,150,24
+ 232               		.stabs	"donnee:P(0,95)",64,0,150,20
+ 233               	.global	_ZN13Memoire24CXXX7lectureEjPh
+ 234               		.type	_ZN13Memoire24CXXX7lectureEjPh, @function
+ 235               	_ZN13Memoire24CXXX7lectureEjPh:
+ 236               		.stabd	46,0,0
+ 107:memoire_24.cpp **** 
+ 108:memoire_24.cpp **** 
+ 109:memoire_24.cpp **** /******************************************************************************/
+ 110:memoire_24.cpp **** /*                Lecture sequentielle de l'eeprom I2C                        */
+ 111:memoire_24.cpp **** /*                                                                            */
+ 112:memoire_24.cpp **** /* Le microcontroleur est en mode maitre. Il realise un acquittement (ACK) de */
+ 113:memoire_24.cpp **** /* la memoire a la fin de chaque lecture a l'exception de la derniere ou il   */
+ 114:memoire_24.cpp **** /* n'acquitte pas la reception (NACK) pour que la memoire place la ligne SDA  */
+ 115:memoire_24.cpp **** /* a un niveau haut et libere le bus et il transmet ensuite la condition      */
+ 116:memoire_24.cpp **** /* d'arret.                                                                   */
+ 117:memoire_24.cpp **** /*                                                                            */
+ 118:memoire_24.cpp **** /* a la premiere etape on verifie si le cycle d'ecriture precedent est        */
+ 119:memoire_24.cpp **** /* termine. On transmet :                                                     */
+ 120:memoire_24.cpp **** /*   - La condition de depart                                                 */
+ 121:memoire_24.cpp **** /*   - Une donnee de controle : code de la memoire + adresse physique         */
+ 122:memoire_24.cpp **** /*                              + commande d'ecriture                         */
+ 123:memoire_24.cpp **** /*   Si le cycle d'ecriture precedent est en cours on recommence la sequence  */
+ 124:memoire_24.cpp **** /*                                                                            */
+ 125:memoire_24.cpp **** /* A la deuxieme etape on transmet :                                          */
+ 126:memoire_24.cpp **** /*   - La condition de depart                                                 */
+ 127:memoire_24.cpp **** /*   - Une donnee de controle : code de la memoire + adresses physique        */
+ 128:memoire_24.cpp **** /*                              + commande d'ecriture                         */
+ 129:memoire_24.cpp **** /*   - L'adresse : poids fort suivi du poids faible                           */
+ 130:memoire_24.cpp **** /*                                                                            */
+ 131:memoire_24.cpp **** /* A la troisieme etape on transmet :                                         */
+ 132:memoire_24.cpp **** /*   - La condition de depart                                                 */
+ 133:memoire_24.cpp **** /*   - Une donnee de controle : code de la memoire + adresse physique         */
+ 134:memoire_24.cpp **** /*                              + commande de lecture                         */
+ 135:memoire_24.cpp **** /*                                                                            */
+ 136:memoire_24.cpp **** /* A la quatrieme etape on realise une lecture sequentielle :                 */
+ 137:memoire_24.cpp **** /*   - Lecture en boucle - Commande de depart de transmission avec ACK,       */
+ 138:memoire_24.cpp **** /*                         attente de reception et lecture de la donnee       */
+ 139:memoire_24.cpp **** /*   - Derniere lecture  - Commande de depart de transmission avec NACK,      */
+ 140:memoire_24.cpp **** /*                         attente de reception et lecture de la donnee       */
+ 141:memoire_24.cpp **** /*                         Le NACK indique a la memoire la fin du transfert   */
+ 142:memoire_24.cpp **** /*   - Transmission de la condition d'arret                                   */
+ 143:memoire_24.cpp **** /*                                                                            */
+ 144:memoire_24.cpp **** /* Parametres d'entree  : uint16_t adresse - adresse de debut de lecture      */
+ 145:memoire_24.cpp **** /*                        int longueur     - nombre de donnees a retourner    */
+ 146:memoire_24.cpp **** /*                                           (variante de la 2eme procedure)  */
+ 147:memoire_24.cpp **** /* Parametres de sortie : uint8_t *donnee  - donnees lues                     */
+ 148:memoire_24.cpp **** /*                                                                            */
+ 149:memoire_24.cpp **** /******************************************************************************/
+ 150:memoire_24.cpp **** uint8_t Memoire24CXXX::lecture(const uint16_t adresse, uint8_t *donnee)
+ 151:memoire_24.cpp **** {
+ 237               		.stabn	68,0,151,.LM14-.LFBB5
+ 238               	.LM14:
+ 239               	.LFBB5:
+GAS LISTING /tmp/cczpOvZM.s 			page 8
+
+
+ 240               	/* prologue: function */
+ 241               	/* frame size = 0 */
+ 242               	/* stack size = 0 */
+ 243               	.L__stack_usage = 0
+ 244               	.LBB9:
+ 152:memoire_24.cpp ****   uint8_t rv = 0;
+ 153:memoire_24.cpp **** 
+ 154:memoire_24.cpp ****   //______________ Attente de la fin d'un cycle d'ecriture ______________
+ 155:memoire_24.cpp ****   for (;;)
+ 156:memoire_24.cpp ****   {
+ 157:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
+ 245               		.stabn	68,0,157,.LM15-.LFBB5
+ 246               	.LM15:
+ 247 0034 94EA      		ldi r25,lo8(-92)
+ 158:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)   // Attente de fin de transmission
+ 159:memoire_24.cpp ****       ;
+ 160:memoire_24.cpp **** 
+ 161:memoire_24.cpp ****     TWDR = m_adresse_peripherique;    //controle - bit 0 a 0, ecriture
+ 162:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWEN);     // R. a Z., interrupt. - Depart de transm.
+ 248               		.stabn	68,0,162,.LM16-.LFBB5
+ 249               	.LM16:
+ 250 0036 24E8      		ldi r18,lo8(-124)
+ 251               	.L15:
+ 157:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
+ 252               		.stabn	68,0,157,.LM17-.LFBB5
+ 253               	.LM17:
+ 254 0038 9093 BC00 		sts 188,r25
+ 255               	.L11:
+ 158:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)   // Attente de fin de transmission
+ 256               		.stabn	68,0,158,.LM18-.LFBB5
+ 257               	.LM18:
+ 258 003c 8091 BC00 		lds r24,188
+ 259 0040 87FF      		sbrs r24,7
+ 260 0042 00C0      		rjmp .L11
+ 161:memoire_24.cpp ****     TWDR = m_adresse_peripherique;    //controle - bit 0 a 0, ecriture
+ 261               		.stabn	68,0,161,.LM19-.LFBB5
+ 262               	.LM19:
+ 263 0044 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 264 0048 8093 BB00 		sts 187,r24
+ 265               		.stabn	68,0,162,.LM20-.LFBB5
+ 266               	.LM20:
+ 267 004c 2093 BC00 		sts 188,r18
+ 268               	.L13:
+ 163:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)   // Attente de fin de transmission
+ 269               		.stabn	68,0,163,.LM21-.LFBB5
+ 270               	.LM21:
+ 271 0050 8091 BC00 		lds r24,188
+ 272 0054 87FF      		sbrs r24,7
+ 273 0056 00C0      		rjmp .L13
+ 164:memoire_24.cpp ****       ;
+ 165:memoire_24.cpp ****     if (TWSR==0x18)         // 0x18 = cycle d'ecriture termine
+ 274               		.stabn	68,0,165,.LM22-.LFBB5
+ 275               	.LM22:
+ 276 0058 8091 B900 		lds r24,185
+ 277 005c 8831      		cpi r24,lo8(24)
+ 278 005e 01F4      		brne .L15
+ 166:memoire_24.cpp ****        break;
+GAS LISTING /tmp/cczpOvZM.s 			page 9
+
+
+ 167:memoire_24.cpp ****   }
+ 168:memoire_24.cpp **** 
+ 169:memoire_24.cpp ****   //_______________ Transmission de la condition de depart ________________
+ 170:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);     // Condition de depart
+ 279               		.stabn	68,0,170,.LM23-.LFBB5
+ 280               	.LM23:
+ 281 0060 84EA      		ldi r24,lo8(-92)
+ 282 0062 8093 BC00 		sts 188,r24
+ 283               	.L17:
+ 171:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 284               		.stabn	68,0,171,.LM24-.LFBB5
+ 285               	.LM24:
+ 286 0066 8091 BC00 		lds r24,188
+ 287 006a 87FF      		sbrs r24,7
+ 288 006c 00C0      		rjmp .L17
+ 172:memoire_24.cpp ****     ;
+ 173:memoire_24.cpp **** 
+ 174:memoire_24.cpp ****   //__________________ Transmission du code de controle ___________________
+ 175:memoire_24.cpp ****   TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
+ 289               		.stabn	68,0,175,.LM25-.LFBB5
+ 290               	.LM25:
+ 291 006e 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 292 0072 8093 BB00 		sts 187,r24
+ 176:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);       // R. a Z., interrupt. - Depart de transm.
+ 293               		.stabn	68,0,176,.LM26-.LFBB5
+ 294               	.LM26:
+ 295 0076 84E8      		ldi r24,lo8(-124)
+ 296 0078 8093 BC00 		sts 188,r24
+ 297               	.L19:
+ 177:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
+ 298               		.stabn	68,0,177,.LM27-.LFBB5
+ 299               	.LM27:
+ 300 007c 8091 BC00 		lds r24,188
+ 301 0080 87FF      		sbrs r24,7
+ 302 0082 00C0      		rjmp .L19
+ 178:memoire_24.cpp ****     ;
+ 179:memoire_24.cpp **** 
+ 180:memoire_24.cpp ****   //______________ Transmission du poids fort de l'adresse ________________
+ 181:memoire_24.cpp ****   TWDR =  ( adresse >> 8 );            // 8 bits de poids fort de l'addresse
+ 303               		.stabn	68,0,181,.LM28-.LFBB5
+ 304               	.LM28:
+ 305 0084 7093 BB00 		sts 187,r23
+ 182:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);       // R. a Z., interrupt. - Depart de transm.
+ 306               		.stabn	68,0,182,.LM29-.LFBB5
+ 307               	.LM29:
+ 308 0088 84E8      		ldi r24,lo8(-124)
+ 309 008a 8093 BC00 		sts 188,r24
+ 310               	.L21:
+ 183:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
+ 311               		.stabn	68,0,183,.LM30-.LFBB5
+ 312               	.LM30:
+ 313 008e 8091 BC00 		lds r24,188
+ 314 0092 87FF      		sbrs r24,7
+ 315 0094 00C0      		rjmp .L21
+ 184:memoire_24.cpp ****      ;
+ 185:memoire_24.cpp **** 
+ 186:memoire_24.cpp ****   //_____________ Transmission du poids faible de l'adresse _______________
+GAS LISTING /tmp/cczpOvZM.s 			page 10
+
+
+ 187:memoire_24.cpp ****   TWDR = adresse;                      // 8 bits de poids faible de l'addresse
+ 316               		.stabn	68,0,187,.LM31-.LFBB5
+ 317               	.LM31:
+ 318 0096 6093 BB00 		sts 187,r22
+ 188:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);       // R.ï¿½Z., interrupt. - Depart de transm.
+ 319               		.stabn	68,0,188,.LM32-.LFBB5
+ 320               	.LM32:
+ 321 009a 84E8      		ldi r24,lo8(-124)
+ 322 009c 8093 BC00 		sts 188,r24
+ 323               	.L23:
+ 189:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
+ 324               		.stabn	68,0,189,.LM33-.LFBB5
+ 325               	.LM33:
+ 326 00a0 8091 BC00 		lds r24,188
+ 327 00a4 87FF      		sbrs r24,7
+ 328 00a6 00C0      		rjmp .L23
+ 329               	.L25:
+ 190:memoire_24.cpp ****     ;
+ 191:memoire_24.cpp **** 
+ 192:memoire_24.cpp ****   //_______________ Transmission de la condition de depart ________________
+ 193:memoire_24.cpp ****   //  TWCR = _BV(TWINT) | _BV(TWSTO) | _BV(TWEN);    // Condition de fin
+ 194:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 330               		.stabn	68,0,194,.LM34-.LFBB5
+ 331               	.LM34:
+ 332 00a8 8091 BC00 		lds r24,188
+ 333 00ac 87FF      		sbrs r24,7
+ 334 00ae 00C0      		rjmp .L25
+ 195:memoire_24.cpp ****     ;
+ 196:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);
+ 335               		.stabn	68,0,196,.LM35-.LFBB5
+ 336               	.LM35:
+ 337 00b0 84EA      		ldi r24,lo8(-92)
+ 338 00b2 8093 BC00 		sts 188,r24
+ 339               	.L27:
+ 197:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 340               		.stabn	68,0,197,.LM36-.LFBB5
+ 341               	.LM36:
+ 342 00b6 8091 BC00 		lds r24,188
+ 343 00ba 87FF      		sbrs r24,7
+ 344 00bc 00C0      		rjmp .L27
+ 198:memoire_24.cpp ****     ;
+ 199:memoire_24.cpp **** 
+ 200:memoire_24.cpp ****   //__________________ Transmission du code de controle ___________________
+ 201:memoire_24.cpp ****   TWDR =  m_adresse_peripherique + 1;   // Controle - bit 0 a 1 lecture 
+ 345               		.stabn	68,0,201,.LM37-.LFBB5
+ 346               	.LM37:
+ 347 00be 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 348 00c2 8F5F      		subi r24,lo8(-(1))
+ 349 00c4 8093 BB00 		sts 187,r24
+ 202:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
+ 350               		.stabn	68,0,202,.LM38-.LFBB5
+ 351               	.LM38:
+ 352 00c8 84E8      		ldi r24,lo8(-124)
+ 353 00ca 8093 BC00 		sts 188,r24
+ 354               	.L29:
+ 203:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 355               		.stabn	68,0,203,.LM39-.LFBB5
+GAS LISTING /tmp/cczpOvZM.s 			page 11
+
+
+ 356               	.LM39:
+ 357 00ce 8091 BC00 		lds r24,188
+ 358 00d2 87FF      		sbrs r24,7
+ 359 00d4 00C0      		rjmp .L29
+ 204:memoire_24.cpp ****     ;
+ 205:memoire_24.cpp **** 
+ 206:memoire_24.cpp ****   //________________________ Lecture de l'eeprom __________________________
+ 207:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);     // R.ï¿½Z., interrupt. - Depart de transm.+NACK
+ 360               		.stabn	68,0,207,.LM40-.LFBB5
+ 361               	.LM40:
+ 362 00d6 84E8      		ldi r24,lo8(-124)
+ 363 00d8 8093 BC00 		sts 188,r24
+ 364               	.L31:
+ 208:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)   // Attente de fin de transmission
+ 365               		.stabn	68,0,208,.LM41-.LFBB5
+ 366               	.LM41:
+ 367 00dc 8091 BC00 		lds r24,188
+ 368 00e0 87FF      		sbrs r24,7
+ 369 00e2 00C0      		rjmp .L31
+ 209:memoire_24.cpp ****     ;
+ 210:memoire_24.cpp ****   *donnee = TWDR;
+ 370               		.stabn	68,0,210,.LM42-.LFBB5
+ 371               	.LM42:
+ 372 00e4 8091 BB00 		lds r24,187
+ 373 00e8 FA01      		movw r30,r20
+ 374 00ea 8083      		st Z,r24
+ 211:memoire_24.cpp **** 
+ 212:memoire_24.cpp ****   //________________ Transmission de la condition d'arret _________________
+ 213:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTO) | _BV(TWEN);
+ 375               		.stabn	68,0,213,.LM43-.LFBB5
+ 376               	.LM43:
+ 377 00ec 84E9      		ldi r24,lo8(-108)
+ 378 00ee 8093 BC00 		sts 188,r24
+ 379               	.LBE9:
+ 214:memoire_24.cpp ****   return rv;
+ 215:memoire_24.cpp **** }
+ 380               		.stabn	68,0,215,.LM44-.LFBB5
+ 381               	.LM44:
+ 382 00f2 80E0      		ldi r24,0
+ 383 00f4 0895      		ret
+ 384               		.size	_ZN13Memoire24CXXX7lectureEjPh, .-_ZN13Memoire24CXXX7lectureEjPh
+ 385               	.Lscope5:
+ 386               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 387               		.stabd	78,0,0
+ 388               		.stabs	"_ZN13Memoire24CXXX7lectureEjPhh:F(0,59)",36,0,218,_ZN13Memoire24CXXX7lectureEjPhh
+ 389               		.stabs	"this:P(0,98)",64,0,219,24
+ 390               		.stabs	"longueur:P(0,59)",64,0,219,18
+ 391               	.global	_ZN13Memoire24CXXX7lectureEjPhh
+ 392               		.type	_ZN13Memoire24CXXX7lectureEjPhh, @function
+ 393               	_ZN13Memoire24CXXX7lectureEjPhh:
+ 394               		.stabd	46,0,0
+ 216:memoire_24.cpp **** 
+ 217:memoire_24.cpp **** 
+ 218:memoire_24.cpp **** uint8_t Memoire24CXXX::lecture(const uint16_t adresse, uint8_t *donnee,
+ 219:memoire_24.cpp ****                                uint8_t longueur)
+ 220:memoire_24.cpp **** {
+ 395               		.stabn	68,0,220,.LM45-.LFBB6
+GAS LISTING /tmp/cczpOvZM.s 			page 12
+
+
+ 396               	.LM45:
+ 397               	.LFBB6:
+ 398               	/* prologue: function */
+ 399               	/* frame size = 0 */
+ 400               	/* stack size = 0 */
+ 401               	.L__stack_usage = 0
+ 402               	.LBB10:
+ 221:memoire_24.cpp ****   uint8_t twcr;
+ 222:memoire_24.cpp **** 
+ 223:memoire_24.cpp ****   //______________ Attente de la fin d'un cycle d'ecriture ______________
+ 224:memoire_24.cpp ****   for (;;)
+ 225:memoire_24.cpp ****   {
+ 226:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
+ 403               		.stabn	68,0,226,.LM46-.LFBB6
+ 404               	.LM46:
+ 405 00f6 94EA      		ldi r25,lo8(-92)
+ 227:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0) ;   // Attente de fin de transmission
+ 228:memoire_24.cpp **** 
+ 229:memoire_24.cpp ****     TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
+ 230:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWEN);       // R. a Z., interrupt. - Depart de transm.
+ 406               		.stabn	68,0,230,.LM47-.LFBB6
+ 407               	.LM47:
+ 408 00f8 34E8      		ldi r19,lo8(-124)
+ 409               	.L38:
+ 226:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
+ 410               		.stabn	68,0,226,.LM48-.LFBB6
+ 411               	.LM48:
+ 412 00fa 9093 BC00 		sts 188,r25
+ 413               	.L34:
+ 227:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0) ;   // Attente de fin de transmission
+ 414               		.stabn	68,0,227,.LM49-.LFBB6
+ 415               	.LM49:
+ 416 00fe 8091 BC00 		lds r24,188
+ 417 0102 87FF      		sbrs r24,7
+ 418 0104 00C0      		rjmp .L34
+ 229:memoire_24.cpp ****     TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
+ 419               		.stabn	68,0,229,.LM50-.LFBB6
+ 420               	.LM50:
+ 421 0106 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 422 010a 8093 BB00 		sts 187,r24
+ 423               		.stabn	68,0,230,.LM51-.LFBB6
+ 424               	.LM51:
+ 425 010e 3093 BC00 		sts 188,r19
+ 426               	.L36:
+ 231:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
+ 427               		.stabn	68,0,231,.LM52-.LFBB6
+ 428               	.LM52:
+ 429 0112 8091 BC00 		lds r24,188
+ 430 0116 87FF      		sbrs r24,7
+ 431 0118 00C0      		rjmp .L36
+ 232:memoire_24.cpp ****        ;
+ 233:memoire_24.cpp ****     if (TWSR==0x18)                      // 0x18 = cycle d'ecriture termine
+ 432               		.stabn	68,0,233,.LM53-.LFBB6
+ 433               	.LM53:
+ 434 011a 8091 B900 		lds r24,185
+ 435 011e 8831      		cpi r24,lo8(24)
+ 436 0120 01F4      		brne .L38
+GAS LISTING /tmp/cczpOvZM.s 			page 13
+
+
+ 234:memoire_24.cpp ****        break;
+ 235:memoire_24.cpp ****   }
+ 236:memoire_24.cpp **** 
+ 237:memoire_24.cpp ****   //_______________ Transmission de la condition de depart ________________
+ 238:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);     // Condition de depart
+ 437               		.stabn	68,0,238,.LM54-.LFBB6
+ 438               	.LM54:
+ 439 0122 84EA      		ldi r24,lo8(-92)
+ 440 0124 8093 BC00 		sts 188,r24
+ 441               	.L40:
+ 239:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)    // Attente de fin de transmission
+ 442               		.stabn	68,0,239,.LM55-.LFBB6
+ 443               	.LM55:
+ 444 0128 8091 BC00 		lds r24,188
+ 445 012c 87FF      		sbrs r24,7
+ 446 012e 00C0      		rjmp .L40
+ 240:memoire_24.cpp ****      ;
+ 241:memoire_24.cpp **** 
+ 242:memoire_24.cpp ****   //__________________ Transmission du code de controle ___________________
+ 243:memoire_24.cpp ****   TWDR = m_adresse_peripherique;        // Controle - bit 0 a 0, ecriture
+ 447               		.stabn	68,0,243,.LM56-.LFBB6
+ 448               	.LM56:
+ 449 0130 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 450 0134 8093 BB00 		sts 187,r24
+ 244:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
+ 451               		.stabn	68,0,244,.LM57-.LFBB6
+ 452               	.LM57:
+ 453 0138 84E8      		ldi r24,lo8(-124)
+ 454 013a 8093 BC00 		sts 188,r24
+ 455               	.L42:
+ 245:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 456               		.stabn	68,0,245,.LM58-.LFBB6
+ 457               	.LM58:
+ 458 013e 8091 BC00 		lds r24,188
+ 459 0142 87FF      		sbrs r24,7
+ 460 0144 00C0      		rjmp .L42
+ 246:memoire_24.cpp ****      ;
+ 247:memoire_24.cpp **** 
+ 248:memoire_24.cpp ****   //______________ Transmission du poids fort de l'adresse ________________
+ 249:memoire_24.cpp ****   TWDR = adresse >> 8;                  // 8 bits de poids fort de l'addresse
+ 461               		.stabn	68,0,249,.LM59-.LFBB6
+ 462               	.LM59:
+ 463 0146 7093 BB00 		sts 187,r23
+ 250:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
+ 464               		.stabn	68,0,250,.LM60-.LFBB6
+ 465               	.LM60:
+ 466 014a 84E8      		ldi r24,lo8(-124)
+ 467 014c 8093 BC00 		sts 188,r24
+ 468               	.L44:
+ 251:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 469               		.stabn	68,0,251,.LM61-.LFBB6
+ 470               	.LM61:
+ 471 0150 8091 BC00 		lds r24,188
+ 472 0154 87FF      		sbrs r24,7
+ 473 0156 00C0      		rjmp .L44
+ 252:memoire_24.cpp ****      ;
+ 253:memoire_24.cpp **** 
+GAS LISTING /tmp/cczpOvZM.s 			page 14
+
+
+ 254:memoire_24.cpp ****   //_____________ Transmission du poids faible de l'adresse _______________
+ 255:memoire_24.cpp ****   TWDR = adresse;                       // 8 bits de poids faible de l'addresse
+ 474               		.stabn	68,0,255,.LM62-.LFBB6
+ 475               	.LM62:
+ 476 0158 6093 BB00 		sts 187,r22
+ 256:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
+ 477               		.stabn	68,0,256,.LM63-.LFBB6
+ 478               	.LM63:
+ 479 015c 84E8      		ldi r24,lo8(-124)
+ 480 015e 8093 BC00 		sts 188,r24
+ 481               	.L46:
+ 257:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 482               		.stabn	68,0,257,.LM64-.LFBB6
+ 483               	.LM64:
+ 484 0162 8091 BC00 		lds r24,188
+ 485 0166 87FF      		sbrs r24,7
+ 486 0168 00C0      		rjmp .L46
+ 258:memoire_24.cpp ****      ;
+ 259:memoire_24.cpp **** 
+ 260:memoire_24.cpp ****   //_______________ Transmission de la condition de depart ________________
+ 261:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
+ 487               		.stabn	68,0,261,.LM65-.LFBB6
+ 488               	.LM65:
+ 489 016a 84EA      		ldi r24,lo8(-92)
+ 490 016c 8093 BC00 		sts 188,r24
+ 491               	.L48:
+ 262:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 492               		.stabn	68,0,262,.LM66-.LFBB6
+ 493               	.LM66:
+ 494 0170 8091 BC00 		lds r24,188
+ 495 0174 87FF      		sbrs r24,7
+ 496 0176 00C0      		rjmp .L48
+ 263:memoire_24.cpp ****      ;
+ 264:memoire_24.cpp **** 
+ 265:memoire_24.cpp ****   //__________________ Transmission du code de controle ___________________
+ 266:memoire_24.cpp ****   TWDR =  m_adresse_peripherique + 1;  // Controle - bit 0 a 1, lecture
+ 497               		.stabn	68,0,266,.LM67-.LFBB6
+ 498               	.LM67:
+ 499 0178 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 500 017c 8F5F      		subi r24,lo8(-(1))
+ 501 017e 8093 BB00 		sts 187,r24
+ 267:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);       // R. a Z., interrupt. - Depart de transm.
+ 502               		.stabn	68,0,267,.LM68-.LFBB6
+ 503               	.LM68:
+ 504 0182 84E8      		ldi r24,lo8(-124)
+ 505 0184 8093 BC00 		sts 188,r24
+ 506               	.L51:
+ 268:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
+ 507               		.stabn	68,0,268,.LM69-.LFBB6
+ 508               	.LM69:
+ 509 0188 8091 BC00 		lds r24,188
+ 510 018c 87FF      		sbrs r24,7
+ 511 018e 00C0      		rjmp .L51
+ 512 0190 FA01      		movw r30,r20
+ 513               		.stabn	68,0,268,.LM70-.LFBB6
+ 514               	.LM70:
+ 515 0192 84EC      		ldi r24,lo8(-60)
+GAS LISTING /tmp/cczpOvZM.s 			page 15
+
+
+ 516               	.L50:
+ 269:memoire_24.cpp ****      ;
+ 270:memoire_24.cpp **** 
+ 271:memoire_24.cpp ****   //________________________ Lecture de l'eeprom __________________________
+ 272:memoire_24.cpp ****   // La memoire transmet 8 bits de donnee et le recepteur transmet un
+ 273:memoire_24.cpp ****   // acquittement (ACK). Si c'est la derniere donnee le recepteur n'acquitte
+ 274:memoire_24.cpp ****   // pas la reception (NACK) et il transmet ensuite la condition de stop.
+ 275:memoire_24.cpp ****   // Le ACK est realisee par le recepteur en placant TWEA a 1 au lieu de le
+ 276:memoire_24.cpp ****   // laisser a 0.
+ 277:memoire_24.cpp ****   for (twcr = _BV(TWINT) | _BV(TWEN) | _BV(TWEA) ; longueur > 0; longueur--)
+ 517               		.stabn	68,0,277,.LM71-.LFBB6
+ 518               	.LM71:
+ 519 0194 2223      		tst r18
+ 520 0196 01F0      		breq .L57
+ 278:memoire_24.cpp ****   {
+ 279:memoire_24.cpp ****       if (longueur == 1)
+ 521               		.stabn	68,0,279,.LM72-.LFBB6
+ 522               	.LM72:
+ 523 0198 2130      		cpi r18,lo8(1)
+ 524 019a 01F4      		brne .L52
+ 280:memoire_24.cpp ****          twcr = _BV(TWINT) | _BV(TWEN);  // Derniere donnee, NACK
+ 525               		.stabn	68,0,280,.LM73-.LFBB6
+ 526               	.LM73:
+ 527 019c 84E8      		ldi r24,lo8(-124)
+ 528               	.L52:
+ 281:memoire_24.cpp ****       TWCR = twcr;                       // R. a Z., interrupt. - Depart de transm.
+ 529               		.stabn	68,0,281,.LM74-.LFBB6
+ 530               	.LM74:
+ 531 019e 8093 BC00 		sts 188,r24
+ 532               	.L54:
+ 282:memoire_24.cpp ****       while ((TWCR & _BV(TWINT)) == 0) ; // Attente de fin de transmission
+ 533               		.stabn	68,0,282,.LM75-.LFBB6
+ 534               	.LM75:
+ 535 01a2 9091 BC00 		lds r25,188
+ 536 01a6 97FF      		sbrs r25,7
+ 537 01a8 00C0      		rjmp .L54
+ 283:memoire_24.cpp ****          *donnee++ = TWDR;               // Lecture
+ 538               		.stabn	68,0,283,.LM76-.LFBB6
+ 539               	.LM76:
+ 540 01aa 9091 BB00 		lds r25,187
+ 541 01ae 9193      		st Z+,r25
+ 277:memoire_24.cpp ****   for (twcr = _BV(TWINT) | _BV(TWEN) | _BV(TWEA) ; longueur > 0; longueur--)
+ 542               		.stabn	68,0,277,.LM77-.LFBB6
+ 543               	.LM77:
+ 544 01b0 2150      		subi r18,lo8(-(-1))
+ 545 01b2 00C0      		rjmp .L50
+ 546               	.L57:
+ 284:memoire_24.cpp ****   }
+ 285:memoire_24.cpp **** 
+ 286:memoire_24.cpp ****   //________________ Transmission de la condition d'arret _________________
+ 287:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTO) | _BV(TWEN);
+ 547               		.stabn	68,0,287,.LM78-.LFBB6
+ 548               	.LM78:
+ 549 01b4 84E9      		ldi r24,lo8(-108)
+ 550 01b6 8093 BC00 		sts 188,r24
+ 551               	.LBE10:
+ 288:memoire_24.cpp **** 
+GAS LISTING /tmp/cczpOvZM.s 			page 16
+
+
+ 289:memoire_24.cpp ****   return 0;
+ 290:memoire_24.cpp **** }
+ 552               		.stabn	68,0,290,.LM79-.LFBB6
+ 553               	.LM79:
+ 554 01ba 80E0      		ldi r24,0
+ 555 01bc 0895      		ret
+ 556               		.size	_ZN13Memoire24CXXX7lectureEjPhh, .-_ZN13Memoire24CXXX7lectureEjPhh
+ 557               		.stabs	"twcr:r(0,59)",64,0,221,24
+ 558               		.stabn	192,0,0,.LBB10-.LFBB6
+ 559               		.stabn	224,0,0,.LBE10-.LFBB6
+ 560               	.Lscope6:
+ 561               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 562               		.stabd	78,0,0
+ 563               		.stabs	"_ZN13Memoire24CXXX8ecritureEjh:F(0,59)",36,0,337,_ZN13Memoire24CXXX8ecritureEjh
+ 564               		.stabs	"this:P(0,98)",64,0,337,24
+ 565               		.stabs	"donnee:P(0,90)",64,0,337,20
+ 566               	.global	_ZN13Memoire24CXXX8ecritureEjh
+ 567               		.type	_ZN13Memoire24CXXX8ecritureEjh, @function
+ 568               	_ZN13Memoire24CXXX8ecritureEjh:
+ 569               		.stabd	46,0,0
+ 291:memoire_24.cpp **** 
+ 292:memoire_24.cpp **** 
+ 293:memoire_24.cpp **** /******************************************************************************/
+ 294:memoire_24.cpp **** /*                                                                            */
+ 295:memoire_24.cpp **** /*      ecriture d'un bloc de donnees en mode page dans l'eeprom I2C          */
+ 296:memoire_24.cpp **** /*                                                                            */
+ 297:memoire_24.cpp **** /* On ne peut ecrire qu'une seule page a la fois dans une eeprom et il faut   */
+ 298:memoire_24.cpp **** /* s'assurer de ne pas depasser cette limite pour eviter le repliement. Cette */
+ 299:memoire_24.cpp **** /* fonction se termine apres l'ecriture d'un bloc de donnees dans une seule   */
+ 300:memoire_24.cpp **** /* page. On doit la rappeler plusieurs fois si la longueur d'un bloc de       */
+ 301:memoire_24.cpp **** /* donnees depasse les limites d'une page.                                    */
+ 302:memoire_24.cpp **** /*                                                                            */
+ 303:memoire_24.cpp **** /* Les memoires eeprom i2c ne generent pas de signal d'acquittement pendant   */
+ 304:memoire_24.cpp **** /* un cycle d'ecriture. Pour s'assurer que l'eeprom est libre pour l'ecriture */
+ 305:memoire_24.cpp **** /* d'une ou de plusieurs nouvelles donnees, on transmet en boucle une         */
+ 306:memoire_24.cpp **** /* condition de depart et un octet de controle d'ecriture et on attend un     */
+ 307:memoire_24.cpp **** /* signal d'acquittement. On peut ensuite entreprendre la procedure           */
+ 308:memoire_24.cpp **** /* d'ecriture. Cette verification est placee au debut de la fonction car le   */
+ 309:memoire_24.cpp **** /* temps d'acces permet a la condition de stop precedente de se completer.    */
+ 310:memoire_24.cpp **** /*                                                                            */
+ 311:memoire_24.cpp **** /* A la premiere, etape on calcule la longueur maximum que l'on peut placer   */
+ 312:memoire_24.cpp **** /* dans une page afin d'eviter le repliement dans l'ecriture des donnees      */
+ 313:memoire_24.cpp **** /*                                                                            */
+ 314:memoire_24.cpp **** /* A la deuxieme etape, on verifie si le cycle d'ecriture precedent est       */
+ 315:memoire_24.cpp **** /* termine. On transmet :                                                     */
+ 316:memoire_24.cpp **** /*   - La condition de depart                                                 */
+ 317:memoire_24.cpp **** /*   - Une donnee de controle : code de la memoire + adresse physique         */
+ 318:memoire_24.cpp **** /*                              + commande d'ecriture                         */
+ 319:memoire_24.cpp **** /*   Si le cycle d'ecriture precedent est en cours on recommence la sequence  */
+ 320:memoire_24.cpp **** /*                                                                            */
+ 321:memoire_24.cpp **** /* A la troisieme etape, on transmet :                                        */
+ 322:memoire_24.cpp **** /*   - La condition de depart                                                 */
+ 323:memoire_24.cpp **** /*   - Une donnee de controle : code de la memoire + adresse physique         */
+ 324:memoire_24.cpp **** /*                              + commande d'ecriture                         */
+ 325:memoire_24.cpp **** /*                                                                            */
+ 326:memoire_24.cpp **** /* A la quatrieme etape, on ecrit la donnee :                                 */
+ 327:memoire_24.cpp **** /*   - Transmission de la donnee + commande de depart de transmission avec    */
+GAS LISTING /tmp/cczpOvZM.s 			page 17
+
+
+ 328:memoire_24.cpp **** /*     ACK et attente de fin de transmission.                                 */
+ 329:memoire_24.cpp **** /*   - Transmission de la condition d'arret pour demarrer le cycle d'ecriture */
+ 330:memoire_24.cpp **** /*                                                                            */
+ 331:memoire_24.cpp **** /* Parametres d'entree  : uint16_t adresse - adresse de debut de lecture      */
+ 332:memoire_24.cpp **** /*                        uint8_t *donnee  - donnees a ecrire dans l'eeprom   */
+ 333:memoire_24.cpp **** /*                        int longueur     - longueur du bloc de donnees      */
+ 334:memoire_24.cpp **** /* Parametre de sortie  : uint8_t rv       - nombre de donnees ecrites        */
+ 335:memoire_24.cpp **** /*                                                                            */
+ 336:memoire_24.cpp **** /******************************************************************************/
+ 337:memoire_24.cpp **** uint8_t Memoire24CXXX::ecriture(const uint16_t adresse, const uint8_t donnee)
+ 338:memoire_24.cpp **** {
+ 570               		.stabn	68,0,338,.LM80-.LFBB7
+ 571               	.LM80:
+ 572               	.LFBB7:
+ 573               	/* prologue: function */
+ 574               	/* frame size = 0 */
+ 575               	/* stack size = 0 */
+ 576               	.L__stack_usage = 0
+ 339:memoire_24.cpp ****   //______________ Attente de la fin d'un cycle d'ecriture ______________
+ 340:memoire_24.cpp ****   for ( ; ; )
+ 341:memoire_24.cpp ****   {
+ 342:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
+ 577               		.stabn	68,0,342,.LM81-.LFBB7
+ 578               	.LM81:
+ 579 01be 94EA      		ldi r25,lo8(-92)
+ 343:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 344:memoire_24.cpp ****        ;
+ 345:memoire_24.cpp **** 
+ 346:memoire_24.cpp ****     TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
+ 347:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWEN);       // R. a Z., interrupt. - Depart de transm.
+ 580               		.stabn	68,0,347,.LM82-.LFBB7
+ 581               	.LM82:
+ 582 01c0 24E8      		ldi r18,lo8(-124)
+ 583               	.L64:
+ 342:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
+ 584               		.stabn	68,0,342,.LM83-.LFBB7
+ 585               	.LM83:
+ 586 01c2 9093 BC00 		sts 188,r25
+ 587               	.L60:
+ 343:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 588               		.stabn	68,0,343,.LM84-.LFBB7
+ 589               	.LM84:
+ 590 01c6 8091 BC00 		lds r24,188
+ 591 01ca 87FF      		sbrs r24,7
+ 592 01cc 00C0      		rjmp .L60
+ 346:memoire_24.cpp ****     TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
+ 593               		.stabn	68,0,346,.LM85-.LFBB7
+ 594               	.LM85:
+ 595 01ce 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 596 01d2 8093 BB00 		sts 187,r24
+ 597               		.stabn	68,0,347,.LM86-.LFBB7
+ 598               	.LM86:
+ 599 01d6 2093 BC00 		sts 188,r18
+ 600               	.L62:
+ 348:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
+ 601               		.stabn	68,0,348,.LM87-.LFBB7
+ 602               	.LM87:
+GAS LISTING /tmp/cczpOvZM.s 			page 18
+
+
+ 603 01da 8091 BC00 		lds r24,188
+ 604 01de 87FF      		sbrs r24,7
+ 605 01e0 00C0      		rjmp .L62
+ 349:memoire_24.cpp ****        ;
+ 350:memoire_24.cpp **** 
+ 351:memoire_24.cpp ****     if (TWSR==0x18)
+ 606               		.stabn	68,0,351,.LM88-.LFBB7
+ 607               	.LM88:
+ 608 01e2 8091 B900 		lds r24,185
+ 609 01e6 8831      		cpi r24,lo8(24)
+ 610 01e8 01F4      		brne .L64
+ 352:memoire_24.cpp ****        break;               // 0x18 = cycle d'ecriture termine
+ 353:memoire_24.cpp ****   }
+ 354:memoire_24.cpp **** 
+ 355:memoire_24.cpp ****   //_______________ Transmission de la condition de depart ________________
+ 356:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);     // Condition de depart
+ 611               		.stabn	68,0,356,.LM89-.LFBB7
+ 612               	.LM89:
+ 613 01ea 84EA      		ldi r24,lo8(-92)
+ 614 01ec 8093 BC00 		sts 188,r24
+ 615               	.L66:
+ 357:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)    // Attente de fin de transmission
+ 616               		.stabn	68,0,357,.LM90-.LFBB7
+ 617               	.LM90:
+ 618 01f0 8091 BC00 		lds r24,188
+ 619 01f4 87FF      		sbrs r24,7
+ 620 01f6 00C0      		rjmp .L66
+ 358:memoire_24.cpp ****      ;
+ 359:memoire_24.cpp **** 
+ 360:memoire_24.cpp ****   //__________________ Transmission du code de controle ___________________
+ 361:memoire_24.cpp ****   TWDR = m_adresse_peripherique;        // Controle - bit 0 a 0, ecriture
+ 621               		.stabn	68,0,361,.LM91-.LFBB7
+ 622               	.LM91:
+ 623 01f8 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 624 01fc 8093 BB00 		sts 187,r24
+ 362:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
+ 625               		.stabn	68,0,362,.LM92-.LFBB7
+ 626               	.LM92:
+ 627 0200 84E8      		ldi r24,lo8(-124)
+ 628 0202 8093 BC00 		sts 188,r24
+ 629               	.L68:
+ 363:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 630               		.stabn	68,0,363,.LM93-.LFBB7
+ 631               	.LM93:
+ 632 0206 8091 BC00 		lds r24,188
+ 633 020a 87FF      		sbrs r24,7
+ 634 020c 00C0      		rjmp .L68
+ 364:memoire_24.cpp ****      ;
+ 365:memoire_24.cpp **** 
+ 366:memoire_24.cpp ****   //______________ Transmission du poids fort de l'adresse ________________
+ 367:memoire_24.cpp ****   TWDR = adresse >> 8;                 // 8 bits de poids fort de l'adresse
+ 635               		.stabn	68,0,367,.LM94-.LFBB7
+ 636               	.LM94:
+ 637 020e 7093 BB00 		sts 187,r23
+ 368:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
+ 638               		.stabn	68,0,368,.LM95-.LFBB7
+ 639               	.LM95:
+GAS LISTING /tmp/cczpOvZM.s 			page 19
+
+
+ 640 0212 84E8      		ldi r24,lo8(-124)
+ 641 0214 8093 BC00 		sts 188,r24
+ 642               	.L70:
+ 369:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 643               		.stabn	68,0,369,.LM96-.LFBB7
+ 644               	.LM96:
+ 645 0218 8091 BC00 		lds r24,188
+ 646 021c 87FF      		sbrs r24,7
+ 647 021e 00C0      		rjmp .L70
+ 370:memoire_24.cpp ****      ;
+ 371:memoire_24.cpp **** 
+ 372:memoire_24.cpp ****   //_____________ Transmission du poids faible de l'adresse _______________
+ 373:memoire_24.cpp ****   TWDR = adresse;                      // 8 bits de poids faible de l'adresse
+ 648               		.stabn	68,0,373,.LM97-.LFBB7
+ 649               	.LM97:
+ 650 0220 6093 BB00 		sts 187,r22
+ 374:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
+ 651               		.stabn	68,0,374,.LM98-.LFBB7
+ 652               	.LM98:
+ 653 0224 84E8      		ldi r24,lo8(-124)
+ 654 0226 8093 BC00 		sts 188,r24
+ 655               	.L72:
+ 375:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 656               		.stabn	68,0,375,.LM99-.LFBB7
+ 657               	.LM99:
+ 658 022a 8091 BC00 		lds r24,188
+ 659 022e 87FF      		sbrs r24,7
+ 660 0230 00C0      		rjmp .L72
+ 376:memoire_24.cpp ****      ;
+ 377:memoire_24.cpp **** 
+ 378:memoire_24.cpp ****   //______________________ Transmission de la donnee ______________________
+ 379:memoire_24.cpp ****   TWDR = donnee;
+ 661               		.stabn	68,0,379,.LM100-.LFBB7
+ 662               	.LM100:
+ 663 0232 4093 BB00 		sts 187,r20
+ 380:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
+ 664               		.stabn	68,0,380,.LM101-.LFBB7
+ 665               	.LM101:
+ 666 0236 84E8      		ldi r24,lo8(-124)
+ 667 0238 8093 BC00 		sts 188,r24
+ 668               	.L74:
+ 381:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 669               		.stabn	68,0,381,.LM102-.LFBB7
+ 670               	.LM102:
+ 671 023c 8091 BC00 		lds r24,188
+ 672 0240 87FF      		sbrs r24,7
+ 673 0242 00C0      		rjmp .L74
+ 382:memoire_24.cpp ****      ;
+ 383:memoire_24.cpp **** 
+ 384:memoire_24.cpp ****   //________________ Transmission de la condition d'arret _________________
+ 385:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTO) | _BV(TWEN);  // Demarrage du cycle d'ecriture
+ 674               		.stabn	68,0,385,.LM103-.LFBB7
+ 675               	.LM103:
+ 676 0244 84E9      		ldi r24,lo8(-108)
+ 677 0246 8093 BC00 		sts 188,r24
+ 386:memoire_24.cpp **** 
+ 387:memoire_24.cpp ****   return 0;
+GAS LISTING /tmp/cczpOvZM.s 			page 20
+
+
+ 388:memoire_24.cpp **** }
+ 678               		.stabn	68,0,388,.LM104-.LFBB7
+ 679               	.LM104:
+ 680 024a 80E0      		ldi r24,0
+ 681 024c 0895      		ret
+ 682               		.size	_ZN13Memoire24CXXX8ecritureEjh, .-_ZN13Memoire24CXXX8ecritureEjh
+ 683               	.Lscope7:
+ 684               		.stabs	"",36,0,0,.Lscope7-.LFBB7
+ 685               		.stabd	78,0,0
+ 686               		.stabs	"_ZN13Memoire24CXXX11ecrire_pageEjPhh:F(0,59)",36,0,410,_ZN13Memoire24CXXX11ecrire_pageEjPh
+ 687               		.stabs	"this:P(0,98)",64,0,411,24
+ 688               		.stabs	"adresse:P(0,99)=k(0,61)",64,0,410,22
+ 689               		.stabs	"longueur:P(0,90)",64,0,411,18
+ 690               	.global	_ZN13Memoire24CXXX11ecrire_pageEjPhh
+ 691               		.type	_ZN13Memoire24CXXX11ecrire_pageEjPhh, @function
+ 692               	_ZN13Memoire24CXXX11ecrire_pageEjPhh:
+ 693               		.stabd	46,0,0
+ 389:memoire_24.cpp **** 
+ 390:memoire_24.cpp **** 
+ 391:memoire_24.cpp **** uint8_t Memoire24CXXX::ecriture(const uint16_t adresse, uint8_t *donnee,
+ 392:memoire_24.cpp ****                                 const uint8_t longueur)
+ 393:memoire_24.cpp **** {
+ 394:memoire_24.cpp ****   uint8_t rv;
+ 395:memoire_24.cpp ****   uint16_t copieAdresse = adresse;
+ 396:memoire_24.cpp ****   uint8_t copieLongueur = longueur;
+ 397:memoire_24.cpp ****   do
+ 398:memoire_24.cpp ****   {
+ 399:memoire_24.cpp ****       rv = ecrire_page(copieAdresse, donnee, copieLongueur);
+ 400:memoire_24.cpp ****       copieAdresse += rv;      // On pointe une nouvelle page
+ 401:memoire_24.cpp ****       copieLongueur -= rv;     // On soustrait la partie ecrite precedemment
+ 402:memoire_24.cpp ****       donnee += rv;            // On avance le pointeur de donnees
+ 403:memoire_24.cpp ****   }
+ 404:memoire_24.cpp ****   while (copieLongueur > 0);
+ 405:memoire_24.cpp **** 
+ 406:memoire_24.cpp ****   return 0;
+ 407:memoire_24.cpp **** }
+ 408:memoire_24.cpp **** 
+ 409:memoire_24.cpp **** 
+ 410:memoire_24.cpp **** uint8_t Memoire24CXXX::ecrire_page(const uint16_t adresse, uint8_t *donnee,
+ 411:memoire_24.cpp ****                                    const uint8_t longueur)
+ 412:memoire_24.cpp **** {
+ 694               		.stabn	68,0,412,.LM105-.LFBB8
+ 695               	.LM105:
+ 696               	.LFBB8:
+ 697               	/* prologue: function */
+ 698               	/* frame size = 0 */
+ 699               	/* stack size = 0 */
+ 700               	.L__stack_usage = 0
+ 701               	.LBB11:
+ 413:memoire_24.cpp ****   uint16_t addr_fin;
+ 414:memoire_24.cpp ****   uint8_t rv = 0;
+ 415:memoire_24.cpp ****   uint8_t copieLongueur = longueur;
+ 416:memoire_24.cpp **** 
+ 417:memoire_24.cpp ****   // Les operations suivantes permettent de tenir compte des limites
+ 418:memoire_24.cpp ****   // de grandeur d'une page afin d'eviter le repliement dans l'ecriture
+ 419:memoire_24.cpp ****   // des donnees
+ 420:memoire_24.cpp **** 
+GAS LISTING /tmp/cczpOvZM.s 			page 21
+
+
+ 421:memoire_24.cpp ****   if (adresse + longueur < (adresse | (PAGE_SIZE - 1)))
+ 702               		.stabn	68,0,421,.LM106-.LFBB8
+ 703               	.LM106:
+ 704 024e FB01      		movw r30,r22
+ 705 0250 E20F      		add r30,r18
+ 706 0252 F11D      		adc r31,__zero_reg__
+ 707 0254 DC01      		movw r26,r24
+ 708 0256 2C91      		ld r18,X
+ 709 0258 30E0      		ldi r19,0
+ 710 025a 2150      		subi r18,1
+ 711 025c 3109      		sbc r19,__zero_reg__
+ 712 025e 262B      		or r18,r22
+ 713 0260 372B      		or r19,r23
+ 714 0262 E217      		cp r30,r18
+ 715 0264 F307      		cpc r31,r19
+ 716 0266 00F0      		brlo .L76
+ 422:memoire_24.cpp ****     addr_fin = adresse + longueur;
+ 423:memoire_24.cpp ****   else
+ 424:memoire_24.cpp ****     addr_fin = (adresse | (PAGE_SIZE - 1)) + 1;
+ 717               		.stabn	68,0,424,.LM107-.LFBB8
+ 718               	.LM107:
+ 719 0268 F901      		movw r30,r18
+ 720 026a 3196      		adiw r30,1
+ 721               	.L76:
+ 425:memoire_24.cpp ****   copieLongueur = addr_fin - adresse;
+ 722               		.stabn	68,0,425,.LM108-.LFBB8
+ 723               	.LM108:
+ 724 026c 8E2F      		mov r24,r30
+ 725 026e 861B      		sub r24,r22
+ 426:memoire_24.cpp **** 
+ 427:memoire_24.cpp **** 
+ 428:memoire_24.cpp ****   //______________ Attente de la fin d'un cycle d'ecriture ______________
+ 429:memoire_24.cpp ****   for ( ; ; )
+ 430:memoire_24.cpp ****   {
+ 431:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
+ 726               		.stabn	68,0,431,.LM109-.LFBB8
+ 727               	.LM109:
+ 728 0270 24EA      		ldi r18,lo8(-92)
+ 432:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0) ;   // Attente de fin de transmission
+ 433:memoire_24.cpp ****     TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
+ 434:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWEN);       // R. a Z., interrupt. - Depart de transm.
+ 729               		.stabn	68,0,434,.LM110-.LFBB8
+ 730               	.LM110:
+ 731 0272 34E8      		ldi r19,lo8(-124)
+ 732               	.L82:
+ 431:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
+ 733               		.stabn	68,0,431,.LM111-.LFBB8
+ 734               	.LM111:
+ 735 0274 2093 BC00 		sts 188,r18
+ 736               	.L78:
+ 432:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0) ;   // Attente de fin de transmission
+ 737               		.stabn	68,0,432,.LM112-.LFBB8
+ 738               	.LM112:
+ 739 0278 9091 BC00 		lds r25,188
+ 740 027c 97FF      		sbrs r25,7
+ 741 027e 00C0      		rjmp .L78
+ 433:memoire_24.cpp ****     TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
+GAS LISTING /tmp/cczpOvZM.s 			page 22
+
+
+ 742               		.stabn	68,0,433,.LM113-.LFBB8
+ 743               	.LM113:
+ 744 0280 9091 0000 		lds r25,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 745 0284 9093 BB00 		sts 187,r25
+ 746               		.stabn	68,0,434,.LM114-.LFBB8
+ 747               	.LM114:
+ 748 0288 3093 BC00 		sts 188,r19
+ 749               	.L80:
+ 435:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
+ 750               		.stabn	68,0,435,.LM115-.LFBB8
+ 751               	.LM115:
+ 752 028c 9091 BC00 		lds r25,188
+ 753 0290 97FF      		sbrs r25,7
+ 754 0292 00C0      		rjmp .L80
+ 436:memoire_24.cpp ****        ;
+ 437:memoire_24.cpp **** 
+ 438:memoire_24.cpp ****     if (TWSR==0x18)
+ 755               		.stabn	68,0,438,.LM116-.LFBB8
+ 756               	.LM116:
+ 757 0294 9091 B900 		lds r25,185
+ 758 0298 9831      		cpi r25,lo8(24)
+ 759 029a 01F4      		brne .L82
+ 439:memoire_24.cpp ****        break;               // 0x18 = cycle d'ecriture termine
+ 440:memoire_24.cpp ****   }
+ 441:memoire_24.cpp **** 
+ 442:memoire_24.cpp ****   //_______________ Transmission de la condition de depart ________________
+ 443:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);     // Condition de depart
+ 760               		.stabn	68,0,443,.LM117-.LFBB8
+ 761               	.LM117:
+ 762 029c 94EA      		ldi r25,lo8(-92)
+ 763 029e 9093 BC00 		sts 188,r25
+ 764               	.L84:
+ 444:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)       // Attente de fin de transmission
+ 765               		.stabn	68,0,444,.LM118-.LFBB8
+ 766               	.LM118:
+ 767 02a2 9091 BC00 		lds r25,188
+ 768 02a6 97FF      		sbrs r25,7
+ 769 02a8 00C0      		rjmp .L84
+ 445:memoire_24.cpp ****      ;
+ 446:memoire_24.cpp **** 
+ 447:memoire_24.cpp ****   //__________________ Transmission du code de controle ___________________
+ 448:memoire_24.cpp ****   TWDR = m_adresse_peripherique;        // Controle - bit 0 a 0, ecriture
+ 770               		.stabn	68,0,448,.LM119-.LFBB8
+ 771               	.LM119:
+ 772 02aa 9091 0000 		lds r25,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 773 02ae 9093 BB00 		sts 187,r25
+ 449:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
+ 774               		.stabn	68,0,449,.LM120-.LFBB8
+ 775               	.LM120:
+ 776 02b2 94E8      		ldi r25,lo8(-124)
+ 777 02b4 9093 BC00 		sts 188,r25
+ 778               	.L86:
+ 450:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 779               		.stabn	68,0,450,.LM121-.LFBB8
+ 780               	.LM121:
+ 781 02b8 9091 BC00 		lds r25,188
+ 782 02bc 97FF      		sbrs r25,7
+GAS LISTING /tmp/cczpOvZM.s 			page 23
+
+
+ 783 02be 00C0      		rjmp .L86
+ 451:memoire_24.cpp ****      ;
+ 452:memoire_24.cpp **** 
+ 453:memoire_24.cpp ****   //______________ Transmission du poids fort de l'adresse ________________
+ 454:memoire_24.cpp ****   TWDR = adresse >> 8;                  // 8 bits de poids fort de l'adresse
+ 784               		.stabn	68,0,454,.LM122-.LFBB8
+ 785               	.LM122:
+ 786 02c0 7093 BB00 		sts 187,r23
+ 455:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
+ 787               		.stabn	68,0,455,.LM123-.LFBB8
+ 788               	.LM123:
+ 789 02c4 94E8      		ldi r25,lo8(-124)
+ 790 02c6 9093 BC00 		sts 188,r25
+ 791               	.L88:
+ 456:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 792               		.stabn	68,0,456,.LM124-.LFBB8
+ 793               	.LM124:
+ 794 02ca 9091 BC00 		lds r25,188
+ 795 02ce 97FF      		sbrs r25,7
+ 796 02d0 00C0      		rjmp .L88
+ 457:memoire_24.cpp ****      ;
+ 458:memoire_24.cpp **** 
+ 459:memoire_24.cpp ****   //_____________ Transmission du poids faible de l'adresse _______________
+ 460:memoire_24.cpp ****   TWDR = adresse;                       // 8 bits de poids faible de l'adresse
+ 797               		.stabn	68,0,460,.LM125-.LFBB8
+ 798               	.LM125:
+ 799 02d2 6093 BB00 		sts 187,r22
+ 461:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
+ 800               		.stabn	68,0,461,.LM126-.LFBB8
+ 801               	.LM126:
+ 802 02d6 94E8      		ldi r25,lo8(-124)
+ 803 02d8 9093 BC00 		sts 188,r25
+ 804               	.L91:
+ 462:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
+ 805               		.stabn	68,0,462,.LM127-.LFBB8
+ 806               	.LM127:
+ 807 02dc 9091 BC00 		lds r25,188
+ 808 02e0 97FF      		sbrs r25,7
+ 809 02e2 00C0      		rjmp .L91
+ 810 02e4 FA01      		movw r30,r20
+ 811               		.stabn	68,0,462,.LM128-.LFBB8
+ 812               	.LM128:
+ 813 02e6 982F      		mov r25,r24
+ 463:memoire_24.cpp ****      ;
+ 464:memoire_24.cpp **** 
+ 465:memoire_24.cpp ****   //______________________ Transmission de la page ______________________
+ 466:memoire_24.cpp ****   for ( ; copieLongueur > 0; copieLongueur--)
+ 467:memoire_24.cpp ****   {
+ 468:memoire_24.cpp ****      TWDR = *donnee++;
+ 469:memoire_24.cpp ****      TWCR = _BV(TWINT) | _BV(TWEN);     // R. a Z., interrupt. - Depart de transm.
+ 814               		.stabn	68,0,469,.LM129-.LFBB8
+ 815               	.LM129:
+ 816 02e8 24E8      		ldi r18,lo8(-124)
+ 817               	.L90:
+ 466:memoire_24.cpp ****   for ( ; copieLongueur > 0; copieLongueur--)
+ 818               		.stabn	68,0,466,.LM130-.LFBB8
+ 819               	.LM130:
+GAS LISTING /tmp/cczpOvZM.s 			page 24
+
+
+ 820 02ea 9923      		tst r25
+ 821 02ec 01F0      		breq .L95
+ 468:memoire_24.cpp ****      TWDR = *donnee++;
+ 822               		.stabn	68,0,468,.LM131-.LFBB8
+ 823               	.LM131:
+ 824 02ee 3191      		ld r19,Z+
+ 825 02f0 3093 BB00 		sts 187,r19
+ 826               		.stabn	68,0,469,.LM132-.LFBB8
+ 827               	.LM132:
+ 828 02f4 2093 BC00 		sts 188,r18
+ 829               	.L93:
+ 470:memoire_24.cpp ****      while ((TWCR & _BV(TWINT)) == 0)   // Attente de fin de transmission
+ 830               		.stabn	68,0,470,.LM133-.LFBB8
+ 831               	.LM133:
+ 832 02f8 3091 BC00 		lds r19,188
+ 833 02fc 37FF      		sbrs r19,7
+ 834 02fe 00C0      		rjmp .L93
+ 466:memoire_24.cpp ****   for ( ; copieLongueur > 0; copieLongueur--)
+ 835               		.stabn	68,0,466,.LM134-.LFBB8
+ 836               	.LM134:
+ 837 0300 9150      		subi r25,lo8(-(-1))
+ 838 0302 00C0      		rjmp .L90
+ 839               	.L95:
+ 471:memoire_24.cpp ****         ;
+ 472:memoire_24.cpp ****      rv++;                              // Compteur de donnees
+ 473:memoire_24.cpp ****   }
+ 474:memoire_24.cpp **** 
+ 475:memoire_24.cpp ****   //________________ Transmission de la condition d'arrret _________________
+ 476:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTO) | _BV(TWEN); // Demarrage du cycle d'ecriture
+ 840               		.stabn	68,0,476,.LM135-.LFBB8
+ 841               	.LM135:
+ 842 0304 94E9      		ldi r25,lo8(-108)
+ 843 0306 9093 BC00 		sts 188,r25
+ 844               	.LBE11:
+ 477:memoire_24.cpp **** 
+ 478:memoire_24.cpp ****   return rv;
+ 479:memoire_24.cpp **** }...
+ 845               		.stabn	68,0,479,.LM136-.LFBB8
+ 846               	.LM136:
+ 847 030a 0895      		ret
+ 848               		.size	_ZN13Memoire24CXXX11ecrire_pageEjPhh, .-_ZN13Memoire24CXXX11ecrire_pageEjPhh
+ 849               		.stabs	"addr_fin:r(0,61)",64,0,413,30
+ 850               		.stabn	192,0,0,.LBB11-.LFBB8
+ 851               		.stabn	224,0,0,.LBE11-.LFBB8
+ 852               	.Lscope8:
+ 853               		.stabs	"",36,0,0,.Lscope8-.LFBB8
+ 854               		.stabd	78,0,0
+ 855               		.stabs	"_ZN13Memoire24CXXX8ecritureEjPhh:F(0,59)",36,0,391,_ZN13Memoire24CXXX8ecritureEjPhh
+ 856               		.stabs	"this:P(0,98)",64,0,392,14
+ 857               		.stabs	"donnee:P(0,95)",64,0,391,16
+ 858               		.stabs	"longueur:P(0,90)",64,0,392,18
+ 859               	.global	_ZN13Memoire24CXXX8ecritureEjPhh
+ 860               		.type	_ZN13Memoire24CXXX8ecritureEjPhh, @function
+ 861               	_ZN13Memoire24CXXX8ecritureEjPhh:
+ 862               		.stabd	46,0,0
+ 393:memoire_24.cpp **** {
+ 863               		.stabn	68,0,393,.LM137-.LFBB9
+GAS LISTING /tmp/cczpOvZM.s 			page 25
+
+
+ 864               	.LM137:
+ 865               	.LFBB9:
+ 866 030c DF92      		push r13
+ 867 030e EF92      		push r14
+ 868 0310 FF92      		push r15
+ 869 0312 0F93      		push r16
+ 870 0314 1F93      		push r17
+ 871 0316 CF93      		push r28
+ 872 0318 DF93      		push r29
+ 873               	/* prologue: function */
+ 874               	/* frame size = 0 */
+ 875               	/* stack size = 7 */
+ 876               	.L__stack_usage = 7
+ 877 031a 7C01      		movw r14,r24
+ 878 031c 8A01      		movw r16,r20
+ 879 031e D22E      		mov r13,r18
+ 880               	.LBB12:
+ 395:memoire_24.cpp ****   uint16_t copieAdresse = adresse;
+ 881               		.stabn	68,0,395,.LM138-.LFBB9
+ 882               	.LM138:
+ 883 0320 EB01      		movw r28,r22
+ 884               	.L98:
+ 399:memoire_24.cpp ****       rv = ecrire_page(copieAdresse, donnee, copieLongueur);
+ 885               		.stabn	68,0,399,.LM139-.LFBB9
+ 886               	.LM139:
+ 887 0322 2D2D      		mov r18,r13
+ 888 0324 A801      		movw r20,r16
+ 889 0326 BE01      		movw r22,r28
+ 890 0328 C701      		movw r24,r14
+ 891 032a 0E94 0000 		call _ZN13Memoire24CXXX11ecrire_pageEjPhh
+ 400:memoire_24.cpp ****       copieAdresse += rv;      // On pointe une nouvelle page
+ 892               		.stabn	68,0,400,.LM140-.LFBB9
+ 893               	.LM140:
+ 894 032e 482F      		mov r20,r24
+ 895 0330 50E0      		ldi r21,0
+ 896 0332 C40F      		add r28,r20
+ 897 0334 D51F      		adc r29,r21
+ 401:memoire_24.cpp ****       copieLongueur -= rv;     // On soustrait la partie ecrite precedemment
+ 898               		.stabn	68,0,401,.LM141-.LFBB9
+ 899               	.LM141:
+ 900 0336 D81A      		sub r13,r24
+ 402:memoire_24.cpp ****       donnee += rv;            // On avance le pointeur de donnees
+ 901               		.stabn	68,0,402,.LM142-.LFBB9
+ 902               	.LM142:
+ 903 0338 040F      		add r16,r20
+ 904 033a 151F      		adc r17,r21
+ 397:memoire_24.cpp ****   do
+ 905               		.stabn	68,0,397,.LM143-.LFBB9
+ 906               	.LM143:
+ 907 033c D110      		cpse r13,__zero_reg__
+ 908 033e 00C0      		rjmp .L98
+ 909               	.LBE12:
+ 407:memoire_24.cpp **** }
+ 910               		.stabn	68,0,407,.LM144-.LFBB9
+ 911               	.LM144:
+ 912 0340 80E0      		ldi r24,0
+ 913               	/* epilogue start */
+GAS LISTING /tmp/cczpOvZM.s 			page 26
+
+
+ 914 0342 DF91      		pop r29
+ 915 0344 CF91      		pop r28
+ 916 0346 1F91      		pop r17
+ 917 0348 0F91      		pop r16
+ 918 034a FF90      		pop r15
+ 919 034c EF90      		pop r14
+ 920 034e DF90      		pop r13
+ 921 0350 0895      		ret
+ 922               		.size	_ZN13Memoire24CXXX8ecritureEjPhh, .-_ZN13Memoire24CXXX8ecritureEjPhh
+ 923               		.stabs	"rv:r(0,59)",64,0,394,24
+ 924               		.stabs	"copieAdresse:r(0,61)",64,0,395,28
+ 925               		.stabs	"copieLongueur:r(0,59)",64,0,396,13
+ 926               		.stabn	192,0,0,.LBB12-.LFBB9
+ 927               		.stabn	224,0,0,.LBE12-.LFBB9
+ 928               	.Lscope9:
+ 929               		.stabs	"",36,0,0,.Lscope9-.LFBB9
+ 930               		.stabd	78,0,0
+ 931               	.global	_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 932               		.data
+ 933               		.type	_ZN13Memoire24CXXX22m_adresse_peripheriqueE, @object
+ 934               		.size	_ZN13Memoire24CXXX22m_adresse_peripheriqueE, 1
+ 935               	_ZN13Memoire24CXXX22m_adresse_peripheriqueE:
+ 936 0000 A0        		.byte	-96
+ 937               		.stabs	"_ZN13Memoire24CXXX22m_adresse_peripheriqueE:G(0,59)",32,0,38,0
+ 938               		.text
+ 939               		.stabs	"",100,0,0,.Letext0
+ 940               	.Letext0:
+ 941               		.ident	"GCC: (GNU) 4.8.2"
+ 942               	.global __do_copy_data
+GAS LISTING /tmp/cczpOvZM.s 			page 27
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 memoire_24.cpp
+     /tmp/cczpOvZM.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cczpOvZM.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cczpOvZM.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cczpOvZM.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cczpOvZM.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cczpOvZM.s:109    .text:0000000000000000 _ZN13Memoire24CXXXD2Ev
+     /tmp/cczpOvZM.s:109    .text:0000000000000000 _ZN13Memoire24CXXXD1Ev
+     /tmp/cczpOvZM.s:129    .text:0000000000000002 _ZN13Memoire24CXXX4initEv
+     /tmp/cczpOvZM.s:935    .data:0000000000000000 _ZN13Memoire24CXXX22m_adresse_peripheriqueE
+     /tmp/cczpOvZM.s:162    .text:0000000000000014 _ZN13Memoire24CXXXC2Ev
+     /tmp/cczpOvZM.s:162    .text:0000000000000014 _ZN13Memoire24CXXXC1Ev
+     /tmp/cczpOvZM.s:191    .text:000000000000001e _ZN13Memoire24CXXX12choisir_bancEh
+     /tmp/cczpOvZM.s:235    .text:0000000000000034 _ZN13Memoire24CXXX7lectureEjPh
+     /tmp/cczpOvZM.s:393    .text:00000000000000f6 _ZN13Memoire24CXXX7lectureEjPhh
+     /tmp/cczpOvZM.s:568    .text:00000000000001be _ZN13Memoire24CXXX8ecritureEjh
+     /tmp/cczpOvZM.s:692    .text:000000000000024e _ZN13Memoire24CXXX11ecrire_pageEjPhh
+     /tmp/cczpOvZM.s:861    .text:000000000000030c _ZN13Memoire24CXXX8ecritureEjPhh
+
+UNDEFINED SYMBOLS
+__do_copy_data

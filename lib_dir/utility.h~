@@ -21,8 +21,7 @@ public:
    bool button2IsPressed();
    void initialisationUSART (void);
    void transmissionUSART (uint8_t donnee);
-   void USART_Flush(void);
-   unsigned char usart_receive(void);
+   void USART_Flush(void)
    
 };
 
