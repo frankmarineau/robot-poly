@@ -70,7 +70,7 @@ CFLAGS=-I. $(INC) -g -mmcu=$(MCU) -O$(OPTLEVEL) \
 	-Wall                                        \
 	-Wa,-ahlms=$(firstword                  \
 	$(filter %.lst, $(<:.c=.lst)))
-CPPFLAGS += -DF_CPU=8000000UL
+
 
 # c++ specific flags
 CPPFLAGS=-fno-exceptions -std=c++98    \
@@ -78,7 +78,7 @@ CPPFLAGS=-fno-exceptions -std=c++98    \
 	$(filter %.lst, $(<:.cpp=.lst))\
 	$(filter %.lst, $(<:.cc=.lst)) \
 	$(filter %.lst, $(<:.C=.lst)))
-
+CPPFLAGS += -DF_CPU=8000000UL
 # assembler
 ASMFLAGS =-I. $(INC) -mmcu=$(MCU)        \
 	-x assembler-with-cpp            \
