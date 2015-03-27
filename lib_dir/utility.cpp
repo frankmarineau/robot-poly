@@ -86,4 +86,11 @@ bool Utility::button2IsPressed()
     return false;
 }
 
+// Permet de creer un délai de durée précise de plus de 30ms en loopant _delay_ms().
+void Utility::delay(uint16_t ms) {
+  for (uint16_t i = 0 ; i < ms ; i++) {
+    _delay_ms(1);
+  }
+}
+
 

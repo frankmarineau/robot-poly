@@ -1,4 +1,4 @@
-GAS LISTING /tmp/cczpOvZM.s 			page 1
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 1
 
 
    1               		.file	"memoire_24.cpp"
@@ -7,120 +7,18 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
    4               	__SREG__ = 0x3f
    5               	__tmp_reg__ = 0
    6               	__zero_reg__ = 1
-   7               		.stabs	"/home/prophete/PROJETFINALINF1995/robot-poly/lib_dir/",100,0,4,.Ltext0
-   8               		.stabs	"memoire_24.cpp",100,0,4,.Ltext0
-   9               		.text
-  10               	.Ltext0:
-  11               		.stabs	"gcc2_compiled.",60,0,0,0
-  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
-  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
-  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
-  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
-  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
-  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
-  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
-  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
-  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
-  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
-  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
-  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
-  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
-  25               		.stabs	"int:t(0,9)",128,0,0,0
-  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
-  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
-  28               		.stabs	"signed:t(0,9)",128,0,0,0
-  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
-  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
-  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
-  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
-  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
-  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
-  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
-  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
-  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
-  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
-  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
-  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
-  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
-  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
-  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
-  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
-  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
-  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
-  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
-  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
-  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
-  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
-  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
-  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
-  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
-  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
-  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
-  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
-  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
-GAS LISTING /tmp/cczpOvZM.s 			page 2
-
-
-  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
-  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
-  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
-  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
-  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
-  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
-  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
-  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
-  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
-  67               		.stabs	"void:t(0,4)",128,0,0,0
-  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
-  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
-  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
-  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
-  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,121,0
-  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,122,0
-  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,123,0
-  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,124,0
-  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,125,0
-  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,126,0
-  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,128,0
-  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,129,0
-  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,142,0
-  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,147,0
-  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,159,0
-  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,164,0
-  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,169,0
-  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,174,0
-  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,179,0
-  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,184,0
-  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,192,0
-  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,199,0
-  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,213,0
-  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,218,0
-  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,223,0
-  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,228,0
-  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,233,0
-  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,238,0
-  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,246,0
-  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,253,0
-  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,273,0
-  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,278,0
- 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
- 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
- 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
- 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
- 104               		.stabs	"Memoire24CXXX:Tt(0,89)=s1m_adresse_peripherique:/0(0,59):_ZN13Memoire24CXXX22m_adresse_per
- 105               		.stabs	"_ZN13Memoire24CXXXD2Ev:F(0,4)",36,0,64,_ZN13Memoire24CXXXD2Ev
- 106               		.stabs	"this:P(0,98)=k(0,92)",64,0,64,24
- 107               	.global	_ZN13Memoire24CXXXD2Ev
- 108               		.type	_ZN13Memoire24CXXXD2Ev, @function
- 109               	_ZN13Memoire24CXXXD2Ev:
- 110               		.stabd	46,0,0
+   7               		.text
+   8               	.Ltext0:
+   9               		.cfi_sections	.debug_frame
+  10               	.global	_ZN13Memoire24CXXXD2Ev
+  11               		.type	_ZN13Memoire24CXXXD2Ev, @function
+  12               	_ZN13Memoire24CXXXD2Ev:
+  13               	.LFB4:
+  14               		.file 1 "memoire_24.cpp"
    1:memoire_24.cpp **** /******************************************************************************/
    2:memoire_24.cpp **** /*                                                                            */
    3:memoire_24.cpp **** /* Ce code a ete modifie par Matthew Khouzam et Jerome Collin                 */
    4:memoire_24.cpp **** /* Pour le cours de INF1995                                                   */
-GAS LISTING /tmp/cczpOvZM.s 			page 3
-
-
    5:memoire_24.cpp **** /*                                                                            */
    6:memoire_24.cpp **** /******************************************************************************/
    7:memoire_24.cpp **** 
@@ -160,6 +58,9 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
   41:memoire_24.cpp **** /* void Memoire24CXXX::Memoire24CXXX()                                        */
   42:memoire_24.cpp **** /*                                                                            */
   43:memoire_24.cpp **** /*      Constructeur: ajuste la taille de la page et procede a                */
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 2
+
+
   44:memoire_24.cpp **** /*                    l'initialisation                                        */
   45:memoire_24.cpp **** /*                                                                            */
   46:memoire_24.cpp **** /* Parametre d'entree  : aucun                                                */
@@ -178,32 +79,26 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
   59:memoire_24.cpp **** /*      Destructeur: ne fait rien                                             */
   60:memoire_24.cpp **** /*                                                                            */
   61:memoire_24.cpp **** /* Parametre d'entree  : aucun                                                */
-GAS LISTING /tmp/cczpOvZM.s 			page 4
-
-
   62:memoire_24.cpp **** /* Parametre de sortie : aucun                                                */
   63:memoire_24.cpp **** /******************************************************************************/
   64:memoire_24.cpp **** Memoire24CXXX::~Memoire24CXXX()
- 111               		.stabn	68,0,64,.LM0-.LFBB1
- 112               	.LM0:
- 113               	.LFBB1:
- 114               	/* prologue: function */
- 115               	/* frame size = 0 */
- 116               	/* stack size = 0 */
- 117               	.L__stack_usage = 0
- 118 0000 0895      		ret
- 119               		.size	_ZN13Memoire24CXXXD2Ev, .-_ZN13Memoire24CXXXD2Ev
- 120               	.Lscope1:
- 121               		.stabs	"",36,0,0,.Lscope1-.LFBB1
- 122               		.stabd	78,0,0
- 123               	.global	_ZN13Memoire24CXXXD1Ev
- 124               		.set	_ZN13Memoire24CXXXD1Ev,_ZN13Memoire24CXXXD2Ev
- 125               		.stabs	"_ZN13Memoire24CXXX4initEv:F(0,4)",36,0,78,_ZN13Memoire24CXXX4initEv
- 126               		.stabs	"this:P(0,98)",64,0,78,24
- 127               	.global	_ZN13Memoire24CXXX4initEv
- 128               		.type	_ZN13Memoire24CXXX4initEv, @function
- 129               	_ZN13Memoire24CXXX4initEv:
- 130               		.stabd	46,0,0
+  15               		.loc 1 64 0
+  16               		.cfi_startproc
+  17               	.LVL0:
+  18               	/* prologue: function */
+  19               	/* frame size = 0 */
+  20               	/* stack size = 0 */
+  21               	.L__stack_usage = 0
+  22 0000 0895      		ret
+  23               		.cfi_endproc
+  24               	.LFE4:
+  25               		.size	_ZN13Memoire24CXXXD2Ev, .-_ZN13Memoire24CXXXD2Ev
+  26               	.global	_ZN13Memoire24CXXXD1Ev
+  27               		.set	_ZN13Memoire24CXXXD1Ev,_ZN13Memoire24CXXXD2Ev
+  28               	.global	_ZN13Memoire24CXXX4initEv
+  29               		.type	_ZN13Memoire24CXXX4initEv, @function
+  30               	_ZN13Memoire24CXXX4initEv:
+  31               	.LFB6:
   65:memoire_24.cpp **** {
   66:memoire_24.cpp ****    // rien a faire... 
   67:memoire_24.cpp **** }
@@ -219,15 +114,18 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
   77:memoire_24.cpp **** /******************************************************************************/
   78:memoire_24.cpp **** void Memoire24CXXX::init()
   79:memoire_24.cpp **** {
- 131               		.stabn	68,0,79,.LM1-.LFBB2
- 132               	.LM1:
- 133               	.LFBB2:
- 134               	/* prologue: function */
- 135               	/* frame size = 0 */
- 136               	/* stack size = 0 */
- 137               	.L__stack_usage = 0
- 138               	.LBB5:
- 139               	.LBB6:
+  32               		.loc 1 79 0
+  33               		.cfi_startproc
+  34               	.LVL1:
+  35               	/* prologue: function */
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 3
+
+
+  36               	/* frame size = 0 */
+  37               	/* stack size = 0 */
+  38               	.L__stack_usage = 0
+  39               	.LBB5:
+  40               	.LBB6:
   80:memoire_24.cpp ****    choisir_banc(0);
   81:memoire_24.cpp ****    // Initialisation de l'horloge de l'interface I2C
   82:memoire_24.cpp ****    TWSR = 0;
@@ -238,9 +136,6 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
   87:memoire_24.cpp **** 
   88:memoire_24.cpp **** /******************************************************************************/
   89:memoire_24.cpp **** /* uint8_t Memoire24CXXX::choisir_banc(const uint8_t banc)                    */
-GAS LISTING /tmp/cczpOvZM.s 			page 5
-
-
   90:memoire_24.cpp **** /*                                                                            */
   91:memoire_24.cpp **** /*      Choisir un banc de memoire                                            */
   92:memoire_24.cpp **** /*                                                                            */
@@ -254,122 +149,107 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
  100:memoire_24.cpp ****    if(banc == temp)
  101:memoire_24.cpp ****    {
  102:memoire_24.cpp ****       Memoire24CXXX::m_adresse_peripherique = (0xA0 | ( banc << 1 ));
- 140               		.stabn	68,0,102,.LM2-.LFBB2
- 141               	.LM2:
- 142 0002 80EA      		ldi r24,lo8(-96)
- 143 0004 8093 0000 		sts _ZN13Memoire24CXXX22m_adresse_peripheriqueE,r24
- 144               	.LBE6:
- 145               	.LBE5:
+  41               		.loc 1 102 0
+  42 0002 80EA      		ldi r24,lo8(-96)
+  43               	.LVL2:
+  44 0004 8093 0000 		sts _ZN13Memoire24CXXX22m_adresse_peripheriqueE,r24
+  45               	.LVL3:
+  46               	.LBE6:
+  47               	.LBE5:
   82:memoire_24.cpp ****    TWSR = 0;
- 146               		.stabn	68,0,82,.LM3-.LFBB2
- 147               	.LM3:
- 148 0008 1092 B900 		sts 185,__zero_reg__
+  48               		.loc 1 82 0
+  49 0008 1092 B900 		sts 185,__zero_reg__
   84:memoire_24.cpp ****    TWBR =  (F_CPU / 100000UL - 16) / 2;
- 149               		.stabn	68,0,84,.LM4-.LFBB2
- 150               	.LM4:
- 151 000c 80E2      		ldi r24,lo8(32)
- 152 000e 8093 B800 		sts 184,r24
- 153 0012 0895      		ret
- 154               		.size	_ZN13Memoire24CXXX4initEv, .-_ZN13Memoire24CXXX4initEv
- 155               	.Lscope2:
- 156               		.stabs	"",36,0,0,.Lscope2-.LFBB2
- 157               		.stabd	78,0,0
- 158               		.stabs	"_ZN13Memoire24CXXXC2Ev:F(0,4)",36,0,49,_ZN13Memoire24CXXXC2Ev
- 159               		.stabs	"this:P(0,98)",64,0,49,24
- 160               	.global	_ZN13Memoire24CXXXC2Ev
- 161               		.type	_ZN13Memoire24CXXXC2Ev, @function
- 162               	_ZN13Memoire24CXXXC2Ev:
- 163               		.stabd	46,0,0
+  50               		.loc 1 84 0
+  51 000c 80E2      		ldi r24,lo8(32)
+  52 000e 8093 B800 		sts 184,r24
+  53 0012 0895      		ret
+  54               		.cfi_endproc
+  55               	.LFE6:
+  56               		.size	_ZN13Memoire24CXXX4initEv, .-_ZN13Memoire24CXXX4initEv
+  57               	.global	_ZN13Memoire24CXXXC2Ev
+  58               		.type	_ZN13Memoire24CXXXC2Ev, @function
+  59               	_ZN13Memoire24CXXXC2Ev:
+  60               	.LFB1:
   49:memoire_24.cpp **** Memoire24CXXX::Memoire24CXXX()
- 164               		.stabn	68,0,49,.LM5-.LFBB3
- 165               	.LM5:
- 166               	.LFBB3:
- 167               	/* prologue: function */
- 168               	/* frame size = 0 */
- 169               	/* stack size = 0 */
- 170               	.L__stack_usage = 0
- 171               	.LBB7:
+  61               		.loc 1 49 0
+  62               		.cfi_startproc
+  63               	.LVL4:
+  64               	/* prologue: function */
+  65               	/* frame size = 0 */
+  66               	/* stack size = 0 */
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 4
+
+
+  67               	.L__stack_usage = 0
+  68               	.LBB7:
   50:memoire_24.cpp ****   : PAGE_SIZE(128)
- 172               		.stabn	68,0,50,.LM6-.LFBB3
- 173               	.LM6:
- 174 0014 20E8      		ldi r18,lo8(-128)
- 175 0016 FC01      		movw r30,r24
- 176 0018 2083      		st Z,r18
+  69               		.loc 1 50 0
+  70 0014 20E8      		ldi r18,lo8(-128)
+  71 0016 FC01      		movw r30,r24
+  72 0018 2083      		st Z,r18
   52:memoire_24.cpp ****    init();
- 177               		.stabn	68,0,52,.LM7-.LFBB3
- 178               	.LM7:
-GAS LISTING /tmp/cczpOvZM.s 			page 6
-
-
- 179 001a 0C94 0000 		jmp _ZN13Memoire24CXXX4initEv
- 180               	.LBE7:
- 181               		.size	_ZN13Memoire24CXXXC2Ev, .-_ZN13Memoire24CXXXC2Ev
- 182               	.Lscope3:
- 183               		.stabs	"",36,0,0,.Lscope3-.LFBB3
- 184               		.stabd	78,0,0
- 185               	.global	_ZN13Memoire24CXXXC1Ev
- 186               		.set	_ZN13Memoire24CXXXC1Ev,_ZN13Memoire24CXXXC2Ev
- 187               		.stabs	"_ZN13Memoire24CXXX12choisir_bancEh:F(0,59)",36,0,96,_ZN13Memoire24CXXX12choisir_bancEh
- 188               		.stabs	"banc:P(0,90)",64,0,96,24
- 189               	.global	_ZN13Memoire24CXXX12choisir_bancEh
- 190               		.type	_ZN13Memoire24CXXX12choisir_bancEh, @function
- 191               	_ZN13Memoire24CXXX12choisir_bancEh:
- 192               		.stabd	46,0,0
+  73               		.loc 1 52 0
+  74 001a 0C94 0000 		jmp _ZN13Memoire24CXXX4initEv
+  75               	.LVL5:
+  76               	.LBE7:
+  77               		.cfi_endproc
+  78               	.LFE1:
+  79               		.size	_ZN13Memoire24CXXXC2Ev, .-_ZN13Memoire24CXXXC2Ev
+  80               	.global	_ZN13Memoire24CXXXC1Ev
+  81               		.set	_ZN13Memoire24CXXXC1Ev,_ZN13Memoire24CXXXC2Ev
+  82               	.global	_ZN13Memoire24CXXX12choisir_bancEh
+  83               		.type	_ZN13Memoire24CXXX12choisir_bancEh, @function
+  84               	_ZN13Memoire24CXXX12choisir_bancEh:
+  85               	.LFB7:
   97:memoire_24.cpp **** {
- 193               		.stabn	68,0,97,.LM8-.LFBB4
- 194               	.LM8:
- 195               	.LFBB4:
- 196               	/* prologue: function */
- 197               	/* frame size = 0 */
- 198               	/* stack size = 0 */
- 199               	.L__stack_usage = 0
- 200               	.LBB8:
+  86               		.loc 1 97 0
+  87               		.cfi_startproc
+  88               	.LVL6:
+  89               	/* prologue: function */
+  90               	/* frame size = 0 */
+  91               	/* stack size = 0 */
+  92               	.L__stack_usage = 0
+  93               	.LBB8:
   98:memoire_24.cpp ****    uint8_t temp = banc & 0x03;
- 201               		.stabn	68,0,98,.LM9-.LFBB4
- 202               	.LM9:
- 203 001e 982F      		mov r25,r24
- 204 0020 9370      		andi r25,lo8(3)
+  94               		.loc 1 98 0
+  95 001e 982F      		mov r25,r24
+  96 0020 9370      		andi r25,lo8(3)
+  97               	.LVL7:
  100:memoire_24.cpp ****    if(banc == temp)
- 205               		.stabn	68,0,100,.LM10-.LFBB4
- 206               	.LM10:
- 207 0022 8913      		cpse r24,r25
- 208 0024 00C0      		rjmp .L7
- 209               		.stabn	68,0,102,.LM11-.LFBB4
- 210               	.LM11:
- 211 0026 880F      		lsl r24
- 212 0028 806A      		ori r24,lo8(-96)
- 213 002a 8093 0000 		sts _ZN13Memoire24CXXX22m_adresse_peripheriqueE,r24
- 214 002e 0895      		ret
- 215               	.L7:
+  98               		.loc 1 100 0
+  99 0022 8913      		cpse r24,r25
+ 100 0024 00C0      		rjmp .L7
+ 101               		.loc 1 102 0
+ 102 0026 880F      		lsl r24
+ 103               	.LVL8:
+ 104 0028 806A      		ori r24,lo8(-96)
+ 105 002a 8093 0000 		sts _ZN13Memoire24CXXX22m_adresse_peripheriqueE,r24
+ 106               	.LVL9:
+ 107 002e 0895      		ret
+ 108               	.LVL10:
+ 109               	.L7:
   99:memoire_24.cpp ****    uint8_t rv = 255;
- 216               		.stabn	68,0,99,.LM12-.LFBB4
- 217               	.LM12:
- 218 0030 8FEF      		ldi r24,lo8(-1)
- 219               	.LBE8:
+ 110               		.loc 1 99 0
+ 111 0030 8FEF      		ldi r24,lo8(-1)
+ 112               	.LVL11:
+ 113               	.LBE8:
  103:memoire_24.cpp ****       rv = Memoire24CXXX::m_adresse_peripherique;
  104:memoire_24.cpp ****    }
  105:memoire_24.cpp ****    return rv;
  106:memoire_24.cpp **** }
- 220               		.stabn	68,0,106,.LM13-.LFBB4
- 221               	.LM13:
- 222 0032 0895      		ret
- 223               		.size	_ZN13Memoire24CXXX12choisir_bancEh, .-_ZN13Memoire24CXXX12choisir_bancEh
- 224               		.stabs	"rv:r(0,59)",64,0,99,24
- 225               		.stabn	192,0,0,.LBB8-.LFBB4
- 226               		.stabn	224,0,0,.LBE8-.LFBB4
- 227               	.Lscope4:
-GAS LISTING /tmp/cczpOvZM.s 			page 7
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 5
 
 
- 228               		.stabs	"",36,0,0,.Lscope4-.LFBB4
- 229               		.stabd	78,0,0
- 230               		.stabs	"_ZN13Memoire24CXXX7lectureEjPh:F(0,59)",36,0,150,_ZN13Memoire24CXXX7lectureEjPh
- 231               		.stabs	"this:P(0,98)",64,0,150,24
- 232               		.stabs	"donnee:P(0,95)",64,0,150,20
- 233               	.global	_ZN13Memoire24CXXX7lectureEjPh
- 234               		.type	_ZN13Memoire24CXXX7lectureEjPh, @function
- 235               	_ZN13Memoire24CXXX7lectureEjPh:
- 236               		.stabd	46,0,0
+ 114               		.loc 1 106 0
+ 115 0032 0895      		ret
+ 116               		.cfi_endproc
+ 117               	.LFE7:
+ 118               		.size	_ZN13Memoire24CXXX12choisir_bancEh, .-_ZN13Memoire24CXXX12choisir_bancEh
+ 119               	.global	_ZN13Memoire24CXXX7lectureEjPh
+ 120               		.type	_ZN13Memoire24CXXX7lectureEjPh, @function
+ 121               	_ZN13Memoire24CXXX7lectureEjPh:
+ 122               	.LFB8:
  107:memoire_24.cpp **** 
  108:memoire_24.cpp **** 
  109:memoire_24.cpp **** /******************************************************************************/
@@ -415,433 +295,374 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
  149:memoire_24.cpp **** /******************************************************************************/
  150:memoire_24.cpp **** uint8_t Memoire24CXXX::lecture(const uint16_t adresse, uint8_t *donnee)
  151:memoire_24.cpp **** {
- 237               		.stabn	68,0,151,.LM14-.LFBB5
- 238               	.LM14:
- 239               	.LFBB5:
-GAS LISTING /tmp/cczpOvZM.s 			page 8
+ 123               		.loc 1 151 0
+ 124               		.cfi_startproc
+ 125               	.LVL12:
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 6
 
 
- 240               	/* prologue: function */
- 241               	/* frame size = 0 */
- 242               	/* stack size = 0 */
- 243               	.L__stack_usage = 0
- 244               	.LBB9:
+ 126               	/* prologue: function */
+ 127               	/* frame size = 0 */
+ 128               	/* stack size = 0 */
+ 129               	.L__stack_usage = 0
+ 130               	.LBB9:
  152:memoire_24.cpp ****   uint8_t rv = 0;
  153:memoire_24.cpp **** 
  154:memoire_24.cpp ****   //______________ Attente de la fin d'un cycle d'ecriture ______________
  155:memoire_24.cpp ****   for (;;)
  156:memoire_24.cpp ****   {
  157:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
- 245               		.stabn	68,0,157,.LM15-.LFBB5
- 246               	.LM15:
- 247 0034 94EA      		ldi r25,lo8(-92)
+ 131               		.loc 1 157 0
+ 132 0034 94EA      		ldi r25,lo8(-92)
  158:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)   // Attente de fin de transmission
  159:memoire_24.cpp ****       ;
  160:memoire_24.cpp **** 
  161:memoire_24.cpp ****     TWDR = m_adresse_peripherique;    //controle - bit 0 a 0, ecriture
  162:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWEN);     // R. a Z., interrupt. - Depart de transm.
- 248               		.stabn	68,0,162,.LM16-.LFBB5
- 249               	.LM16:
- 250 0036 24E8      		ldi r18,lo8(-124)
- 251               	.L15:
+ 133               		.loc 1 162 0
+ 134 0036 24E8      		ldi r18,lo8(-124)
+ 135               	.LVL13:
+ 136               	.L15:
  157:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
- 252               		.stabn	68,0,157,.LM17-.LFBB5
- 253               	.LM17:
- 254 0038 9093 BC00 		sts 188,r25
- 255               	.L11:
+ 137               		.loc 1 157 0
+ 138 0038 9093 BC00 		sts 188,r25
+ 139               	.L11:
  158:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)   // Attente de fin de transmission
- 256               		.stabn	68,0,158,.LM18-.LFBB5
- 257               	.LM18:
- 258 003c 8091 BC00 		lds r24,188
- 259 0040 87FF      		sbrs r24,7
- 260 0042 00C0      		rjmp .L11
+ 140               		.loc 1 158 0 discriminator 1
+ 141 003c 8091 BC00 		lds r24,188
+ 142 0040 87FF      		sbrs r24,7
+ 143 0042 00C0      		rjmp .L11
  161:memoire_24.cpp ****     TWDR = m_adresse_peripherique;    //controle - bit 0 a 0, ecriture
- 261               		.stabn	68,0,161,.LM19-.LFBB5
- 262               	.LM19:
- 263 0044 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
- 264 0048 8093 BB00 		sts 187,r24
- 265               		.stabn	68,0,162,.LM20-.LFBB5
- 266               	.LM20:
- 267 004c 2093 BC00 		sts 188,r18
- 268               	.L13:
+ 144               		.loc 1 161 0
+ 145 0044 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 146 0048 8093 BB00 		sts 187,r24
+ 147               		.loc 1 162 0
+ 148 004c 2093 BC00 		sts 188,r18
+ 149               	.L13:
  163:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)   // Attente de fin de transmission
- 269               		.stabn	68,0,163,.LM21-.LFBB5
- 270               	.LM21:
- 271 0050 8091 BC00 		lds r24,188
- 272 0054 87FF      		sbrs r24,7
- 273 0056 00C0      		rjmp .L13
+ 150               		.loc 1 163 0 discriminator 1
+ 151 0050 8091 BC00 		lds r24,188
+ 152 0054 87FF      		sbrs r24,7
+ 153 0056 00C0      		rjmp .L13
  164:memoire_24.cpp ****       ;
  165:memoire_24.cpp ****     if (TWSR==0x18)         // 0x18 = cycle d'ecriture termine
- 274               		.stabn	68,0,165,.LM22-.LFBB5
- 275               	.LM22:
- 276 0058 8091 B900 		lds r24,185
- 277 005c 8831      		cpi r24,lo8(24)
- 278 005e 01F4      		brne .L15
+ 154               		.loc 1 165 0
+ 155 0058 8091 B900 		lds r24,185
+ 156 005c 8831      		cpi r24,lo8(24)
+ 157 005e 01F4      		brne .L15
  166:memoire_24.cpp ****        break;
-GAS LISTING /tmp/cczpOvZM.s 			page 9
-
-
  167:memoire_24.cpp ****   }
  168:memoire_24.cpp **** 
  169:memoire_24.cpp ****   //_______________ Transmission de la condition de depart ________________
  170:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);     // Condition de depart
- 279               		.stabn	68,0,170,.LM23-.LFBB5
- 280               	.LM23:
- 281 0060 84EA      		ldi r24,lo8(-92)
- 282 0062 8093 BC00 		sts 188,r24
- 283               	.L17:
+ 158               		.loc 1 170 0
+ 159 0060 84EA      		ldi r24,lo8(-92)
+ 160 0062 8093 BC00 		sts 188,r24
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 7
+
+
+ 161               	.L17:
  171:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 284               		.stabn	68,0,171,.LM24-.LFBB5
- 285               	.LM24:
- 286 0066 8091 BC00 		lds r24,188
- 287 006a 87FF      		sbrs r24,7
- 288 006c 00C0      		rjmp .L17
+ 162               		.loc 1 171 0 discriminator 1
+ 163 0066 8091 BC00 		lds r24,188
+ 164 006a 87FF      		sbrs r24,7
+ 165 006c 00C0      		rjmp .L17
  172:memoire_24.cpp ****     ;
  173:memoire_24.cpp **** 
  174:memoire_24.cpp ****   //__________________ Transmission du code de controle ___________________
  175:memoire_24.cpp ****   TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
- 289               		.stabn	68,0,175,.LM25-.LFBB5
- 290               	.LM25:
- 291 006e 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
- 292 0072 8093 BB00 		sts 187,r24
+ 166               		.loc 1 175 0
+ 167 006e 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 168 0072 8093 BB00 		sts 187,r24
  176:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);       // R. a Z., interrupt. - Depart de transm.
- 293               		.stabn	68,0,176,.LM26-.LFBB5
- 294               	.LM26:
- 295 0076 84E8      		ldi r24,lo8(-124)
- 296 0078 8093 BC00 		sts 188,r24
- 297               	.L19:
+ 169               		.loc 1 176 0
+ 170 0076 84E8      		ldi r24,lo8(-124)
+ 171 0078 8093 BC00 		sts 188,r24
+ 172               	.L19:
  177:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
- 298               		.stabn	68,0,177,.LM27-.LFBB5
- 299               	.LM27:
- 300 007c 8091 BC00 		lds r24,188
- 301 0080 87FF      		sbrs r24,7
- 302 0082 00C0      		rjmp .L19
+ 173               		.loc 1 177 0 discriminator 1
+ 174 007c 8091 BC00 		lds r24,188
+ 175 0080 87FF      		sbrs r24,7
+ 176 0082 00C0      		rjmp .L19
  178:memoire_24.cpp ****     ;
  179:memoire_24.cpp **** 
  180:memoire_24.cpp ****   //______________ Transmission du poids fort de l'adresse ________________
  181:memoire_24.cpp ****   TWDR =  ( adresse >> 8 );            // 8 bits de poids fort de l'addresse
- 303               		.stabn	68,0,181,.LM28-.LFBB5
- 304               	.LM28:
- 305 0084 7093 BB00 		sts 187,r23
+ 177               		.loc 1 181 0
+ 178 0084 7093 BB00 		sts 187,r23
  182:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);       // R. a Z., interrupt. - Depart de transm.
- 306               		.stabn	68,0,182,.LM29-.LFBB5
- 307               	.LM29:
- 308 0088 84E8      		ldi r24,lo8(-124)
- 309 008a 8093 BC00 		sts 188,r24
- 310               	.L21:
+ 179               		.loc 1 182 0
+ 180 0088 84E8      		ldi r24,lo8(-124)
+ 181 008a 8093 BC00 		sts 188,r24
+ 182               	.L21:
  183:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
- 311               		.stabn	68,0,183,.LM30-.LFBB5
- 312               	.LM30:
- 313 008e 8091 BC00 		lds r24,188
- 314 0092 87FF      		sbrs r24,7
- 315 0094 00C0      		rjmp .L21
+ 183               		.loc 1 183 0 discriminator 1
+ 184 008e 8091 BC00 		lds r24,188
+ 185 0092 87FF      		sbrs r24,7
+ 186 0094 00C0      		rjmp .L21
  184:memoire_24.cpp ****      ;
  185:memoire_24.cpp **** 
  186:memoire_24.cpp ****   //_____________ Transmission du poids faible de l'adresse _______________
-GAS LISTING /tmp/cczpOvZM.s 			page 10
-
-
  187:memoire_24.cpp ****   TWDR = adresse;                      // 8 bits de poids faible de l'addresse
- 316               		.stabn	68,0,187,.LM31-.LFBB5
- 317               	.LM31:
- 318 0096 6093 BB00 		sts 187,r22
+ 187               		.loc 1 187 0
+ 188 0096 6093 BB00 		sts 187,r22
  188:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);       // R.ï¿½Z., interrupt. - Depart de transm.
- 319               		.stabn	68,0,188,.LM32-.LFBB5
- 320               	.LM32:
- 321 009a 84E8      		ldi r24,lo8(-124)
- 322 009c 8093 BC00 		sts 188,r24
- 323               	.L23:
+ 189               		.loc 1 188 0
+ 190 009a 84E8      		ldi r24,lo8(-124)
+ 191 009c 8093 BC00 		sts 188,r24
+ 192               	.L23:
  189:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
- 324               		.stabn	68,0,189,.LM33-.LFBB5
- 325               	.LM33:
- 326 00a0 8091 BC00 		lds r24,188
- 327 00a4 87FF      		sbrs r24,7
- 328 00a6 00C0      		rjmp .L23
- 329               	.L25:
+ 193               		.loc 1 189 0 discriminator 1
+ 194 00a0 8091 BC00 		lds r24,188
+ 195 00a4 87FF      		sbrs r24,7
+ 196 00a6 00C0      		rjmp .L23
+ 197               	.L25:
  190:memoire_24.cpp ****     ;
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 8
+
+
  191:memoire_24.cpp **** 
  192:memoire_24.cpp ****   //_______________ Transmission de la condition de depart ________________
  193:memoire_24.cpp ****   //  TWCR = _BV(TWINT) | _BV(TWSTO) | _BV(TWEN);    // Condition de fin
  194:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 330               		.stabn	68,0,194,.LM34-.LFBB5
- 331               	.LM34:
- 332 00a8 8091 BC00 		lds r24,188
- 333 00ac 87FF      		sbrs r24,7
- 334 00ae 00C0      		rjmp .L25
+ 198               		.loc 1 194 0
+ 199 00a8 8091 BC00 		lds r24,188
+ 200 00ac 87FF      		sbrs r24,7
+ 201 00ae 00C0      		rjmp .L25
  195:memoire_24.cpp ****     ;
  196:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);
- 335               		.stabn	68,0,196,.LM35-.LFBB5
- 336               	.LM35:
- 337 00b0 84EA      		ldi r24,lo8(-92)
- 338 00b2 8093 BC00 		sts 188,r24
- 339               	.L27:
+ 202               		.loc 1 196 0
+ 203 00b0 84EA      		ldi r24,lo8(-92)
+ 204 00b2 8093 BC00 		sts 188,r24
+ 205               	.L27:
  197:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 340               		.stabn	68,0,197,.LM36-.LFBB5
- 341               	.LM36:
- 342 00b6 8091 BC00 		lds r24,188
- 343 00ba 87FF      		sbrs r24,7
- 344 00bc 00C0      		rjmp .L27
+ 206               		.loc 1 197 0 discriminator 1
+ 207 00b6 8091 BC00 		lds r24,188
+ 208 00ba 87FF      		sbrs r24,7
+ 209 00bc 00C0      		rjmp .L27
  198:memoire_24.cpp ****     ;
  199:memoire_24.cpp **** 
  200:memoire_24.cpp ****   //__________________ Transmission du code de controle ___________________
  201:memoire_24.cpp ****   TWDR =  m_adresse_peripherique + 1;   // Controle - bit 0 a 1 lecture 
- 345               		.stabn	68,0,201,.LM37-.LFBB5
- 346               	.LM37:
- 347 00be 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
- 348 00c2 8F5F      		subi r24,lo8(-(1))
- 349 00c4 8093 BB00 		sts 187,r24
+ 210               		.loc 1 201 0
+ 211 00be 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 212 00c2 8F5F      		subi r24,lo8(-(1))
+ 213 00c4 8093 BB00 		sts 187,r24
  202:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
- 350               		.stabn	68,0,202,.LM38-.LFBB5
- 351               	.LM38:
- 352 00c8 84E8      		ldi r24,lo8(-124)
- 353 00ca 8093 BC00 		sts 188,r24
- 354               	.L29:
+ 214               		.loc 1 202 0
+ 215 00c8 84E8      		ldi r24,lo8(-124)
+ 216 00ca 8093 BC00 		sts 188,r24
+ 217               	.L29:
  203:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 355               		.stabn	68,0,203,.LM39-.LFBB5
-GAS LISTING /tmp/cczpOvZM.s 			page 11
-
-
- 356               	.LM39:
- 357 00ce 8091 BC00 		lds r24,188
- 358 00d2 87FF      		sbrs r24,7
- 359 00d4 00C0      		rjmp .L29
+ 218               		.loc 1 203 0 discriminator 1
+ 219 00ce 8091 BC00 		lds r24,188
+ 220 00d2 87FF      		sbrs r24,7
+ 221 00d4 00C0      		rjmp .L29
  204:memoire_24.cpp ****     ;
  205:memoire_24.cpp **** 
  206:memoire_24.cpp ****   //________________________ Lecture de l'eeprom __________________________
  207:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);     // R.ï¿½Z., interrupt. - Depart de transm.+NACK
- 360               		.stabn	68,0,207,.LM40-.LFBB5
- 361               	.LM40:
- 362 00d6 84E8      		ldi r24,lo8(-124)
- 363 00d8 8093 BC00 		sts 188,r24
- 364               	.L31:
+ 222               		.loc 1 207 0
+ 223 00d6 84E8      		ldi r24,lo8(-124)
+ 224 00d8 8093 BC00 		sts 188,r24
+ 225               	.L31:
  208:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)   // Attente de fin de transmission
- 365               		.stabn	68,0,208,.LM41-.LFBB5
- 366               	.LM41:
- 367 00dc 8091 BC00 		lds r24,188
- 368 00e0 87FF      		sbrs r24,7
- 369 00e2 00C0      		rjmp .L31
+ 226               		.loc 1 208 0 discriminator 1
+ 227 00dc 8091 BC00 		lds r24,188
+ 228 00e0 87FF      		sbrs r24,7
+ 229 00e2 00C0      		rjmp .L31
  209:memoire_24.cpp ****     ;
  210:memoire_24.cpp ****   *donnee = TWDR;
- 370               		.stabn	68,0,210,.LM42-.LFBB5
- 371               	.LM42:
- 372 00e4 8091 BB00 		lds r24,187
- 373 00e8 FA01      		movw r30,r20
- 374 00ea 8083      		st Z,r24
+ 230               		.loc 1 210 0
+ 231 00e4 8091 BB00 		lds r24,187
+ 232 00e8 FA01      		movw r30,r20
+ 233 00ea 8083      		st Z,r24
  211:memoire_24.cpp **** 
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 9
+
+
  212:memoire_24.cpp ****   //________________ Transmission de la condition d'arret _________________
  213:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTO) | _BV(TWEN);
- 375               		.stabn	68,0,213,.LM43-.LFBB5
- 376               	.LM43:
- 377 00ec 84E9      		ldi r24,lo8(-108)
- 378 00ee 8093 BC00 		sts 188,r24
- 379               	.LBE9:
+ 234               		.loc 1 213 0
+ 235 00ec 84E9      		ldi r24,lo8(-108)
+ 236 00ee 8093 BC00 		sts 188,r24
+ 237               	.LBE9:
  214:memoire_24.cpp ****   return rv;
  215:memoire_24.cpp **** }
- 380               		.stabn	68,0,215,.LM44-.LFBB5
- 381               	.LM44:
- 382 00f2 80E0      		ldi r24,0
- 383 00f4 0895      		ret
- 384               		.size	_ZN13Memoire24CXXX7lectureEjPh, .-_ZN13Memoire24CXXX7lectureEjPh
- 385               	.Lscope5:
- 386               		.stabs	"",36,0,0,.Lscope5-.LFBB5
- 387               		.stabd	78,0,0
- 388               		.stabs	"_ZN13Memoire24CXXX7lectureEjPhh:F(0,59)",36,0,218,_ZN13Memoire24CXXX7lectureEjPhh
- 389               		.stabs	"this:P(0,98)",64,0,219,24
- 390               		.stabs	"longueur:P(0,59)",64,0,219,18
- 391               	.global	_ZN13Memoire24CXXX7lectureEjPhh
- 392               		.type	_ZN13Memoire24CXXX7lectureEjPhh, @function
- 393               	_ZN13Memoire24CXXX7lectureEjPhh:
- 394               		.stabd	46,0,0
+ 238               		.loc 1 215 0
+ 239 00f2 80E0      		ldi r24,0
+ 240 00f4 0895      		ret
+ 241               		.cfi_endproc
+ 242               	.LFE8:
+ 243               		.size	_ZN13Memoire24CXXX7lectureEjPh, .-_ZN13Memoire24CXXX7lectureEjPh
+ 244               	.global	_ZN13Memoire24CXXX7lectureEjPhh
+ 245               		.type	_ZN13Memoire24CXXX7lectureEjPhh, @function
+ 246               	_ZN13Memoire24CXXX7lectureEjPhh:
+ 247               	.LFB9:
  216:memoire_24.cpp **** 
  217:memoire_24.cpp **** 
  218:memoire_24.cpp **** uint8_t Memoire24CXXX::lecture(const uint16_t adresse, uint8_t *donnee,
  219:memoire_24.cpp ****                                uint8_t longueur)
  220:memoire_24.cpp **** {
- 395               		.stabn	68,0,220,.LM45-.LFBB6
-GAS LISTING /tmp/cczpOvZM.s 			page 12
-
-
- 396               	.LM45:
- 397               	.LFBB6:
- 398               	/* prologue: function */
- 399               	/* frame size = 0 */
- 400               	/* stack size = 0 */
- 401               	.L__stack_usage = 0
- 402               	.LBB10:
+ 248               		.loc 1 220 0
+ 249               		.cfi_startproc
+ 250               	.LVL14:
+ 251               	/* prologue: function */
+ 252               	/* frame size = 0 */
+ 253               	/* stack size = 0 */
+ 254               	.L__stack_usage = 0
+ 255               	.LBB10:
  221:memoire_24.cpp ****   uint8_t twcr;
  222:memoire_24.cpp **** 
  223:memoire_24.cpp ****   //______________ Attente de la fin d'un cycle d'ecriture ______________
  224:memoire_24.cpp ****   for (;;)
  225:memoire_24.cpp ****   {
  226:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
- 403               		.stabn	68,0,226,.LM46-.LFBB6
- 404               	.LM46:
- 405 00f6 94EA      		ldi r25,lo8(-92)
+ 256               		.loc 1 226 0
+ 257 00f6 94EA      		ldi r25,lo8(-92)
  227:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0) ;   // Attente de fin de transmission
  228:memoire_24.cpp **** 
  229:memoire_24.cpp ****     TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
  230:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWEN);       // R. a Z., interrupt. - Depart de transm.
- 406               		.stabn	68,0,230,.LM47-.LFBB6
- 407               	.LM47:
- 408 00f8 34E8      		ldi r19,lo8(-124)
- 409               	.L38:
+ 258               		.loc 1 230 0
+ 259 00f8 34E8      		ldi r19,lo8(-124)
+ 260               	.LVL15:
+ 261               	.L38:
  226:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
- 410               		.stabn	68,0,226,.LM48-.LFBB6
- 411               	.LM48:
- 412 00fa 9093 BC00 		sts 188,r25
- 413               	.L34:
+ 262               		.loc 1 226 0
+ 263 00fa 9093 BC00 		sts 188,r25
+ 264               	.L34:
  227:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0) ;   // Attente de fin de transmission
- 414               		.stabn	68,0,227,.LM49-.LFBB6
- 415               	.LM49:
- 416 00fe 8091 BC00 		lds r24,188
- 417 0102 87FF      		sbrs r24,7
- 418 0104 00C0      		rjmp .L34
+ 265               		.loc 1 227 0 discriminator 1
+ 266 00fe 8091 BC00 		lds r24,188
+ 267 0102 87FF      		sbrs r24,7
+ 268 0104 00C0      		rjmp .L34
  229:memoire_24.cpp ****     TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
- 419               		.stabn	68,0,229,.LM50-.LFBB6
- 420               	.LM50:
- 421 0106 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
- 422 010a 8093 BB00 		sts 187,r24
- 423               		.stabn	68,0,230,.LM51-.LFBB6
- 424               	.LM51:
- 425 010e 3093 BC00 		sts 188,r19
- 426               	.L36:
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 10
+
+
+ 269               		.loc 1 229 0
+ 270 0106 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 271 010a 8093 BB00 		sts 187,r24
+ 272               		.loc 1 230 0
+ 273 010e 3093 BC00 		sts 188,r19
+ 274               	.L36:
  231:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
- 427               		.stabn	68,0,231,.LM52-.LFBB6
- 428               	.LM52:
- 429 0112 8091 BC00 		lds r24,188
- 430 0116 87FF      		sbrs r24,7
- 431 0118 00C0      		rjmp .L36
+ 275               		.loc 1 231 0 discriminator 1
+ 276 0112 8091 BC00 		lds r24,188
+ 277 0116 87FF      		sbrs r24,7
+ 278 0118 00C0      		rjmp .L36
  232:memoire_24.cpp ****        ;
  233:memoire_24.cpp ****     if (TWSR==0x18)                      // 0x18 = cycle d'ecriture termine
- 432               		.stabn	68,0,233,.LM53-.LFBB6
- 433               	.LM53:
- 434 011a 8091 B900 		lds r24,185
- 435 011e 8831      		cpi r24,lo8(24)
- 436 0120 01F4      		brne .L38
-GAS LISTING /tmp/cczpOvZM.s 			page 13
-
-
+ 279               		.loc 1 233 0
+ 280 011a 8091 B900 		lds r24,185
+ 281 011e 8831      		cpi r24,lo8(24)
+ 282 0120 01F4      		brne .L38
  234:memoire_24.cpp ****        break;
  235:memoire_24.cpp ****   }
  236:memoire_24.cpp **** 
  237:memoire_24.cpp ****   //_______________ Transmission de la condition de depart ________________
  238:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);     // Condition de depart
- 437               		.stabn	68,0,238,.LM54-.LFBB6
- 438               	.LM54:
- 439 0122 84EA      		ldi r24,lo8(-92)
- 440 0124 8093 BC00 		sts 188,r24
- 441               	.L40:
+ 283               		.loc 1 238 0
+ 284 0122 84EA      		ldi r24,lo8(-92)
+ 285 0124 8093 BC00 		sts 188,r24
+ 286               	.L40:
  239:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)    // Attente de fin de transmission
- 442               		.stabn	68,0,239,.LM55-.LFBB6
- 443               	.LM55:
- 444 0128 8091 BC00 		lds r24,188
- 445 012c 87FF      		sbrs r24,7
- 446 012e 00C0      		rjmp .L40
+ 287               		.loc 1 239 0 discriminator 1
+ 288 0128 8091 BC00 		lds r24,188
+ 289 012c 87FF      		sbrs r24,7
+ 290 012e 00C0      		rjmp .L40
  240:memoire_24.cpp ****      ;
  241:memoire_24.cpp **** 
  242:memoire_24.cpp ****   //__________________ Transmission du code de controle ___________________
  243:memoire_24.cpp ****   TWDR = m_adresse_peripherique;        // Controle - bit 0 a 0, ecriture
- 447               		.stabn	68,0,243,.LM56-.LFBB6
- 448               	.LM56:
- 449 0130 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
- 450 0134 8093 BB00 		sts 187,r24
+ 291               		.loc 1 243 0
+ 292 0130 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 293 0134 8093 BB00 		sts 187,r24
  244:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
- 451               		.stabn	68,0,244,.LM57-.LFBB6
- 452               	.LM57:
- 453 0138 84E8      		ldi r24,lo8(-124)
- 454 013a 8093 BC00 		sts 188,r24
- 455               	.L42:
+ 294               		.loc 1 244 0
+ 295 0138 84E8      		ldi r24,lo8(-124)
+ 296 013a 8093 BC00 		sts 188,r24
+ 297               	.L42:
  245:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 456               		.stabn	68,0,245,.LM58-.LFBB6
- 457               	.LM58:
- 458 013e 8091 BC00 		lds r24,188
- 459 0142 87FF      		sbrs r24,7
- 460 0144 00C0      		rjmp .L42
+ 298               		.loc 1 245 0 discriminator 1
+ 299 013e 8091 BC00 		lds r24,188
+ 300 0142 87FF      		sbrs r24,7
+ 301 0144 00C0      		rjmp .L42
  246:memoire_24.cpp ****      ;
  247:memoire_24.cpp **** 
  248:memoire_24.cpp ****   //______________ Transmission du poids fort de l'adresse ________________
  249:memoire_24.cpp ****   TWDR = adresse >> 8;                  // 8 bits de poids fort de l'addresse
- 461               		.stabn	68,0,249,.LM59-.LFBB6
- 462               	.LM59:
- 463 0146 7093 BB00 		sts 187,r23
+ 302               		.loc 1 249 0
+ 303 0146 7093 BB00 		sts 187,r23
  250:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
- 464               		.stabn	68,0,250,.LM60-.LFBB6
- 465               	.LM60:
- 466 014a 84E8      		ldi r24,lo8(-124)
- 467 014c 8093 BC00 		sts 188,r24
- 468               	.L44:
+ 304               		.loc 1 250 0
+ 305 014a 84E8      		ldi r24,lo8(-124)
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 11
+
+
+ 306 014c 8093 BC00 		sts 188,r24
+ 307               	.L44:
  251:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 469               		.stabn	68,0,251,.LM61-.LFBB6
- 470               	.LM61:
- 471 0150 8091 BC00 		lds r24,188
- 472 0154 87FF      		sbrs r24,7
- 473 0156 00C0      		rjmp .L44
+ 308               		.loc 1 251 0 discriminator 1
+ 309 0150 8091 BC00 		lds r24,188
+ 310 0154 87FF      		sbrs r24,7
+ 311 0156 00C0      		rjmp .L44
  252:memoire_24.cpp ****      ;
  253:memoire_24.cpp **** 
-GAS LISTING /tmp/cczpOvZM.s 			page 14
-
-
  254:memoire_24.cpp ****   //_____________ Transmission du poids faible de l'adresse _______________
  255:memoire_24.cpp ****   TWDR = adresse;                       // 8 bits de poids faible de l'addresse
- 474               		.stabn	68,0,255,.LM62-.LFBB6
- 475               	.LM62:
- 476 0158 6093 BB00 		sts 187,r22
+ 312               		.loc 1 255 0
+ 313 0158 6093 BB00 		sts 187,r22
  256:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
- 477               		.stabn	68,0,256,.LM63-.LFBB6
- 478               	.LM63:
- 479 015c 84E8      		ldi r24,lo8(-124)
- 480 015e 8093 BC00 		sts 188,r24
- 481               	.L46:
+ 314               		.loc 1 256 0
+ 315 015c 84E8      		ldi r24,lo8(-124)
+ 316 015e 8093 BC00 		sts 188,r24
+ 317               	.L46:
  257:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 482               		.stabn	68,0,257,.LM64-.LFBB6
- 483               	.LM64:
- 484 0162 8091 BC00 		lds r24,188
- 485 0166 87FF      		sbrs r24,7
- 486 0168 00C0      		rjmp .L46
+ 318               		.loc 1 257 0 discriminator 1
+ 319 0162 8091 BC00 		lds r24,188
+ 320 0166 87FF      		sbrs r24,7
+ 321 0168 00C0      		rjmp .L46
  258:memoire_24.cpp ****      ;
  259:memoire_24.cpp **** 
  260:memoire_24.cpp ****   //_______________ Transmission de la condition de depart ________________
  261:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
- 487               		.stabn	68,0,261,.LM65-.LFBB6
- 488               	.LM65:
- 489 016a 84EA      		ldi r24,lo8(-92)
- 490 016c 8093 BC00 		sts 188,r24
- 491               	.L48:
+ 322               		.loc 1 261 0
+ 323 016a 84EA      		ldi r24,lo8(-92)
+ 324 016c 8093 BC00 		sts 188,r24
+ 325               	.L48:
  262:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 492               		.stabn	68,0,262,.LM66-.LFBB6
- 493               	.LM66:
- 494 0170 8091 BC00 		lds r24,188
- 495 0174 87FF      		sbrs r24,7
- 496 0176 00C0      		rjmp .L48
+ 326               		.loc 1 262 0 discriminator 1
+ 327 0170 8091 BC00 		lds r24,188
+ 328 0174 87FF      		sbrs r24,7
+ 329 0176 00C0      		rjmp .L48
  263:memoire_24.cpp ****      ;
  264:memoire_24.cpp **** 
  265:memoire_24.cpp ****   //__________________ Transmission du code de controle ___________________
  266:memoire_24.cpp ****   TWDR =  m_adresse_peripherique + 1;  // Controle - bit 0 a 1, lecture
- 497               		.stabn	68,0,266,.LM67-.LFBB6
- 498               	.LM67:
- 499 0178 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
- 500 017c 8F5F      		subi r24,lo8(-(1))
- 501 017e 8093 BB00 		sts 187,r24
+ 330               		.loc 1 266 0
+ 331 0178 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 332 017c 8F5F      		subi r24,lo8(-(1))
+ 333 017e 8093 BB00 		sts 187,r24
  267:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);       // R. a Z., interrupt. - Depart de transm.
- 502               		.stabn	68,0,267,.LM68-.LFBB6
- 503               	.LM68:
- 504 0182 84E8      		ldi r24,lo8(-124)
- 505 0184 8093 BC00 		sts 188,r24
- 506               	.L51:
+ 334               		.loc 1 267 0
+ 335 0182 84E8      		ldi r24,lo8(-124)
+ 336 0184 8093 BC00 		sts 188,r24
+ 337               	.L51:
  268:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
- 507               		.stabn	68,0,268,.LM69-.LFBB6
- 508               	.LM69:
- 509 0188 8091 BC00 		lds r24,188
- 510 018c 87FF      		sbrs r24,7
- 511 018e 00C0      		rjmp .L51
- 512 0190 FA01      		movw r30,r20
- 513               		.stabn	68,0,268,.LM70-.LFBB6
- 514               	.LM70:
- 515 0192 84EC      		ldi r24,lo8(-60)
-GAS LISTING /tmp/cczpOvZM.s 			page 15
+ 338               		.loc 1 268 0 discriminator 1
+ 339 0188 8091 BC00 		lds r24,188
+ 340 018c 87FF      		sbrs r24,7
+ 341 018e 00C0      		rjmp .L51
+ 342 0190 FA01      		movw r30,r20
+ 343               		.loc 1 268 0 is_stmt 0
+ 344 0192 84EC      		ldi r24,lo8(-60)
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 12
 
 
- 516               	.L50:
+ 345               	.LVL16:
+ 346               	.L50:
  269:memoire_24.cpp ****      ;
  270:memoire_24.cpp **** 
  271:memoire_24.cpp ****   //________________________ Lecture de l'eeprom __________________________
@@ -851,76 +672,65 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
  275:memoire_24.cpp ****   // Le ACK est realisee par le recepteur en placant TWEA a 1 au lieu de le
  276:memoire_24.cpp ****   // laisser a 0.
  277:memoire_24.cpp ****   for (twcr = _BV(TWINT) | _BV(TWEN) | _BV(TWEA) ; longueur > 0; longueur--)
- 517               		.stabn	68,0,277,.LM71-.LFBB6
- 518               	.LM71:
- 519 0194 2223      		tst r18
- 520 0196 01F0      		breq .L57
+ 347               		.loc 1 277 0 is_stmt 1 discriminator 1
+ 348 0194 2223      		tst r18
+ 349 0196 01F0      		breq .L57
  278:memoire_24.cpp ****   {
  279:memoire_24.cpp ****       if (longueur == 1)
- 521               		.stabn	68,0,279,.LM72-.LFBB6
- 522               	.LM72:
- 523 0198 2130      		cpi r18,lo8(1)
- 524 019a 01F4      		brne .L52
+ 350               		.loc 1 279 0
+ 351 0198 2130      		cpi r18,lo8(1)
+ 352 019a 01F4      		brne .L52
  280:memoire_24.cpp ****          twcr = _BV(TWINT) | _BV(TWEN);  // Derniere donnee, NACK
- 525               		.stabn	68,0,280,.LM73-.LFBB6
- 526               	.LM73:
- 527 019c 84E8      		ldi r24,lo8(-124)
- 528               	.L52:
+ 353               		.loc 1 280 0
+ 354 019c 84E8      		ldi r24,lo8(-124)
+ 355               	.LVL17:
+ 356               	.L52:
  281:memoire_24.cpp ****       TWCR = twcr;                       // R. a Z., interrupt. - Depart de transm.
- 529               		.stabn	68,0,281,.LM74-.LFBB6
- 530               	.LM74:
- 531 019e 8093 BC00 		sts 188,r24
- 532               	.L54:
+ 357               		.loc 1 281 0
+ 358 019e 8093 BC00 		sts 188,r24
+ 359               	.L54:
  282:memoire_24.cpp ****       while ((TWCR & _BV(TWINT)) == 0) ; // Attente de fin de transmission
- 533               		.stabn	68,0,282,.LM75-.LFBB6
- 534               	.LM75:
- 535 01a2 9091 BC00 		lds r25,188
- 536 01a6 97FF      		sbrs r25,7
- 537 01a8 00C0      		rjmp .L54
+ 360               		.loc 1 282 0 discriminator 1
+ 361 01a2 9091 BC00 		lds r25,188
+ 362 01a6 97FF      		sbrs r25,7
+ 363 01a8 00C0      		rjmp .L54
+ 364               	.LVL18:
  283:memoire_24.cpp ****          *donnee++ = TWDR;               // Lecture
- 538               		.stabn	68,0,283,.LM76-.LFBB6
- 539               	.LM76:
- 540 01aa 9091 BB00 		lds r25,187
- 541 01ae 9193      		st Z+,r25
+ 365               		.loc 1 283 0
+ 366 01aa 9091 BB00 		lds r25,187
+ 367 01ae 9193      		st Z+,r25
+ 368               	.LVL19:
  277:memoire_24.cpp ****   for (twcr = _BV(TWINT) | _BV(TWEN) | _BV(TWEA) ; longueur > 0; longueur--)
- 542               		.stabn	68,0,277,.LM77-.LFBB6
- 543               	.LM77:
- 544 01b0 2150      		subi r18,lo8(-(-1))
- 545 01b2 00C0      		rjmp .L50
- 546               	.L57:
+ 369               		.loc 1 277 0
+ 370 01b0 2150      		subi r18,lo8(-(-1))
+ 371               	.LVL20:
+ 372 01b2 00C0      		rjmp .L50
+ 373               	.L57:
  284:memoire_24.cpp ****   }
  285:memoire_24.cpp **** 
  286:memoire_24.cpp ****   //________________ Transmission de la condition d'arret _________________
  287:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTO) | _BV(TWEN);
- 547               		.stabn	68,0,287,.LM78-.LFBB6
- 548               	.LM78:
- 549 01b4 84E9      		ldi r24,lo8(-108)
- 550 01b6 8093 BC00 		sts 188,r24
- 551               	.LBE10:
+ 374               		.loc 1 287 0
+ 375 01b4 84E9      		ldi r24,lo8(-108)
+ 376               	.LVL21:
+ 377 01b6 8093 BC00 		sts 188,r24
+ 378               	.LBE10:
  288:memoire_24.cpp **** 
-GAS LISTING /tmp/cczpOvZM.s 			page 16
-
-
  289:memoire_24.cpp ****   return 0;
  290:memoire_24.cpp **** }
- 552               		.stabn	68,0,290,.LM79-.LFBB6
- 553               	.LM79:
- 554 01ba 80E0      		ldi r24,0
- 555 01bc 0895      		ret
- 556               		.size	_ZN13Memoire24CXXX7lectureEjPhh, .-_ZN13Memoire24CXXX7lectureEjPhh
- 557               		.stabs	"twcr:r(0,59)",64,0,221,24
- 558               		.stabn	192,0,0,.LBB10-.LFBB6
- 559               		.stabn	224,0,0,.LBE10-.LFBB6
- 560               	.Lscope6:
- 561               		.stabs	"",36,0,0,.Lscope6-.LFBB6
- 562               		.stabd	78,0,0
- 563               		.stabs	"_ZN13Memoire24CXXX8ecritureEjh:F(0,59)",36,0,337,_ZN13Memoire24CXXX8ecritureEjh
- 564               		.stabs	"this:P(0,98)",64,0,337,24
- 565               		.stabs	"donnee:P(0,90)",64,0,337,20
- 566               	.global	_ZN13Memoire24CXXX8ecritureEjh
- 567               		.type	_ZN13Memoire24CXXX8ecritureEjh, @function
- 568               	_ZN13Memoire24CXXX8ecritureEjh:
- 569               		.stabd	46,0,0
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 13
+
+
+ 379               		.loc 1 290 0
+ 380 01ba 80E0      		ldi r24,0
+ 381 01bc 0895      		ret
+ 382               		.cfi_endproc
+ 383               	.LFE9:
+ 384               		.size	_ZN13Memoire24CXXX7lectureEjPhh, .-_ZN13Memoire24CXXX7lectureEjPhh
+ 385               	.global	_ZN13Memoire24CXXX8ecritureEjh
+ 386               		.type	_ZN13Memoire24CXXX8ecritureEjh, @function
+ 387               	_ZN13Memoire24CXXX8ecritureEjh:
+ 388               	.LFB10:
  291:memoire_24.cpp **** 
  292:memoire_24.cpp **** 
  293:memoire_24.cpp **** /******************************************************************************/
@@ -958,9 +768,6 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
  325:memoire_24.cpp **** /*                                                                            */
  326:memoire_24.cpp **** /* A la quatrieme etape, on ecrit la donnee :                                 */
  327:memoire_24.cpp **** /*   - Transmission de la donnee + commande de depart de transmission avec    */
-GAS LISTING /tmp/cczpOvZM.s 			page 17
-
-
  328:memoire_24.cpp **** /*     ACK et attente de fin de transmission.                                 */
  329:memoire_24.cpp **** /*   - Transmission de la condition d'arret pour demarrer le cycle d'ecriture */
  330:memoire_24.cpp **** /*                                                                            */
@@ -971,193 +778,165 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
  335:memoire_24.cpp **** /*                                                                            */
  336:memoire_24.cpp **** /******************************************************************************/
  337:memoire_24.cpp **** uint8_t Memoire24CXXX::ecriture(const uint16_t adresse, const uint8_t donnee)
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 14
+
+
  338:memoire_24.cpp **** {
- 570               		.stabn	68,0,338,.LM80-.LFBB7
- 571               	.LM80:
- 572               	.LFBB7:
- 573               	/* prologue: function */
- 574               	/* frame size = 0 */
- 575               	/* stack size = 0 */
- 576               	.L__stack_usage = 0
+ 389               		.loc 1 338 0
+ 390               		.cfi_startproc
+ 391               	.LVL22:
+ 392               	/* prologue: function */
+ 393               	/* frame size = 0 */
+ 394               	/* stack size = 0 */
+ 395               	.L__stack_usage = 0
  339:memoire_24.cpp ****   //______________ Attente de la fin d'un cycle d'ecriture ______________
  340:memoire_24.cpp ****   for ( ; ; )
  341:memoire_24.cpp ****   {
  342:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
- 577               		.stabn	68,0,342,.LM81-.LFBB7
- 578               	.LM81:
- 579 01be 94EA      		ldi r25,lo8(-92)
+ 396               		.loc 1 342 0
+ 397 01be 94EA      		ldi r25,lo8(-92)
  343:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
  344:memoire_24.cpp ****        ;
  345:memoire_24.cpp **** 
  346:memoire_24.cpp ****     TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
  347:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWEN);       // R. a Z., interrupt. - Depart de transm.
- 580               		.stabn	68,0,347,.LM82-.LFBB7
- 581               	.LM82:
- 582 01c0 24E8      		ldi r18,lo8(-124)
- 583               	.L64:
+ 398               		.loc 1 347 0
+ 399 01c0 24E8      		ldi r18,lo8(-124)
+ 400               	.LVL23:
+ 401               	.L64:
  342:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
- 584               		.stabn	68,0,342,.LM83-.LFBB7
- 585               	.LM83:
- 586 01c2 9093 BC00 		sts 188,r25
- 587               	.L60:
+ 402               		.loc 1 342 0
+ 403 01c2 9093 BC00 		sts 188,r25
+ 404               	.L60:
  343:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 588               		.stabn	68,0,343,.LM84-.LFBB7
- 589               	.LM84:
- 590 01c6 8091 BC00 		lds r24,188
- 591 01ca 87FF      		sbrs r24,7
- 592 01cc 00C0      		rjmp .L60
+ 405               		.loc 1 343 0 discriminator 1
+ 406 01c6 8091 BC00 		lds r24,188
+ 407 01ca 87FF      		sbrs r24,7
+ 408 01cc 00C0      		rjmp .L60
  346:memoire_24.cpp ****     TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
- 593               		.stabn	68,0,346,.LM85-.LFBB7
- 594               	.LM85:
- 595 01ce 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
- 596 01d2 8093 BB00 		sts 187,r24
- 597               		.stabn	68,0,347,.LM86-.LFBB7
- 598               	.LM86:
- 599 01d6 2093 BC00 		sts 188,r18
- 600               	.L62:
+ 409               		.loc 1 346 0
+ 410 01ce 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 411 01d2 8093 BB00 		sts 187,r24
+ 412               		.loc 1 347 0
+ 413 01d6 2093 BC00 		sts 188,r18
+ 414               	.L62:
  348:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
- 601               		.stabn	68,0,348,.LM87-.LFBB7
- 602               	.LM87:
-GAS LISTING /tmp/cczpOvZM.s 			page 18
-
-
- 603 01da 8091 BC00 		lds r24,188
- 604 01de 87FF      		sbrs r24,7
- 605 01e0 00C0      		rjmp .L62
+ 415               		.loc 1 348 0 discriminator 1
+ 416 01da 8091 BC00 		lds r24,188
+ 417 01de 87FF      		sbrs r24,7
+ 418 01e0 00C0      		rjmp .L62
  349:memoire_24.cpp ****        ;
  350:memoire_24.cpp **** 
  351:memoire_24.cpp ****     if (TWSR==0x18)
- 606               		.stabn	68,0,351,.LM88-.LFBB7
- 607               	.LM88:
- 608 01e2 8091 B900 		lds r24,185
- 609 01e6 8831      		cpi r24,lo8(24)
- 610 01e8 01F4      		brne .L64
+ 419               		.loc 1 351 0
+ 420 01e2 8091 B900 		lds r24,185
+ 421 01e6 8831      		cpi r24,lo8(24)
+ 422 01e8 01F4      		brne .L64
  352:memoire_24.cpp ****        break;               // 0x18 = cycle d'ecriture termine
  353:memoire_24.cpp ****   }
  354:memoire_24.cpp **** 
  355:memoire_24.cpp ****   //_______________ Transmission de la condition de depart ________________
  356:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);     // Condition de depart
- 611               		.stabn	68,0,356,.LM89-.LFBB7
- 612               	.LM89:
- 613 01ea 84EA      		ldi r24,lo8(-92)
- 614 01ec 8093 BC00 		sts 188,r24
- 615               	.L66:
+ 423               		.loc 1 356 0
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 15
+
+
+ 424 01ea 84EA      		ldi r24,lo8(-92)
+ 425 01ec 8093 BC00 		sts 188,r24
+ 426               	.L66:
  357:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)    // Attente de fin de transmission
- 616               		.stabn	68,0,357,.LM90-.LFBB7
- 617               	.LM90:
- 618 01f0 8091 BC00 		lds r24,188
- 619 01f4 87FF      		sbrs r24,7
- 620 01f6 00C0      		rjmp .L66
+ 427               		.loc 1 357 0 discriminator 1
+ 428 01f0 8091 BC00 		lds r24,188
+ 429 01f4 87FF      		sbrs r24,7
+ 430 01f6 00C0      		rjmp .L66
  358:memoire_24.cpp ****      ;
  359:memoire_24.cpp **** 
  360:memoire_24.cpp ****   //__________________ Transmission du code de controle ___________________
  361:memoire_24.cpp ****   TWDR = m_adresse_peripherique;        // Controle - bit 0 a 0, ecriture
- 621               		.stabn	68,0,361,.LM91-.LFBB7
- 622               	.LM91:
- 623 01f8 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
- 624 01fc 8093 BB00 		sts 187,r24
+ 431               		.loc 1 361 0
+ 432 01f8 8091 0000 		lds r24,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 433 01fc 8093 BB00 		sts 187,r24
  362:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
- 625               		.stabn	68,0,362,.LM92-.LFBB7
- 626               	.LM92:
- 627 0200 84E8      		ldi r24,lo8(-124)
- 628 0202 8093 BC00 		sts 188,r24
- 629               	.L68:
+ 434               		.loc 1 362 0
+ 435 0200 84E8      		ldi r24,lo8(-124)
+ 436 0202 8093 BC00 		sts 188,r24
+ 437               	.L68:
  363:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 630               		.stabn	68,0,363,.LM93-.LFBB7
- 631               	.LM93:
- 632 0206 8091 BC00 		lds r24,188
- 633 020a 87FF      		sbrs r24,7
- 634 020c 00C0      		rjmp .L68
+ 438               		.loc 1 363 0 discriminator 1
+ 439 0206 8091 BC00 		lds r24,188
+ 440 020a 87FF      		sbrs r24,7
+ 441 020c 00C0      		rjmp .L68
  364:memoire_24.cpp ****      ;
  365:memoire_24.cpp **** 
  366:memoire_24.cpp ****   //______________ Transmission du poids fort de l'adresse ________________
  367:memoire_24.cpp ****   TWDR = adresse >> 8;                 // 8 bits de poids fort de l'adresse
- 635               		.stabn	68,0,367,.LM94-.LFBB7
- 636               	.LM94:
- 637 020e 7093 BB00 		sts 187,r23
+ 442               		.loc 1 367 0
+ 443 020e 7093 BB00 		sts 187,r23
  368:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
- 638               		.stabn	68,0,368,.LM95-.LFBB7
- 639               	.LM95:
-GAS LISTING /tmp/cczpOvZM.s 			page 19
-
-
- 640 0212 84E8      		ldi r24,lo8(-124)
- 641 0214 8093 BC00 		sts 188,r24
- 642               	.L70:
+ 444               		.loc 1 368 0
+ 445 0212 84E8      		ldi r24,lo8(-124)
+ 446 0214 8093 BC00 		sts 188,r24
+ 447               	.L70:
  369:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 643               		.stabn	68,0,369,.LM96-.LFBB7
- 644               	.LM96:
- 645 0218 8091 BC00 		lds r24,188
- 646 021c 87FF      		sbrs r24,7
- 647 021e 00C0      		rjmp .L70
+ 448               		.loc 1 369 0 discriminator 1
+ 449 0218 8091 BC00 		lds r24,188
+ 450 021c 87FF      		sbrs r24,7
+ 451 021e 00C0      		rjmp .L70
  370:memoire_24.cpp ****      ;
  371:memoire_24.cpp **** 
  372:memoire_24.cpp ****   //_____________ Transmission du poids faible de l'adresse _______________
  373:memoire_24.cpp ****   TWDR = adresse;                      // 8 bits de poids faible de l'adresse
- 648               		.stabn	68,0,373,.LM97-.LFBB7
- 649               	.LM97:
- 650 0220 6093 BB00 		sts 187,r22
+ 452               		.loc 1 373 0
+ 453 0220 6093 BB00 		sts 187,r22
  374:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
- 651               		.stabn	68,0,374,.LM98-.LFBB7
- 652               	.LM98:
- 653 0224 84E8      		ldi r24,lo8(-124)
- 654 0226 8093 BC00 		sts 188,r24
- 655               	.L72:
+ 454               		.loc 1 374 0
+ 455 0224 84E8      		ldi r24,lo8(-124)
+ 456 0226 8093 BC00 		sts 188,r24
+ 457               	.L72:
  375:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 656               		.stabn	68,0,375,.LM99-.LFBB7
- 657               	.LM99:
- 658 022a 8091 BC00 		lds r24,188
- 659 022e 87FF      		sbrs r24,7
- 660 0230 00C0      		rjmp .L72
+ 458               		.loc 1 375 0 discriminator 1
+ 459 022a 8091 BC00 		lds r24,188
+ 460 022e 87FF      		sbrs r24,7
+ 461 0230 00C0      		rjmp .L72
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 16
+
+
  376:memoire_24.cpp ****      ;
  377:memoire_24.cpp **** 
  378:memoire_24.cpp ****   //______________________ Transmission de la donnee ______________________
  379:memoire_24.cpp ****   TWDR = donnee;
- 661               		.stabn	68,0,379,.LM100-.LFBB7
- 662               	.LM100:
- 663 0232 4093 BB00 		sts 187,r20
+ 462               		.loc 1 379 0
+ 463 0232 4093 BB00 		sts 187,r20
  380:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
- 664               		.stabn	68,0,380,.LM101-.LFBB7
- 665               	.LM101:
- 666 0236 84E8      		ldi r24,lo8(-124)
- 667 0238 8093 BC00 		sts 188,r24
- 668               	.L74:
+ 464               		.loc 1 380 0
+ 465 0236 84E8      		ldi r24,lo8(-124)
+ 466 0238 8093 BC00 		sts 188,r24
+ 467               	.L74:
  381:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 669               		.stabn	68,0,381,.LM102-.LFBB7
- 670               	.LM102:
- 671 023c 8091 BC00 		lds r24,188
- 672 0240 87FF      		sbrs r24,7
- 673 0242 00C0      		rjmp .L74
+ 468               		.loc 1 381 0 discriminator 1
+ 469 023c 8091 BC00 		lds r24,188
+ 470 0240 87FF      		sbrs r24,7
+ 471 0242 00C0      		rjmp .L74
  382:memoire_24.cpp ****      ;
  383:memoire_24.cpp **** 
  384:memoire_24.cpp ****   //________________ Transmission de la condition d'arret _________________
  385:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTO) | _BV(TWEN);  // Demarrage du cycle d'ecriture
- 674               		.stabn	68,0,385,.LM103-.LFBB7
- 675               	.LM103:
- 676 0244 84E9      		ldi r24,lo8(-108)
- 677 0246 8093 BC00 		sts 188,r24
+ 472               		.loc 1 385 0
+ 473 0244 84E9      		ldi r24,lo8(-108)
+ 474 0246 8093 BC00 		sts 188,r24
  386:memoire_24.cpp **** 
  387:memoire_24.cpp ****   return 0;
-GAS LISTING /tmp/cczpOvZM.s 			page 20
-
-
  388:memoire_24.cpp **** }
- 678               		.stabn	68,0,388,.LM104-.LFBB7
- 679               	.LM104:
- 680 024a 80E0      		ldi r24,0
- 681 024c 0895      		ret
- 682               		.size	_ZN13Memoire24CXXX8ecritureEjh, .-_ZN13Memoire24CXXX8ecritureEjh
- 683               	.Lscope7:
- 684               		.stabs	"",36,0,0,.Lscope7-.LFBB7
- 685               		.stabd	78,0,0
- 686               		.stabs	"_ZN13Memoire24CXXX11ecrire_pageEjPhh:F(0,59)",36,0,410,_ZN13Memoire24CXXX11ecrire_pageEjPh
- 687               		.stabs	"this:P(0,98)",64,0,411,24
- 688               		.stabs	"adresse:P(0,99)=k(0,61)",64,0,410,22
- 689               		.stabs	"longueur:P(0,90)",64,0,411,18
- 690               	.global	_ZN13Memoire24CXXX11ecrire_pageEjPhh
- 691               		.type	_ZN13Memoire24CXXX11ecrire_pageEjPhh, @function
- 692               	_ZN13Memoire24CXXX11ecrire_pageEjPhh:
- 693               		.stabd	46,0,0
+ 475               		.loc 1 388 0
+ 476 024a 80E0      		ldi r24,0
+ 477 024c 0895      		ret
+ 478               		.cfi_endproc
+ 479               	.LFE10:
+ 480               		.size	_ZN13Memoire24CXXX8ecritureEjh, .-_ZN13Memoire24CXXX8ecritureEjh
+ 481               	.global	_ZN13Memoire24CXXX11ecrire_pageEjPhh
+ 482               		.type	_ZN13Memoire24CXXX11ecrire_pageEjPhh, @function
+ 483               	_ZN13Memoire24CXXX11ecrire_pageEjPhh:
+ 484               	.LFB12:
  389:memoire_24.cpp **** 
  390:memoire_24.cpp **** 
  391:memoire_24.cpp **** uint8_t Memoire24CXXX::ecriture(const uint16_t adresse, uint8_t *donnee,
@@ -1179,17 +958,20 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
  407:memoire_24.cpp **** }
  408:memoire_24.cpp **** 
  409:memoire_24.cpp **** 
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 17
+
+
  410:memoire_24.cpp **** uint8_t Memoire24CXXX::ecrire_page(const uint16_t adresse, uint8_t *donnee,
  411:memoire_24.cpp ****                                    const uint8_t longueur)
  412:memoire_24.cpp **** {
- 694               		.stabn	68,0,412,.LM105-.LFBB8
- 695               	.LM105:
- 696               	.LFBB8:
- 697               	/* prologue: function */
- 698               	/* frame size = 0 */
- 699               	/* stack size = 0 */
- 700               	.L__stack_usage = 0
- 701               	.LBB11:
+ 485               		.loc 1 412 0
+ 486               		.cfi_startproc
+ 487               	.LVL24:
+ 488               	/* prologue: function */
+ 489               	/* frame size = 0 */
+ 490               	/* stack size = 0 */
+ 491               	.L__stack_usage = 0
+ 492               	.LBB11:
  413:memoire_24.cpp ****   uint16_t addr_fin;
  414:memoire_24.cpp ****   uint8_t rv = 0;
  415:memoire_24.cpp ****   uint8_t copieLongueur = longueur;
@@ -1198,172 +980,149 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
  418:memoire_24.cpp ****   // de grandeur d'une page afin d'eviter le repliement dans l'ecriture
  419:memoire_24.cpp ****   // des donnees
  420:memoire_24.cpp **** 
-GAS LISTING /tmp/cczpOvZM.s 			page 21
-
-
  421:memoire_24.cpp ****   if (adresse + longueur < (adresse | (PAGE_SIZE - 1)))
- 702               		.stabn	68,0,421,.LM106-.LFBB8
- 703               	.LM106:
- 704 024e FB01      		movw r30,r22
- 705 0250 E20F      		add r30,r18
- 706 0252 F11D      		adc r31,__zero_reg__
- 707 0254 DC01      		movw r26,r24
- 708 0256 2C91      		ld r18,X
- 709 0258 30E0      		ldi r19,0
- 710 025a 2150      		subi r18,1
- 711 025c 3109      		sbc r19,__zero_reg__
- 712 025e 262B      		or r18,r22
- 713 0260 372B      		or r19,r23
- 714 0262 E217      		cp r30,r18
- 715 0264 F307      		cpc r31,r19
- 716 0266 00F0      		brlo .L76
+ 493               		.loc 1 421 0
+ 494 024e FB01      		movw r30,r22
+ 495 0250 E20F      		add r30,r18
+ 496 0252 F11D      		adc r31,__zero_reg__
+ 497 0254 DC01      		movw r26,r24
+ 498 0256 2C91      		ld r18,X
+ 499               	.LVL25:
+ 500 0258 30E0      		ldi r19,0
+ 501 025a 2150      		subi r18,1
+ 502 025c 3109      		sbc r19,__zero_reg__
+ 503 025e 262B      		or r18,r22
+ 504 0260 372B      		or r19,r23
+ 505 0262 E217      		cp r30,r18
+ 506 0264 F307      		cpc r31,r19
+ 507 0266 00F0      		brlo .L76
  422:memoire_24.cpp ****     addr_fin = adresse + longueur;
  423:memoire_24.cpp ****   else
  424:memoire_24.cpp ****     addr_fin = (adresse | (PAGE_SIZE - 1)) + 1;
- 717               		.stabn	68,0,424,.LM107-.LFBB8
- 718               	.LM107:
- 719 0268 F901      		movw r30,r18
- 720 026a 3196      		adiw r30,1
- 721               	.L76:
+ 508               		.loc 1 424 0
+ 509 0268 F901      		movw r30,r18
+ 510 026a 3196      		adiw r30,1
+ 511               	.L76:
  425:memoire_24.cpp ****   copieLongueur = addr_fin - adresse;
- 722               		.stabn	68,0,425,.LM108-.LFBB8
- 723               	.LM108:
- 724 026c 8E2F      		mov r24,r30
- 725 026e 861B      		sub r24,r22
+ 512               		.loc 1 425 0
+ 513 026c 8E2F      		mov r24,r30
+ 514               	.LVL26:
+ 515 026e 861B      		sub r24,r22
+ 516               	.LVL27:
  426:memoire_24.cpp **** 
  427:memoire_24.cpp **** 
  428:memoire_24.cpp ****   //______________ Attente de la fin d'un cycle d'ecriture ______________
  429:memoire_24.cpp ****   for ( ; ; )
  430:memoire_24.cpp ****   {
  431:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
- 726               		.stabn	68,0,431,.LM109-.LFBB8
- 727               	.LM109:
- 728 0270 24EA      		ldi r18,lo8(-92)
+ 517               		.loc 1 431 0
+ 518 0270 24EA      		ldi r18,lo8(-92)
  432:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0) ;   // Attente de fin de transmission
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 18
+
+
  433:memoire_24.cpp ****     TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
  434:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWEN);       // R. a Z., interrupt. - Depart de transm.
- 729               		.stabn	68,0,434,.LM110-.LFBB8
- 730               	.LM110:
- 731 0272 34E8      		ldi r19,lo8(-124)
- 732               	.L82:
+ 519               		.loc 1 434 0
+ 520 0272 34E8      		ldi r19,lo8(-124)
+ 521               	.L82:
  431:memoire_24.cpp ****     TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);    // Condition de depart
- 733               		.stabn	68,0,431,.LM111-.LFBB8
- 734               	.LM111:
- 735 0274 2093 BC00 		sts 188,r18
- 736               	.L78:
+ 522               		.loc 1 431 0
+ 523 0274 2093 BC00 		sts 188,r18
+ 524               	.L78:
  432:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0) ;   // Attente de fin de transmission
- 737               		.stabn	68,0,432,.LM112-.LFBB8
- 738               	.LM112:
- 739 0278 9091 BC00 		lds r25,188
- 740 027c 97FF      		sbrs r25,7
- 741 027e 00C0      		rjmp .L78
+ 525               		.loc 1 432 0 discriminator 1
+ 526 0278 9091 BC00 		lds r25,188
+ 527 027c 97FF      		sbrs r25,7
+ 528 027e 00C0      		rjmp .L78
  433:memoire_24.cpp ****     TWDR = m_adresse_peripherique;       // Controle - bit 0 a 0, ecriture
-GAS LISTING /tmp/cczpOvZM.s 			page 22
-
-
- 742               		.stabn	68,0,433,.LM113-.LFBB8
- 743               	.LM113:
- 744 0280 9091 0000 		lds r25,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
- 745 0284 9093 BB00 		sts 187,r25
- 746               		.stabn	68,0,434,.LM114-.LFBB8
- 747               	.LM114:
- 748 0288 3093 BC00 		sts 188,r19
- 749               	.L80:
+ 529               		.loc 1 433 0
+ 530 0280 9091 0000 		lds r25,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 531 0284 9093 BB00 		sts 187,r25
+ 532               		.loc 1 434 0
+ 533 0288 3093 BC00 		sts 188,r19
+ 534               	.L80:
  435:memoire_24.cpp ****     while ((TWCR & _BV(TWINT)) == 0)     // Attente de fin de transmission
- 750               		.stabn	68,0,435,.LM115-.LFBB8
- 751               	.LM115:
- 752 028c 9091 BC00 		lds r25,188
- 753 0290 97FF      		sbrs r25,7
- 754 0292 00C0      		rjmp .L80
+ 535               		.loc 1 435 0 discriminator 1
+ 536 028c 9091 BC00 		lds r25,188
+ 537 0290 97FF      		sbrs r25,7
+ 538 0292 00C0      		rjmp .L80
  436:memoire_24.cpp ****        ;
  437:memoire_24.cpp **** 
  438:memoire_24.cpp ****     if (TWSR==0x18)
- 755               		.stabn	68,0,438,.LM116-.LFBB8
- 756               	.LM116:
- 757 0294 9091 B900 		lds r25,185
- 758 0298 9831      		cpi r25,lo8(24)
- 759 029a 01F4      		brne .L82
+ 539               		.loc 1 438 0
+ 540 0294 9091 B900 		lds r25,185
+ 541 0298 9831      		cpi r25,lo8(24)
+ 542 029a 01F4      		brne .L82
  439:memoire_24.cpp ****        break;               // 0x18 = cycle d'ecriture termine
  440:memoire_24.cpp ****   }
  441:memoire_24.cpp **** 
  442:memoire_24.cpp ****   //_______________ Transmission de la condition de depart ________________
  443:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTA) | _BV(TWEN);     // Condition de depart
- 760               		.stabn	68,0,443,.LM117-.LFBB8
- 761               	.LM117:
- 762 029c 94EA      		ldi r25,lo8(-92)
- 763 029e 9093 BC00 		sts 188,r25
- 764               	.L84:
+ 543               		.loc 1 443 0
+ 544 029c 94EA      		ldi r25,lo8(-92)
+ 545 029e 9093 BC00 		sts 188,r25
+ 546               	.L84:
  444:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)       // Attente de fin de transmission
- 765               		.stabn	68,0,444,.LM118-.LFBB8
- 766               	.LM118:
- 767 02a2 9091 BC00 		lds r25,188
- 768 02a6 97FF      		sbrs r25,7
- 769 02a8 00C0      		rjmp .L84
+ 547               		.loc 1 444 0 discriminator 1
+ 548 02a2 9091 BC00 		lds r25,188
+ 549 02a6 97FF      		sbrs r25,7
+ 550 02a8 00C0      		rjmp .L84
  445:memoire_24.cpp ****      ;
  446:memoire_24.cpp **** 
  447:memoire_24.cpp ****   //__________________ Transmission du code de controle ___________________
  448:memoire_24.cpp ****   TWDR = m_adresse_peripherique;        // Controle - bit 0 a 0, ecriture
- 770               		.stabn	68,0,448,.LM119-.LFBB8
- 771               	.LM119:
- 772 02aa 9091 0000 		lds r25,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
- 773 02ae 9093 BB00 		sts 187,r25
+ 551               		.loc 1 448 0
+ 552 02aa 9091 0000 		lds r25,_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 553 02ae 9093 BB00 		sts 187,r25
  449:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
- 774               		.stabn	68,0,449,.LM120-.LFBB8
- 775               	.LM120:
- 776 02b2 94E8      		ldi r25,lo8(-124)
- 777 02b4 9093 BC00 		sts 188,r25
- 778               	.L86:
+ 554               		.loc 1 449 0
+ 555 02b2 94E8      		ldi r25,lo8(-124)
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 19
+
+
+ 556 02b4 9093 BC00 		sts 188,r25
+ 557               	.L86:
  450:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 779               		.stabn	68,0,450,.LM121-.LFBB8
- 780               	.LM121:
- 781 02b8 9091 BC00 		lds r25,188
- 782 02bc 97FF      		sbrs r25,7
-GAS LISTING /tmp/cczpOvZM.s 			page 23
-
-
- 783 02be 00C0      		rjmp .L86
+ 558               		.loc 1 450 0 discriminator 1
+ 559 02b8 9091 BC00 		lds r25,188
+ 560 02bc 97FF      		sbrs r25,7
+ 561 02be 00C0      		rjmp .L86
  451:memoire_24.cpp ****      ;
  452:memoire_24.cpp **** 
  453:memoire_24.cpp ****   //______________ Transmission du poids fort de l'adresse ________________
  454:memoire_24.cpp ****   TWDR = adresse >> 8;                  // 8 bits de poids fort de l'adresse
- 784               		.stabn	68,0,454,.LM122-.LFBB8
- 785               	.LM122:
- 786 02c0 7093 BB00 		sts 187,r23
+ 562               		.loc 1 454 0
+ 563 02c0 7093 BB00 		sts 187,r23
  455:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
- 787               		.stabn	68,0,455,.LM123-.LFBB8
- 788               	.LM123:
- 789 02c4 94E8      		ldi r25,lo8(-124)
- 790 02c6 9093 BC00 		sts 188,r25
- 791               	.L88:
+ 564               		.loc 1 455 0
+ 565 02c4 94E8      		ldi r25,lo8(-124)
+ 566 02c6 9093 BC00 		sts 188,r25
+ 567               	.L88:
  456:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 792               		.stabn	68,0,456,.LM124-.LFBB8
- 793               	.LM124:
- 794 02ca 9091 BC00 		lds r25,188
- 795 02ce 97FF      		sbrs r25,7
- 796 02d0 00C0      		rjmp .L88
+ 568               		.loc 1 456 0 discriminator 1
+ 569 02ca 9091 BC00 		lds r25,188
+ 570 02ce 97FF      		sbrs r25,7
+ 571 02d0 00C0      		rjmp .L88
  457:memoire_24.cpp ****      ;
  458:memoire_24.cpp **** 
  459:memoire_24.cpp ****   //_____________ Transmission du poids faible de l'adresse _______________
  460:memoire_24.cpp ****   TWDR = adresse;                       // 8 bits de poids faible de l'adresse
- 797               		.stabn	68,0,460,.LM125-.LFBB8
- 798               	.LM125:
- 799 02d2 6093 BB00 		sts 187,r22
+ 572               		.loc 1 460 0
+ 573 02d2 6093 BB00 		sts 187,r22
  461:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWEN);        // R. a Z., interrupt. - Depart de transm.
- 800               		.stabn	68,0,461,.LM126-.LFBB8
- 801               	.LM126:
- 802 02d6 94E8      		ldi r25,lo8(-124)
- 803 02d8 9093 BC00 		sts 188,r25
- 804               	.L91:
+ 574               		.loc 1 461 0
+ 575 02d6 94E8      		ldi r25,lo8(-124)
+ 576 02d8 9093 BC00 		sts 188,r25
+ 577               	.L91:
  462:memoire_24.cpp ****   while ((TWCR & _BV(TWINT)) == 0)      // Attente de fin de transmission
- 805               		.stabn	68,0,462,.LM127-.LFBB8
- 806               	.LM127:
- 807 02dc 9091 BC00 		lds r25,188
- 808 02e0 97FF      		sbrs r25,7
- 809 02e2 00C0      		rjmp .L91
- 810 02e4 FA01      		movw r30,r20
- 811               		.stabn	68,0,462,.LM128-.LFBB8
- 812               	.LM128:
- 813 02e6 982F      		mov r25,r24
+ 578               		.loc 1 462 0 discriminator 1
+ 579 02dc 9091 BC00 		lds r25,188
+ 580 02e0 97FF      		sbrs r25,7
+ 581 02e2 00C0      		rjmp .L91
+ 582 02e4 FA01      		movw r30,r20
+ 583               		.loc 1 462 0 is_stmt 0
+ 584 02e6 982F      		mov r25,r24
  463:memoire_24.cpp ****      ;
  464:memoire_24.cpp **** 
  465:memoire_24.cpp ****   //______________________ Transmission de la page ______________________
@@ -1371,187 +1130,2500 @@ GAS LISTING /tmp/cczpOvZM.s 			page 1
  467:memoire_24.cpp ****   {
  468:memoire_24.cpp ****      TWDR = *donnee++;
  469:memoire_24.cpp ****      TWCR = _BV(TWINT) | _BV(TWEN);     // R. a Z., interrupt. - Depart de transm.
- 814               		.stabn	68,0,469,.LM129-.LFBB8
- 815               	.LM129:
- 816 02e8 24E8      		ldi r18,lo8(-124)
- 817               	.L90:
+ 585               		.loc 1 469 0 is_stmt 1
+ 586 02e8 24E8      		ldi r18,lo8(-124)
+ 587               	.LVL28:
+ 588               	.L90:
  466:memoire_24.cpp ****   for ( ; copieLongueur > 0; copieLongueur--)
- 818               		.stabn	68,0,466,.LM130-.LFBB8
- 819               	.LM130:
-GAS LISTING /tmp/cczpOvZM.s 			page 24
+ 589               		.loc 1 466 0 discriminator 1
+ 590 02ea 9923      		tst r25
+ 591 02ec 01F0      		breq .L95
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 20
 
 
- 820 02ea 9923      		tst r25
- 821 02ec 01F0      		breq .L95
+ 592               	.LVL29:
  468:memoire_24.cpp ****      TWDR = *donnee++;
- 822               		.stabn	68,0,468,.LM131-.LFBB8
- 823               	.LM131:
- 824 02ee 3191      		ld r19,Z+
- 825 02f0 3093 BB00 		sts 187,r19
- 826               		.stabn	68,0,469,.LM132-.LFBB8
- 827               	.LM132:
- 828 02f4 2093 BC00 		sts 188,r18
- 829               	.L93:
+ 593               		.loc 1 468 0
+ 594 02ee 3191      		ld r19,Z+
+ 595               	.LVL30:
+ 596 02f0 3093 BB00 		sts 187,r19
+ 597               		.loc 1 469 0
+ 598 02f4 2093 BC00 		sts 188,r18
+ 599               	.L93:
  470:memoire_24.cpp ****      while ((TWCR & _BV(TWINT)) == 0)   // Attente de fin de transmission
- 830               		.stabn	68,0,470,.LM133-.LFBB8
- 831               	.LM133:
- 832 02f8 3091 BC00 		lds r19,188
- 833 02fc 37FF      		sbrs r19,7
- 834 02fe 00C0      		rjmp .L93
+ 600               		.loc 1 470 0 discriminator 1
+ 601 02f8 3091 BC00 		lds r19,188
+ 602 02fc 37FF      		sbrs r19,7
+ 603 02fe 00C0      		rjmp .L93
+ 604               	.LVL31:
  466:memoire_24.cpp ****   for ( ; copieLongueur > 0; copieLongueur--)
- 835               		.stabn	68,0,466,.LM134-.LFBB8
- 836               	.LM134:
- 837 0300 9150      		subi r25,lo8(-(-1))
- 838 0302 00C0      		rjmp .L90
- 839               	.L95:
+ 605               		.loc 1 466 0
+ 606 0300 9150      		subi r25,lo8(-(-1))
+ 607               	.LVL32:
+ 608 0302 00C0      		rjmp .L90
+ 609               	.L95:
  471:memoire_24.cpp ****         ;
  472:memoire_24.cpp ****      rv++;                              // Compteur de donnees
  473:memoire_24.cpp ****   }
  474:memoire_24.cpp **** 
  475:memoire_24.cpp ****   //________________ Transmission de la condition d'arrret _________________
  476:memoire_24.cpp ****   TWCR = _BV(TWINT) | _BV(TWSTO) | _BV(TWEN); // Demarrage du cycle d'ecriture
- 840               		.stabn	68,0,476,.LM135-.LFBB8
- 841               	.LM135:
- 842 0304 94E9      		ldi r25,lo8(-108)
- 843 0306 9093 BC00 		sts 188,r25
- 844               	.LBE11:
+ 610               		.loc 1 476 0
+ 611 0304 94E9      		ldi r25,lo8(-108)
+ 612               	.LVL33:
+ 613 0306 9093 BC00 		sts 188,r25
+ 614               	.LBE11:
  477:memoire_24.cpp **** 
  478:memoire_24.cpp ****   return rv;
  479:memoire_24.cpp **** }...
- 845               		.stabn	68,0,479,.LM136-.LFBB8
- 846               	.LM136:
- 847 030a 0895      		ret
- 848               		.size	_ZN13Memoire24CXXX11ecrire_pageEjPhh, .-_ZN13Memoire24CXXX11ecrire_pageEjPhh
- 849               		.stabs	"addr_fin:r(0,61)",64,0,413,30
- 850               		.stabn	192,0,0,.LBB11-.LFBB8
- 851               		.stabn	224,0,0,.LBE11-.LFBB8
- 852               	.Lscope8:
- 853               		.stabs	"",36,0,0,.Lscope8-.LFBB8
- 854               		.stabd	78,0,0
- 855               		.stabs	"_ZN13Memoire24CXXX8ecritureEjPhh:F(0,59)",36,0,391,_ZN13Memoire24CXXX8ecritureEjPhh
- 856               		.stabs	"this:P(0,98)",64,0,392,14
- 857               		.stabs	"donnee:P(0,95)",64,0,391,16
- 858               		.stabs	"longueur:P(0,90)",64,0,392,18
- 859               	.global	_ZN13Memoire24CXXX8ecritureEjPhh
- 860               		.type	_ZN13Memoire24CXXX8ecritureEjPhh, @function
- 861               	_ZN13Memoire24CXXX8ecritureEjPhh:
- 862               		.stabd	46,0,0
+ 615               		.loc 1 479 0
+ 616 030a 0895      		ret
+ 617               		.cfi_endproc
+ 618               	.LFE12:
+ 619               		.size	_ZN13Memoire24CXXX11ecrire_pageEjPhh, .-_ZN13Memoire24CXXX11ecrire_pageEjPhh
+ 620               	.global	_ZN13Memoire24CXXX8ecritureEjPhh
+ 621               		.type	_ZN13Memoire24CXXX8ecritureEjPhh, @function
+ 622               	_ZN13Memoire24CXXX8ecritureEjPhh:
+ 623               	.LFB11:
  393:memoire_24.cpp **** {
- 863               		.stabn	68,0,393,.LM137-.LFBB9
-GAS LISTING /tmp/cczpOvZM.s 			page 25
+ 624               		.loc 1 393 0
+ 625               		.cfi_startproc
+ 626               	.LVL34:
+ 627 030c DF92      		push r13
+ 628               	.LCFI0:
+ 629               		.cfi_def_cfa_offset 3
+ 630               		.cfi_offset 13, -2
+ 631 030e EF92      		push r14
+ 632               	.LCFI1:
+ 633               		.cfi_def_cfa_offset 4
+ 634               		.cfi_offset 14, -3
+ 635 0310 FF92      		push r15
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 21
 
 
- 864               	.LM137:
- 865               	.LFBB9:
- 866 030c DF92      		push r13
- 867 030e EF92      		push r14
- 868 0310 FF92      		push r15
- 869 0312 0F93      		push r16
- 870 0314 1F93      		push r17
- 871 0316 CF93      		push r28
- 872 0318 DF93      		push r29
- 873               	/* prologue: function */
- 874               	/* frame size = 0 */
- 875               	/* stack size = 7 */
- 876               	.L__stack_usage = 7
- 877 031a 7C01      		movw r14,r24
- 878 031c 8A01      		movw r16,r20
- 879 031e D22E      		mov r13,r18
- 880               	.LBB12:
+ 636               	.LCFI2:
+ 637               		.cfi_def_cfa_offset 5
+ 638               		.cfi_offset 15, -4
+ 639 0312 0F93      		push r16
+ 640               	.LCFI3:
+ 641               		.cfi_def_cfa_offset 6
+ 642               		.cfi_offset 16, -5
+ 643 0314 1F93      		push r17
+ 644               	.LCFI4:
+ 645               		.cfi_def_cfa_offset 7
+ 646               		.cfi_offset 17, -6
+ 647 0316 CF93      		push r28
+ 648               	.LCFI5:
+ 649               		.cfi_def_cfa_offset 8
+ 650               		.cfi_offset 28, -7
+ 651 0318 DF93      		push r29
+ 652               	.LCFI6:
+ 653               		.cfi_def_cfa_offset 9
+ 654               		.cfi_offset 29, -8
+ 655               	/* prologue: function */
+ 656               	/* frame size = 0 */
+ 657               	/* stack size = 7 */
+ 658               	.L__stack_usage = 7
+ 659 031a 7C01      		movw r14,r24
+ 660 031c 8A01      		movw r16,r20
+ 661 031e D22E      		mov r13,r18
+ 662               	.LVL35:
+ 663               	.LBB12:
  395:memoire_24.cpp ****   uint16_t copieAdresse = adresse;
- 881               		.stabn	68,0,395,.LM138-.LFBB9
- 882               	.LM138:
- 883 0320 EB01      		movw r28,r22
- 884               	.L98:
+ 664               		.loc 1 395 0
+ 665 0320 EB01      		movw r28,r22
+ 666               	.LVL36:
+ 667               	.L98:
  399:memoire_24.cpp ****       rv = ecrire_page(copieAdresse, donnee, copieLongueur);
- 885               		.stabn	68,0,399,.LM139-.LFBB9
- 886               	.LM139:
- 887 0322 2D2D      		mov r18,r13
- 888 0324 A801      		movw r20,r16
- 889 0326 BE01      		movw r22,r28
- 890 0328 C701      		movw r24,r14
- 891 032a 0E94 0000 		call _ZN13Memoire24CXXX11ecrire_pageEjPhh
+ 668               		.loc 1 399 0 discriminator 1
+ 669 0322 2D2D      		mov r18,r13
+ 670 0324 A801      		movw r20,r16
+ 671 0326 BE01      		movw r22,r28
+ 672 0328 C701      		movw r24,r14
+ 673 032a 0E94 0000 		call _ZN13Memoire24CXXX11ecrire_pageEjPhh
+ 674               	.LVL37:
  400:memoire_24.cpp ****       copieAdresse += rv;      // On pointe une nouvelle page
- 892               		.stabn	68,0,400,.LM140-.LFBB9
- 893               	.LM140:
- 894 032e 482F      		mov r20,r24
- 895 0330 50E0      		ldi r21,0
- 896 0332 C40F      		add r28,r20
- 897 0334 D51F      		adc r29,r21
+ 675               		.loc 1 400 0 discriminator 1
+ 676 032e 482F      		mov r20,r24
+ 677 0330 50E0      		ldi r21,0
+ 678 0332 C40F      		add r28,r20
+ 679 0334 D51F      		adc r29,r21
+ 680               	.LVL38:
  401:memoire_24.cpp ****       copieLongueur -= rv;     // On soustrait la partie ecrite precedemment
- 898               		.stabn	68,0,401,.LM141-.LFBB9
- 899               	.LM141:
- 900 0336 D81A      		sub r13,r24
+ 681               		.loc 1 401 0 discriminator 1
+ 682 0336 D81A      		sub r13,r24
+ 683               	.LVL39:
  402:memoire_24.cpp ****       donnee += rv;            // On avance le pointeur de donnees
- 901               		.stabn	68,0,402,.LM142-.LFBB9
- 902               	.LM142:
- 903 0338 040F      		add r16,r20
- 904 033a 151F      		adc r17,r21
+ 684               		.loc 1 402 0 discriminator 1
+ 685 0338 040F      		add r16,r20
+ 686 033a 151F      		adc r17,r21
+ 687               	.LVL40:
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 22
+
+
  397:memoire_24.cpp ****   do
- 905               		.stabn	68,0,397,.LM143-.LFBB9
- 906               	.LM143:
- 907 033c D110      		cpse r13,__zero_reg__
- 908 033e 00C0      		rjmp .L98
- 909               	.LBE12:
+ 688               		.loc 1 397 0 discriminator 1
+ 689 033c D110      		cpse r13,__zero_reg__
+ 690 033e 00C0      		rjmp .L98
+ 691               	.LBE12:
  407:memoire_24.cpp **** }
- 910               		.stabn	68,0,407,.LM144-.LFBB9
- 911               	.LM144:
- 912 0340 80E0      		ldi r24,0
- 913               	/* epilogue start */
-GAS LISTING /tmp/cczpOvZM.s 			page 26
+ 692               		.loc 1 407 0
+ 693 0340 80E0      		ldi r24,0
+ 694               	.LVL41:
+ 695               	/* epilogue start */
+ 696 0342 DF91      		pop r29
+ 697 0344 CF91      		pop r28
+ 698               	.LVL42:
+ 699 0346 1F91      		pop r17
+ 700 0348 0F91      		pop r16
+ 701               	.LVL43:
+ 702 034a FF90      		pop r15
+ 703 034c EF90      		pop r14
+ 704               	.LVL44:
+ 705 034e DF90      		pop r13
+ 706               	.LVL45:
+ 707 0350 0895      		ret
+ 708               		.cfi_endproc
+ 709               	.LFE11:
+ 710               		.size	_ZN13Memoire24CXXX8ecritureEjPhh, .-_ZN13Memoire24CXXX8ecritureEjPhh
+ 711               	.global	_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 712               		.data
+ 713               		.type	_ZN13Memoire24CXXX22m_adresse_peripheriqueE, @object
+ 714               		.size	_ZN13Memoire24CXXX22m_adresse_peripheriqueE, 1
+ 715               	_ZN13Memoire24CXXX22m_adresse_peripheriqueE:
+ 716 0000 A0        		.byte	-96
+ 717               		.text
+ 718               	.Letext0:
+ 719               		.file 2 "/usr/local/CrossPack-AVR-20131216/avr/include/stdint.h"
+ 720               		.file 3 "memoire_24.h"
+ 721               		.section	.debug_info,"",@progbits
+ 722               	.Ldebug_info0:
+ 723 0000 0F06 0000 		.long	0x60f
+ 724 0004 0200      		.word	0x2
+ 725 0006 0000 0000 		.long	.Ldebug_abbrev0
+ 726 000a 04        		.byte	0x4
+ 727 000b 01        		.uleb128 0x1
+ 728 000c 0000 0000 		.long	.LASF36
+ 729 0010 04        		.byte	0x4
+ 730 0011 0000 0000 		.long	.LASF37
+ 731 0015 0000 0000 		.long	.LASF38
+ 732 0019 0000 0000 		.long	.Ltext0
+ 733 001d 0000 0000 		.long	.Letext0
+ 734 0021 0000 0000 		.long	.Ldebug_line0
+ 735 0025 02        		.uleb128 0x2
+ 736 0026 01        		.byte	0x1
+ 737 0027 06        		.byte	0x6
+ 738 0028 0000 0000 		.long	.LASF0
+ 739 002c 03        		.uleb128 0x3
+ 740 002d 0000 0000 		.long	.LASF2
+ 741 0031 02        		.byte	0x2
+ 742 0032 7A        		.byte	0x7a
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 23
 
 
- 914 0342 DF91      		pop r29
- 915 0344 CF91      		pop r28
- 916 0346 1F91      		pop r17
- 917 0348 0F91      		pop r16
- 918 034a FF90      		pop r15
- 919 034c EF90      		pop r14
- 920 034e DF90      		pop r13
- 921 0350 0895      		ret
- 922               		.size	_ZN13Memoire24CXXX8ecritureEjPhh, .-_ZN13Memoire24CXXX8ecritureEjPhh
- 923               		.stabs	"rv:r(0,59)",64,0,394,24
- 924               		.stabs	"copieAdresse:r(0,61)",64,0,395,28
- 925               		.stabs	"copieLongueur:r(0,59)",64,0,396,13
- 926               		.stabn	192,0,0,.LBB12-.LFBB9
- 927               		.stabn	224,0,0,.LBE12-.LFBB9
- 928               	.Lscope9:
- 929               		.stabs	"",36,0,0,.Lscope9-.LFBB9
- 930               		.stabd	78,0,0
- 931               	.global	_ZN13Memoire24CXXX22m_adresse_peripheriqueE
- 932               		.data
- 933               		.type	_ZN13Memoire24CXXX22m_adresse_peripheriqueE, @object
- 934               		.size	_ZN13Memoire24CXXX22m_adresse_peripheriqueE, 1
- 935               	_ZN13Memoire24CXXX22m_adresse_peripheriqueE:
- 936 0000 A0        		.byte	-96
- 937               		.stabs	"_ZN13Memoire24CXXX22m_adresse_peripheriqueE:G(0,59)",32,0,38,0
- 938               		.text
- 939               		.stabs	"",100,0,0,.Letext0
- 940               	.Letext0:
- 941               		.ident	"GCC: (GNU) 4.8.2"
- 942               	.global __do_copy_data
-GAS LISTING /tmp/cczpOvZM.s 			page 27
+ 743 0033 3700 0000 		.long	0x37
+ 744 0037 02        		.uleb128 0x2
+ 745 0038 01        		.byte	0x1
+ 746 0039 08        		.byte	0x8
+ 747 003a 0000 0000 		.long	.LASF1
+ 748 003e 04        		.uleb128 0x4
+ 749 003f 02        		.byte	0x2
+ 750 0040 05        		.byte	0x5
+ 751 0041 696E 7400 		.string	"int"
+ 752 0045 03        		.uleb128 0x3
+ 753 0046 0000 0000 		.long	.LASF3
+ 754 004a 02        		.byte	0x2
+ 755 004b 7C        		.byte	0x7c
+ 756 004c 5000 0000 		.long	0x50
+ 757 0050 02        		.uleb128 0x2
+ 758 0051 02        		.byte	0x2
+ 759 0052 07        		.byte	0x7
+ 760 0053 0000 0000 		.long	.LASF4
+ 761 0057 02        		.uleb128 0x2
+ 762 0058 04        		.byte	0x4
+ 763 0059 05        		.byte	0x5
+ 764 005a 0000 0000 		.long	.LASF5
+ 765 005e 02        		.uleb128 0x2
+ 766 005f 04        		.byte	0x4
+ 767 0060 07        		.byte	0x7
+ 768 0061 0000 0000 		.long	.LASF6
+ 769 0065 02        		.uleb128 0x2
+ 770 0066 08        		.byte	0x8
+ 771 0067 05        		.byte	0x5
+ 772 0068 0000 0000 		.long	.LASF7
+ 773 006c 02        		.uleb128 0x2
+ 774 006d 08        		.byte	0x8
+ 775 006e 07        		.byte	0x7
+ 776 006f 0000 0000 		.long	.LASF8
+ 777 0073 05        		.uleb128 0x5
+ 778 0074 0000 0000 		.long	.LASF9
+ 779 0078 01        		.byte	0x1
+ 780 0079 03        		.byte	0x3
+ 781 007a 19        		.byte	0x19
+ 782 007b E801 0000 		.long	0x1e8
+ 783 007f 06        		.uleb128 0x6
+ 784 0080 0000 0000 		.long	.LASF39
+ 785 0084 03        		.byte	0x3
+ 786 0085 3A        		.byte	0x3a
+ 787 0086 2C00 0000 		.long	0x2c
+ 788 008a 01        		.byte	0x1
+ 789 008b 03        		.byte	0x3
+ 790 008c 01        		.byte	0x1
+ 791 008d 07        		.uleb128 0x7
+ 792 008e 0000 0000 		.long	.LASF40
+ 793 0092 03        		.byte	0x3
+ 794 0093 3B        		.byte	0x3b
+ 795 0094 E801 0000 		.long	0x1e8
+ 796 0098 02        		.byte	0x2
+ 797 0099 23        		.byte	0x23
+ 798 009a 00        		.uleb128 0
+ 799 009b 03        		.byte	0x3
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 24
+
+
+ 800 009c 08        		.uleb128 0x8
+ 801 009d 01        		.byte	0x1
+ 802 009e 0000 0000 		.long	.LASF9
+ 803 00a2 03        		.byte	0x3
+ 804 00a3 1D        		.byte	0x1d
+ 805 00a4 01        		.byte	0x1
+ 806 00a5 AD00 0000 		.long	0xad
+ 807 00a9 B400 0000 		.long	0xb4
+ 808 00ad 09        		.uleb128 0x9
+ 809 00ae ED01 0000 		.long	0x1ed
+ 810 00b2 01        		.byte	0x1
+ 811 00b3 00        		.byte	0
+ 812 00b4 08        		.uleb128 0x8
+ 813 00b5 01        		.byte	0x1
+ 814 00b6 0000 0000 		.long	.LASF10
+ 815 00ba 03        		.byte	0x3
+ 816 00bb 1E        		.byte	0x1e
+ 817 00bc 01        		.byte	0x1
+ 818 00bd C500 0000 		.long	0xc5
+ 819 00c1 D200 0000 		.long	0xd2
+ 820 00c5 09        		.uleb128 0x9
+ 821 00c6 ED01 0000 		.long	0x1ed
+ 822 00ca 01        		.byte	0x1
+ 823 00cb 09        		.uleb128 0x9
+ 824 00cc 3E00 0000 		.long	0x3e
+ 825 00d0 01        		.byte	0x1
+ 826 00d1 00        		.byte	0
+ 827 00d2 0A        		.uleb128 0xa
+ 828 00d3 01        		.byte	0x1
+ 829 00d4 0000 0000 		.long	.LASF11
+ 830 00d8 03        		.byte	0x3
+ 831 00d9 21        		.byte	0x21
+ 832 00da 0000 0000 		.long	.LASF13
+ 833 00de 01        		.byte	0x1
+ 834 00df E700 0000 		.long	0xe7
+ 835 00e3 EE00 0000 		.long	0xee
+ 836 00e7 09        		.uleb128 0x9
+ 837 00e8 ED01 0000 		.long	0x1ed
+ 838 00ec 01        		.byte	0x1
+ 839 00ed 00        		.byte	0
+ 840 00ee 0B        		.uleb128 0xb
+ 841 00ef 01        		.byte	0x1
+ 842 00f0 0000 0000 		.long	.LASF12
+ 843 00f4 03        		.byte	0x3
+ 844 00f5 25        		.byte	0x25
+ 845 00f6 0000 0000 		.long	.LASF14
+ 846 00fa 2C00 0000 		.long	0x2c
+ 847 00fe 01        		.byte	0x1
+ 848 00ff 0901 0000 		.long	0x109
+ 849 0103 0C        		.uleb128 0xc
+ 850 0104 2C00 0000 		.long	0x2c
+ 851 0108 00        		.byte	0
+ 852 0109 0D        		.uleb128 0xd
+ 853 010a 01        		.byte	0x1
+ 854 010b 0000 0000 		.long	.LASF15
+ 855 010f 03        		.byte	0x3
+ 856 0110 28        		.byte	0x28
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 25
+
+
+ 857 0111 0000 0000 		.long	.LASF16
+ 858 0115 2C00 0000 		.long	0x2c
+ 859 0119 01        		.byte	0x1
+ 860 011a 2201 0000 		.long	0x122
+ 861 011e 3301 0000 		.long	0x133
+ 862 0122 09        		.uleb128 0x9
+ 863 0123 ED01 0000 		.long	0x1ed
+ 864 0127 01        		.byte	0x1
+ 865 0128 0C        		.uleb128 0xc
+ 866 0129 4500 0000 		.long	0x45
+ 867 012d 0C        		.uleb128 0xc
+ 868 012e F301 0000 		.long	0x1f3
+ 869 0132 00        		.byte	0
+ 870 0133 0D        		.uleb128 0xd
+ 871 0134 01        		.byte	0x1
+ 872 0135 0000 0000 		.long	.LASF15
+ 873 0139 03        		.byte	0x3
+ 874 013a 2B        		.byte	0x2b
+ 875 013b 0000 0000 		.long	.LASF17
+ 876 013f 2C00 0000 		.long	0x2c
+ 877 0143 01        		.byte	0x1
+ 878 0144 4C01 0000 		.long	0x14c
+ 879 0148 6201 0000 		.long	0x162
+ 880 014c 09        		.uleb128 0x9
+ 881 014d ED01 0000 		.long	0x1ed
+ 882 0151 01        		.byte	0x1
+ 883 0152 0C        		.uleb128 0xc
+ 884 0153 4500 0000 		.long	0x45
+ 885 0157 0C        		.uleb128 0xc
+ 886 0158 F301 0000 		.long	0x1f3
+ 887 015c 0C        		.uleb128 0xc
+ 888 015d 2C00 0000 		.long	0x2c
+ 889 0161 00        		.byte	0
+ 890 0162 0D        		.uleb128 0xd
+ 891 0163 01        		.byte	0x1
+ 892 0164 0000 0000 		.long	.LASF18
+ 893 0168 03        		.byte	0x3
+ 894 0169 2F        		.byte	0x2f
+ 895 016a 0000 0000 		.long	.LASF19
+ 896 016e 2C00 0000 		.long	0x2c
+ 897 0172 01        		.byte	0x1
+ 898 0173 7B01 0000 		.long	0x17b
+ 899 0177 8C01 0000 		.long	0x18c
+ 900 017b 09        		.uleb128 0x9
+ 901 017c ED01 0000 		.long	0x1ed
+ 902 0180 01        		.byte	0x1
+ 903 0181 0C        		.uleb128 0xc
+ 904 0182 4500 0000 		.long	0x45
+ 905 0186 0C        		.uleb128 0xc
+ 906 0187 2C00 0000 		.long	0x2c
+ 907 018b 00        		.byte	0
+ 908 018c 0D        		.uleb128 0xd
+ 909 018d 01        		.byte	0x1
+ 910 018e 0000 0000 		.long	.LASF18
+ 911 0192 03        		.byte	0x3
+ 912 0193 30        		.byte	0x30
+ 913 0194 0000 0000 		.long	.LASF20
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 26
+
+
+ 914 0198 2C00 0000 		.long	0x2c
+ 915 019c 01        		.byte	0x1
+ 916 019d A501 0000 		.long	0x1a5
+ 917 01a1 BB01 0000 		.long	0x1bb
+ 918 01a5 09        		.uleb128 0x9
+ 919 01a6 ED01 0000 		.long	0x1ed
+ 920 01aa 01        		.byte	0x1
+ 921 01ab 0C        		.uleb128 0xc
+ 922 01ac 4500 0000 		.long	0x45
+ 923 01b0 0C        		.uleb128 0xc
+ 924 01b1 F301 0000 		.long	0x1f3
+ 925 01b5 0C        		.uleb128 0xc
+ 926 01b6 2C00 0000 		.long	0x2c
+ 927 01ba 00        		.byte	0
+ 928 01bb 0E        		.uleb128 0xe
+ 929 01bc 01        		.byte	0x1
+ 930 01bd 0000 0000 		.long	.LASF21
+ 931 01c1 03        		.byte	0x3
+ 932 01c2 35        		.byte	0x35
+ 933 01c3 0000 0000 		.long	.LASF22
+ 934 01c7 2C00 0000 		.long	0x2c
+ 935 01cb 03        		.byte	0x3
+ 936 01cc 01        		.byte	0x1
+ 937 01cd D101 0000 		.long	0x1d1
+ 938 01d1 09        		.uleb128 0x9
+ 939 01d2 ED01 0000 		.long	0x1ed
+ 940 01d6 01        		.byte	0x1
+ 941 01d7 0C        		.uleb128 0xc
+ 942 01d8 4500 0000 		.long	0x45
+ 943 01dc 0C        		.uleb128 0xc
+ 944 01dd F301 0000 		.long	0x1f3
+ 945 01e1 0C        		.uleb128 0xc
+ 946 01e2 2C00 0000 		.long	0x2c
+ 947 01e6 00        		.byte	0
+ 948 01e7 00        		.byte	0
+ 949 01e8 0F        		.uleb128 0xf
+ 950 01e9 2C00 0000 		.long	0x2c
+ 951 01ed 10        		.uleb128 0x10
+ 952 01ee 02        		.byte	0x2
+ 953 01ef 7300 0000 		.long	0x73
+ 954 01f3 10        		.uleb128 0x10
+ 955 01f4 02        		.byte	0x2
+ 956 01f5 2C00 0000 		.long	0x2c
+ 957 01f9 11        		.uleb128 0x11
+ 958 01fa B400 0000 		.long	0xb4
+ 959 01fe 01        		.byte	0x1
+ 960 01ff 40        		.byte	0x40
+ 961 0200 00        		.byte	0
+ 962 0201 0902 0000 		.long	0x209
+ 963 0205 1E02 0000 		.long	0x21e
+ 964 0209 12        		.uleb128 0x12
+ 965 020a 0000 0000 		.long	.LASF23
+ 966 020e 1E02 0000 		.long	0x21e
+ 967 0212 01        		.byte	0x1
+ 968 0213 12        		.uleb128 0x12
+ 969 0214 0000 0000 		.long	.LASF24
+ 970 0218 2302 0000 		.long	0x223
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 27
+
+
+ 971 021c 01        		.byte	0x1
+ 972 021d 00        		.byte	0
+ 973 021e 0F        		.uleb128 0xf
+ 974 021f ED01 0000 		.long	0x1ed
+ 975 0223 0F        		.uleb128 0xf
+ 976 0224 3E00 0000 		.long	0x3e
+ 977 0228 13        		.uleb128 0x13
+ 978 0229 F901 0000 		.long	0x1f9
+ 979 022d 0000 0000 		.long	.LASF27
+ 980 0231 0000 0000 		.long	.LFB4
+ 981 0235 0000 0000 		.long	.LFE4
+ 982 0239 03        		.byte	0x3
+ 983 023a 92        		.byte	0x92
+ 984 023b 20        		.uleb128 0x20
+ 985 023c 02        		.sleb128 2
+ 986 023d 4602 0000 		.long	0x246
+ 987 0241 01        		.byte	0x1
+ 988 0242 5302 0000 		.long	0x253
+ 989 0246 14        		.uleb128 0x14
+ 990 0247 0902 0000 		.long	0x209
+ 991 024b 06        		.byte	0x6
+ 992 024c 68        		.byte	0x68
+ 993 024d 93        		.byte	0x93
+ 994 024e 01        		.uleb128 0x1
+ 995 024f 69        		.byte	0x69
+ 996 0250 93        		.byte	0x93
+ 997 0251 01        		.uleb128 0x1
+ 998 0252 00        		.byte	0
+ 999 0253 15        		.uleb128 0x15
+ 1000 0254 EE00 0000 		.long	0xee
+ 1001 0258 01        		.byte	0x1
+ 1002 0259 60        		.byte	0x60
+ 1003 025a 01        		.byte	0x1
+ 1004 025b 8202 0000 		.long	0x282
+ 1005 025f 16        		.uleb128 0x16
+ 1006 0260 0000 0000 		.long	.LASF26
+ 1007 0264 01        		.byte	0x1
+ 1008 0265 60        		.byte	0x60
+ 1009 0266 E801 0000 		.long	0x1e8
+ 1010 026a 17        		.uleb128 0x17
+ 1011 026b 18        		.uleb128 0x18
+ 1012 026c 0000 0000 		.long	.LASF25
+ 1013 0270 01        		.byte	0x1
+ 1014 0271 62        		.byte	0x62
+ 1015 0272 2C00 0000 		.long	0x2c
+ 1016 0276 19        		.uleb128 0x19
+ 1017 0277 7276 00   		.string	"rv"
+ 1018 027a 01        		.byte	0x1
+ 1019 027b 63        		.byte	0x63
+ 1020 027c 2C00 0000 		.long	0x2c
+ 1021 0280 00        		.byte	0
+ 1022 0281 00        		.byte	0
+ 1023 0282 1A        		.uleb128 0x1a
+ 1024 0283 D200 0000 		.long	0xd2
+ 1025 0287 01        		.byte	0x1
+ 1026 0288 4E        		.byte	0x4e
+ 1027 0289 0000 0000 		.long	.LFB6
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 28
+
+
+ 1028 028d 0000 0000 		.long	.LFE6
+ 1029 0291 03        		.byte	0x3
+ 1030 0292 92        		.byte	0x92
+ 1031 0293 20        		.uleb128 0x20
+ 1032 0294 02        		.sleb128 2
+ 1033 0295 9E02 0000 		.long	0x29e
+ 1034 0299 01        		.byte	0x1
+ 1035 029a DC02 0000 		.long	0x2dc
+ 1036 029e 1B        		.uleb128 0x1b
+ 1037 029f 0000 0000 		.long	.LASF23
+ 1038 02a3 1E02 0000 		.long	0x21e
+ 1039 02a7 01        		.byte	0x1
+ 1040 02a8 0000 0000 		.long	.LLST0
+ 1041 02ac 1C        		.uleb128 0x1c
+ 1042 02ad 5302 0000 		.long	0x253
+ 1043 02b1 0000 0000 		.long	.LBB5
+ 1044 02b5 0000 0000 		.long	.LBE5
+ 1045 02b9 01        		.byte	0x1
+ 1046 02ba 50        		.byte	0x50
+ 1047 02bb 1D        		.uleb128 0x1d
+ 1048 02bc 5F02 0000 		.long	0x25f
+ 1049 02c0 00        		.byte	0
+ 1050 02c1 1E        		.uleb128 0x1e
+ 1051 02c2 0000 0000 		.long	.LBB6
+ 1052 02c6 0000 0000 		.long	.LBE6
+ 1053 02ca 1F        		.uleb128 0x1f
+ 1054 02cb 6B02 0000 		.long	0x26b
+ 1055 02cf 00        		.byte	0
+ 1056 02d0 20        		.uleb128 0x20
+ 1057 02d1 7602 0000 		.long	0x276
+ 1058 02d5 0000 0000 		.long	.LLST1
+ 1059 02d9 00        		.byte	0
+ 1060 02da 00        		.byte	0
+ 1061 02db 00        		.byte	0
+ 1062 02dc 11        		.uleb128 0x11
+ 1063 02dd 9C00 0000 		.long	0x9c
+ 1064 02e1 01        		.byte	0x1
+ 1065 02e2 31        		.byte	0x31
+ 1066 02e3 00        		.byte	0
+ 1067 02e4 EC02 0000 		.long	0x2ec
+ 1068 02e8 F702 0000 		.long	0x2f7
+ 1069 02ec 12        		.uleb128 0x12
+ 1070 02ed 0000 0000 		.long	.LASF23
+ 1071 02f1 1E02 0000 		.long	0x21e
+ 1072 02f5 01        		.byte	0x1
+ 1073 02f6 00        		.byte	0
+ 1074 02f7 13        		.uleb128 0x13
+ 1075 02f8 DC02 0000 		.long	0x2dc
+ 1076 02fc 0000 0000 		.long	.LASF28
+ 1077 0300 0000 0000 		.long	.LFB1
+ 1078 0304 0000 0000 		.long	.LFE1
+ 1079 0308 03        		.byte	0x3
+ 1080 0309 92        		.byte	0x92
+ 1081 030a 20        		.uleb128 0x20
+ 1082 030b 02        		.sleb128 2
+ 1083 030c 1503 0000 		.long	0x315
+ 1084 0310 01        		.byte	0x1
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 29
+
+
+ 1085 0311 3603 0000 		.long	0x336
+ 1086 0315 21        		.uleb128 0x21
+ 1087 0316 EC02 0000 		.long	0x2ec
+ 1088 031a 0000 0000 		.long	.LLST2
+ 1089 031e 22        		.uleb128 0x22
+ 1090 031f 0000 0000 		.long	.LVL5
+ 1091 0323 01        		.byte	0x1
+ 1092 0324 8202 0000 		.long	0x282
+ 1093 0328 23        		.uleb128 0x23
+ 1094 0329 06        		.byte	0x6
+ 1095 032a 68        		.byte	0x68
+ 1096 032b 93        		.byte	0x93
+ 1097 032c 01        		.uleb128 0x1
+ 1098 032d 69        		.byte	0x69
+ 1099 032e 93        		.byte	0x93
+ 1100 032f 01        		.uleb128 0x1
+ 1101 0330 03        		.byte	0x3
+ 1102 0331 F3        		.byte	0xf3
+ 1103 0332 01        		.uleb128 0x1
+ 1104 0333 68        		.byte	0x68
+ 1105 0334 00        		.byte	0
+ 1106 0335 00        		.byte	0
+ 1107 0336 24        		.uleb128 0x24
+ 1108 0337 5302 0000 		.long	0x253
+ 1109 033b 0000 0000 		.long	.LASF14
+ 1110 033f 0000 0000 		.long	.LFB7
+ 1111 0343 0000 0000 		.long	.LFE7
+ 1112 0347 03        		.byte	0x3
+ 1113 0348 92        		.byte	0x92
+ 1114 0349 20        		.uleb128 0x20
+ 1115 034a 02        		.sleb128 2
+ 1116 034b 01        		.byte	0x1
+ 1117 034c 7603 0000 		.long	0x376
+ 1118 0350 21        		.uleb128 0x21
+ 1119 0351 5F02 0000 		.long	0x25f
+ 1120 0355 0000 0000 		.long	.LLST3
+ 1121 0359 1E        		.uleb128 0x1e
+ 1122 035a 0000 0000 		.long	.LBB8
+ 1123 035e 0000 0000 		.long	.LBE8
+ 1124 0362 20        		.uleb128 0x20
+ 1125 0363 6B02 0000 		.long	0x26b
+ 1126 0367 0000 0000 		.long	.LLST4
+ 1127 036b 20        		.uleb128 0x20
+ 1128 036c 7602 0000 		.long	0x276
+ 1129 0370 0000 0000 		.long	.LLST5
+ 1130 0374 00        		.byte	0
+ 1131 0375 00        		.byte	0
+ 1132 0376 1A        		.uleb128 0x1a
+ 1133 0377 0901 0000 		.long	0x109
+ 1134 037b 01        		.byte	0x1
+ 1135 037c 96        		.byte	0x96
+ 1136 037d 0000 0000 		.long	.LFB8
+ 1137 0381 0000 0000 		.long	.LFE8
+ 1138 0385 03        		.byte	0x3
+ 1139 0386 92        		.byte	0x92
+ 1140 0387 20        		.uleb128 0x20
+ 1141 0388 02        		.sleb128 2
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 30
+
+
+ 1142 0389 9203 0000 		.long	0x392
+ 1143 038d 01        		.byte	0x1
+ 1144 038e DA03 0000 		.long	0x3da
+ 1145 0392 1B        		.uleb128 0x1b
+ 1146 0393 0000 0000 		.long	.LASF23
+ 1147 0397 1E02 0000 		.long	0x21e
+ 1148 039b 01        		.byte	0x1
+ 1149 039c 0000 0000 		.long	.LLST6
+ 1150 03a0 25        		.uleb128 0x25
+ 1151 03a1 0000 0000 		.long	.LASF29
+ 1152 03a5 01        		.byte	0x1
+ 1153 03a6 96        		.byte	0x96
+ 1154 03a7 DA03 0000 		.long	0x3da
+ 1155 03ab 06        		.byte	0x6
+ 1156 03ac 66        		.byte	0x66
+ 1157 03ad 93        		.byte	0x93
+ 1158 03ae 01        		.uleb128 0x1
+ 1159 03af 67        		.byte	0x67
+ 1160 03b0 93        		.byte	0x93
+ 1161 03b1 01        		.uleb128 0x1
+ 1162 03b2 25        		.uleb128 0x25
+ 1163 03b3 0000 0000 		.long	.LASF30
+ 1164 03b7 01        		.byte	0x1
+ 1165 03b8 96        		.byte	0x96
+ 1166 03b9 F301 0000 		.long	0x1f3
+ 1167 03bd 06        		.byte	0x6
+ 1168 03be 64        		.byte	0x64
+ 1169 03bf 93        		.byte	0x93
+ 1170 03c0 01        		.uleb128 0x1
+ 1171 03c1 65        		.byte	0x65
+ 1172 03c2 93        		.byte	0x93
+ 1173 03c3 01        		.uleb128 0x1
+ 1174 03c4 1E        		.uleb128 0x1e
+ 1175 03c5 0000 0000 		.long	.LBB9
+ 1176 03c9 0000 0000 		.long	.LBE9
+ 1177 03cd 26        		.uleb128 0x26
+ 1178 03ce 7276 00   		.string	"rv"
+ 1179 03d1 01        		.byte	0x1
+ 1180 03d2 98        		.byte	0x98
+ 1181 03d3 2C00 0000 		.long	0x2c
+ 1182 03d7 00        		.byte	0
+ 1183 03d8 00        		.byte	0
+ 1184 03d9 00        		.byte	0
+ 1185 03da 0F        		.uleb128 0xf
+ 1186 03db 4500 0000 		.long	0x45
+ 1187 03df 1A        		.uleb128 0x1a
+ 1188 03e0 3301 0000 		.long	0x133
+ 1189 03e4 01        		.byte	0x1
+ 1190 03e5 DA        		.byte	0xda
+ 1191 03e6 0000 0000 		.long	.LFB9
+ 1192 03ea 0000 0000 		.long	.LFE9
+ 1193 03ee 03        		.byte	0x3
+ 1194 03ef 92        		.byte	0x92
+ 1195 03f0 20        		.uleb128 0x20
+ 1196 03f1 02        		.sleb128 2
+ 1197 03f2 FB03 0000 		.long	0x3fb
+ 1198 03f6 01        		.byte	0x1
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 31
+
+
+ 1199 03f7 5304 0000 		.long	0x453
+ 1200 03fb 1B        		.uleb128 0x1b
+ 1201 03fc 0000 0000 		.long	.LASF23
+ 1202 0400 1E02 0000 		.long	0x21e
+ 1203 0404 01        		.byte	0x1
+ 1204 0405 0000 0000 		.long	.LLST7
+ 1205 0409 25        		.uleb128 0x25
+ 1206 040a 0000 0000 		.long	.LASF29
+ 1207 040e 01        		.byte	0x1
+ 1208 040f DA        		.byte	0xda
+ 1209 0410 DA03 0000 		.long	0x3da
+ 1210 0414 06        		.byte	0x6
+ 1211 0415 66        		.byte	0x66
+ 1212 0416 93        		.byte	0x93
+ 1213 0417 01        		.uleb128 0x1
+ 1214 0418 67        		.byte	0x67
+ 1215 0419 93        		.byte	0x93
+ 1216 041a 01        		.uleb128 0x1
+ 1217 041b 27        		.uleb128 0x27
+ 1218 041c 0000 0000 		.long	.LASF30
+ 1219 0420 01        		.byte	0x1
+ 1220 0421 DA        		.byte	0xda
+ 1221 0422 F301 0000 		.long	0x1f3
+ 1222 0426 0000 0000 		.long	.LLST8
+ 1223 042a 27        		.uleb128 0x27
+ 1224 042b 0000 0000 		.long	.LASF31
+ 1225 042f 01        		.byte	0x1
+ 1226 0430 DB        		.byte	0xdb
+ 1227 0431 2C00 0000 		.long	0x2c
+ 1228 0435 0000 0000 		.long	.LLST9
+ 1229 0439 1E        		.uleb128 0x1e
+ 1230 043a 0000 0000 		.long	.LBB10
+ 1231 043e 0000 0000 		.long	.LBE10
+ 1232 0442 28        		.uleb128 0x28
+ 1233 0443 0000 0000 		.long	.LASF32
+ 1234 0447 01        		.byte	0x1
+ 1235 0448 DD        		.byte	0xdd
+ 1236 0449 2C00 0000 		.long	0x2c
+ 1237 044d 0000 0000 		.long	.LLST10
+ 1238 0451 00        		.byte	0
+ 1239 0452 00        		.byte	0
+ 1240 0453 29        		.uleb128 0x29
+ 1241 0454 6201 0000 		.long	0x162
+ 1242 0458 01        		.byte	0x1
+ 1243 0459 5101      		.word	0x151
+ 1244 045b 0000 0000 		.long	.LFB10
+ 1245 045f 0000 0000 		.long	.LFE10
+ 1246 0463 03        		.byte	0x3
+ 1247 0464 92        		.byte	0x92
+ 1248 0465 20        		.uleb128 0x20
+ 1249 0466 02        		.sleb128 2
+ 1250 0467 7004 0000 		.long	0x470
+ 1251 046b 01        		.byte	0x1
+ 1252 046c A004 0000 		.long	0x4a0
+ 1253 0470 1B        		.uleb128 0x1b
+ 1254 0471 0000 0000 		.long	.LASF23
+ 1255 0475 1E02 0000 		.long	0x21e
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 32
+
+
+ 1256 0479 01        		.byte	0x1
+ 1257 047a 0000 0000 		.long	.LLST11
+ 1258 047e 2A        		.uleb128 0x2a
+ 1259 047f 0000 0000 		.long	.LASF29
+ 1260 0483 01        		.byte	0x1
+ 1261 0484 5101      		.word	0x151
+ 1262 0486 DA03 0000 		.long	0x3da
+ 1263 048a 06        		.byte	0x6
+ 1264 048b 66        		.byte	0x66
+ 1265 048c 93        		.byte	0x93
+ 1266 048d 01        		.uleb128 0x1
+ 1267 048e 67        		.byte	0x67
+ 1268 048f 93        		.byte	0x93
+ 1269 0490 01        		.uleb128 0x1
+ 1270 0491 2A        		.uleb128 0x2a
+ 1271 0492 0000 0000 		.long	.LASF30
+ 1272 0496 01        		.byte	0x1
+ 1273 0497 5101      		.word	0x151
+ 1274 0499 E801 0000 		.long	0x1e8
+ 1275 049d 01        		.byte	0x1
+ 1276 049e 64        		.byte	0x64
+ 1277 049f 00        		.byte	0
+ 1278 04a0 29        		.uleb128 0x29
+ 1279 04a1 BB01 0000 		.long	0x1bb
+ 1280 04a5 01        		.byte	0x1
+ 1281 04a6 9A01      		.word	0x19a
+ 1282 04a8 0000 0000 		.long	.LFB12
+ 1283 04ac 0000 0000 		.long	.LFE12
+ 1284 04b0 03        		.byte	0x3
+ 1285 04b1 92        		.byte	0x92
+ 1286 04b2 20        		.uleb128 0x20
+ 1287 04b3 02        		.sleb128 2
+ 1288 04b4 BD04 0000 		.long	0x4bd
+ 1289 04b8 01        		.byte	0x1
+ 1290 04b9 3B05 0000 		.long	0x53b
+ 1291 04bd 1B        		.uleb128 0x1b
+ 1292 04be 0000 0000 		.long	.LASF23
+ 1293 04c2 1E02 0000 		.long	0x21e
+ 1294 04c6 01        		.byte	0x1
+ 1295 04c7 0000 0000 		.long	.LLST12
+ 1296 04cb 2A        		.uleb128 0x2a
+ 1297 04cc 0000 0000 		.long	.LASF29
+ 1298 04d0 01        		.byte	0x1
+ 1299 04d1 9A01      		.word	0x19a
+ 1300 04d3 DA03 0000 		.long	0x3da
+ 1301 04d7 06        		.byte	0x6
+ 1302 04d8 66        		.byte	0x66
+ 1303 04d9 93        		.byte	0x93
+ 1304 04da 01        		.uleb128 0x1
+ 1305 04db 67        		.byte	0x67
+ 1306 04dc 93        		.byte	0x93
+ 1307 04dd 01        		.uleb128 0x1
+ 1308 04de 2B        		.uleb128 0x2b
+ 1309 04df 0000 0000 		.long	.LASF30
+ 1310 04e3 01        		.byte	0x1
+ 1311 04e4 9A01      		.word	0x19a
+ 1312 04e6 F301 0000 		.long	0x1f3
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 33
+
+
+ 1313 04ea 0000 0000 		.long	.LLST13
+ 1314 04ee 2B        		.uleb128 0x2b
+ 1315 04ef 0000 0000 		.long	.LASF31
+ 1316 04f3 01        		.byte	0x1
+ 1317 04f4 9B01      		.word	0x19b
+ 1318 04f6 E801 0000 		.long	0x1e8
+ 1319 04fa 0000 0000 		.long	.LLST14
+ 1320 04fe 1E        		.uleb128 0x1e
+ 1321 04ff 0000 0000 		.long	.LBB11
+ 1322 0503 0000 0000 		.long	.LBE11
+ 1323 0507 2C        		.uleb128 0x2c
+ 1324 0508 0000 0000 		.long	.LASF33
+ 1325 050c 01        		.byte	0x1
+ 1326 050d 9D01      		.word	0x19d
+ 1327 050f 4500 0000 		.long	0x45
+ 1328 0513 06        		.byte	0x6
+ 1329 0514 6E        		.byte	0x6e
+ 1330 0515 93        		.byte	0x93
+ 1331 0516 01        		.uleb128 0x1
+ 1332 0517 6F        		.byte	0x6f
+ 1333 0518 93        		.byte	0x93
+ 1334 0519 01        		.uleb128 0x1
+ 1335 051a 2D        		.uleb128 0x2d
+ 1336 051b 7276 00   		.string	"rv"
+ 1337 051e 01        		.byte	0x1
+ 1338 051f 9E01      		.word	0x19e
+ 1339 0521 2C00 0000 		.long	0x2c
+ 1340 0525 0000 0000 		.long	.LLST15
+ 1341 0529 2E        		.uleb128 0x2e
+ 1342 052a 0000 0000 		.long	.LASF34
+ 1343 052e 01        		.byte	0x1
+ 1344 052f 9F01      		.word	0x19f
+ 1345 0531 2C00 0000 		.long	0x2c
+ 1346 0535 0000 0000 		.long	.LLST16
+ 1347 0539 00        		.byte	0
+ 1348 053a 00        		.byte	0
+ 1349 053b 2F        		.uleb128 0x2f
+ 1350 053c 8C01 0000 		.long	0x18c
+ 1351 0540 01        		.byte	0x1
+ 1352 0541 8701      		.word	0x187
+ 1353 0543 0000 0000 		.long	.LFB11
+ 1354 0547 0000 0000 		.long	.LFE11
+ 1355 054b 0000 0000 		.long	.LLST17
+ 1356 054f 5805 0000 		.long	0x558
+ 1357 0553 01        		.byte	0x1
+ 1358 0554 0106 0000 		.long	0x601
+ 1359 0558 1B        		.uleb128 0x1b
+ 1360 0559 0000 0000 		.long	.LASF23
+ 1361 055d 1E02 0000 		.long	0x21e
+ 1362 0561 01        		.byte	0x1
+ 1363 0562 0000 0000 		.long	.LLST18
+ 1364 0566 2B        		.uleb128 0x2b
+ 1365 0567 0000 0000 		.long	.LASF29
+ 1366 056b 01        		.byte	0x1
+ 1367 056c 8701      		.word	0x187
+ 1368 056e DA03 0000 		.long	0x3da
+ 1369 0572 0000 0000 		.long	.LLST19
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 34
+
+
+ 1370 0576 2B        		.uleb128 0x2b
+ 1371 0577 0000 0000 		.long	.LASF30
+ 1372 057b 01        		.byte	0x1
+ 1373 057c 8701      		.word	0x187
+ 1374 057e F301 0000 		.long	0x1f3
+ 1375 0582 0000 0000 		.long	.LLST20
+ 1376 0586 2B        		.uleb128 0x2b
+ 1377 0587 0000 0000 		.long	.LASF31
+ 1378 058b 01        		.byte	0x1
+ 1379 058c 8801      		.word	0x188
+ 1380 058e E801 0000 		.long	0x1e8
+ 1381 0592 0000 0000 		.long	.LLST21
+ 1382 0596 1E        		.uleb128 0x1e
+ 1383 0597 0000 0000 		.long	.LBB12
+ 1384 059b 0000 0000 		.long	.LBE12
+ 1385 059f 2D        		.uleb128 0x2d
+ 1386 05a0 7276 00   		.string	"rv"
+ 1387 05a3 01        		.byte	0x1
+ 1388 05a4 8A01      		.word	0x18a
+ 1389 05a6 2C00 0000 		.long	0x2c
+ 1390 05aa 0000 0000 		.long	.LLST22
+ 1391 05ae 2E        		.uleb128 0x2e
+ 1392 05af 0000 0000 		.long	.LASF35
+ 1393 05b3 01        		.byte	0x1
+ 1394 05b4 8B01      		.word	0x18b
+ 1395 05b6 4500 0000 		.long	0x45
+ 1396 05ba 0000 0000 		.long	.LLST23
+ 1397 05be 2E        		.uleb128 0x2e
+ 1398 05bf 0000 0000 		.long	.LASF34
+ 1399 05c3 01        		.byte	0x1
+ 1400 05c4 8C01      		.word	0x18c
+ 1401 05c6 2C00 0000 		.long	0x2c
+ 1402 05ca 0000 0000 		.long	.LLST24
+ 1403 05ce 30        		.uleb128 0x30
+ 1404 05cf 0000 0000 		.long	.LVL37
+ 1405 05d3 A004 0000 		.long	0x4a0
+ 1406 05d7 23        		.uleb128 0x23
+ 1407 05d8 06        		.byte	0x6
+ 1408 05d9 68        		.byte	0x68
+ 1409 05da 93        		.byte	0x93
+ 1410 05db 01        		.uleb128 0x1
+ 1411 05dc 69        		.byte	0x69
+ 1412 05dd 93        		.byte	0x93
+ 1413 05de 01        		.uleb128 0x1
+ 1414 05df 02        		.byte	0x2
+ 1415 05e0 7E        		.byte	0x7e
+ 1416 05e1 00        		.sleb128 0
+ 1417 05e2 23        		.uleb128 0x23
+ 1418 05e3 06        		.byte	0x6
+ 1419 05e4 66        		.byte	0x66
+ 1420 05e5 93        		.byte	0x93
+ 1421 05e6 01        		.uleb128 0x1
+ 1422 05e7 67        		.byte	0x67
+ 1423 05e8 93        		.byte	0x93
+ 1424 05e9 01        		.uleb128 0x1
+ 1425 05ea 02        		.byte	0x2
+ 1426 05eb 8C        		.byte	0x8c
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 35
+
+
+ 1427 05ec 00        		.sleb128 0
+ 1428 05ed 23        		.uleb128 0x23
+ 1429 05ee 06        		.byte	0x6
+ 1430 05ef 64        		.byte	0x64
+ 1431 05f0 93        		.byte	0x93
+ 1432 05f1 01        		.uleb128 0x1
+ 1433 05f2 65        		.byte	0x65
+ 1434 05f3 93        		.byte	0x93
+ 1435 05f4 01        		.uleb128 0x1
+ 1436 05f5 02        		.byte	0x2
+ 1437 05f6 80        		.byte	0x80
+ 1438 05f7 00        		.sleb128 0
+ 1439 05f8 23        		.uleb128 0x23
+ 1440 05f9 01        		.byte	0x1
+ 1441 05fa 62        		.byte	0x62
+ 1442 05fb 02        		.byte	0x2
+ 1443 05fc 7D        		.byte	0x7d
+ 1444 05fd 00        		.sleb128 0
+ 1445 05fe 00        		.byte	0
+ 1446 05ff 00        		.byte	0
+ 1447 0600 00        		.byte	0
+ 1448 0601 31        		.uleb128 0x31
+ 1449 0602 7F00 0000 		.long	0x7f
+ 1450 0606 01        		.byte	0x1
+ 1451 0607 26        		.byte	0x26
+ 1452 0608 0000 0000 		.long	.LASF41
+ 1453 060c 05        		.byte	0x5
+ 1454 060d 03        		.byte	0x3
+ 1455 060e 0000 0000 		.long	_ZN13Memoire24CXXX22m_adresse_peripheriqueE
+ 1456 0612 00        		.byte	0
+ 1457               		.section	.debug_abbrev,"",@progbits
+ 1458               	.Ldebug_abbrev0:
+ 1459 0000 01        		.uleb128 0x1
+ 1460 0001 11        		.uleb128 0x11
+ 1461 0002 01        		.byte	0x1
+ 1462 0003 25        		.uleb128 0x25
+ 1463 0004 0E        		.uleb128 0xe
+ 1464 0005 13        		.uleb128 0x13
+ 1465 0006 0B        		.uleb128 0xb
+ 1466 0007 03        		.uleb128 0x3
+ 1467 0008 0E        		.uleb128 0xe
+ 1468 0009 1B        		.uleb128 0x1b
+ 1469 000a 0E        		.uleb128 0xe
+ 1470 000b 11        		.uleb128 0x11
+ 1471 000c 01        		.uleb128 0x1
+ 1472 000d 12        		.uleb128 0x12
+ 1473 000e 01        		.uleb128 0x1
+ 1474 000f 10        		.uleb128 0x10
+ 1475 0010 06        		.uleb128 0x6
+ 1476 0011 00        		.byte	0
+ 1477 0012 00        		.byte	0
+ 1478 0013 02        		.uleb128 0x2
+ 1479 0014 24        		.uleb128 0x24
+ 1480 0015 00        		.byte	0
+ 1481 0016 0B        		.uleb128 0xb
+ 1482 0017 0B        		.uleb128 0xb
+ 1483 0018 3E        		.uleb128 0x3e
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 36
+
+
+ 1484 0019 0B        		.uleb128 0xb
+ 1485 001a 03        		.uleb128 0x3
+ 1486 001b 0E        		.uleb128 0xe
+ 1487 001c 00        		.byte	0
+ 1488 001d 00        		.byte	0
+ 1489 001e 03        		.uleb128 0x3
+ 1490 001f 16        		.uleb128 0x16
+ 1491 0020 00        		.byte	0
+ 1492 0021 03        		.uleb128 0x3
+ 1493 0022 0E        		.uleb128 0xe
+ 1494 0023 3A        		.uleb128 0x3a
+ 1495 0024 0B        		.uleb128 0xb
+ 1496 0025 3B        		.uleb128 0x3b
+ 1497 0026 0B        		.uleb128 0xb
+ 1498 0027 49        		.uleb128 0x49
+ 1499 0028 13        		.uleb128 0x13
+ 1500 0029 00        		.byte	0
+ 1501 002a 00        		.byte	0
+ 1502 002b 04        		.uleb128 0x4
+ 1503 002c 24        		.uleb128 0x24
+ 1504 002d 00        		.byte	0
+ 1505 002e 0B        		.uleb128 0xb
+ 1506 002f 0B        		.uleb128 0xb
+ 1507 0030 3E        		.uleb128 0x3e
+ 1508 0031 0B        		.uleb128 0xb
+ 1509 0032 03        		.uleb128 0x3
+ 1510 0033 08        		.uleb128 0x8
+ 1511 0034 00        		.byte	0
+ 1512 0035 00        		.byte	0
+ 1513 0036 05        		.uleb128 0x5
+ 1514 0037 02        		.uleb128 0x2
+ 1515 0038 01        		.byte	0x1
+ 1516 0039 03        		.uleb128 0x3
+ 1517 003a 0E        		.uleb128 0xe
+ 1518 003b 0B        		.uleb128 0xb
+ 1519 003c 0B        		.uleb128 0xb
+ 1520 003d 3A        		.uleb128 0x3a
+ 1521 003e 0B        		.uleb128 0xb
+ 1522 003f 3B        		.uleb128 0x3b
+ 1523 0040 0B        		.uleb128 0xb
+ 1524 0041 01        		.uleb128 0x1
+ 1525 0042 13        		.uleb128 0x13
+ 1526 0043 00        		.byte	0
+ 1527 0044 00        		.byte	0
+ 1528 0045 06        		.uleb128 0x6
+ 1529 0046 0D        		.uleb128 0xd
+ 1530 0047 00        		.byte	0
+ 1531 0048 03        		.uleb128 0x3
+ 1532 0049 0E        		.uleb128 0xe
+ 1533 004a 3A        		.uleb128 0x3a
+ 1534 004b 0B        		.uleb128 0xb
+ 1535 004c 3B        		.uleb128 0x3b
+ 1536 004d 0B        		.uleb128 0xb
+ 1537 004e 49        		.uleb128 0x49
+ 1538 004f 13        		.uleb128 0x13
+ 1539 0050 3F        		.uleb128 0x3f
+ 1540 0051 0C        		.uleb128 0xc
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 37
+
+
+ 1541 0052 32        		.uleb128 0x32
+ 1542 0053 0B        		.uleb128 0xb
+ 1543 0054 3C        		.uleb128 0x3c
+ 1544 0055 0C        		.uleb128 0xc
+ 1545 0056 00        		.byte	0
+ 1546 0057 00        		.byte	0
+ 1547 0058 07        		.uleb128 0x7
+ 1548 0059 0D        		.uleb128 0xd
+ 1549 005a 00        		.byte	0
+ 1550 005b 03        		.uleb128 0x3
+ 1551 005c 0E        		.uleb128 0xe
+ 1552 005d 3A        		.uleb128 0x3a
+ 1553 005e 0B        		.uleb128 0xb
+ 1554 005f 3B        		.uleb128 0x3b
+ 1555 0060 0B        		.uleb128 0xb
+ 1556 0061 49        		.uleb128 0x49
+ 1557 0062 13        		.uleb128 0x13
+ 1558 0063 38        		.uleb128 0x38
+ 1559 0064 0A        		.uleb128 0xa
+ 1560 0065 32        		.uleb128 0x32
+ 1561 0066 0B        		.uleb128 0xb
+ 1562 0067 00        		.byte	0
+ 1563 0068 00        		.byte	0
+ 1564 0069 08        		.uleb128 0x8
+ 1565 006a 2E        		.uleb128 0x2e
+ 1566 006b 01        		.byte	0x1
+ 1567 006c 3F        		.uleb128 0x3f
+ 1568 006d 0C        		.uleb128 0xc
+ 1569 006e 03        		.uleb128 0x3
+ 1570 006f 0E        		.uleb128 0xe
+ 1571 0070 3A        		.uleb128 0x3a
+ 1572 0071 0B        		.uleb128 0xb
+ 1573 0072 3B        		.uleb128 0x3b
+ 1574 0073 0B        		.uleb128 0xb
+ 1575 0074 3C        		.uleb128 0x3c
+ 1576 0075 0C        		.uleb128 0xc
+ 1577 0076 64        		.uleb128 0x64
+ 1578 0077 13        		.uleb128 0x13
+ 1579 0078 01        		.uleb128 0x1
+ 1580 0079 13        		.uleb128 0x13
+ 1581 007a 00        		.byte	0
+ 1582 007b 00        		.byte	0
+ 1583 007c 09        		.uleb128 0x9
+ 1584 007d 05        		.uleb128 0x5
+ 1585 007e 00        		.byte	0
+ 1586 007f 49        		.uleb128 0x49
+ 1587 0080 13        		.uleb128 0x13
+ 1588 0081 34        		.uleb128 0x34
+ 1589 0082 0C        		.uleb128 0xc
+ 1590 0083 00        		.byte	0
+ 1591 0084 00        		.byte	0
+ 1592 0085 0A        		.uleb128 0xa
+ 1593 0086 2E        		.uleb128 0x2e
+ 1594 0087 01        		.byte	0x1
+ 1595 0088 3F        		.uleb128 0x3f
+ 1596 0089 0C        		.uleb128 0xc
+ 1597 008a 03        		.uleb128 0x3
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 38
+
+
+ 1598 008b 0E        		.uleb128 0xe
+ 1599 008c 3A        		.uleb128 0x3a
+ 1600 008d 0B        		.uleb128 0xb
+ 1601 008e 3B        		.uleb128 0x3b
+ 1602 008f 0B        		.uleb128 0xb
+ 1603 0090 8740      		.uleb128 0x2007
+ 1604 0092 0E        		.uleb128 0xe
+ 1605 0093 3C        		.uleb128 0x3c
+ 1606 0094 0C        		.uleb128 0xc
+ 1607 0095 64        		.uleb128 0x64
+ 1608 0096 13        		.uleb128 0x13
+ 1609 0097 01        		.uleb128 0x1
+ 1610 0098 13        		.uleb128 0x13
+ 1611 0099 00        		.byte	0
+ 1612 009a 00        		.byte	0
+ 1613 009b 0B        		.uleb128 0xb
+ 1614 009c 2E        		.uleb128 0x2e
+ 1615 009d 01        		.byte	0x1
+ 1616 009e 3F        		.uleb128 0x3f
+ 1617 009f 0C        		.uleb128 0xc
+ 1618 00a0 03        		.uleb128 0x3
+ 1619 00a1 0E        		.uleb128 0xe
+ 1620 00a2 3A        		.uleb128 0x3a
+ 1621 00a3 0B        		.uleb128 0xb
+ 1622 00a4 3B        		.uleb128 0x3b
+ 1623 00a5 0B        		.uleb128 0xb
+ 1624 00a6 8740      		.uleb128 0x2007
+ 1625 00a8 0E        		.uleb128 0xe
+ 1626 00a9 49        		.uleb128 0x49
+ 1627 00aa 13        		.uleb128 0x13
+ 1628 00ab 3C        		.uleb128 0x3c
+ 1629 00ac 0C        		.uleb128 0xc
+ 1630 00ad 01        		.uleb128 0x1
+ 1631 00ae 13        		.uleb128 0x13
+ 1632 00af 00        		.byte	0
+ 1633 00b0 00        		.byte	0
+ 1634 00b1 0C        		.uleb128 0xc
+ 1635 00b2 05        		.uleb128 0x5
+ 1636 00b3 00        		.byte	0
+ 1637 00b4 49        		.uleb128 0x49
+ 1638 00b5 13        		.uleb128 0x13
+ 1639 00b6 00        		.byte	0
+ 1640 00b7 00        		.byte	0
+ 1641 00b8 0D        		.uleb128 0xd
+ 1642 00b9 2E        		.uleb128 0x2e
+ 1643 00ba 01        		.byte	0x1
+ 1644 00bb 3F        		.uleb128 0x3f
+ 1645 00bc 0C        		.uleb128 0xc
+ 1646 00bd 03        		.uleb128 0x3
+ 1647 00be 0E        		.uleb128 0xe
+ 1648 00bf 3A        		.uleb128 0x3a
+ 1649 00c0 0B        		.uleb128 0xb
+ 1650 00c1 3B        		.uleb128 0x3b
+ 1651 00c2 0B        		.uleb128 0xb
+ 1652 00c3 8740      		.uleb128 0x2007
+ 1653 00c5 0E        		.uleb128 0xe
+ 1654 00c6 49        		.uleb128 0x49
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 39
+
+
+ 1655 00c7 13        		.uleb128 0x13
+ 1656 00c8 3C        		.uleb128 0x3c
+ 1657 00c9 0C        		.uleb128 0xc
+ 1658 00ca 64        		.uleb128 0x64
+ 1659 00cb 13        		.uleb128 0x13
+ 1660 00cc 01        		.uleb128 0x1
+ 1661 00cd 13        		.uleb128 0x13
+ 1662 00ce 00        		.byte	0
+ 1663 00cf 00        		.byte	0
+ 1664 00d0 0E        		.uleb128 0xe
+ 1665 00d1 2E        		.uleb128 0x2e
+ 1666 00d2 01        		.byte	0x1
+ 1667 00d3 3F        		.uleb128 0x3f
+ 1668 00d4 0C        		.uleb128 0xc
+ 1669 00d5 03        		.uleb128 0x3
+ 1670 00d6 0E        		.uleb128 0xe
+ 1671 00d7 3A        		.uleb128 0x3a
+ 1672 00d8 0B        		.uleb128 0xb
+ 1673 00d9 3B        		.uleb128 0x3b
+ 1674 00da 0B        		.uleb128 0xb
+ 1675 00db 8740      		.uleb128 0x2007
+ 1676 00dd 0E        		.uleb128 0xe
+ 1677 00de 49        		.uleb128 0x49
+ 1678 00df 13        		.uleb128 0x13
+ 1679 00e0 32        		.uleb128 0x32
+ 1680 00e1 0B        		.uleb128 0xb
+ 1681 00e2 3C        		.uleb128 0x3c
+ 1682 00e3 0C        		.uleb128 0xc
+ 1683 00e4 64        		.uleb128 0x64
+ 1684 00e5 13        		.uleb128 0x13
+ 1685 00e6 00        		.byte	0
+ 1686 00e7 00        		.byte	0
+ 1687 00e8 0F        		.uleb128 0xf
+ 1688 00e9 26        		.uleb128 0x26
+ 1689 00ea 00        		.byte	0
+ 1690 00eb 49        		.uleb128 0x49
+ 1691 00ec 13        		.uleb128 0x13
+ 1692 00ed 00        		.byte	0
+ 1693 00ee 00        		.byte	0
+ 1694 00ef 10        		.uleb128 0x10
+ 1695 00f0 0F        		.uleb128 0xf
+ 1696 00f1 00        		.byte	0
+ 1697 00f2 0B        		.uleb128 0xb
+ 1698 00f3 0B        		.uleb128 0xb
+ 1699 00f4 49        		.uleb128 0x49
+ 1700 00f5 13        		.uleb128 0x13
+ 1701 00f6 00        		.byte	0
+ 1702 00f7 00        		.byte	0
+ 1703 00f8 11        		.uleb128 0x11
+ 1704 00f9 2E        		.uleb128 0x2e
+ 1705 00fa 01        		.byte	0x1
+ 1706 00fb 47        		.uleb128 0x47
+ 1707 00fc 13        		.uleb128 0x13
+ 1708 00fd 3A        		.uleb128 0x3a
+ 1709 00fe 0B        		.uleb128 0xb
+ 1710 00ff 3B        		.uleb128 0x3b
+ 1711 0100 0B        		.uleb128 0xb
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 40
+
+
+ 1712 0101 20        		.uleb128 0x20
+ 1713 0102 0B        		.uleb128 0xb
+ 1714 0103 64        		.uleb128 0x64
+ 1715 0104 13        		.uleb128 0x13
+ 1716 0105 01        		.uleb128 0x1
+ 1717 0106 13        		.uleb128 0x13
+ 1718 0107 00        		.byte	0
+ 1719 0108 00        		.byte	0
+ 1720 0109 12        		.uleb128 0x12
+ 1721 010a 05        		.uleb128 0x5
+ 1722 010b 00        		.byte	0
+ 1723 010c 03        		.uleb128 0x3
+ 1724 010d 0E        		.uleb128 0xe
+ 1725 010e 49        		.uleb128 0x49
+ 1726 010f 13        		.uleb128 0x13
+ 1727 0110 34        		.uleb128 0x34
+ 1728 0111 0C        		.uleb128 0xc
+ 1729 0112 00        		.byte	0
+ 1730 0113 00        		.byte	0
+ 1731 0114 13        		.uleb128 0x13
+ 1732 0115 2E        		.uleb128 0x2e
+ 1733 0116 01        		.byte	0x1
+ 1734 0117 31        		.uleb128 0x31
+ 1735 0118 13        		.uleb128 0x13
+ 1736 0119 8740      		.uleb128 0x2007
+ 1737 011b 0E        		.uleb128 0xe
+ 1738 011c 11        		.uleb128 0x11
+ 1739 011d 01        		.uleb128 0x1
+ 1740 011e 12        		.uleb128 0x12
+ 1741 011f 01        		.uleb128 0x1
+ 1742 0120 40        		.uleb128 0x40
+ 1743 0121 0A        		.uleb128 0xa
+ 1744 0122 64        		.uleb128 0x64
+ 1745 0123 13        		.uleb128 0x13
+ 1746 0124 9742      		.uleb128 0x2117
+ 1747 0126 0C        		.uleb128 0xc
+ 1748 0127 01        		.uleb128 0x1
+ 1749 0128 13        		.uleb128 0x13
+ 1750 0129 00        		.byte	0
+ 1751 012a 00        		.byte	0
+ 1752 012b 14        		.uleb128 0x14
+ 1753 012c 05        		.uleb128 0x5
+ 1754 012d 00        		.byte	0
+ 1755 012e 31        		.uleb128 0x31
+ 1756 012f 13        		.uleb128 0x13
+ 1757 0130 02        		.uleb128 0x2
+ 1758 0131 0A        		.uleb128 0xa
+ 1759 0132 00        		.byte	0
+ 1760 0133 00        		.byte	0
+ 1761 0134 15        		.uleb128 0x15
+ 1762 0135 2E        		.uleb128 0x2e
+ 1763 0136 01        		.byte	0x1
+ 1764 0137 47        		.uleb128 0x47
+ 1765 0138 13        		.uleb128 0x13
+ 1766 0139 3A        		.uleb128 0x3a
+ 1767 013a 0B        		.uleb128 0xb
+ 1768 013b 3B        		.uleb128 0x3b
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 41
+
+
+ 1769 013c 0B        		.uleb128 0xb
+ 1770 013d 20        		.uleb128 0x20
+ 1771 013e 0B        		.uleb128 0xb
+ 1772 013f 01        		.uleb128 0x1
+ 1773 0140 13        		.uleb128 0x13
+ 1774 0141 00        		.byte	0
+ 1775 0142 00        		.byte	0
+ 1776 0143 16        		.uleb128 0x16
+ 1777 0144 05        		.uleb128 0x5
+ 1778 0145 00        		.byte	0
+ 1779 0146 03        		.uleb128 0x3
+ 1780 0147 0E        		.uleb128 0xe
+ 1781 0148 3A        		.uleb128 0x3a
+ 1782 0149 0B        		.uleb128 0xb
+ 1783 014a 3B        		.uleb128 0x3b
+ 1784 014b 0B        		.uleb128 0xb
+ 1785 014c 49        		.uleb128 0x49
+ 1786 014d 13        		.uleb128 0x13
+ 1787 014e 00        		.byte	0
+ 1788 014f 00        		.byte	0
+ 1789 0150 17        		.uleb128 0x17
+ 1790 0151 0B        		.uleb128 0xb
+ 1791 0152 01        		.byte	0x1
+ 1792 0153 00        		.byte	0
+ 1793 0154 00        		.byte	0
+ 1794 0155 18        		.uleb128 0x18
+ 1795 0156 34        		.uleb128 0x34
+ 1796 0157 00        		.byte	0
+ 1797 0158 03        		.uleb128 0x3
+ 1798 0159 0E        		.uleb128 0xe
+ 1799 015a 3A        		.uleb128 0x3a
+ 1800 015b 0B        		.uleb128 0xb
+ 1801 015c 3B        		.uleb128 0x3b
+ 1802 015d 0B        		.uleb128 0xb
+ 1803 015e 49        		.uleb128 0x49
+ 1804 015f 13        		.uleb128 0x13
+ 1805 0160 00        		.byte	0
+ 1806 0161 00        		.byte	0
+ 1807 0162 19        		.uleb128 0x19
+ 1808 0163 34        		.uleb128 0x34
+ 1809 0164 00        		.byte	0
+ 1810 0165 03        		.uleb128 0x3
+ 1811 0166 08        		.uleb128 0x8
+ 1812 0167 3A        		.uleb128 0x3a
+ 1813 0168 0B        		.uleb128 0xb
+ 1814 0169 3B        		.uleb128 0x3b
+ 1815 016a 0B        		.uleb128 0xb
+ 1816 016b 49        		.uleb128 0x49
+ 1817 016c 13        		.uleb128 0x13
+ 1818 016d 00        		.byte	0
+ 1819 016e 00        		.byte	0
+ 1820 016f 1A        		.uleb128 0x1a
+ 1821 0170 2E        		.uleb128 0x2e
+ 1822 0171 01        		.byte	0x1
+ 1823 0172 47        		.uleb128 0x47
+ 1824 0173 13        		.uleb128 0x13
+ 1825 0174 3A        		.uleb128 0x3a
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 42
+
+
+ 1826 0175 0B        		.uleb128 0xb
+ 1827 0176 3B        		.uleb128 0x3b
+ 1828 0177 0B        		.uleb128 0xb
+ 1829 0178 11        		.uleb128 0x11
+ 1830 0179 01        		.uleb128 0x1
+ 1831 017a 12        		.uleb128 0x12
+ 1832 017b 01        		.uleb128 0x1
+ 1833 017c 40        		.uleb128 0x40
+ 1834 017d 0A        		.uleb128 0xa
+ 1835 017e 64        		.uleb128 0x64
+ 1836 017f 13        		.uleb128 0x13
+ 1837 0180 9742      		.uleb128 0x2117
+ 1838 0182 0C        		.uleb128 0xc
+ 1839 0183 01        		.uleb128 0x1
+ 1840 0184 13        		.uleb128 0x13
+ 1841 0185 00        		.byte	0
+ 1842 0186 00        		.byte	0
+ 1843 0187 1B        		.uleb128 0x1b
+ 1844 0188 05        		.uleb128 0x5
+ 1845 0189 00        		.byte	0
+ 1846 018a 03        		.uleb128 0x3
+ 1847 018b 0E        		.uleb128 0xe
+ 1848 018c 49        		.uleb128 0x49
+ 1849 018d 13        		.uleb128 0x13
+ 1850 018e 34        		.uleb128 0x34
+ 1851 018f 0C        		.uleb128 0xc
+ 1852 0190 02        		.uleb128 0x2
+ 1853 0191 06        		.uleb128 0x6
+ 1854 0192 00        		.byte	0
+ 1855 0193 00        		.byte	0
+ 1856 0194 1C        		.uleb128 0x1c
+ 1857 0195 1D        		.uleb128 0x1d
+ 1858 0196 01        		.byte	0x1
+ 1859 0197 31        		.uleb128 0x31
+ 1860 0198 13        		.uleb128 0x13
+ 1861 0199 11        		.uleb128 0x11
+ 1862 019a 01        		.uleb128 0x1
+ 1863 019b 12        		.uleb128 0x12
+ 1864 019c 01        		.uleb128 0x1
+ 1865 019d 58        		.uleb128 0x58
+ 1866 019e 0B        		.uleb128 0xb
+ 1867 019f 59        		.uleb128 0x59
+ 1868 01a0 0B        		.uleb128 0xb
+ 1869 01a1 00        		.byte	0
+ 1870 01a2 00        		.byte	0
+ 1871 01a3 1D        		.uleb128 0x1d
+ 1872 01a4 05        		.uleb128 0x5
+ 1873 01a5 00        		.byte	0
+ 1874 01a6 31        		.uleb128 0x31
+ 1875 01a7 13        		.uleb128 0x13
+ 1876 01a8 1C        		.uleb128 0x1c
+ 1877 01a9 0B        		.uleb128 0xb
+ 1878 01aa 00        		.byte	0
+ 1879 01ab 00        		.byte	0
+ 1880 01ac 1E        		.uleb128 0x1e
+ 1881 01ad 0B        		.uleb128 0xb
+ 1882 01ae 01        		.byte	0x1
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 43
+
+
+ 1883 01af 11        		.uleb128 0x11
+ 1884 01b0 01        		.uleb128 0x1
+ 1885 01b1 12        		.uleb128 0x12
+ 1886 01b2 01        		.uleb128 0x1
+ 1887 01b3 00        		.byte	0
+ 1888 01b4 00        		.byte	0
+ 1889 01b5 1F        		.uleb128 0x1f
+ 1890 01b6 34        		.uleb128 0x34
+ 1891 01b7 00        		.byte	0
+ 1892 01b8 31        		.uleb128 0x31
+ 1893 01b9 13        		.uleb128 0x13
+ 1894 01ba 1C        		.uleb128 0x1c
+ 1895 01bb 0B        		.uleb128 0xb
+ 1896 01bc 00        		.byte	0
+ 1897 01bd 00        		.byte	0
+ 1898 01be 20        		.uleb128 0x20
+ 1899 01bf 34        		.uleb128 0x34
+ 1900 01c0 00        		.byte	0
+ 1901 01c1 31        		.uleb128 0x31
+ 1902 01c2 13        		.uleb128 0x13
+ 1903 01c3 02        		.uleb128 0x2
+ 1904 01c4 06        		.uleb128 0x6
+ 1905 01c5 00        		.byte	0
+ 1906 01c6 00        		.byte	0
+ 1907 01c7 21        		.uleb128 0x21
+ 1908 01c8 05        		.uleb128 0x5
+ 1909 01c9 00        		.byte	0
+ 1910 01ca 31        		.uleb128 0x31
+ 1911 01cb 13        		.uleb128 0x13
+ 1912 01cc 02        		.uleb128 0x2
+ 1913 01cd 06        		.uleb128 0x6
+ 1914 01ce 00        		.byte	0
+ 1915 01cf 00        		.byte	0
+ 1916 01d0 22        		.uleb128 0x22
+ 1917 01d1 8982 01   		.uleb128 0x4109
+ 1918 01d4 01        		.byte	0x1
+ 1919 01d5 11        		.uleb128 0x11
+ 1920 01d6 01        		.uleb128 0x1
+ 1921 01d7 9542      		.uleb128 0x2115
+ 1922 01d9 0C        		.uleb128 0xc
+ 1923 01da 31        		.uleb128 0x31
+ 1924 01db 13        		.uleb128 0x13
+ 1925 01dc 00        		.byte	0
+ 1926 01dd 00        		.byte	0
+ 1927 01de 23        		.uleb128 0x23
+ 1928 01df 8A82 01   		.uleb128 0x410a
+ 1929 01e2 00        		.byte	0
+ 1930 01e3 02        		.uleb128 0x2
+ 1931 01e4 0A        		.uleb128 0xa
+ 1932 01e5 9142      		.uleb128 0x2111
+ 1933 01e7 0A        		.uleb128 0xa
+ 1934 01e8 00        		.byte	0
+ 1935 01e9 00        		.byte	0
+ 1936 01ea 24        		.uleb128 0x24
+ 1937 01eb 2E        		.uleb128 0x2e
+ 1938 01ec 01        		.byte	0x1
+ 1939 01ed 31        		.uleb128 0x31
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 44
+
+
+ 1940 01ee 13        		.uleb128 0x13
+ 1941 01ef 8740      		.uleb128 0x2007
+ 1942 01f1 0E        		.uleb128 0xe
+ 1943 01f2 11        		.uleb128 0x11
+ 1944 01f3 01        		.uleb128 0x1
+ 1945 01f4 12        		.uleb128 0x12
+ 1946 01f5 01        		.uleb128 0x1
+ 1947 01f6 40        		.uleb128 0x40
+ 1948 01f7 0A        		.uleb128 0xa
+ 1949 01f8 9742      		.uleb128 0x2117
+ 1950 01fa 0C        		.uleb128 0xc
+ 1951 01fb 01        		.uleb128 0x1
+ 1952 01fc 13        		.uleb128 0x13
+ 1953 01fd 00        		.byte	0
+ 1954 01fe 00        		.byte	0
+ 1955 01ff 25        		.uleb128 0x25
+ 1956 0200 05        		.uleb128 0x5
+ 1957 0201 00        		.byte	0
+ 1958 0202 03        		.uleb128 0x3
+ 1959 0203 0E        		.uleb128 0xe
+ 1960 0204 3A        		.uleb128 0x3a
+ 1961 0205 0B        		.uleb128 0xb
+ 1962 0206 3B        		.uleb128 0x3b
+ 1963 0207 0B        		.uleb128 0xb
+ 1964 0208 49        		.uleb128 0x49
+ 1965 0209 13        		.uleb128 0x13
+ 1966 020a 02        		.uleb128 0x2
+ 1967 020b 0A        		.uleb128 0xa
+ 1968 020c 00        		.byte	0
+ 1969 020d 00        		.byte	0
+ 1970 020e 26        		.uleb128 0x26
+ 1971 020f 34        		.uleb128 0x34
+ 1972 0210 00        		.byte	0
+ 1973 0211 03        		.uleb128 0x3
+ 1974 0212 08        		.uleb128 0x8
+ 1975 0213 3A        		.uleb128 0x3a
+ 1976 0214 0B        		.uleb128 0xb
+ 1977 0215 3B        		.uleb128 0x3b
+ 1978 0216 0B        		.uleb128 0xb
+ 1979 0217 49        		.uleb128 0x49
+ 1980 0218 13        		.uleb128 0x13
+ 1981 0219 1C        		.uleb128 0x1c
+ 1982 021a 0B        		.uleb128 0xb
+ 1983 021b 00        		.byte	0
+ 1984 021c 00        		.byte	0
+ 1985 021d 27        		.uleb128 0x27
+ 1986 021e 05        		.uleb128 0x5
+ 1987 021f 00        		.byte	0
+ 1988 0220 03        		.uleb128 0x3
+ 1989 0221 0E        		.uleb128 0xe
+ 1990 0222 3A        		.uleb128 0x3a
+ 1991 0223 0B        		.uleb128 0xb
+ 1992 0224 3B        		.uleb128 0x3b
+ 1993 0225 0B        		.uleb128 0xb
+ 1994 0226 49        		.uleb128 0x49
+ 1995 0227 13        		.uleb128 0x13
+ 1996 0228 02        		.uleb128 0x2
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 45
+
+
+ 1997 0229 06        		.uleb128 0x6
+ 1998 022a 00        		.byte	0
+ 1999 022b 00        		.byte	0
+ 2000 022c 28        		.uleb128 0x28
+ 2001 022d 34        		.uleb128 0x34
+ 2002 022e 00        		.byte	0
+ 2003 022f 03        		.uleb128 0x3
+ 2004 0230 0E        		.uleb128 0xe
+ 2005 0231 3A        		.uleb128 0x3a
+ 2006 0232 0B        		.uleb128 0xb
+ 2007 0233 3B        		.uleb128 0x3b
+ 2008 0234 0B        		.uleb128 0xb
+ 2009 0235 49        		.uleb128 0x49
+ 2010 0236 13        		.uleb128 0x13
+ 2011 0237 02        		.uleb128 0x2
+ 2012 0238 06        		.uleb128 0x6
+ 2013 0239 00        		.byte	0
+ 2014 023a 00        		.byte	0
+ 2015 023b 29        		.uleb128 0x29
+ 2016 023c 2E        		.uleb128 0x2e
+ 2017 023d 01        		.byte	0x1
+ 2018 023e 47        		.uleb128 0x47
+ 2019 023f 13        		.uleb128 0x13
+ 2020 0240 3A        		.uleb128 0x3a
+ 2021 0241 0B        		.uleb128 0xb
+ 2022 0242 3B        		.uleb128 0x3b
+ 2023 0243 05        		.uleb128 0x5
+ 2024 0244 11        		.uleb128 0x11
+ 2025 0245 01        		.uleb128 0x1
+ 2026 0246 12        		.uleb128 0x12
+ 2027 0247 01        		.uleb128 0x1
+ 2028 0248 40        		.uleb128 0x40
+ 2029 0249 0A        		.uleb128 0xa
+ 2030 024a 64        		.uleb128 0x64
+ 2031 024b 13        		.uleb128 0x13
+ 2032 024c 9742      		.uleb128 0x2117
+ 2033 024e 0C        		.uleb128 0xc
+ 2034 024f 01        		.uleb128 0x1
+ 2035 0250 13        		.uleb128 0x13
+ 2036 0251 00        		.byte	0
+ 2037 0252 00        		.byte	0
+ 2038 0253 2A        		.uleb128 0x2a
+ 2039 0254 05        		.uleb128 0x5
+ 2040 0255 00        		.byte	0
+ 2041 0256 03        		.uleb128 0x3
+ 2042 0257 0E        		.uleb128 0xe
+ 2043 0258 3A        		.uleb128 0x3a
+ 2044 0259 0B        		.uleb128 0xb
+ 2045 025a 3B        		.uleb128 0x3b
+ 2046 025b 05        		.uleb128 0x5
+ 2047 025c 49        		.uleb128 0x49
+ 2048 025d 13        		.uleb128 0x13
+ 2049 025e 02        		.uleb128 0x2
+ 2050 025f 0A        		.uleb128 0xa
+ 2051 0260 00        		.byte	0
+ 2052 0261 00        		.byte	0
+ 2053 0262 2B        		.uleb128 0x2b
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 46
+
+
+ 2054 0263 05        		.uleb128 0x5
+ 2055 0264 00        		.byte	0
+ 2056 0265 03        		.uleb128 0x3
+ 2057 0266 0E        		.uleb128 0xe
+ 2058 0267 3A        		.uleb128 0x3a
+ 2059 0268 0B        		.uleb128 0xb
+ 2060 0269 3B        		.uleb128 0x3b
+ 2061 026a 05        		.uleb128 0x5
+ 2062 026b 49        		.uleb128 0x49
+ 2063 026c 13        		.uleb128 0x13
+ 2064 026d 02        		.uleb128 0x2
+ 2065 026e 06        		.uleb128 0x6
+ 2066 026f 00        		.byte	0
+ 2067 0270 00        		.byte	0
+ 2068 0271 2C        		.uleb128 0x2c
+ 2069 0272 34        		.uleb128 0x34
+ 2070 0273 00        		.byte	0
+ 2071 0274 03        		.uleb128 0x3
+ 2072 0275 0E        		.uleb128 0xe
+ 2073 0276 3A        		.uleb128 0x3a
+ 2074 0277 0B        		.uleb128 0xb
+ 2075 0278 3B        		.uleb128 0x3b
+ 2076 0279 05        		.uleb128 0x5
+ 2077 027a 49        		.uleb128 0x49
+ 2078 027b 13        		.uleb128 0x13
+ 2079 027c 02        		.uleb128 0x2
+ 2080 027d 0A        		.uleb128 0xa
+ 2081 027e 00        		.byte	0
+ 2082 027f 00        		.byte	0
+ 2083 0280 2D        		.uleb128 0x2d
+ 2084 0281 34        		.uleb128 0x34
+ 2085 0282 00        		.byte	0
+ 2086 0283 03        		.uleb128 0x3
+ 2087 0284 08        		.uleb128 0x8
+ 2088 0285 3A        		.uleb128 0x3a
+ 2089 0286 0B        		.uleb128 0xb
+ 2090 0287 3B        		.uleb128 0x3b
+ 2091 0288 05        		.uleb128 0x5
+ 2092 0289 49        		.uleb128 0x49
+ 2093 028a 13        		.uleb128 0x13
+ 2094 028b 02        		.uleb128 0x2
+ 2095 028c 06        		.uleb128 0x6
+ 2096 028d 00        		.byte	0
+ 2097 028e 00        		.byte	0
+ 2098 028f 2E        		.uleb128 0x2e
+ 2099 0290 34        		.uleb128 0x34
+ 2100 0291 00        		.byte	0
+ 2101 0292 03        		.uleb128 0x3
+ 2102 0293 0E        		.uleb128 0xe
+ 2103 0294 3A        		.uleb128 0x3a
+ 2104 0295 0B        		.uleb128 0xb
+ 2105 0296 3B        		.uleb128 0x3b
+ 2106 0297 05        		.uleb128 0x5
+ 2107 0298 49        		.uleb128 0x49
+ 2108 0299 13        		.uleb128 0x13
+ 2109 029a 02        		.uleb128 0x2
+ 2110 029b 06        		.uleb128 0x6
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 47
+
+
+ 2111 029c 00        		.byte	0
+ 2112 029d 00        		.byte	0
+ 2113 029e 2F        		.uleb128 0x2f
+ 2114 029f 2E        		.uleb128 0x2e
+ 2115 02a0 01        		.byte	0x1
+ 2116 02a1 47        		.uleb128 0x47
+ 2117 02a2 13        		.uleb128 0x13
+ 2118 02a3 3A        		.uleb128 0x3a
+ 2119 02a4 0B        		.uleb128 0xb
+ 2120 02a5 3B        		.uleb128 0x3b
+ 2121 02a6 05        		.uleb128 0x5
+ 2122 02a7 11        		.uleb128 0x11
+ 2123 02a8 01        		.uleb128 0x1
+ 2124 02a9 12        		.uleb128 0x12
+ 2125 02aa 01        		.uleb128 0x1
+ 2126 02ab 40        		.uleb128 0x40
+ 2127 02ac 06        		.uleb128 0x6
+ 2128 02ad 64        		.uleb128 0x64
+ 2129 02ae 13        		.uleb128 0x13
+ 2130 02af 9742      		.uleb128 0x2117
+ 2131 02b1 0C        		.uleb128 0xc
+ 2132 02b2 01        		.uleb128 0x1
+ 2133 02b3 13        		.uleb128 0x13
+ 2134 02b4 00        		.byte	0
+ 2135 02b5 00        		.byte	0
+ 2136 02b6 30        		.uleb128 0x30
+ 2137 02b7 8982 01   		.uleb128 0x4109
+ 2138 02ba 01        		.byte	0x1
+ 2139 02bb 11        		.uleb128 0x11
+ 2140 02bc 01        		.uleb128 0x1
+ 2141 02bd 31        		.uleb128 0x31
+ 2142 02be 13        		.uleb128 0x13
+ 2143 02bf 00        		.byte	0
+ 2144 02c0 00        		.byte	0
+ 2145 02c1 31        		.uleb128 0x31
+ 2146 02c2 34        		.uleb128 0x34
+ 2147 02c3 00        		.byte	0
+ 2148 02c4 47        		.uleb128 0x47
+ 2149 02c5 13        		.uleb128 0x13
+ 2150 02c6 3A        		.uleb128 0x3a
+ 2151 02c7 0B        		.uleb128 0xb
+ 2152 02c8 3B        		.uleb128 0x3b
+ 2153 02c9 0B        		.uleb128 0xb
+ 2154 02ca 8740      		.uleb128 0x2007
+ 2155 02cc 0E        		.uleb128 0xe
+ 2156 02cd 02        		.uleb128 0x2
+ 2157 02ce 0A        		.uleb128 0xa
+ 2158 02cf 00        		.byte	0
+ 2159 02d0 00        		.byte	0
+ 2160 02d1 00        		.byte	0
+ 2161               		.section	.debug_loc,"",@progbits
+ 2162               	.Ldebug_loc0:
+ 2163               	.LLST0:
+ 2164 0000 0200 0000 		.long	.LVL1-.Ltext0
+ 2165 0004 0400 0000 		.long	.LVL2-.Ltext0
+ 2166 0008 0600      		.word	0x6
+ 2167 000a 68        		.byte	0x68
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 48
+
+
+ 2168 000b 93        		.byte	0x93
+ 2169 000c 01        		.uleb128 0x1
+ 2170 000d 69        		.byte	0x69
+ 2171 000e 93        		.byte	0x93
+ 2172 000f 01        		.uleb128 0x1
+ 2173 0010 0400 0000 		.long	.LVL2-.Ltext0
+ 2174 0014 1400 0000 		.long	.LFE6-.Ltext0
+ 2175 0018 0400      		.word	0x4
+ 2176 001a F3        		.byte	0xf3
+ 2177 001b 01        		.uleb128 0x1
+ 2178 001c 68        		.byte	0x68
+ 2179 001d 9F        		.byte	0x9f
+ 2180 001e 0000 0000 		.long	0
+ 2181 0022 0000 0000 		.long	0
+ 2182               	.LLST1:
+ 2183 0026 0200 0000 		.long	.LVL1-.Ltext0
+ 2184 002a 0800 0000 		.long	.LVL3-.Ltext0
+ 2185 002e 0300      		.word	0x3
+ 2186 0030 09        		.byte	0x9
+ 2187 0031 FF        		.byte	0xff
+ 2188 0032 9F        		.byte	0x9f
+ 2189 0033 0800 0000 		.long	.LVL3-.Ltext0
+ 2190 0037 1400 0000 		.long	.LFE6-.Ltext0
+ 2191 003b 0300      		.word	0x3
+ 2192 003d 09        		.byte	0x9
+ 2193 003e A0        		.byte	0xa0
+ 2194 003f 9F        		.byte	0x9f
+ 2195 0040 0000 0000 		.long	0
+ 2196 0044 0000 0000 		.long	0
+ 2197               	.LLST2:
+ 2198 0048 1400 0000 		.long	.LVL4-.Ltext0
+ 2199 004c 1D00 0000 		.long	.LVL5-1-.Ltext0
+ 2200 0050 0600      		.word	0x6
+ 2201 0052 68        		.byte	0x68
+ 2202 0053 93        		.byte	0x93
+ 2203 0054 01        		.uleb128 0x1
+ 2204 0055 69        		.byte	0x69
+ 2205 0056 93        		.byte	0x93
+ 2206 0057 01        		.uleb128 0x1
+ 2207 0058 1D00 0000 		.long	.LVL5-1-.Ltext0
+ 2208 005c 1E00 0000 		.long	.LFE1-.Ltext0
+ 2209 0060 0400      		.word	0x4
+ 2210 0062 F3        		.byte	0xf3
+ 2211 0063 01        		.uleb128 0x1
+ 2212 0064 68        		.byte	0x68
+ 2213 0065 9F        		.byte	0x9f
+ 2214 0066 0000 0000 		.long	0
+ 2215 006a 0000 0000 		.long	0
+ 2216               	.LLST3:
+ 2217 006e 1E00 0000 		.long	.LVL6-.Ltext0
+ 2218 0072 2800 0000 		.long	.LVL8-.Ltext0
+ 2219 0076 0100      		.word	0x1
+ 2220 0078 68        		.byte	0x68
+ 2221 0079 2800 0000 		.long	.LVL8-.Ltext0
+ 2222 007d 3000 0000 		.long	.LVL10-.Ltext0
+ 2223 0081 0400      		.word	0x4
+ 2224 0083 F3        		.byte	0xf3
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 49
+
+
+ 2225 0084 01        		.uleb128 0x1
+ 2226 0085 68        		.byte	0x68
+ 2227 0086 9F        		.byte	0x9f
+ 2228 0087 3000 0000 		.long	.LVL10-.Ltext0
+ 2229 008b 3200 0000 		.long	.LVL11-.Ltext0
+ 2230 008f 0100      		.word	0x1
+ 2231 0091 68        		.byte	0x68
+ 2232 0092 3200 0000 		.long	.LVL11-.Ltext0
+ 2233 0096 3400 0000 		.long	.LFE7-.Ltext0
+ 2234 009a 0400      		.word	0x4
+ 2235 009c F3        		.byte	0xf3
+ 2236 009d 01        		.uleb128 0x1
+ 2237 009e 68        		.byte	0x68
+ 2238 009f 9F        		.byte	0x9f
+ 2239 00a0 0000 0000 		.long	0
+ 2240 00a4 0000 0000 		.long	0
+ 2241               	.LLST4:
+ 2242 00a8 1E00 0000 		.long	.LVL6-.Ltext0
+ 2243 00ac 2200 0000 		.long	.LVL7-.Ltext0
+ 2244 00b0 0500      		.word	0x5
+ 2245 00b2 88        		.byte	0x88
+ 2246 00b3 00        		.sleb128 0
+ 2247 00b4 33        		.byte	0x33
+ 2248 00b5 1A        		.byte	0x1a
+ 2249 00b6 9F        		.byte	0x9f
+ 2250 00b7 2200 0000 		.long	.LVL7-.Ltext0
+ 2251 00bb 3400 0000 		.long	.LFE7-.Ltext0
+ 2252 00bf 0100      		.word	0x1
+ 2253 00c1 69        		.byte	0x69
+ 2254 00c2 0000 0000 		.long	0
+ 2255 00c6 0000 0000 		.long	0
+ 2256               	.LLST5:
+ 2257 00ca 1E00 0000 		.long	.LVL6-.Ltext0
+ 2258 00ce 2E00 0000 		.long	.LVL9-.Ltext0
+ 2259 00d2 0300      		.word	0x3
+ 2260 00d4 09        		.byte	0x9
+ 2261 00d5 FF        		.byte	0xff
+ 2262 00d6 9F        		.byte	0x9f
+ 2263 00d7 2E00 0000 		.long	.LVL9-.Ltext0
+ 2264 00db 3000 0000 		.long	.LVL10-.Ltext0
+ 2265 00df 0100      		.word	0x1
+ 2266 00e1 68        		.byte	0x68
+ 2267 00e2 3000 0000 		.long	.LVL10-.Ltext0
+ 2268 00e6 3200 0000 		.long	.LVL11-.Ltext0
+ 2269 00ea 0300      		.word	0x3
+ 2270 00ec 09        		.byte	0x9
+ 2271 00ed FF        		.byte	0xff
+ 2272 00ee 9F        		.byte	0x9f
+ 2273 00ef 3200 0000 		.long	.LVL11-.Ltext0
+ 2274 00f3 3400 0000 		.long	.LFE7-.Ltext0
+ 2275 00f7 0100      		.word	0x1
+ 2276 00f9 68        		.byte	0x68
+ 2277 00fa 0000 0000 		.long	0
+ 2278 00fe 0000 0000 		.long	0
+ 2279               	.LLST6:
+ 2280 0102 3400 0000 		.long	.LVL12-.Ltext0
+ 2281 0106 3800 0000 		.long	.LVL13-.Ltext0
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 50
+
+
+ 2282 010a 0600      		.word	0x6
+ 2283 010c 68        		.byte	0x68
+ 2284 010d 93        		.byte	0x93
+ 2285 010e 01        		.uleb128 0x1
+ 2286 010f 69        		.byte	0x69
+ 2287 0110 93        		.byte	0x93
+ 2288 0111 01        		.uleb128 0x1
+ 2289 0112 3800 0000 		.long	.LVL13-.Ltext0
+ 2290 0116 F600 0000 		.long	.LFE8-.Ltext0
+ 2291 011a 0400      		.word	0x4
+ 2292 011c F3        		.byte	0xf3
+ 2293 011d 01        		.uleb128 0x1
+ 2294 011e 68        		.byte	0x68
+ 2295 011f 9F        		.byte	0x9f
+ 2296 0120 0000 0000 		.long	0
+ 2297 0124 0000 0000 		.long	0
+ 2298               	.LLST7:
+ 2299 0128 F600 0000 		.long	.LVL14-.Ltext0
+ 2300 012c FA00 0000 		.long	.LVL15-.Ltext0
+ 2301 0130 0600      		.word	0x6
+ 2302 0132 68        		.byte	0x68
+ 2303 0133 93        		.byte	0x93
+ 2304 0134 01        		.uleb128 0x1
+ 2305 0135 69        		.byte	0x69
+ 2306 0136 93        		.byte	0x93
+ 2307 0137 01        		.uleb128 0x1
+ 2308 0138 FA00 0000 		.long	.LVL15-.Ltext0
+ 2309 013c BE01 0000 		.long	.LFE9-.Ltext0
+ 2310 0140 0400      		.word	0x4
+ 2311 0142 F3        		.byte	0xf3
+ 2312 0143 01        		.uleb128 0x1
+ 2313 0144 68        		.byte	0x68
+ 2314 0145 9F        		.byte	0x9f
+ 2315 0146 0000 0000 		.long	0
+ 2316 014a 0000 0000 		.long	0
+ 2317               	.LLST8:
+ 2318 014e F600 0000 		.long	.LVL14-.Ltext0
+ 2319 0152 9401 0000 		.long	.LVL16-.Ltext0
+ 2320 0156 0600      		.word	0x6
+ 2321 0158 64        		.byte	0x64
+ 2322 0159 93        		.byte	0x93
+ 2323 015a 01        		.uleb128 0x1
+ 2324 015b 65        		.byte	0x65
+ 2325 015c 93        		.byte	0x93
+ 2326 015d 01        		.uleb128 0x1
+ 2327 015e 9401 0000 		.long	.LVL16-.Ltext0
+ 2328 0162 AA01 0000 		.long	.LVL18-.Ltext0
+ 2329 0166 0600      		.word	0x6
+ 2330 0168 6E        		.byte	0x6e
+ 2331 0169 93        		.byte	0x93
+ 2332 016a 01        		.uleb128 0x1
+ 2333 016b 6F        		.byte	0x6f
+ 2334 016c 93        		.byte	0x93
+ 2335 016d 01        		.uleb128 0x1
+ 2336 016e AA01 0000 		.long	.LVL18-.Ltext0
+ 2337 0172 B001 0000 		.long	.LVL19-.Ltext0
+ 2338 0176 0300      		.word	0x3
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 51
+
+
+ 2339 0178 8E        		.byte	0x8e
+ 2340 0179 01        		.sleb128 1
+ 2341 017a 9F        		.byte	0x9f
+ 2342 017b B001 0000 		.long	.LVL19-.Ltext0
+ 2343 017f BE01 0000 		.long	.LFE9-.Ltext0
+ 2344 0183 0600      		.word	0x6
+ 2345 0185 6E        		.byte	0x6e
+ 2346 0186 93        		.byte	0x93
+ 2347 0187 01        		.uleb128 0x1
+ 2348 0188 6F        		.byte	0x6f
+ 2349 0189 93        		.byte	0x93
+ 2350 018a 01        		.uleb128 0x1
+ 2351 018b 0000 0000 		.long	0
+ 2352 018f 0000 0000 		.long	0
+ 2353               	.LLST9:
+ 2354 0193 F600 0000 		.long	.LVL14-.Ltext0
+ 2355 0197 B201 0000 		.long	.LVL20-.Ltext0
+ 2356 019b 0100      		.word	0x1
+ 2357 019d 62        		.byte	0x62
+ 2358 019e B201 0000 		.long	.LVL20-.Ltext0
+ 2359 01a2 BE01 0000 		.long	.LFE9-.Ltext0
+ 2360 01a6 0100      		.word	0x1
+ 2361 01a8 62        		.byte	0x62
+ 2362 01a9 0000 0000 		.long	0
+ 2363 01ad 0000 0000 		.long	0
+ 2364               	.LLST10:
+ 2365 01b1 9401 0000 		.long	.LVL16-.Ltext0
+ 2366 01b5 B601 0000 		.long	.LVL21-.Ltext0
+ 2367 01b9 0100      		.word	0x1
+ 2368 01bb 68        		.byte	0x68
+ 2369 01bc 0000 0000 		.long	0
+ 2370 01c0 0000 0000 		.long	0
+ 2371               	.LLST11:
+ 2372 01c4 BE01 0000 		.long	.LVL22-.Ltext0
+ 2373 01c8 C201 0000 		.long	.LVL23-.Ltext0
+ 2374 01cc 0600      		.word	0x6
+ 2375 01ce 68        		.byte	0x68
+ 2376 01cf 93        		.byte	0x93
+ 2377 01d0 01        		.uleb128 0x1
+ 2378 01d1 69        		.byte	0x69
+ 2379 01d2 93        		.byte	0x93
+ 2380 01d3 01        		.uleb128 0x1
+ 2381 01d4 C201 0000 		.long	.LVL23-.Ltext0
+ 2382 01d8 4E02 0000 		.long	.LFE10-.Ltext0
+ 2383 01dc 0400      		.word	0x4
+ 2384 01de F3        		.byte	0xf3
+ 2385 01df 01        		.uleb128 0x1
+ 2386 01e0 68        		.byte	0x68
+ 2387 01e1 9F        		.byte	0x9f
+ 2388 01e2 0000 0000 		.long	0
+ 2389 01e6 0000 0000 		.long	0
+ 2390               	.LLST12:
+ 2391 01ea 4E02 0000 		.long	.LVL24-.Ltext0
+ 2392 01ee 6E02 0000 		.long	.LVL26-.Ltext0
+ 2393 01f2 0600      		.word	0x6
+ 2394 01f4 68        		.byte	0x68
+ 2395 01f5 93        		.byte	0x93
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 52
+
+
+ 2396 01f6 01        		.uleb128 0x1
+ 2397 01f7 69        		.byte	0x69
+ 2398 01f8 93        		.byte	0x93
+ 2399 01f9 01        		.uleb128 0x1
+ 2400 01fa 6E02 0000 		.long	.LVL26-.Ltext0
+ 2401 01fe 0C03 0000 		.long	.LFE12-.Ltext0
+ 2402 0202 0600      		.word	0x6
+ 2403 0204 6A        		.byte	0x6a
+ 2404 0205 93        		.byte	0x93
+ 2405 0206 01        		.uleb128 0x1
+ 2406 0207 6B        		.byte	0x6b
+ 2407 0208 93        		.byte	0x93
+ 2408 0209 01        		.uleb128 0x1
+ 2409 020a 0000 0000 		.long	0
+ 2410 020e 0000 0000 		.long	0
+ 2411               	.LLST13:
+ 2412 0212 4E02 0000 		.long	.LVL24-.Ltext0
+ 2413 0216 EA02 0000 		.long	.LVL28-.Ltext0
+ 2414 021a 0600      		.word	0x6
+ 2415 021c 64        		.byte	0x64
+ 2416 021d 93        		.byte	0x93
+ 2417 021e 01        		.uleb128 0x1
+ 2418 021f 65        		.byte	0x65
+ 2419 0220 93        		.byte	0x93
+ 2420 0221 01        		.uleb128 0x1
+ 2421 0222 EA02 0000 		.long	.LVL28-.Ltext0
+ 2422 0226 EE02 0000 		.long	.LVL29-.Ltext0
+ 2423 022a 0600      		.word	0x6
+ 2424 022c 6E        		.byte	0x6e
+ 2425 022d 93        		.byte	0x93
+ 2426 022e 01        		.uleb128 0x1
+ 2427 022f 6F        		.byte	0x6f
+ 2428 0230 93        		.byte	0x93
+ 2429 0231 01        		.uleb128 0x1
+ 2430 0232 EE02 0000 		.long	.LVL29-.Ltext0
+ 2431 0236 F002 0000 		.long	.LVL30-.Ltext0
+ 2432 023a 0300      		.word	0x3
+ 2433 023c 8E        		.byte	0x8e
+ 2434 023d 01        		.sleb128 1
+ 2435 023e 9F        		.byte	0x9f
+ 2436 023f F002 0000 		.long	.LVL30-.Ltext0
+ 2437 0243 0C03 0000 		.long	.LFE12-.Ltext0
+ 2438 0247 0600      		.word	0x6
+ 2439 0249 6E        		.byte	0x6e
+ 2440 024a 93        		.byte	0x93
+ 2441 024b 01        		.uleb128 0x1
+ 2442 024c 6F        		.byte	0x6f
+ 2443 024d 93        		.byte	0x93
+ 2444 024e 01        		.uleb128 0x1
+ 2445 024f 0000 0000 		.long	0
+ 2446 0253 0000 0000 		.long	0
+ 2447               	.LLST14:
+ 2448 0257 4E02 0000 		.long	.LVL24-.Ltext0
+ 2449 025b 5802 0000 		.long	.LVL25-.Ltext0
+ 2450 025f 0100      		.word	0x1
+ 2451 0261 62        		.byte	0x62
+ 2452 0262 5802 0000 		.long	.LVL25-.Ltext0
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 53
+
+
+ 2453 0266 0C03 0000 		.long	.LFE12-.Ltext0
+ 2454 026a 0400      		.word	0x4
+ 2455 026c F3        		.byte	0xf3
+ 2456 026d 01        		.uleb128 0x1
+ 2457 026e 62        		.byte	0x62
+ 2458 026f 9F        		.byte	0x9f
+ 2459 0270 0000 0000 		.long	0
+ 2460 0274 0000 0000 		.long	0
+ 2461               	.LLST15:
+ 2462 0278 4E02 0000 		.long	.LVL24-.Ltext0
+ 2463 027c EA02 0000 		.long	.LVL28-.Ltext0
+ 2464 0280 0200      		.word	0x2
+ 2465 0282 30        		.byte	0x30
+ 2466 0283 9F        		.byte	0x9f
+ 2467 0284 EA02 0000 		.long	.LVL28-.Ltext0
+ 2468 0288 F002 0000 		.long	.LVL30-.Ltext0
+ 2469 028c 0600      		.word	0x6
+ 2470 028e 8E        		.byte	0x8e
+ 2471 028f 00        		.sleb128 0
+ 2472 0290 84        		.byte	0x84
+ 2473 0291 00        		.sleb128 0
+ 2474 0292 1C        		.byte	0x1c
+ 2475 0293 9F        		.byte	0x9f
+ 2476 0294 F002 0000 		.long	.LVL30-.Ltext0
+ 2477 0298 0003 0000 		.long	.LVL31-.Ltext0
+ 2478 029c 0700      		.word	0x7
+ 2479 029e 84        		.byte	0x84
+ 2480 029f 00        		.sleb128 0
+ 2481 02a0 20        		.byte	0x20
+ 2482 02a1 8E        		.byte	0x8e
+ 2483 02a2 00        		.sleb128 0
+ 2484 02a3 22        		.byte	0x22
+ 2485 02a4 9F        		.byte	0x9f
+ 2486 02a5 0003 0000 		.long	.LVL31-.Ltext0
+ 2487 02a9 0C03 0000 		.long	.LFE12-.Ltext0
+ 2488 02ad 0600      		.word	0x6
+ 2489 02af 8E        		.byte	0x8e
+ 2490 02b0 00        		.sleb128 0
+ 2491 02b1 84        		.byte	0x84
+ 2492 02b2 00        		.sleb128 0
+ 2493 02b3 1C        		.byte	0x1c
+ 2494 02b4 9F        		.byte	0x9f
+ 2495 02b5 0000 0000 		.long	0
+ 2496 02b9 0000 0000 		.long	0
+ 2497               	.LLST16:
+ 2498 02bd 4E02 0000 		.long	.LVL24-.Ltext0
+ 2499 02c1 5802 0000 		.long	.LVL25-.Ltext0
+ 2500 02c5 0100      		.word	0x1
+ 2501 02c7 62        		.byte	0x62
+ 2502 02c8 5802 0000 		.long	.LVL25-.Ltext0
+ 2503 02cc 7002 0000 		.long	.LVL27-.Ltext0
+ 2504 02d0 0400      		.word	0x4
+ 2505 02d2 F3        		.byte	0xf3
+ 2506 02d3 01        		.uleb128 0x1
+ 2507 02d4 62        		.byte	0x62
+ 2508 02d5 9F        		.byte	0x9f
+ 2509 02d6 7002 0000 		.long	.LVL27-.Ltext0
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 54
+
+
+ 2510 02da EA02 0000 		.long	.LVL28-.Ltext0
+ 2511 02de 0100      		.word	0x1
+ 2512 02e0 68        		.byte	0x68
+ 2513 02e1 EA02 0000 		.long	.LVL28-.Ltext0
+ 2514 02e5 0603 0000 		.long	.LVL33-.Ltext0
+ 2515 02e9 0100      		.word	0x1
+ 2516 02eb 69        		.byte	0x69
+ 2517 02ec 0000 0000 		.long	0
+ 2518 02f0 0000 0000 		.long	0
+ 2519               	.LLST17:
+ 2520 02f4 0C03 0000 		.long	.LFB11-.Ltext0
+ 2521 02f8 0E03 0000 		.long	.LCFI0-.Ltext0
+ 2522 02fc 0300      		.word	0x3
+ 2523 02fe 92        		.byte	0x92
+ 2524 02ff 20        		.uleb128 0x20
+ 2525 0300 02        		.sleb128 2
+ 2526 0301 0E03 0000 		.long	.LCFI0-.Ltext0
+ 2527 0305 1003 0000 		.long	.LCFI1-.Ltext0
+ 2528 0309 0300      		.word	0x3
+ 2529 030b 92        		.byte	0x92
+ 2530 030c 20        		.uleb128 0x20
+ 2531 030d 03        		.sleb128 3
+ 2532 030e 1003 0000 		.long	.LCFI1-.Ltext0
+ 2533 0312 1203 0000 		.long	.LCFI2-.Ltext0
+ 2534 0316 0300      		.word	0x3
+ 2535 0318 92        		.byte	0x92
+ 2536 0319 20        		.uleb128 0x20
+ 2537 031a 04        		.sleb128 4
+ 2538 031b 1203 0000 		.long	.LCFI2-.Ltext0
+ 2539 031f 1403 0000 		.long	.LCFI3-.Ltext0
+ 2540 0323 0300      		.word	0x3
+ 2541 0325 92        		.byte	0x92
+ 2542 0326 20        		.uleb128 0x20
+ 2543 0327 05        		.sleb128 5
+ 2544 0328 1403 0000 		.long	.LCFI3-.Ltext0
+ 2545 032c 1603 0000 		.long	.LCFI4-.Ltext0
+ 2546 0330 0300      		.word	0x3
+ 2547 0332 92        		.byte	0x92
+ 2548 0333 20        		.uleb128 0x20
+ 2549 0334 06        		.sleb128 6
+ 2550 0335 1603 0000 		.long	.LCFI4-.Ltext0
+ 2551 0339 1803 0000 		.long	.LCFI5-.Ltext0
+ 2552 033d 0300      		.word	0x3
+ 2553 033f 92        		.byte	0x92
+ 2554 0340 20        		.uleb128 0x20
+ 2555 0341 07        		.sleb128 7
+ 2556 0342 1803 0000 		.long	.LCFI5-.Ltext0
+ 2557 0346 1A03 0000 		.long	.LCFI6-.Ltext0
+ 2558 034a 0300      		.word	0x3
+ 2559 034c 92        		.byte	0x92
+ 2560 034d 20        		.uleb128 0x20
+ 2561 034e 08        		.sleb128 8
+ 2562 034f 1A03 0000 		.long	.LCFI6-.Ltext0
+ 2563 0353 5203 0000 		.long	.LFE11-.Ltext0
+ 2564 0357 0300      		.word	0x3
+ 2565 0359 92        		.byte	0x92
+ 2566 035a 20        		.uleb128 0x20
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 55
+
+
+ 2567 035b 09        		.sleb128 9
+ 2568 035c 0000 0000 		.long	0
+ 2569 0360 0000 0000 		.long	0
+ 2570               	.LLST18:
+ 2571 0364 0C03 0000 		.long	.LVL34-.Ltext0
+ 2572 0368 2203 0000 		.long	.LVL36-.Ltext0
+ 2573 036c 0600      		.word	0x6
+ 2574 036e 68        		.byte	0x68
+ 2575 036f 93        		.byte	0x93
+ 2576 0370 01        		.uleb128 0x1
+ 2577 0371 69        		.byte	0x69
+ 2578 0372 93        		.byte	0x93
+ 2579 0373 01        		.uleb128 0x1
+ 2580 0374 2203 0000 		.long	.LVL36-.Ltext0
+ 2581 0378 4E03 0000 		.long	.LVL44-.Ltext0
+ 2582 037c 0600      		.word	0x6
+ 2583 037e 5E        		.byte	0x5e
+ 2584 037f 93        		.byte	0x93
+ 2585 0380 01        		.uleb128 0x1
+ 2586 0381 5F        		.byte	0x5f
+ 2587 0382 93        		.byte	0x93
+ 2588 0383 01        		.uleb128 0x1
+ 2589 0384 4E03 0000 		.long	.LVL44-.Ltext0
+ 2590 0388 5203 0000 		.long	.LFE11-.Ltext0
+ 2591 038c 0400      		.word	0x4
+ 2592 038e F3        		.byte	0xf3
+ 2593 038f 01        		.uleb128 0x1
+ 2594 0390 68        		.byte	0x68
+ 2595 0391 9F        		.byte	0x9f
+ 2596 0392 0000 0000 		.long	0
+ 2597 0396 0000 0000 		.long	0
+ 2598               	.LLST19:
+ 2599 039a 0C03 0000 		.long	.LVL34-.Ltext0
+ 2600 039e 2203 0000 		.long	.LVL36-.Ltext0
+ 2601 03a2 0600      		.word	0x6
+ 2602 03a4 66        		.byte	0x66
+ 2603 03a5 93        		.byte	0x93
+ 2604 03a6 01        		.uleb128 0x1
+ 2605 03a7 67        		.byte	0x67
+ 2606 03a8 93        		.byte	0x93
+ 2607 03a9 01        		.uleb128 0x1
+ 2608 03aa 2203 0000 		.long	.LVL36-.Ltext0
+ 2609 03ae 5203 0000 		.long	.LFE11-.Ltext0
+ 2610 03b2 0400      		.word	0x4
+ 2611 03b4 F3        		.byte	0xf3
+ 2612 03b5 01        		.uleb128 0x1
+ 2613 03b6 66        		.byte	0x66
+ 2614 03b7 9F        		.byte	0x9f
+ 2615 03b8 0000 0000 		.long	0
+ 2616 03bc 0000 0000 		.long	0
+ 2617               	.LLST20:
+ 2618 03c0 0C03 0000 		.long	.LVL34-.Ltext0
+ 2619 03c4 2203 0000 		.long	.LVL36-.Ltext0
+ 2620 03c8 0600      		.word	0x6
+ 2621 03ca 64        		.byte	0x64
+ 2622 03cb 93        		.byte	0x93
+ 2623 03cc 01        		.uleb128 0x1
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 56
+
+
+ 2624 03cd 65        		.byte	0x65
+ 2625 03ce 93        		.byte	0x93
+ 2626 03cf 01        		.uleb128 0x1
+ 2627 03d0 2203 0000 		.long	.LVL36-.Ltext0
+ 2628 03d4 4A03 0000 		.long	.LVL43-.Ltext0
+ 2629 03d8 0600      		.word	0x6
+ 2630 03da 60        		.byte	0x60
+ 2631 03db 93        		.byte	0x93
+ 2632 03dc 01        		.uleb128 0x1
+ 2633 03dd 61        		.byte	0x61
+ 2634 03de 93        		.byte	0x93
+ 2635 03df 01        		.uleb128 0x1
+ 2636 03e0 0000 0000 		.long	0
+ 2637 03e4 0000 0000 		.long	0
+ 2638               	.LLST21:
+ 2639 03e8 0C03 0000 		.long	.LVL34-.Ltext0
+ 2640 03ec 2203 0000 		.long	.LVL36-.Ltext0
+ 2641 03f0 0100      		.word	0x1
+ 2642 03f2 62        		.byte	0x62
+ 2643 03f3 2203 0000 		.long	.LVL36-.Ltext0
+ 2644 03f7 5203 0000 		.long	.LFE11-.Ltext0
+ 2645 03fb 0400      		.word	0x4
+ 2646 03fd F3        		.byte	0xf3
+ 2647 03fe 01        		.uleb128 0x1
+ 2648 03ff 62        		.byte	0x62
+ 2649 0400 9F        		.byte	0x9f
+ 2650 0401 0000 0000 		.long	0
+ 2651 0405 0000 0000 		.long	0
+ 2652               	.LLST22:
+ 2653 0409 2E03 0000 		.long	.LVL37-.Ltext0
+ 2654 040d 4203 0000 		.long	.LVL41-.Ltext0
+ 2655 0411 0100      		.word	0x1
+ 2656 0413 68        		.byte	0x68
+ 2657 0414 4203 0000 		.long	.LVL41-.Ltext0
+ 2658 0418 5203 0000 		.long	.LFE11-.Ltext0
+ 2659 041c 0100      		.word	0x1
+ 2660 041e 64        		.byte	0x64
+ 2661 041f 0000 0000 		.long	0
+ 2662 0423 0000 0000 		.long	0
+ 2663               	.LLST23:
+ 2664 0427 2003 0000 		.long	.LVL35-.Ltext0
+ 2665 042b 2203 0000 		.long	.LVL36-.Ltext0
+ 2666 042f 0600      		.word	0x6
+ 2667 0431 66        		.byte	0x66
+ 2668 0432 93        		.byte	0x93
+ 2669 0433 01        		.uleb128 0x1
+ 2670 0434 67        		.byte	0x67
+ 2671 0435 93        		.byte	0x93
+ 2672 0436 01        		.uleb128 0x1
+ 2673 0437 2203 0000 		.long	.LVL36-.Ltext0
+ 2674 043b 4603 0000 		.long	.LVL42-.Ltext0
+ 2675 043f 0600      		.word	0x6
+ 2676 0441 6C        		.byte	0x6c
+ 2677 0442 93        		.byte	0x93
+ 2678 0443 01        		.uleb128 0x1
+ 2679 0444 6D        		.byte	0x6d
+ 2680 0445 93        		.byte	0x93
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 57
+
+
+ 2681 0446 01        		.uleb128 0x1
+ 2682 0447 0000 0000 		.long	0
+ 2683 044b 0000 0000 		.long	0
+ 2684               	.LLST24:
+ 2685 044f 2203 0000 		.long	.LVL36-.Ltext0
+ 2686 0453 5003 0000 		.long	.LVL45-.Ltext0
+ 2687 0457 0100      		.word	0x1
+ 2688 0459 5D        		.byte	0x5d
+ 2689 045a 0000 0000 		.long	0
+ 2690 045e 0000 0000 		.long	0
+ 2691               		.section	.debug_aranges,"",@progbits
+ 2692 0000 1C00 0000 		.long	0x1c
+ 2693 0004 0200      		.word	0x2
+ 2694 0006 0000 0000 		.long	.Ldebug_info0
+ 2695 000a 04        		.byte	0x4
+ 2696 000b 00        		.byte	0
+ 2697 000c 0000      		.word	0
+ 2698 000e 0000      		.word	0
+ 2699 0010 0000 0000 		.long	.Ltext0
+ 2700 0014 5203 0000 		.long	.Letext0-.Ltext0
+ 2701 0018 0000 0000 		.long	0
+ 2702 001c 0000 0000 		.long	0
+ 2703               		.section	.debug_line,"",@progbits
+ 2704               	.Ldebug_line0:
+ 2705 0000 D001 0000 		.section	.debug_str,"MS",@progbits,1
+ 2705      0200 6C00 
+ 2705      0000 0201 
+ 2705      FB0E 0A00 
+ 2705      0101 0101 
+ 2706               	.LASF9:
+ 2707 0000 4D65 6D6F 		.string	"Memoire24CXXX"
+ 2707      6972 6532 
+ 2707      3443 5858 
+ 2707      5800 
+ 2708               	.LASF20:
+ 2709 000e 5F5A 4E31 		.string	"_ZN13Memoire24CXXX8ecritureEjPhh"
+ 2709      334D 656D 
+ 2709      6F69 7265 
+ 2709      3234 4358 
+ 2709      5858 3865 
+ 2710               	.LASF41:
+ 2711 002f 5F5A 4E31 		.string	"_ZN13Memoire24CXXX22m_adresse_peripheriqueE"
+ 2711      334D 656D 
+ 2711      6F69 7265 
+ 2711      3234 4358 
+ 2711      5858 3232 
+ 2712               	.LASF17:
+ 2713 005b 5F5A 4E31 		.string	"_ZN13Memoire24CXXX7lectureEjPhh"
+ 2713      334D 656D 
+ 2713      6F69 7265 
+ 2713      3234 4358 
+ 2713      5858 376C 
+ 2714               	.LASF33:
+ 2715 007b 6164 6472 		.string	"addr_fin"
+ 2715      5F66 696E 
+ 2715      00
+ 2716               	.LASF36:
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 58
+
+
+ 2717 0084 474E 5520 		.string	"GNU C++ 4.8.1 -mmcu=atmega324pa -g -Os -std=c++98 -fpack-struct -fshort-enums -funsigned-
+ 2717      432B 2B20 
+ 2717      342E 382E 
+ 2717      3120 2D6D 
+ 2717      6D63 753D 
+ 2718               	.LASF12:
+ 2719 0127 6368 6F69 		.string	"choisir_banc"
+ 2719      7369 725F 
+ 2719      6261 6E63 
+ 2719      00
+ 2720               	.LASF31:
+ 2721 0134 6C6F 6E67 		.string	"longueur"
+ 2721      7565 7572 
+ 2721      00
+ 2722               	.LASF1:
+ 2723 013d 756E 7369 		.string	"unsigned char"
+ 2723      676E 6564 
+ 2723      2063 6861 
+ 2723      7200 
+ 2724               	.LASF23:
+ 2725 014b 7468 6973 		.string	"this"
+ 2725      00
+ 2726               	.LASF28:
+ 2727 0150 5F5A 4E31 		.string	"_ZN13Memoire24CXXXC2Ev"
+ 2727      334D 656D 
+ 2727      6F69 7265 
+ 2727      3234 4358 
+ 2727      5858 4332 
+ 2728               	.LASF6:
+ 2729 0167 6C6F 6E67 		.string	"long unsigned int"
+ 2729      2075 6E73 
+ 2729      6967 6E65 
+ 2729      6420 696E 
+ 2729      7400 
+ 2730               	.LASF25:
+ 2731 0179 7465 6D70 		.string	"temp"
+ 2731      00
+ 2732               	.LASF21:
+ 2733 017e 6563 7269 		.string	"ecrire_page"
+ 2733      7265 5F70 
+ 2733      6167 6500 
+ 2734               	.LASF10:
+ 2735 018a 7E4D 656D 		.string	"~Memoire24CXXX"
+ 2735      6F69 7265 
+ 2735      3234 4358 
+ 2735      5858 00
+ 2736               	.LASF19:
+ 2737 0199 5F5A 4E31 		.string	"_ZN13Memoire24CXXX8ecritureEjh"
+ 2737      334D 656D 
+ 2737      6F69 7265 
+ 2737      3234 4358 
+ 2737      5858 3865 
+ 2738               	.LASF13:
+ 2739 01b8 5F5A 4E31 		.string	"_ZN13Memoire24CXXX4initEv"
+ 2739      334D 656D 
+ 2739      6F69 7265 
+ 2739      3234 4358 
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 59
+
+
+ 2739      5858 3469 
+ 2740               	.LASF38:
+ 2741 01d2 2F55 7365 		.string	"/Users/Esteban/dev/robot-poly/lib_dir"
+ 2741      7273 2F45 
+ 2741      7374 6562 
+ 2741      616E 2F64 
+ 2741      6576 2F72 
+ 2742               	.LASF37:
+ 2743 01f8 6D65 6D6F 		.string	"memoire_24.cpp"
+ 2743      6972 655F 
+ 2743      3234 2E63 
+ 2743      7070 00
+ 2744               	.LASF27:
+ 2745 0207 5F5A 4E31 		.string	"_ZN13Memoire24CXXXD2Ev"
+ 2745      334D 656D 
+ 2745      6F69 7265 
+ 2745      3234 4358 
+ 2745      5858 4432 
+ 2746               	.LASF4:
+ 2747 021e 756E 7369 		.string	"unsigned int"
+ 2747      676E 6564 
+ 2747      2069 6E74 
+ 2747      00
+ 2748               	.LASF8:
+ 2749 022b 6C6F 6E67 		.string	"long long unsigned int"
+ 2749      206C 6F6E 
+ 2749      6720 756E 
+ 2749      7369 676E 
+ 2749      6564 2069 
+ 2750               	.LASF2:
+ 2751 0242 7569 6E74 		.string	"uint8_t"
+ 2751      385F 7400 
+ 2752               	.LASF32:
+ 2753 024a 7477 6372 		.string	"twcr"
+ 2753      00
+ 2754               	.LASF39:
+ 2755 024f 6D5F 6164 		.string	"m_adresse_peripherique"
+ 2755      7265 7373 
+ 2755      655F 7065 
+ 2755      7269 7068 
+ 2755      6572 6971 
+ 2756               	.LASF34:
+ 2757 0266 636F 7069 		.string	"copieLongueur"
+ 2757      654C 6F6E 
+ 2757      6775 6575 
+ 2757      7200 
+ 2758               	.LASF22:
+ 2759 0274 5F5A 4E31 		.string	"_ZN13Memoire24CXXX11ecrire_pageEjPhh"
+ 2759      334D 656D 
+ 2759      6F69 7265 
+ 2759      3234 4358 
+ 2759      5858 3131 
+ 2760               	.LASF26:
+ 2761 0299 6261 6E63 		.string	"banc"
+ 2761      00
+ 2762               	.LASF7:
+ 2763 029e 6C6F 6E67 		.string	"long long int"
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 60
+
+
+ 2763      206C 6F6E 
+ 2763      6720 696E 
+ 2763      7400 
+ 2764               	.LASF11:
+ 2765 02ac 696E 6974 		.string	"init"
+ 2765      00
+ 2766               	.LASF40:
+ 2767 02b1 5041 4745 		.string	"PAGE_SIZE"
+ 2767      5F53 495A 
+ 2767      4500 
+ 2768               	.LASF24:
+ 2769 02bb 5F5F 696E 		.string	"__in_chrg"
+ 2769      5F63 6872 
+ 2769      6700 
+ 2770               	.LASF3:
+ 2771 02c5 7569 6E74 		.string	"uint16_t"
+ 2771      3136 5F74 
+ 2771      00
+ 2772               	.LASF14:
+ 2773 02ce 5F5A 4E31 		.string	"_ZN13Memoire24CXXX12choisir_bancEh"
+ 2773      334D 656D 
+ 2773      6F69 7265 
+ 2773      3234 4358 
+ 2773      5858 3132 
+ 2774               	.LASF30:
+ 2775 02f1 646F 6E6E 		.string	"donnee"
+ 2775      6565 00
+ 2776               	.LASF5:
+ 2777 02f8 6C6F 6E67 		.string	"long int"
+ 2777      2069 6E74 
+ 2777      00
+ 2778               	.LASF0:
+ 2779 0301 7369 676E 		.string	"signed char"
+ 2779      6564 2063 
+ 2779      6861 7200 
+ 2780               	.LASF35:
+ 2781 030d 636F 7069 		.string	"copieAdresse"
+ 2781      6541 6472 
+ 2781      6573 7365 
+ 2781      00
+ 2782               	.LASF16:
+ 2783 031a 5F5A 4E31 		.string	"_ZN13Memoire24CXXX7lectureEjPh"
+ 2783      334D 656D 
+ 2783      6F69 7265 
+ 2783      3234 4358 
+ 2783      5858 376C 
+ 2784               	.LASF15:
+ 2785 0339 6C65 6374 		.string	"lecture"
+ 2785      7572 6500 
+ 2786               	.LASF29:
+ 2787 0341 6164 7265 		.string	"adresse"
+ 2787      7373 6500 
+ 2788               	.LASF18:
+ 2789 0349 6563 7269 		.string	"ecriture"
+ 2789      7475 7265 
+ 2789      00
+ 2790               		.ident	"GCC: (GNU) 4.8.1"
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 61
+
+
+ 2791               	.global __do_copy_data
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s 			page 62
 
 
 DEFINED SYMBOLS
-                            *ABS*:0000000000000000 memoire_24.cpp
-     /tmp/cczpOvZM.s:2      *ABS*:000000000000003e __SP_H__
-     /tmp/cczpOvZM.s:3      *ABS*:000000000000003d __SP_L__
-     /tmp/cczpOvZM.s:4      *ABS*:000000000000003f __SREG__
-     /tmp/cczpOvZM.s:5      *ABS*:0000000000000000 __tmp_reg__
-     /tmp/cczpOvZM.s:6      *ABS*:0000000000000001 __zero_reg__
-     /tmp/cczpOvZM.s:109    .text:0000000000000000 _ZN13Memoire24CXXXD2Ev
-     /tmp/cczpOvZM.s:109    .text:0000000000000000 _ZN13Memoire24CXXXD1Ev
-     /tmp/cczpOvZM.s:129    .text:0000000000000002 _ZN13Memoire24CXXX4initEv
-     /tmp/cczpOvZM.s:935    .data:0000000000000000 _ZN13Memoire24CXXX22m_adresse_peripheriqueE
-     /tmp/cczpOvZM.s:162    .text:0000000000000014 _ZN13Memoire24CXXXC2Ev
-     /tmp/cczpOvZM.s:162    .text:0000000000000014 _ZN13Memoire24CXXXC1Ev
-     /tmp/cczpOvZM.s:191    .text:000000000000001e _ZN13Memoire24CXXX12choisir_bancEh
-     /tmp/cczpOvZM.s:235    .text:0000000000000034 _ZN13Memoire24CXXX7lectureEjPh
-     /tmp/cczpOvZM.s:393    .text:00000000000000f6 _ZN13Memoire24CXXX7lectureEjPhh
-     /tmp/cczpOvZM.s:568    .text:00000000000001be _ZN13Memoire24CXXX8ecritureEjh
-     /tmp/cczpOvZM.s:692    .text:000000000000024e _ZN13Memoire24CXXX11ecrire_pageEjPhh
-     /tmp/cczpOvZM.s:861    .text:000000000000030c _ZN13Memoire24CXXX8ecritureEjPhh
+                            *ABS*:00000000 memoire_24.cpp
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:2      *ABS*:0000003e __SP_H__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:3      *ABS*:0000003d __SP_L__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:4      *ABS*:0000003f __SREG__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:5      *ABS*:00000000 __tmp_reg__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:6      *ABS*:00000001 __zero_reg__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:12     .text:00000000 _ZN13Memoire24CXXXD2Ev
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:12     .text:00000000 _ZN13Memoire24CXXXD1Ev
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:30     .text:00000002 _ZN13Memoire24CXXX4initEv
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:715    .data:00000000 _ZN13Memoire24CXXX22m_adresse_peripheriqueE
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:59     .text:00000014 _ZN13Memoire24CXXXC2Ev
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:59     .text:00000014 _ZN13Memoire24CXXXC1Ev
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:84     .text:0000001e _ZN13Memoire24CXXX12choisir_bancEh
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:121    .text:00000034 _ZN13Memoire24CXXX7lectureEjPh
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:246    .text:000000f6 _ZN13Memoire24CXXX7lectureEjPhh
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:387    .text:000001be _ZN13Memoire24CXXX8ecritureEjh
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:483    .text:0000024e _ZN13Memoire24CXXX11ecrire_pageEjPhh
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccrC65jx.s:622    .text:0000030c _ZN13Memoire24CXXX8ecritureEjPhh
 
 UNDEFINED SYMBOLS
 __do_copy_data

@@ -23,6 +23,8 @@ public:
    void transmissionUSART (uint8_t donnee);
    void USART_Flush(void);
    unsigned char usart_receive(void);
+
+   static void delay(uint16_t ms); // Précise une intervale de temps donnée
    
 };
 

@@ -1,4 +1,4 @@
-GAS LISTING /tmp/cc0IbbBn.s 			page 1
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 1
 
 
    1               		.file	"captor.cpp"
@@ -7,289 +7,958 @@ GAS LISTING /tmp/cc0IbbBn.s 			page 1
    4               	__SREG__ = 0x3f
    5               	__tmp_reg__ = 0
    6               	__zero_reg__ = 1
-   7               		.stabs	"/home/prophete/PROJETFINALINF1995/robot-poly/lib_dir/",100,0,4,.Ltext0
-   8               		.stabs	"captor.cpp",100,0,4,.Ltext0
-   9               		.text
-  10               	.Ltext0:
-  11               		.stabs	"gcc2_compiled.",60,0,0,0
-  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
-  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
-  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
-  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
-  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
-  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
-  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
-  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
-  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
-  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
-  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
-  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
-  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
-  25               		.stabs	"int:t(0,9)",128,0,0,0
-  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
-  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
-  28               		.stabs	"signed:t(0,9)",128,0,0,0
-  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
-  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
-  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
-  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
-  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
-  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
-  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
-  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
-  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
-  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
-  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
-  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
-  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
-  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
-  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
-  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
-  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
-  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
-  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
-  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
-  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
-  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
-  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
-  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
-  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
-  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
-  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
-  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
-  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
-GAS LISTING /tmp/cc0IbbBn.s 			page 2
-
-
-  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
-  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
-  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
-  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
-  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
-  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
-  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
-  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
-  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
-  67               		.stabs	"void:t(0,4)",128,0,0,0
-  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
-  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
-  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
-  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
-  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,121,0
-  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,122,0
-  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,123,0
-  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,124,0
-  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,125,0
-  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,126,0
-  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,128,0
-  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,129,0
-  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,142,0
-  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,147,0
-  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,159,0
-  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,164,0
-  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,169,0
-  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,174,0
-  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,179,0
-  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,184,0
-  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,192,0
-  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,199,0
-  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,213,0
-  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,218,0
-  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,223,0
-  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,228,0
-  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,233,0
-  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,238,0
-  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,246,0
-  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,253,0
-  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,273,0
-  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,278,0
- 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
- 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
- 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
- 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
- 104               		.stabs	"Captor:Tt(0,89)=s4DDR:/0(0,90)=*(0,91)=B(0,59),0,16;PORT:/0(0,90),16,16;__base_ctor ::(0,9
- 105               		.stabs	"_ZN6CaptorC2Ev:F(0,4)",36,0,4,_ZN6CaptorC2Ev
- 106               		.stabs	"this:P(0,97)=k(0,93)",64,0,4,24
- 107               	.global	_ZN6CaptorC2Ev
- 108               		.type	_ZN6CaptorC2Ev, @function
- 109               	_ZN6CaptorC2Ev:
- 110               		.stabd	46,0,0
+   7               		.text
+   8               	.Ltext0:
+   9               		.cfi_sections	.debug_frame
+  10               	.global	_ZN6CaptorC2Ev
+  11               		.type	_ZN6CaptorC2Ev, @function
+  12               	_ZN6CaptorC2Ev:
+  13               	.LFB1:
+  14               		.file 1 "captor.cpp"
    1:captor.cpp    **** #include "captor.h"
    2:captor.cpp    **** 
    3:captor.cpp    **** 
    4:captor.cpp    **** Captor::Captor()
-GAS LISTING /tmp/cc0IbbBn.s 			page 3
-
-
- 111               		.stabn	68,0,4,.LM0-.LFBB1
- 112               	.LM0:
- 113               	.LFBB1:
- 114               	/* prologue: function */
- 115               	/* frame size = 0 */
- 116               	/* stack size = 0 */
- 117               	.L__stack_usage = 0
- 118               	.LBB2:
+  15               		.loc 1 4 0
+  16               		.cfi_startproc
+  17               	.LVL0:
+  18               	/* prologue: function */
+  19               	/* frame size = 0 */
+  20               	/* stack size = 0 */
+  21               	.L__stack_usage = 0
+  22               	.LBB2:
    5:captor.cpp    **** {
    6:captor.cpp    ****         DDR = &(DDRA);
- 119               		.stabn	68,0,6,.LM1-.LFBB1
- 120               	.LM1:
- 121 0000 21E2      		ldi r18,lo8(33)
- 122 0002 30E0      		ldi r19,0
- 123 0004 FC01      		movw r30,r24
- 124 0006 3183      		std Z+1,r19
- 125 0008 2083      		st Z,r18
+  23               		.loc 1 6 0
+  24 0000 21E2      		ldi r18,lo8(33)
+  25 0002 30E0      		ldi r19,0
+  26 0004 FC01      		movw r30,r24
+  27 0006 3183      		std Z+1,r19
+  28 0008 2083      		st Z,r18
    7:captor.cpp    ****         *DDR = 0x00;
- 126               		.stabn	68,0,7,.LM2-.LFBB1
- 127               	.LM2:
- 128 000a 11B8      		out 0x1,__zero_reg__
+  29               		.loc 1 7 0
+  30 000a 11B8      		out 0x1,__zero_reg__
    8:captor.cpp    ****         
    9:captor.cpp    ****         PORT = &(PINA);
- 129               		.stabn	68,0,9,.LM3-.LFBB1
- 130               	.LM3:
- 131 000c 20E2      		ldi r18,lo8(32)
- 132 000e 30E0      		ldi r19,0
- 133 0010 3383      		std Z+3,r19
- 134 0012 2283      		std Z+2,r18
- 135 0014 0895      		ret
- 136               	.LBE2:
- 137               		.size	_ZN6CaptorC2Ev, .-_ZN6CaptorC2Ev
- 138               	.Lscope1:
- 139               		.stabs	"",36,0,0,.Lscope1-.LFBB1
- 140               		.stabd	78,0,0
- 141               	.global	_ZN6CaptorC1Ev
- 142               		.set	_ZN6CaptorC1Ev,_ZN6CaptorC2Ev
- 143               		.stabs	"_ZN6CaptorC2EPhS0_:F(0,4)",36,0,12,_ZN6CaptorC2EPhS0_
- 144               		.stabs	"this:P(0,97)",64,0,12,24
- 145               		.stabs	"dataDirection:P(0,95)",64,0,12,22
- 146               		.stabs	"portIndex:P(0,95)",64,0,12,20
- 147               	.global	_ZN6CaptorC2EPhS0_
- 148               		.type	_ZN6CaptorC2EPhS0_, @function
- 149               	_ZN6CaptorC2EPhS0_:
- 150               		.stabd	46,0,0
+  31               		.loc 1 9 0
+  32 000c 20E2      		ldi r18,lo8(32)
+  33 000e 30E0      		ldi r19,0
+  34 0010 3383      		std Z+3,r19
+  35 0012 2283      		std Z+2,r18
+  36 0014 0895      		ret
+  37               	.LBE2:
+  38               		.cfi_endproc
+  39               	.LFE1:
+  40               		.size	_ZN6CaptorC2Ev, .-_ZN6CaptorC2Ev
+  41               	.global	_ZN6CaptorC1Ev
+  42               		.set	_ZN6CaptorC1Ev,_ZN6CaptorC2Ev
+  43               	.global	_ZN6CaptorC2EPhS0_
+  44               		.type	_ZN6CaptorC2EPhS0_, @function
+  45               	_ZN6CaptorC2EPhS0_:
+  46               	.LFB4:
   10:captor.cpp    **** }
   11:captor.cpp    **** 
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 2
+
+
   12:captor.cpp    **** Captor::Captor(uint8_t *dataDirection, uint8_t *portIndex)
- 151               		.stabn	68,0,12,.LM4-.LFBB2
- 152               	.LM4:
- 153               	.LFBB2:
- 154               	/* prologue: function */
- 155               	/* frame size = 0 */
- 156               	/* stack size = 0 */
- 157               	.L__stack_usage = 0
- 158               	.LBB3:
+  47               		.loc 1 12 0
+  48               		.cfi_startproc
+  49               	.LVL1:
+  50               	/* prologue: function */
+  51               	/* frame size = 0 */
+  52               	/* stack size = 0 */
+  53               	.L__stack_usage = 0
+  54               	.LBB3:
   13:captor.cpp    **** {
-GAS LISTING /tmp/cc0IbbBn.s 			page 4
-
-
   14:captor.cpp    ****        DDR = dataDirection;
- 159               		.stabn	68,0,14,.LM5-.LFBB2
- 160               	.LM5:
- 161 0016 FC01      		movw r30,r24
- 162 0018 7183      		std Z+1,r23
- 163 001a 6083      		st Z,r22
+  55               		.loc 1 14 0
+  56 0016 FC01      		movw r30,r24
+  57 0018 7183      		std Z+1,r23
+  58 001a 6083      		st Z,r22
   15:captor.cpp    ****        *DDR = 0x00;
- 164               		.stabn	68,0,15,.LM6-.LFBB2
- 165               	.LM6:
- 166 001c FB01      		movw r30,r22
- 167 001e 1082      		st Z,__zero_reg__
+  59               		.loc 1 15 0
+  60 001c FB01      		movw r30,r22
+  61 001e 1082      		st Z,__zero_reg__
   16:captor.cpp    ****        
   17:captor.cpp    ****        PORT = portIndex;
- 168               		.stabn	68,0,17,.LM7-.LFBB2
- 169               	.LM7:
- 170 0020 FC01      		movw r30,r24
- 171 0022 5383      		std Z+3,r21
- 172 0024 4283      		std Z+2,r20
- 173 0026 0895      		ret
- 174               	.LBE3:
- 175               		.size	_ZN6CaptorC2EPhS0_, .-_ZN6CaptorC2EPhS0_
- 176               	.Lscope2:
- 177               		.stabs	"",36,0,0,.Lscope2-.LFBB2
- 178               		.stabd	78,0,0
- 179               	.global	_ZN6CaptorC1EPhS0_
- 180               		.set	_ZN6CaptorC1EPhS0_,_ZN6CaptorC2EPhS0_
- 181               		.stabs	"_ZN6CaptorD2Ev:F(0,4)",36,0,21,_ZN6CaptorD2Ev
- 182               		.stabs	"this:P(0,97)",64,0,21,24
- 183               	.global	_ZN6CaptorD2Ev
- 184               		.type	_ZN6CaptorD2Ev, @function
- 185               	_ZN6CaptorD2Ev:
- 186               		.stabd	46,0,0
+  62               		.loc 1 17 0
+  63 0020 FC01      		movw r30,r24
+  64 0022 5383      		std Z+3,r21
+  65 0024 4283      		std Z+2,r20
+  66 0026 0895      		ret
+  67               	.LBE3:
+  68               		.cfi_endproc
+  69               	.LFE4:
+  70               		.size	_ZN6CaptorC2EPhS0_, .-_ZN6CaptorC2EPhS0_
+  71               	.global	_ZN6CaptorC1EPhS0_
+  72               		.set	_ZN6CaptorC1EPhS0_,_ZN6CaptorC2EPhS0_
+  73               	.global	_ZN6CaptorD2Ev
+  74               		.type	_ZN6CaptorD2Ev, @function
+  75               	_ZN6CaptorD2Ev:
+  76               	.LFB7:
   18:captor.cpp    **** }
   19:captor.cpp    **** 
   20:captor.cpp    **** 
   21:captor.cpp    **** Captor::~Captor()
- 187               		.stabn	68,0,21,.LM8-.LFBB3
- 188               	.LM8:
- 189               	.LFBB3:
- 190               	/* prologue: function */
- 191               	/* frame size = 0 */
- 192               	/* stack size = 0 */
- 193               	.L__stack_usage = 0
- 194 0028 0895      		ret
- 195               		.size	_ZN6CaptorD2Ev, .-_ZN6CaptorD2Ev
- 196               	.Lscope3:
- 197               		.stabs	"",36,0,0,.Lscope3-.LFBB3
- 198               		.stabd	78,0,0
- 199               	.global	_ZN6CaptorD1Ev
- 200               		.set	_ZN6CaptorD1Ev,_ZN6CaptorD2Ev
- 201               		.stabs	"_ZN6Captor4readEv:F(0,59)",36,0,27,_ZN6Captor4readEv
- 202               		.stabs	"this:P(0,97)",64,0,27,24
- 203               	.global	_ZN6Captor4readEv
- 204               		.type	_ZN6Captor4readEv, @function
- 205               	_ZN6Captor4readEv:
- 206               		.stabd	46,0,0
+  77               		.loc 1 21 0
+  78               		.cfi_startproc
+  79               	.LVL2:
+  80               	/* prologue: function */
+  81               	/* frame size = 0 */
+  82               	/* stack size = 0 */
+  83               	.L__stack_usage = 0
+  84 0028 0895      		ret
+  85               		.cfi_endproc
+  86               	.LFE7:
+  87               		.size	_ZN6CaptorD2Ev, .-_ZN6CaptorD2Ev
+  88               	.global	_ZN6CaptorD1Ev
+  89               		.set	_ZN6CaptorD1Ev,_ZN6CaptorD2Ev
+  90               	.global	_ZN6Captor4readEv
+  91               		.type	_ZN6Captor4readEv, @function
+  92               	_ZN6Captor4readEv:
+  93               	.LFB9:
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 3
+
+
   22:captor.cpp    **** {
-GAS LISTING /tmp/cc0IbbBn.s 			page 5
-
-
   23:captor.cpp    ****         
   24:captor.cpp    **** } 
   25:captor.cpp    **** 
   26:captor.cpp    ****     
   27:captor.cpp    **** uint8_t Captor::read()
   28:captor.cpp    **** {
- 207               		.stabn	68,0,28,.LM9-.LFBB4
- 208               	.LM9:
- 209               	.LFBB4:
- 210               	/* prologue: function */
- 211               	/* frame size = 0 */
- 212               	/* stack size = 0 */
- 213               	.L__stack_usage = 0
+  94               		.loc 1 28 0
+  95               		.cfi_startproc
+  96               	.LVL3:
+  97               	/* prologue: function */
+  98               	/* frame size = 0 */
+  99               	/* stack size = 0 */
+ 100               	.L__stack_usage = 0
   29:captor.cpp    ****       return ((*PORT) & 0xFF);  
- 214               		.stabn	68,0,29,.LM10-.LFBB4
- 215               	.LM10:
- 216 002a DC01      		movw r26,r24
- 217 002c 1296      		adiw r26,2
- 218 002e ED91      		ld r30,X+
- 219 0030 FC91      		ld r31,X
- 220 0032 1397      		sbiw r26,2+1
- 221 0034 8081      		ld r24,Z
+ 101               		.loc 1 29 0
+ 102 002a DC01      		movw r26,r24
+ 103 002c 1296      		adiw r26,2
+ 104 002e ED91      		ld r30,X+
+ 105 0030 FC91      		ld r31,X
+ 106 0032 1397      		sbiw r26,2+1
+ 107 0034 8081      		ld r24,Z
+ 108               	.LVL4:
   30:captor.cpp    **** }
- 222               		.stabn	68,0,30,.LM11-.LFBB4
- 223               	.LM11:
- 224 0036 0895      		ret
- 225               		.size	_ZN6Captor4readEv, .-_ZN6Captor4readEv
- 226               	.Lscope4:
- 227               		.stabs	"",36,0,0,.Lscope4-.LFBB4
- 228               		.stabd	78,0,0
- 229               		.stabs	"",100,0,0,.Letext0
- 230               	.Letext0:
- 231               		.ident	"GCC: (GNU) 4.8.2"
-GAS LISTING /tmp/cc0IbbBn.s 			page 6
+ 109               		.loc 1 30 0
+ 110 0036 0895      		ret
+ 111               		.cfi_endproc
+ 112               	.LFE9:
+ 113               		.size	_ZN6Captor4readEv, .-_ZN6Captor4readEv
+ 114               	.Letext0:
+ 115               		.file 2 "captor.h"
+ 116               		.file 3 "/usr/local/CrossPack-AVR-20131216/avr/include/stdint.h"
+ 117               		.section	.debug_info,"",@progbits
+ 118               	.Ldebug_info0:
+ 119 0000 5502 0000 		.long	0x255
+ 120 0004 0200      		.word	0x2
+ 121 0006 0000 0000 		.long	.Ldebug_abbrev0
+ 122 000a 04        		.byte	0x4
+ 123 000b 01        		.uleb128 0x1
+ 124 000c 0000 0000 		.long	.LASF17
+ 125 0010 04        		.byte	0x4
+ 126 0011 0000 0000 		.long	.LASF18
+ 127 0015 0000 0000 		.long	.LASF19
+ 128 0019 0000 0000 		.long	.Ltext0
+ 129 001d 0000 0000 		.long	.Letext0
+ 130 0021 0000 0000 		.long	.Ldebug_line0
+ 131 0025 02        		.uleb128 0x2
+ 132 0026 01        		.byte	0x1
+ 133 0027 06        		.byte	0x6
+ 134 0028 0000 0000 		.long	.LASF0
+ 135 002c 03        		.uleb128 0x3
+ 136 002d 0000 0000 		.long	.LASF20
+ 137 0031 03        		.byte	0x3
+ 138 0032 7A        		.byte	0x7a
+ 139 0033 3700 0000 		.long	0x37
+ 140 0037 02        		.uleb128 0x2
+ 141 0038 01        		.byte	0x1
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 4
+
+
+ 142 0039 08        		.byte	0x8
+ 143 003a 0000 0000 		.long	.LASF1
+ 144 003e 04        		.uleb128 0x4
+ 145 003f 02        		.byte	0x2
+ 146 0040 05        		.byte	0x5
+ 147 0041 696E 7400 		.string	"int"
+ 148 0045 02        		.uleb128 0x2
+ 149 0046 02        		.byte	0x2
+ 150 0047 07        		.byte	0x7
+ 151 0048 0000 0000 		.long	.LASF2
+ 152 004c 02        		.uleb128 0x2
+ 153 004d 04        		.byte	0x4
+ 154 004e 05        		.byte	0x5
+ 155 004f 0000 0000 		.long	.LASF3
+ 156 0053 02        		.uleb128 0x2
+ 157 0054 04        		.byte	0x4
+ 158 0055 07        		.byte	0x7
+ 159 0056 0000 0000 		.long	.LASF4
+ 160 005a 02        		.uleb128 0x2
+ 161 005b 08        		.byte	0x8
+ 162 005c 05        		.byte	0x5
+ 163 005d 0000 0000 		.long	.LASF5
+ 164 0061 02        		.uleb128 0x2
+ 165 0062 08        		.byte	0x8
+ 166 0063 07        		.byte	0x7
+ 167 0064 0000 0000 		.long	.LASF6
+ 168 0068 05        		.uleb128 0x5
+ 169 0069 0000 0000 		.long	.LASF8
+ 170 006d 04        		.byte	0x4
+ 171 006e 02        		.byte	0x2
+ 172 006f 05        		.byte	0x5
+ 173 0070 0701 0000 		.long	0x107
+ 174 0074 06        		.uleb128 0x6
+ 175 0075 4444 5200 		.string	"DDR"
+ 176 0079 02        		.byte	0x2
+ 177 007a 08        		.byte	0x8
+ 178 007b 0701 0000 		.long	0x107
+ 179 007f 02        		.byte	0x2
+ 180 0080 23        		.byte	0x23
+ 181 0081 00        		.uleb128 0
+ 182 0082 03        		.byte	0x3
+ 183 0083 07        		.uleb128 0x7
+ 184 0084 0000 0000 		.long	.LASF7
+ 185 0088 02        		.byte	0x2
+ 186 0089 09        		.byte	0x9
+ 187 008a 0701 0000 		.long	0x107
+ 188 008e 02        		.byte	0x2
+ 189 008f 23        		.byte	0x23
+ 190 0090 02        		.uleb128 0x2
+ 191 0091 03        		.byte	0x3
+ 192 0092 08        		.uleb128 0x8
+ 193 0093 01        		.byte	0x1
+ 194 0094 0000 0000 		.long	.LASF8
+ 195 0098 02        		.byte	0x2
+ 196 0099 0B        		.byte	0xb
+ 197 009a 01        		.byte	0x1
+ 198 009b A300 0000 		.long	0xa3
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 5
+
+
+ 199 009f AA00 0000 		.long	0xaa
+ 200 00a3 09        		.uleb128 0x9
+ 201 00a4 1201 0000 		.long	0x112
+ 202 00a8 01        		.byte	0x1
+ 203 00a9 00        		.byte	0
+ 204 00aa 08        		.uleb128 0x8
+ 205 00ab 01        		.byte	0x1
+ 206 00ac 0000 0000 		.long	.LASF8
+ 207 00b0 02        		.byte	0x2
+ 208 00b1 0C        		.byte	0xc
+ 209 00b2 01        		.byte	0x1
+ 210 00b3 BB00 0000 		.long	0xbb
+ 211 00b7 CC00 0000 		.long	0xcc
+ 212 00bb 09        		.uleb128 0x9
+ 213 00bc 1201 0000 		.long	0x112
+ 214 00c0 01        		.byte	0x1
+ 215 00c1 0A        		.uleb128 0xa
+ 216 00c2 1801 0000 		.long	0x118
+ 217 00c6 0A        		.uleb128 0xa
+ 218 00c7 1801 0000 		.long	0x118
+ 219 00cb 00        		.byte	0
+ 220 00cc 08        		.uleb128 0x8
+ 221 00cd 01        		.byte	0x1
+ 222 00ce 0000 0000 		.long	.LASF9
+ 223 00d2 02        		.byte	0x2
+ 224 00d3 0D        		.byte	0xd
+ 225 00d4 01        		.byte	0x1
+ 226 00d5 DD00 0000 		.long	0xdd
+ 227 00d9 EA00 0000 		.long	0xea
+ 228 00dd 09        		.uleb128 0x9
+ 229 00de 1201 0000 		.long	0x112
+ 230 00e2 01        		.byte	0x1
+ 231 00e3 09        		.uleb128 0x9
+ 232 00e4 3E00 0000 		.long	0x3e
+ 233 00e8 01        		.byte	0x1
+ 234 00e9 00        		.byte	0
+ 235 00ea 0B        		.uleb128 0xb
+ 236 00eb 01        		.byte	0x1
+ 237 00ec 0000 0000 		.long	.LASF21
+ 238 00f0 02        		.byte	0x2
+ 239 00f1 0E        		.byte	0xe
+ 240 00f2 0000 0000 		.long	.LASF22
+ 241 00f6 2C00 0000 		.long	0x2c
+ 242 00fa 01        		.byte	0x1
+ 243 00fb FF00 0000 		.long	0xff
+ 244 00ff 09        		.uleb128 0x9
+ 245 0100 1201 0000 		.long	0x112
+ 246 0104 01        		.byte	0x1
+ 247 0105 00        		.byte	0
+ 248 0106 00        		.byte	0
+ 249 0107 0C        		.uleb128 0xc
+ 250 0108 02        		.byte	0x2
+ 251 0109 0D01 0000 		.long	0x10d
+ 252 010d 0D        		.uleb128 0xd
+ 253 010e 2C00 0000 		.long	0x2c
+ 254 0112 0C        		.uleb128 0xc
+ 255 0113 02        		.byte	0x2
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 6
+
+
+ 256 0114 6800 0000 		.long	0x68
+ 257 0118 0C        		.uleb128 0xc
+ 258 0119 02        		.byte	0x2
+ 259 011a 2C00 0000 		.long	0x2c
+ 260 011e 0E        		.uleb128 0xe
+ 261 011f 9200 0000 		.long	0x92
+ 262 0123 01        		.byte	0x1
+ 263 0124 04        		.byte	0x4
+ 264 0125 00        		.byte	0
+ 265 0126 2E01 0000 		.long	0x12e
+ 266 012a 3901 0000 		.long	0x139
+ 267 012e 0F        		.uleb128 0xf
+ 268 012f 0000 0000 		.long	.LASF10
+ 269 0133 3901 0000 		.long	0x139
+ 270 0137 01        		.byte	0x1
+ 271 0138 00        		.byte	0
+ 272 0139 10        		.uleb128 0x10
+ 273 013a 1201 0000 		.long	0x112
+ 274 013e 11        		.uleb128 0x11
+ 275 013f 1E01 0000 		.long	0x11e
+ 276 0143 0000 0000 		.long	.LASF13
+ 277 0147 0000 0000 		.long	.LFB1
+ 278 014b 0000 0000 		.long	.LFE1
+ 279 014f 03        		.byte	0x3
+ 280 0150 92        		.byte	0x92
+ 281 0151 20        		.uleb128 0x20
+ 282 0152 02        		.sleb128 2
+ 283 0153 5C01 0000 		.long	0x15c
+ 284 0157 01        		.byte	0x1
+ 285 0158 6901 0000 		.long	0x169
+ 286 015c 12        		.uleb128 0x12
+ 287 015d 2E01 0000 		.long	0x12e
+ 288 0161 06        		.byte	0x6
+ 289 0162 68        		.byte	0x68
+ 290 0163 93        		.byte	0x93
+ 291 0164 01        		.uleb128 0x1
+ 292 0165 69        		.byte	0x69
+ 293 0166 93        		.byte	0x93
+ 294 0167 01        		.uleb128 0x1
+ 295 0168 00        		.byte	0
+ 296 0169 13        		.uleb128 0x13
+ 297 016a AA00 0000 		.long	0xaa
+ 298 016e 01        		.byte	0x1
+ 299 016f 00        		.byte	0
+ 300 0170 7801 0000 		.long	0x178
+ 301 0174 9901 0000 		.long	0x199
+ 302 0178 0F        		.uleb128 0xf
+ 303 0179 0000 0000 		.long	.LASF10
+ 304 017d 3901 0000 		.long	0x139
+ 305 0181 01        		.byte	0x1
+ 306 0182 14        		.uleb128 0x14
+ 307 0183 0000 0000 		.long	.LASF11
+ 308 0187 01        		.byte	0x1
+ 309 0188 0C        		.byte	0xc
+ 310 0189 1801 0000 		.long	0x118
+ 311 018d 14        		.uleb128 0x14
+ 312 018e 0000 0000 		.long	.LASF12
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 7
+
+
+ 313 0192 01        		.byte	0x1
+ 314 0193 0C        		.byte	0xc
+ 315 0194 1801 0000 		.long	0x118
+ 316 0198 00        		.byte	0
+ 317 0199 11        		.uleb128 0x11
+ 318 019a 6901 0000 		.long	0x169
+ 319 019e 0000 0000 		.long	.LASF14
+ 320 01a2 0000 0000 		.long	.LFB4
+ 321 01a6 0000 0000 		.long	.LFE4
+ 322 01aa 03        		.byte	0x3
+ 323 01ab 92        		.byte	0x92
+ 324 01ac 20        		.uleb128 0x20
+ 325 01ad 02        		.sleb128 2
+ 326 01ae B701 0000 		.long	0x1b7
+ 327 01b2 01        		.byte	0x1
+ 328 01b3 DC01 0000 		.long	0x1dc
+ 329 01b7 12        		.uleb128 0x12
+ 330 01b8 7801 0000 		.long	0x178
+ 331 01bc 06        		.byte	0x6
+ 332 01bd 68        		.byte	0x68
+ 333 01be 93        		.byte	0x93
+ 334 01bf 01        		.uleb128 0x1
+ 335 01c0 69        		.byte	0x69
+ 336 01c1 93        		.byte	0x93
+ 337 01c2 01        		.uleb128 0x1
+ 338 01c3 12        		.uleb128 0x12
+ 339 01c4 8201 0000 		.long	0x182
+ 340 01c8 06        		.byte	0x6
+ 341 01c9 66        		.byte	0x66
+ 342 01ca 93        		.byte	0x93
+ 343 01cb 01        		.uleb128 0x1
+ 344 01cc 67        		.byte	0x67
+ 345 01cd 93        		.byte	0x93
+ 346 01ce 01        		.uleb128 0x1
+ 347 01cf 12        		.uleb128 0x12
+ 348 01d0 8D01 0000 		.long	0x18d
+ 349 01d4 06        		.byte	0x6
+ 350 01d5 64        		.byte	0x64
+ 351 01d6 93        		.byte	0x93
+ 352 01d7 01        		.uleb128 0x1
+ 353 01d8 65        		.byte	0x65
+ 354 01d9 93        		.byte	0x93
+ 355 01da 01        		.uleb128 0x1
+ 356 01db 00        		.byte	0
+ 357 01dc 0E        		.uleb128 0xe
+ 358 01dd CC00 0000 		.long	0xcc
+ 359 01e1 01        		.byte	0x1
+ 360 01e2 15        		.byte	0x15
+ 361 01e3 00        		.byte	0
+ 362 01e4 EC01 0000 		.long	0x1ec
+ 363 01e8 0102 0000 		.long	0x201
+ 364 01ec 0F        		.uleb128 0xf
+ 365 01ed 0000 0000 		.long	.LASF10
+ 366 01f1 3901 0000 		.long	0x139
+ 367 01f5 01        		.byte	0x1
+ 368 01f6 0F        		.uleb128 0xf
+ 369 01f7 0000 0000 		.long	.LASF15
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 8
+
+
+ 370 01fb 0102 0000 		.long	0x201
+ 371 01ff 01        		.byte	0x1
+ 372 0200 00        		.byte	0
+ 373 0201 10        		.uleb128 0x10
+ 374 0202 3E00 0000 		.long	0x3e
+ 375 0206 11        		.uleb128 0x11
+ 376 0207 DC01 0000 		.long	0x1dc
+ 377 020b 0000 0000 		.long	.LASF16
+ 378 020f 0000 0000 		.long	.LFB7
+ 379 0213 0000 0000 		.long	.LFE7
+ 380 0217 03        		.byte	0x3
+ 381 0218 92        		.byte	0x92
+ 382 0219 20        		.uleb128 0x20
+ 383 021a 02        		.sleb128 2
+ 384 021b 2402 0000 		.long	0x224
+ 385 021f 01        		.byte	0x1
+ 386 0220 3102 0000 		.long	0x231
+ 387 0224 12        		.uleb128 0x12
+ 388 0225 EC01 0000 		.long	0x1ec
+ 389 0229 06        		.byte	0x6
+ 390 022a 68        		.byte	0x68
+ 391 022b 93        		.byte	0x93
+ 392 022c 01        		.uleb128 0x1
+ 393 022d 69        		.byte	0x69
+ 394 022e 93        		.byte	0x93
+ 395 022f 01        		.uleb128 0x1
+ 396 0230 00        		.byte	0
+ 397 0231 15        		.uleb128 0x15
+ 398 0232 EA00 0000 		.long	0xea
+ 399 0236 01        		.byte	0x1
+ 400 0237 1B        		.byte	0x1b
+ 401 0238 0000 0000 		.long	.LFB9
+ 402 023c 0000 0000 		.long	.LFE9
+ 403 0240 03        		.byte	0x3
+ 404 0241 92        		.byte	0x92
+ 405 0242 20        		.uleb128 0x20
+ 406 0243 02        		.sleb128 2
+ 407 0244 4902 0000 		.long	0x249
+ 408 0248 01        		.byte	0x1
+ 409 0249 16        		.uleb128 0x16
+ 410 024a 0000 0000 		.long	.LASF10
+ 411 024e 3901 0000 		.long	0x139
+ 412 0252 01        		.byte	0x1
+ 413 0253 0000 0000 		.long	.LLST0
+ 414 0257 00        		.byte	0
+ 415 0258 00        		.byte	0
+ 416               		.section	.debug_abbrev,"",@progbits
+ 417               	.Ldebug_abbrev0:
+ 418 0000 01        		.uleb128 0x1
+ 419 0001 11        		.uleb128 0x11
+ 420 0002 01        		.byte	0x1
+ 421 0003 25        		.uleb128 0x25
+ 422 0004 0E        		.uleb128 0xe
+ 423 0005 13        		.uleb128 0x13
+ 424 0006 0B        		.uleb128 0xb
+ 425 0007 03        		.uleb128 0x3
+ 426 0008 0E        		.uleb128 0xe
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 9
+
+
+ 427 0009 1B        		.uleb128 0x1b
+ 428 000a 0E        		.uleb128 0xe
+ 429 000b 11        		.uleb128 0x11
+ 430 000c 01        		.uleb128 0x1
+ 431 000d 12        		.uleb128 0x12
+ 432 000e 01        		.uleb128 0x1
+ 433 000f 10        		.uleb128 0x10
+ 434 0010 06        		.uleb128 0x6
+ 435 0011 00        		.byte	0
+ 436 0012 00        		.byte	0
+ 437 0013 02        		.uleb128 0x2
+ 438 0014 24        		.uleb128 0x24
+ 439 0015 00        		.byte	0
+ 440 0016 0B        		.uleb128 0xb
+ 441 0017 0B        		.uleb128 0xb
+ 442 0018 3E        		.uleb128 0x3e
+ 443 0019 0B        		.uleb128 0xb
+ 444 001a 03        		.uleb128 0x3
+ 445 001b 0E        		.uleb128 0xe
+ 446 001c 00        		.byte	0
+ 447 001d 00        		.byte	0
+ 448 001e 03        		.uleb128 0x3
+ 449 001f 16        		.uleb128 0x16
+ 450 0020 00        		.byte	0
+ 451 0021 03        		.uleb128 0x3
+ 452 0022 0E        		.uleb128 0xe
+ 453 0023 3A        		.uleb128 0x3a
+ 454 0024 0B        		.uleb128 0xb
+ 455 0025 3B        		.uleb128 0x3b
+ 456 0026 0B        		.uleb128 0xb
+ 457 0027 49        		.uleb128 0x49
+ 458 0028 13        		.uleb128 0x13
+ 459 0029 00        		.byte	0
+ 460 002a 00        		.byte	0
+ 461 002b 04        		.uleb128 0x4
+ 462 002c 24        		.uleb128 0x24
+ 463 002d 00        		.byte	0
+ 464 002e 0B        		.uleb128 0xb
+ 465 002f 0B        		.uleb128 0xb
+ 466 0030 3E        		.uleb128 0x3e
+ 467 0031 0B        		.uleb128 0xb
+ 468 0032 03        		.uleb128 0x3
+ 469 0033 08        		.uleb128 0x8
+ 470 0034 00        		.byte	0
+ 471 0035 00        		.byte	0
+ 472 0036 05        		.uleb128 0x5
+ 473 0037 02        		.uleb128 0x2
+ 474 0038 01        		.byte	0x1
+ 475 0039 03        		.uleb128 0x3
+ 476 003a 0E        		.uleb128 0xe
+ 477 003b 0B        		.uleb128 0xb
+ 478 003c 0B        		.uleb128 0xb
+ 479 003d 3A        		.uleb128 0x3a
+ 480 003e 0B        		.uleb128 0xb
+ 481 003f 3B        		.uleb128 0x3b
+ 482 0040 0B        		.uleb128 0xb
+ 483 0041 01        		.uleb128 0x1
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 10
+
+
+ 484 0042 13        		.uleb128 0x13
+ 485 0043 00        		.byte	0
+ 486 0044 00        		.byte	0
+ 487 0045 06        		.uleb128 0x6
+ 488 0046 0D        		.uleb128 0xd
+ 489 0047 00        		.byte	0
+ 490 0048 03        		.uleb128 0x3
+ 491 0049 08        		.uleb128 0x8
+ 492 004a 3A        		.uleb128 0x3a
+ 493 004b 0B        		.uleb128 0xb
+ 494 004c 3B        		.uleb128 0x3b
+ 495 004d 0B        		.uleb128 0xb
+ 496 004e 49        		.uleb128 0x49
+ 497 004f 13        		.uleb128 0x13
+ 498 0050 38        		.uleb128 0x38
+ 499 0051 0A        		.uleb128 0xa
+ 500 0052 32        		.uleb128 0x32
+ 501 0053 0B        		.uleb128 0xb
+ 502 0054 00        		.byte	0
+ 503 0055 00        		.byte	0
+ 504 0056 07        		.uleb128 0x7
+ 505 0057 0D        		.uleb128 0xd
+ 506 0058 00        		.byte	0
+ 507 0059 03        		.uleb128 0x3
+ 508 005a 0E        		.uleb128 0xe
+ 509 005b 3A        		.uleb128 0x3a
+ 510 005c 0B        		.uleb128 0xb
+ 511 005d 3B        		.uleb128 0x3b
+ 512 005e 0B        		.uleb128 0xb
+ 513 005f 49        		.uleb128 0x49
+ 514 0060 13        		.uleb128 0x13
+ 515 0061 38        		.uleb128 0x38
+ 516 0062 0A        		.uleb128 0xa
+ 517 0063 32        		.uleb128 0x32
+ 518 0064 0B        		.uleb128 0xb
+ 519 0065 00        		.byte	0
+ 520 0066 00        		.byte	0
+ 521 0067 08        		.uleb128 0x8
+ 522 0068 2E        		.uleb128 0x2e
+ 523 0069 01        		.byte	0x1
+ 524 006a 3F        		.uleb128 0x3f
+ 525 006b 0C        		.uleb128 0xc
+ 526 006c 03        		.uleb128 0x3
+ 527 006d 0E        		.uleb128 0xe
+ 528 006e 3A        		.uleb128 0x3a
+ 529 006f 0B        		.uleb128 0xb
+ 530 0070 3B        		.uleb128 0x3b
+ 531 0071 0B        		.uleb128 0xb
+ 532 0072 3C        		.uleb128 0x3c
+ 533 0073 0C        		.uleb128 0xc
+ 534 0074 64        		.uleb128 0x64
+ 535 0075 13        		.uleb128 0x13
+ 536 0076 01        		.uleb128 0x1
+ 537 0077 13        		.uleb128 0x13
+ 538 0078 00        		.byte	0
+ 539 0079 00        		.byte	0
+ 540 007a 09        		.uleb128 0x9
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 11
+
+
+ 541 007b 05        		.uleb128 0x5
+ 542 007c 00        		.byte	0
+ 543 007d 49        		.uleb128 0x49
+ 544 007e 13        		.uleb128 0x13
+ 545 007f 34        		.uleb128 0x34
+ 546 0080 0C        		.uleb128 0xc
+ 547 0081 00        		.byte	0
+ 548 0082 00        		.byte	0
+ 549 0083 0A        		.uleb128 0xa
+ 550 0084 05        		.uleb128 0x5
+ 551 0085 00        		.byte	0
+ 552 0086 49        		.uleb128 0x49
+ 553 0087 13        		.uleb128 0x13
+ 554 0088 00        		.byte	0
+ 555 0089 00        		.byte	0
+ 556 008a 0B        		.uleb128 0xb
+ 557 008b 2E        		.uleb128 0x2e
+ 558 008c 01        		.byte	0x1
+ 559 008d 3F        		.uleb128 0x3f
+ 560 008e 0C        		.uleb128 0xc
+ 561 008f 03        		.uleb128 0x3
+ 562 0090 0E        		.uleb128 0xe
+ 563 0091 3A        		.uleb128 0x3a
+ 564 0092 0B        		.uleb128 0xb
+ 565 0093 3B        		.uleb128 0x3b
+ 566 0094 0B        		.uleb128 0xb
+ 567 0095 8740      		.uleb128 0x2007
+ 568 0097 0E        		.uleb128 0xe
+ 569 0098 49        		.uleb128 0x49
+ 570 0099 13        		.uleb128 0x13
+ 571 009a 3C        		.uleb128 0x3c
+ 572 009b 0C        		.uleb128 0xc
+ 573 009c 64        		.uleb128 0x64
+ 574 009d 13        		.uleb128 0x13
+ 575 009e 00        		.byte	0
+ 576 009f 00        		.byte	0
+ 577 00a0 0C        		.uleb128 0xc
+ 578 00a1 0F        		.uleb128 0xf
+ 579 00a2 00        		.byte	0
+ 580 00a3 0B        		.uleb128 0xb
+ 581 00a4 0B        		.uleb128 0xb
+ 582 00a5 49        		.uleb128 0x49
+ 583 00a6 13        		.uleb128 0x13
+ 584 00a7 00        		.byte	0
+ 585 00a8 00        		.byte	0
+ 586 00a9 0D        		.uleb128 0xd
+ 587 00aa 35        		.uleb128 0x35
+ 588 00ab 00        		.byte	0
+ 589 00ac 49        		.uleb128 0x49
+ 590 00ad 13        		.uleb128 0x13
+ 591 00ae 00        		.byte	0
+ 592 00af 00        		.byte	0
+ 593 00b0 0E        		.uleb128 0xe
+ 594 00b1 2E        		.uleb128 0x2e
+ 595 00b2 01        		.byte	0x1
+ 596 00b3 47        		.uleb128 0x47
+ 597 00b4 13        		.uleb128 0x13
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 12
+
+
+ 598 00b5 3A        		.uleb128 0x3a
+ 599 00b6 0B        		.uleb128 0xb
+ 600 00b7 3B        		.uleb128 0x3b
+ 601 00b8 0B        		.uleb128 0xb
+ 602 00b9 20        		.uleb128 0x20
+ 603 00ba 0B        		.uleb128 0xb
+ 604 00bb 64        		.uleb128 0x64
+ 605 00bc 13        		.uleb128 0x13
+ 606 00bd 01        		.uleb128 0x1
+ 607 00be 13        		.uleb128 0x13
+ 608 00bf 00        		.byte	0
+ 609 00c0 00        		.byte	0
+ 610 00c1 0F        		.uleb128 0xf
+ 611 00c2 05        		.uleb128 0x5
+ 612 00c3 00        		.byte	0
+ 613 00c4 03        		.uleb128 0x3
+ 614 00c5 0E        		.uleb128 0xe
+ 615 00c6 49        		.uleb128 0x49
+ 616 00c7 13        		.uleb128 0x13
+ 617 00c8 34        		.uleb128 0x34
+ 618 00c9 0C        		.uleb128 0xc
+ 619 00ca 00        		.byte	0
+ 620 00cb 00        		.byte	0
+ 621 00cc 10        		.uleb128 0x10
+ 622 00cd 26        		.uleb128 0x26
+ 623 00ce 00        		.byte	0
+ 624 00cf 49        		.uleb128 0x49
+ 625 00d0 13        		.uleb128 0x13
+ 626 00d1 00        		.byte	0
+ 627 00d2 00        		.byte	0
+ 628 00d3 11        		.uleb128 0x11
+ 629 00d4 2E        		.uleb128 0x2e
+ 630 00d5 01        		.byte	0x1
+ 631 00d6 31        		.uleb128 0x31
+ 632 00d7 13        		.uleb128 0x13
+ 633 00d8 8740      		.uleb128 0x2007
+ 634 00da 0E        		.uleb128 0xe
+ 635 00db 11        		.uleb128 0x11
+ 636 00dc 01        		.uleb128 0x1
+ 637 00dd 12        		.uleb128 0x12
+ 638 00de 01        		.uleb128 0x1
+ 639 00df 40        		.uleb128 0x40
+ 640 00e0 0A        		.uleb128 0xa
+ 641 00e1 64        		.uleb128 0x64
+ 642 00e2 13        		.uleb128 0x13
+ 643 00e3 9742      		.uleb128 0x2117
+ 644 00e5 0C        		.uleb128 0xc
+ 645 00e6 01        		.uleb128 0x1
+ 646 00e7 13        		.uleb128 0x13
+ 647 00e8 00        		.byte	0
+ 648 00e9 00        		.byte	0
+ 649 00ea 12        		.uleb128 0x12
+ 650 00eb 05        		.uleb128 0x5
+ 651 00ec 00        		.byte	0
+ 652 00ed 31        		.uleb128 0x31
+ 653 00ee 13        		.uleb128 0x13
+ 654 00ef 02        		.uleb128 0x2
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 13
+
+
+ 655 00f0 0A        		.uleb128 0xa
+ 656 00f1 00        		.byte	0
+ 657 00f2 00        		.byte	0
+ 658 00f3 13        		.uleb128 0x13
+ 659 00f4 2E        		.uleb128 0x2e
+ 660 00f5 01        		.byte	0x1
+ 661 00f6 47        		.uleb128 0x47
+ 662 00f7 13        		.uleb128 0x13
+ 663 00f8 3A        		.uleb128 0x3a
+ 664 00f9 0B        		.uleb128 0xb
+ 665 00fa 20        		.uleb128 0x20
+ 666 00fb 0B        		.uleb128 0xb
+ 667 00fc 64        		.uleb128 0x64
+ 668 00fd 13        		.uleb128 0x13
+ 669 00fe 01        		.uleb128 0x1
+ 670 00ff 13        		.uleb128 0x13
+ 671 0100 00        		.byte	0
+ 672 0101 00        		.byte	0
+ 673 0102 14        		.uleb128 0x14
+ 674 0103 05        		.uleb128 0x5
+ 675 0104 00        		.byte	0
+ 676 0105 03        		.uleb128 0x3
+ 677 0106 0E        		.uleb128 0xe
+ 678 0107 3A        		.uleb128 0x3a
+ 679 0108 0B        		.uleb128 0xb
+ 680 0109 3B        		.uleb128 0x3b
+ 681 010a 0B        		.uleb128 0xb
+ 682 010b 49        		.uleb128 0x49
+ 683 010c 13        		.uleb128 0x13
+ 684 010d 00        		.byte	0
+ 685 010e 00        		.byte	0
+ 686 010f 15        		.uleb128 0x15
+ 687 0110 2E        		.uleb128 0x2e
+ 688 0111 01        		.byte	0x1
+ 689 0112 47        		.uleb128 0x47
+ 690 0113 13        		.uleb128 0x13
+ 691 0114 3A        		.uleb128 0x3a
+ 692 0115 0B        		.uleb128 0xb
+ 693 0116 3B        		.uleb128 0x3b
+ 694 0117 0B        		.uleb128 0xb
+ 695 0118 11        		.uleb128 0x11
+ 696 0119 01        		.uleb128 0x1
+ 697 011a 12        		.uleb128 0x12
+ 698 011b 01        		.uleb128 0x1
+ 699 011c 40        		.uleb128 0x40
+ 700 011d 0A        		.uleb128 0xa
+ 701 011e 64        		.uleb128 0x64
+ 702 011f 13        		.uleb128 0x13
+ 703 0120 9742      		.uleb128 0x2117
+ 704 0122 0C        		.uleb128 0xc
+ 705 0123 00        		.byte	0
+ 706 0124 00        		.byte	0
+ 707 0125 16        		.uleb128 0x16
+ 708 0126 05        		.uleb128 0x5
+ 709 0127 00        		.byte	0
+ 710 0128 03        		.uleb128 0x3
+ 711 0129 0E        		.uleb128 0xe
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 14
+
+
+ 712 012a 49        		.uleb128 0x49
+ 713 012b 13        		.uleb128 0x13
+ 714 012c 34        		.uleb128 0x34
+ 715 012d 0C        		.uleb128 0xc
+ 716 012e 02        		.uleb128 0x2
+ 717 012f 06        		.uleb128 0x6
+ 718 0130 00        		.byte	0
+ 719 0131 00        		.byte	0
+ 720 0132 00        		.byte	0
+ 721               		.section	.debug_loc,"",@progbits
+ 722               	.Ldebug_loc0:
+ 723               	.LLST0:
+ 724 0000 2A00 0000 		.long	.LVL3-.Ltext0
+ 725 0004 3600 0000 		.long	.LVL4-.Ltext0
+ 726 0008 0600      		.word	0x6
+ 727 000a 68        		.byte	0x68
+ 728 000b 93        		.byte	0x93
+ 729 000c 01        		.uleb128 0x1
+ 730 000d 69        		.byte	0x69
+ 731 000e 93        		.byte	0x93
+ 732 000f 01        		.uleb128 0x1
+ 733 0010 3600 0000 		.long	.LVL4-.Ltext0
+ 734 0014 3800 0000 		.long	.LFE9-.Ltext0
+ 735 0018 0600      		.word	0x6
+ 736 001a 6A        		.byte	0x6a
+ 737 001b 93        		.byte	0x93
+ 738 001c 01        		.uleb128 0x1
+ 739 001d 6B        		.byte	0x6b
+ 740 001e 93        		.byte	0x93
+ 741 001f 01        		.uleb128 0x1
+ 742 0020 0000 0000 		.long	0
+ 743 0024 0000 0000 		.long	0
+ 744               		.section	.debug_aranges,"",@progbits
+ 745 0000 1C00 0000 		.long	0x1c
+ 746 0004 0200      		.word	0x2
+ 747 0006 0000 0000 		.long	.Ldebug_info0
+ 748 000a 04        		.byte	0x4
+ 749 000b 00        		.byte	0
+ 750 000c 0000      		.word	0
+ 751 000e 0000      		.word	0
+ 752 0010 0000 0000 		.long	.Ltext0
+ 753 0014 3800 0000 		.long	.Letext0-.Ltext0
+ 754 0018 0000 0000 		.long	0
+ 755 001c 0000 0000 		.long	0
+ 756               		.section	.debug_line,"",@progbits
+ 757               	.Ldebug_line0:
+ 758 0000 8200 0000 		.section	.debug_str,"MS",@progbits,1
+ 758      0200 6400 
+ 758      0000 0201 
+ 758      FB0E 0A00 
+ 758      0101 0101 
+ 759               	.LASF16:
+ 760 0000 5F5A 4E36 		.string	"_ZN6CaptorD2Ev"
+ 760      4361 7074 
+ 760      6F72 4432 
+ 760      4576 00
+ 761               	.LASF17:
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 15
+
+
+ 762 000f 474E 5520 		.string	"GNU C++ 4.8.1 -mmcu=atmega324pa -g -Os -std=c++98 -fpack-struct -fshort-enums -funsigned-
+ 762      432B 2B20 
+ 762      342E 382E 
+ 762      3120 2D6D 
+ 762      6D63 753D 
+ 763               	.LASF11:
+ 764 00b2 6461 7461 		.string	"dataDirection"
+ 764      4469 7265 
+ 764      6374 696F 
+ 764      6E00 
+ 765               	.LASF18:
+ 766 00c0 6361 7074 		.string	"captor.cpp"
+ 766      6F72 2E63 
+ 766      7070 00
+ 767               	.LASF14:
+ 768 00cb 5F5A 4E36 		.string	"_ZN6CaptorC2EPhS0_"
+ 768      4361 7074 
+ 768      6F72 4332 
+ 768      4550 6853 
+ 768      305F 00
+ 769               	.LASF1:
+ 770 00de 756E 7369 		.string	"unsigned char"
+ 770      676E 6564 
+ 770      2063 6861 
+ 770      7200 
+ 771               	.LASF10:
+ 772 00ec 7468 6973 		.string	"this"
+ 772      00
+ 773               	.LASF4:
+ 774 00f1 6C6F 6E67 		.string	"long unsigned int"
+ 774      2075 6E73 
+ 774      6967 6E65 
+ 774      6420 696E 
+ 774      7400 
+ 775               	.LASF8:
+ 776 0103 4361 7074 		.string	"Captor"
+ 776      6F72 00
+ 777               	.LASF19:
+ 778 010a 2F55 7365 		.string	"/Users/Esteban/dev/robot-poly/lib_dir"
+ 778      7273 2F45 
+ 778      7374 6562 
+ 778      616E 2F64 
+ 778      6576 2F72 
+ 779               	.LASF21:
+ 780 0130 7265 6164 		.string	"read"
+ 780      00
+ 781               	.LASF9:
+ 782 0135 7E43 6170 		.string	"~Captor"
+ 782      746F 7200 
+ 783               	.LASF2:
+ 784 013d 756E 7369 		.string	"unsigned int"
+ 784      676E 6564 
+ 784      2069 6E74 
+ 784      00
+ 785               	.LASF6:
+ 786 014a 6C6F 6E67 		.string	"long long unsigned int"
+ 786      206C 6F6E 
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 16
+
+
+ 786      6720 756E 
+ 786      7369 676E 
+ 786      6564 2069 
+ 787               	.LASF20:
+ 788 0161 7569 6E74 		.string	"uint8_t"
+ 788      385F 7400 
+ 789               	.LASF13:
+ 790 0169 5F5A 4E36 		.string	"_ZN6CaptorC2Ev"
+ 790      4361 7074 
+ 790      6F72 4332 
+ 790      4576 00
+ 791               	.LASF5:
+ 792 0178 6C6F 6E67 		.string	"long long int"
+ 792      206C 6F6E 
+ 792      6720 696E 
+ 792      7400 
+ 793               	.LASF7:
+ 794 0186 504F 5254 		.string	"PORT"
+ 794      00
+ 795               	.LASF22:
+ 796 018b 5F5A 4E36 		.string	"_ZN6Captor4readEv"
+ 796      4361 7074 
+ 796      6F72 3472 
+ 796      6561 6445 
+ 796      7600 
+ 797               	.LASF15:
+ 798 019d 5F5F 696E 		.string	"__in_chrg"
+ 798      5F63 6872 
+ 798      6700 
+ 799               	.LASF3:
+ 800 01a7 6C6F 6E67 		.string	"long int"
+ 800      2069 6E74 
+ 800      00
+ 801               	.LASF0:
+ 802 01b0 7369 676E 		.string	"signed char"
+ 802      6564 2063 
+ 802      6861 7200 
+ 803               	.LASF12:
+ 804 01bc 706F 7274 		.string	"portIndex"
+ 804      496E 6465 
+ 804      7800 
+ 805               		.ident	"GCC: (GNU) 4.8.1"
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 17
 
 
 DEFINED SYMBOLS
-                            *ABS*:0000000000000000 captor.cpp
-     /tmp/cc0IbbBn.s:2      *ABS*:000000000000003e __SP_H__
-     /tmp/cc0IbbBn.s:3      *ABS*:000000000000003d __SP_L__
-     /tmp/cc0IbbBn.s:4      *ABS*:000000000000003f __SREG__
-     /tmp/cc0IbbBn.s:5      *ABS*:0000000000000000 __tmp_reg__
-     /tmp/cc0IbbBn.s:6      *ABS*:0000000000000001 __zero_reg__
-     /tmp/cc0IbbBn.s:109    .text:0000000000000000 _ZN6CaptorC2Ev
-     /tmp/cc0IbbBn.s:109    .text:0000000000000000 _ZN6CaptorC1Ev
-     /tmp/cc0IbbBn.s:149    .text:0000000000000016 _ZN6CaptorC2EPhS0_
-     /tmp/cc0IbbBn.s:149    .text:0000000000000016 _ZN6CaptorC1EPhS0_
-     /tmp/cc0IbbBn.s:185    .text:0000000000000028 _ZN6CaptorD2Ev
-     /tmp/cc0IbbBn.s:185    .text:0000000000000028 _ZN6CaptorD1Ev
-     /tmp/cc0IbbBn.s:205    .text:000000000000002a _ZN6Captor4readEv
+                            *ABS*:00000000 captor.cpp
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:2      *ABS*:0000003e __SP_H__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:3      *ABS*:0000003d __SP_L__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:4      *ABS*:0000003f __SREG__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:5      *ABS*:00000000 __tmp_reg__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:6      *ABS*:00000001 __zero_reg__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:12     .text:00000000 _ZN6CaptorC2Ev
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:12     .text:00000000 _ZN6CaptorC1Ev
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:45     .text:00000016 _ZN6CaptorC2EPhS0_
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:45     .text:00000016 _ZN6CaptorC1EPhS0_
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:75     .text:00000028 _ZN6CaptorD2Ev
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:75     .text:00000028 _ZN6CaptorD1Ev
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:92     .text:0000002a _ZN6Captor4readEv
 
 NO UNDEFINED SYMBOLS
