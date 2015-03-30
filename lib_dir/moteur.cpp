@@ -8,11 +8,11 @@ void Moteur::avancer(uint8_t direction) {
 	//Calculer vitesse de chaque roue
 	uint8_t vitesseA = VITESSE;
 	uint8_t vitesseB = VITESSE;
-	if (direction <= 90) {
-		vitesseB = round(VITESSE * direction / 90);
+	if (direction >= 0) {
+		vitesseB = round(VITESSE * (90 - direction) / 90);
 	}
 	else {
-		vitesseA = round(VITESSE * (180 - direction) / 90);
+		vitesseA = round(VITESSE * (90 + direction) / 90);
 	}
 
 	//Ajuster PWM
@@ -23,11 +23,11 @@ void Moteur::reculer(uint8_t direction) {
 	//Calculer vitesse de chaque roue
 	uint8_t vitesseA = VITESSE;
 	uint8_t vitesseB = VITESSE;
-	if (direction <= 90) {
-		vitesseB = round(VITESSE * direction / 90);
+	if (direction >= 0) {
+		vitesseB = round(VITESSE * (90 - direction) / 90);
 	}
 	else {
-		vitesseA = round(VITESSE * (180 - direction) / 90);
+		vitesseA = round(VITESSE * (90 + direction) / 90);
 	}
 
 	//Ajuster PWM

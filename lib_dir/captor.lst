@@ -1,4 +1,4 @@
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 1
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 1
 
 
    1               		.file	"captor.cpp"
@@ -58,7 +58,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
   46               	.LFB4:
   10:captor.cpp    **** }
   11:captor.cpp    **** 
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 2
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 2
 
 
   12:captor.cpp    **** Captor::Captor(uint8_t *dataDirection, uint8_t *portIndex)
@@ -118,7 +118,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
   91               		.type	_ZN6Captor4readEv, @function
   92               	_ZN6Captor4readEv:
   93               	.LFB9:
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 3
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 3
 
 
   22:captor.cpp    **** {
@@ -178,7 +178,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  139 0033 3700 0000 		.long	0x37
  140 0037 02        		.uleb128 0x2
  141 0038 01        		.byte	0x1
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 4
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 4
 
 
  142 0039 08        		.byte	0x8
@@ -238,7 +238,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  196 0099 0B        		.byte	0xb
  197 009a 01        		.byte	0x1
  198 009b A300 0000 		.long	0xa3
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 5
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 5
 
 
  199 009f AA00 0000 		.long	0xaa
@@ -298,7 +298,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  253 010e 2C00 0000 		.long	0x2c
  254 0112 0C        		.uleb128 0xc
  255 0113 02        		.byte	0x2
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 6
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 6
 
 
  256 0114 6800 0000 		.long	0x68
@@ -358,7 +358,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  310 0189 1801 0000 		.long	0x118
  311 018d 14        		.uleb128 0x14
  312 018e 0000 0000 		.long	.LASF12
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 7
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 7
 
 
  313 0192 01        		.byte	0x1
@@ -418,7 +418,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  367 01f5 01        		.byte	0x1
  368 01f6 0F        		.uleb128 0xf
  369 01f7 0000 0000 		.long	.LASF15
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 8
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 8
 
 
  370 01fb 0102 0000 		.long	0x201
@@ -478,7 +478,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  424 0006 0B        		.uleb128 0xb
  425 0007 03        		.uleb128 0x3
  426 0008 0E        		.uleb128 0xe
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 9
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 9
 
 
  427 0009 1B        		.uleb128 0x1b
@@ -538,7 +538,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  481 003f 3B        		.uleb128 0x3b
  482 0040 0B        		.uleb128 0xb
  483 0041 01        		.uleb128 0x1
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 10
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 10
 
 
  484 0042 13        		.uleb128 0x13
@@ -598,7 +598,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  538 0078 00        		.byte	0
  539 0079 00        		.byte	0
  540 007a 09        		.uleb128 0x9
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 11
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 11
 
 
  541 007b 05        		.uleb128 0x5
@@ -658,7 +658,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  595 00b2 01        		.byte	0x1
  596 00b3 47        		.uleb128 0x47
  597 00b4 13        		.uleb128 0x13
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 12
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 12
 
 
  598 00b5 3A        		.uleb128 0x3a
@@ -718,7 +718,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  652 00ed 31        		.uleb128 0x31
  653 00ee 13        		.uleb128 0x13
  654 00ef 02        		.uleb128 0x2
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 13
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 13
 
 
  655 00f0 0A        		.uleb128 0xa
@@ -778,7 +778,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  709 0127 00        		.byte	0
  710 0128 03        		.uleb128 0x3
  711 0129 0E        		.uleb128 0xe
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 14
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 14
 
 
  712 012a 49        		.uleb128 0x49
@@ -838,7 +838,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  760      6F72 4432 
  760      4576 00
  761               	.LASF17:
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 15
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 15
 
 
  762 000f 474E 5520 		.string	"GNU C++ 4.8.1 -mmcu=atmega324pa -g -Os -std=c++98 -fpack-struct -fshort-enums -funsigned-
@@ -898,7 +898,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  785               	.LASF6:
  786 014a 6C6F 6E67 		.string	"long long unsigned int"
  786      206C 6F6E 
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 16
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 16
 
 
  786      6720 756E 
@@ -943,22 +943,22 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page
  804      496E 6465 
  804      7800 
  805               		.ident	"GCC: (GNU) 4.8.1"
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s 			page 17
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 captor.cpp
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:2      *ABS*:0000003e __SP_H__
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:3      *ABS*:0000003d __SP_L__
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:4      *ABS*:0000003f __SREG__
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:5      *ABS*:00000000 __tmp_reg__
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:6      *ABS*:00000001 __zero_reg__
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:12     .text:00000000 _ZN6CaptorC2Ev
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:12     .text:00000000 _ZN6CaptorC1Ev
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:45     .text:00000016 _ZN6CaptorC2EPhS0_
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:45     .text:00000016 _ZN6CaptorC1EPhS0_
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:75     .text:00000028 _ZN6CaptorD2Ev
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:75     .text:00000028 _ZN6CaptorD1Ev
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//cc8GgwYZ.s:92     .text:0000002a _ZN6Captor4readEv
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s:2      *ABS*:0000003e __SP_H__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s:3      *ABS*:0000003d __SP_L__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s:4      *ABS*:0000003f __SREG__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s:5      *ABS*:00000000 __tmp_reg__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s:6      *ABS*:00000001 __zero_reg__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s:12     .text:00000000 _ZN6CaptorC2Ev
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s:12     .text:00000000 _ZN6CaptorC1Ev
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s:45     .text:00000016 _ZN6CaptorC2EPhS0_
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s:45     .text:00000016 _ZN6CaptorC1EPhS0_
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s:75     .text:00000028 _ZN6CaptorD2Ev
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s:75     .text:00000028 _ZN6CaptorD1Ev
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccSC0bh9.s:92     .text:0000002a _ZN6Captor4readEv
 
 NO UNDEFINED SYMBOLS

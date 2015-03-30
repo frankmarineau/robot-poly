@@ -1,4 +1,4 @@
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 1
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 1
 
 
    1               		.file	"customprocs.cpp"
@@ -58,7 +58,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
   25               	.L3:
   26 0004 9F01      		movw r18,r30
   27 0006 281B      		sub r18,r24
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 2
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 2
 
 
   28 0008 390B      		sbc r19,r25
@@ -118,7 +118,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
   62 0018 1F93      		push r17
   63               	.LCFI2:
   64               		.cfi_def_cfa_offset 5
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 3
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 3
 
 
   65               		.cfi_offset 17, -4
@@ -178,7 +178,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  108               	.LVL7:
  109 0044 DC01      		movw r26,r24
  110 0046 A050      		subi r26,lo8(-(.LC0))
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 4
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 4
 
 
  111 0048 B040      		sbci r27,hi8(-(.LC0))
@@ -238,7 +238,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  152               	/* frame size = 0 */
  153               	/* stack size = 0 */
  154               	.L__stack_usage = 0
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 5
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 5
 
 
  155               	.LBB8:
@@ -298,7 +298,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
   38:/usr/local/CrossPack-AVR-20131216/avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
   39:/usr/local/CrossPack-AVR-20131216/avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 1
   40:/usr/local/CrossPack-AVR-20131216/avr/include/util/delay.h **** #endif
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 6
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 6
 
 
   41:/usr/local/CrossPack-AVR-20131216/avr/include/util/delay.h **** 
@@ -358,7 +358,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
   95:/usr/local/CrossPack-AVR-20131216/avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
   96:/usr/local/CrossPack-AVR-20131216/avr/include/util/delay.h **** #endif
   97:/usr/local/CrossPack-AVR-20131216/avr/include/util/delay.h **** 
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 7
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 7
 
 
   98:/usr/local/CrossPack-AVR-20131216/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
@@ -418,7 +418,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  152:/usr/local/CrossPack-AVR-20131216/avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
  153:/usr/local/CrossPack-AVR-20131216/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
  154:/usr/local/CrossPack-AVR-20131216/avr/include/util/delay.h **** 
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 8
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 8
 
 
  155:/usr/local/CrossPack-AVR-20131216/avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
@@ -478,7 +478,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  211 0028 0000 0000 		.long	.LASF0
  212 002c 03        		.uleb128 0x3
  213 002d 0000 0000 		.long	.LASF2
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 9
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 9
 
 
  214 0031 03        		.byte	0x3
@@ -538,7 +538,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  268 0097 0000 0000 		.long	.LASF10
  269 009b 02        		.byte	0x2
  270 009c 90        		.byte	0x90
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 10
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 10
 
 
  271 009d BD00 0000 		.long	0xbd
@@ -598,7 +598,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  325 010d 02        		.byte	0x2
  326 010e 1201 0000 		.long	0x112
  327 0112 10        		.uleb128 0x10
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 11
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 11
 
 
  328 0113 1701 0000 		.long	0x117
@@ -658,7 +658,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  382 0195 01        		.byte	0x1
  383 0196 43        		.byte	0x43
  384 0197 0000 0000 		.long	.LASF27
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 12
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 12
 
 
  385 019b 0000 0000 		.long	.LFB8
@@ -718,7 +718,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  439 0210 AC00 0000 		.long	0xac
  440 0214 00        		.byte	0
  441 0215 0A        		.uleb128 0xa
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 13
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 13
 
 
  442 0216 6900 0000 		.long	0x69
@@ -778,7 +778,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  496 0031 0B        		.uleb128 0xb
  497 0032 03        		.uleb128 0x3
  498 0033 08        		.uleb128 0x8
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 14
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 14
 
 
  499 0034 00        		.byte	0
@@ -838,7 +838,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  553 006a 0E        		.uleb128 0xe
  554 006b 3A        		.uleb128 0x3a
  555 006c 0B        		.uleb128 0xb
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 15
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 15
 
 
  556 006d 3B        		.uleb128 0x3b
@@ -898,7 +898,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  610 00a5 00        		.byte	0
  611 00a6 0D        		.uleb128 0xd
  612 00a7 0B        		.uleb128 0xb
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 16
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 16
 
 
  613 00a8 01        		.byte	0x1
@@ -958,7 +958,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  667 00df 01        		.uleb128 0x1
  668 00e0 12        		.uleb128 0x12
  669 00e1 01        		.uleb128 0x1
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 17
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 17
 
 
  670 00e2 40        		.uleb128 0x40
@@ -1018,7 +1018,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  724 011b 0B        		.uleb128 0xb
  725 011c 3B        		.uleb128 0x3b
  726 011d 0B        		.uleb128 0xb
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 18
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 18
 
 
  727 011e 49        		.uleb128 0x49
@@ -1078,7 +1078,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  781 0008 0600      		.word	0x6
  782 000a 68        		.byte	0x68
  783 000b 93        		.byte	0x93
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 19
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 19
 
 
  784 000c 01        		.uleb128 0x1
@@ -1138,7 +1138,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  838 0079 1A00 0000 		.long	.LCFI2-.Ltext0
  839 007d 0300      		.word	0x3
  840 007f 92        		.byte	0x92
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 20
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 20
 
 
  841 0080 20        		.uleb128 0x20
@@ -1198,7 +1198,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  895 00ed 4400 0000 		.long	.LVL7-.Ltext0
  896 00f1 0600      		.word	0x6
  897 00f3 68        		.byte	0x68
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 21
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 21
 
 
  898 00f4 93        		.byte	0x93
@@ -1258,7 +1258,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  952 0175 0600      		.word	0x6
  953 0177 9E        		.byte	0x9e
  954 0178 04        		.uleb128 0x4
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 22
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 22
 
 
  955 0179 0000 803F 		.long	0x3f800000
@@ -1318,7 +1318,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  996      6E5F 6176 
  996      725F 6465 
  996      6C61 795F 
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 23
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 23
 
 
  997               	.LASF18:
@@ -1378,7 +1378,7 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  1022      7400 
  1023               	.LASF16:
  1024 0177 5F5A 3963 		.string	"_Z9cp_strlenPKc"
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 24
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 24
 
 
  1024      705F 7374 
@@ -1430,19 +1430,19 @@ GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page
  1046      00
  1047               		.ident	"GCC: (GNU) 4.8.1"
  1048               	.global __do_copy_data
-GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s 			page 25
+GAS LISTING /var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s 			page 25
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 customprocs.cpp
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s:2      *ABS*:0000003e __SP_H__
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s:3      *ABS*:0000003d __SP_L__
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s:4      *ABS*:0000003f __SREG__
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s:5      *ABS*:00000000 __tmp_reg__
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s:6      *ABS*:00000001 __zero_reg__
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s:12     .text:00000000 _Z9cp_strlenPKc
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s:49     .text:00000014 _Z7cp_itoaPcjh
-/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccwI08RC.s:146    .text:00000070 _Z10cp_wait_msj
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s:2      *ABS*:0000003e __SP_H__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s:3      *ABS*:0000003d __SP_L__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s:4      *ABS*:0000003f __SREG__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s:5      *ABS*:00000000 __tmp_reg__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s:6      *ABS*:00000001 __zero_reg__
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s:12     .text:00000000 _Z9cp_strlenPKc
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s:49     .text:00000014 _Z7cp_itoaPcjh
+/var/folders/86/8ymzt0g934z5dpmztl89nd000000gn/T//ccz0jCiT.s:146    .text:00000070 _Z10cp_wait_msj
 
 UNDEFINED SYMBOLS
 __udivmodhi4
