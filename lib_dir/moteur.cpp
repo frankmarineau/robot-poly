@@ -34,7 +34,7 @@ void Moteur::reculer(uint8_t direction) {
 	ajustementTimer1(vitesseA, vitesseB, 0x03);
 }
 
-void Moteur::tourner(uint8_t degree) {
+void Moteur::tourner(uint16_t degree) {
 	//Tourner
 	if (degree > 0){
 		ajustementTimer1(VITESSE_ROTATION,VITESSE_ROTATION,0x02); //Droite
@@ -42,7 +42,7 @@ void Moteur::tourner(uint8_t degree) {
 	else {
 		ajustementTimer1(VITESSE_ROTATION,VITESSE_ROTATION,0x01); //Gauche
 	}
-  	Utility::delay(degree * 10 + 100);
+  	Utility::delay(degree * 10 + 300);
 
 	//Terminer tournant
 	arreter();
@@ -58,7 +58,7 @@ void Moteur::ajustementTimer1( uint8_t dureeA, uint8_t dureeB, uint8_t direction
   TCCR1B |= (1<< CS11) ;
   OCR1A = dureeA ; OCR1B = dureeB;
 
-  PORTD &= 0x3F; //Reinitialiser la direction
-  PORTD |= direction << 6; //Nouvelle direction
+  PORTD &= 0xF3; //Reinitialiser la direction
+  PORTD |= direction << 2; //Nouvelle direction
 
 }

@@ -10,11 +10,20 @@ int main() {
 	//Initialisation 
 	DDRD = 0xff;
 
-	Moteur moteur();
-	moteur.avancer(90);
+	Moteur moteur;
+	//moteur.reculer(0);
 
-	Utility::delay(2000);
+	moteur.avancer(45);
+	Utility::delay(5000);
 	moteur.arreter();
+
+	/*Utility::delay(2000);
+	moteur.avancer(20);
+	Utility::delay(6000);
+	moteur.arreter();*/
+	Utility::delay(2000);
+
+	moteur.tourner(360);
 
 
   return 0;

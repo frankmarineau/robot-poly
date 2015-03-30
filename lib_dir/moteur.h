@@ -6,14 +6,14 @@
 
 class Moteur {
 public:
-	Moteur(uint8_t vitesse = 100, uint8_t vitesseRotation = 100);
+	Moteur(uint8_t vitesse = 150, uint8_t vitesseRotation = 150);
 
 	// Avance dans une certaine direction - entre -90 et 90
 	void avancer(uint8_t direction);
 	// Recule dans une certaine direction - entre -90 et 90
 	void reculer(uint8_t direction);
 	// Tourne sur place d'un certain nombre de degrée - négatif si anti-horaire
-	void tourner(uint8_t degree);
+	void tourner(uint16_t degree);
 	//Arrete de bouger
 	void arreter();
 
