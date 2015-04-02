@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+# Custom stuff
+*.lst
+*~
+*.map
+*.hex
