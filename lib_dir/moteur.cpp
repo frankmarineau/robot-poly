@@ -62,3 +62,4 @@ void Moteur::ajustementTimer1( uint8_t dureeA, uint8_t dureeB, uint8_t direction
   PORTD |= direction << 2; //Nouvelle direction
 
 }
+

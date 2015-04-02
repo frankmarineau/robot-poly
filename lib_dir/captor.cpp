@@ -26,5 +26,5 @@ Captor::~Captor()
     
 uint8_t Captor::read()
 {
-      return ((*PORT) && 0x1F);  
+      return ((*PORT) & 0x1F);  
 }
