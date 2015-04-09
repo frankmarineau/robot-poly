@@ -1,6 +1,8 @@
 #ifndef PORTS_H
 #define PORTS_H
 
+#include <avr/io.h>
+#include "can.h"
 class Ports {
 public:
 	static void initialiserPorts();

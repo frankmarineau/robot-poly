@@ -1,23 +1,5 @@
 #include "Sonar.h"
 
-void Sonar::initialisationUSART(){
-            
-
-	    //2400 bauds. Nous vous donnons la valeur des deux
-	    // premier registres pour vous éviter des complications
-	    UBRR0H = 0;
-	    UBRR0L = 0xCF;
-	    //permettre la reception et la transmission par le UART0
-	    //UCSR0A = ??  ;
-	    UCSR0B = (1 << RXEN0) | (1 << TXEN0);
-	    //Format des trames: 8 bits, 1 stop bits, none parity
-	    UCSR0C = (1 << UCSZ01) | (1 << UCSZ00)|(0<< UPM00)|(0<< UPM10)|(0 << USBS0);
-}
-
-
-
-
-
 
      
 void Sonar::envoiDuTrigerPulse(){

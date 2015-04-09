@@ -10,7 +10,8 @@ void Utility::initialisationInterruption( void ) {
         //'modifier ici'
         // cette procédure ajuste le registre EIMSK
         // de ATmega324PA pour permettre les interruptions externes
-       EIMSK |= _BV(INT0);
+       EIMSK |= 1 << INT0;
+       EIMSK |= 1 << INT1;
         // il faut sensibiliser les interruptions externes aux
         // changements de niveau du bouton-poussoir
         // en ajustant le registre EICRA
@@ -50,14 +51,6 @@ unsigned char Utility::usart_receive( void )
 }
 
 
-void Utility::USART_Flush( void )
-{
-        unsigned char dummy;
-        while ( UCSR0A & (1<<RXC0) )
-        {
-          dummy = UDR0;
-        }
-}
 
 bool Utility::button1IsPressed()
 {

@@ -19,8 +19,8 @@
 
 #include "lcm_so1602dtr_m_fw.h"
 #include "customprocs.h"
-
-
+#include <stdlib.h>
+#include <avr/io.h>
 
 
 //---------------Les differents de notre menu -----------------------//
@@ -31,14 +31,15 @@ class Menu
 {
 private:
         state menuState;
-        LCM *disp;
-        void afficherMenu();
+        LCM *display;
+        void afficherMenu(void);
         
 public:
-        Menu(LCM *display);
+        Menu(LCM *d);
         ~Menu();
-        void changeState();
-        uint8_t validation();
+        void changeState(void);
+       
+        uint8_t validation(void);
 };
 
 

@@ -4,7 +4,7 @@
 void Sound::jouerSound(float frequence){
         
         float periode = (1/2*frequence);
-	float activeTime = period*1000000; //*8 000 000/8 (prescaler)
+	float activeTime = periode*1000000; //*8 000 000/8 (prescaler)
 	TCCR0A|=(1<<COM0A0); //Toggle OC0A on Compare Match
 	TCCR0A|=(1<<WGM01); //CTC mode
 	TCCR0B|=(1<<CS01); //Prescaler de 8

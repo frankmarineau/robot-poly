@@ -1,23 +1,20 @@
-
-
-
 #include "lcd.h"
 
 
-Menu::Menu(LCM *display)
+
+Menu::Menu(LCM *disp)
 {
        menuState = mode1;
-       disp =  display;
+       display = disp;
        afficherMenu();        
 }
-
 
 Menu::~Menu()
 {
 
 }
 
-void Menu::changeState()
+void Menu::changeState(void)
 {
         switch(menuState)
         {
@@ -55,55 +52,62 @@ void Menu::changeState()
         afficherMenu();
 }
 
-void Menu::afficherMenu()
+void Menu::afficherMenu(void)
 {
+	
         
-        disp->clear();
+        display->clear();
         switch(menuState)
         {
              case mode1:
              case mode2:
                    {
-                           disp->write("Mode 1");
+                           display->write("Mode 1");
                            break;
                    }
              case mode3:
              case mode4:
                    {
-                           disp->write("Mode 2");
+                           display->write("Mode 2");
                            break;
                    }
              case mode5:
              case mode6:
                    {
-                            disp->write("Mode 3");
+                            display->write("Mode 3");
                             break;
                    }
         }
 }
 
-uint8_t Menu::validation()
+uint8_t Menu::validation(void)
 {
+	display->clear();
         switch(menuState)
         {
              case mode1:
              case mode2:
                    {
+                   	   
+                   	   display->write("Tache 1");
                            return 1;
                            break;
                    }
              case mode3:
              case mode4:
                    {
+                   	   display->write("Tache 2");
                            return 2;
                            break;
                    }
              case mode5:
              case mode6:
                    {
+                   	    display->write("Tache 3");
                             return 3;
                             break;
                    }
         }
+        return 0;
         
 }
