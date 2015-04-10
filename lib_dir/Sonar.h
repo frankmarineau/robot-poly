@@ -6,13 +6,13 @@
 #include <util/delay.h>
 class Sonar{
 
+   private:
+   	uint8_t distance_;
    public:
-
-    
-     void envoiDuTrigerPulse();
-     void receptionDuSignal();
-
-
+     Sonar();    
+     uint8_t getDistance;
+     void setDistance(uint8_t d) 
+     uint8_t readDistance();
 };
 
 #endif

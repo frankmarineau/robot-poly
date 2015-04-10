@@ -1,6 +1,9 @@
 #ifndef TACHE_H
 #define TACHE_H
 
+#include <avr/io.h>
+
+#include "Sound.h"
 
 class Tache {
 

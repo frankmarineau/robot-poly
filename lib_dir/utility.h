@@ -17,6 +17,7 @@ private:
 
 public:
    void initialisationInterruption(void); 
+   void ajustementTimer3(void);
    bool button1IsPressed();
    bool button2IsPressed();
    void initialisationUSART (void);

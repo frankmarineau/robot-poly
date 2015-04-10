@@ -20,6 +20,18 @@ void Utility::initialisationInterruption( void ) {
         sei ();
 }
 
+void Utility::ajustementTimer3(void)
+{
+  //TCCR1A |= (1 << WGM10) | (1 << COM1A1)|(1 << COM1B1) ;
+  TCCR3B |= (1<< CS31) ;
+  //OCR3A = dureeA ; 
+  // OCR3B = dureeB;
+
+  //PORTD &= 0xF3; //Reinitialiser la direction
+  //PORTD |= direction << 2; //Nouvelle direction
+
+}
+
 void Utility::initialisationUSART ( void ) 
 {
 	// 2400 bauds. Nous vous donnons la valeur des deux

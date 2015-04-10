@@ -1,25 +1,20 @@
 #include "Sound.h"
 
 
-void Sound::jouerSound(float frequence){
+void Sound::jouerSound(){
         
-        float periode = (1/2*frequence);
-	float activeTime = periode*1000000; //*8 000 000/8 (prescaler)
-	TCCR0A|=(1<<COM0A0); //Toggle OC0A on Compare Match
-	TCCR0A|=(1<<WGM01); //CTC mode
-	TCCR0B|=(1<<CS01); //Prescaler de 8
-	TCNT0 = 0x00; //Counter fixed at 0
-	OCR0A = activeTime; //valeur de comparaison fixee a activeTime
+      TCCR0A |= (1<<WGM01)|(1<<COM0A0);     // CTC mode, toggle OC0 on compare match
+      TCCR0B |= (1<<CS02);                   // Start timer0 with prescaler 256
 
+	
+      OCR0A = 10;
 
 }
      
 void Sound::arreterSound() {
 
-        TCCR0A &= 0x00;// Deconnection de 0C0A
-	TCCR0A|=(1<<WGM01); // CTC mode
-	TCCR0B|=(1<<CS01); // Prescaler de 8
-	TCNT0=0x00;//Counter=0
+        TCCR0B &= 0x00;
 }
     
+
 

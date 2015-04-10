@@ -5,7 +5,7 @@
 #include "can.h"
 class Ports {
 public:
-	static void initialiserPorts();
+	static void initialiserPorts(volatile uint8_t *, volatile uint8_t *, volatile uint8_t *, volatile uint8_t *);
 
 	//Input
 	static uint8_t lireSonar();
