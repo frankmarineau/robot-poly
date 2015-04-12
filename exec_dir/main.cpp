@@ -1,7 +1,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <stdlib.h>
-#include "lcd.h"
+#include "Menu.h"
 #include "utility.h"
 #include "Tache.h"
 #include "Ports.h"
@@ -11,29 +11,8 @@
 #define  lcdPortDirection DDRC
 #define  lcdPort PORTC
 
-
-       
-//----------------------Menu de selection des taches---------------------//
-//static Menu mainMenu; //on fournir en paramtre la lcd
-
 //---------------Variable qui representera la tache selectronner--------//
 volatile uint8_t selectedActionIndex=0 ;
-
-
-
-Menu *mainMenu;
-
-ISR (INT0_vect)
-{
-      mainMenu->changeState();
-      EIFR = (1 << INTF0) ; 
-}
-
-ISR (INT1_vect)
-{
-        selectedActionIndex = mainMenu->validation();       
-        EIFR = (1 << INTF1);
-}
 
 
 int main()
@@ -44,13 +23,14 @@ int main()
        //  de l'application du parametre le microcontrolleur          //
        //-------------------------------------------------------------//      
        LCM disp(&(lcdPortDirection), &(lcdPort)); 
-       Menu tmpMenu(&disp); 
-       mainMenu =&tmpMenu;
+       MENU tmpMenu(&disp); 
+     
       
-       Utility microControlleur;
+    
        Ports::initialiserPorts(&DDRA,&DDRB,&DDRC,&DDRD);
-       microControlleur.initialisationInterruption();       
-       while(selectedActionIndex ==0);
+       
+       Utility microControlleur;
+       selectedActionIndex =microControlleur.selectionTache(&tmpMenu);
        
        Tache1 t1;
        Tache2 t2;
@@ -58,14 +38,15 @@ int main()
 
        switch(selectedActionIndex)
        {
-       	case 1: t1.run(); break;
-       	case 2: t2.run(); break;
-       	case 3: t3.run(); break;
+       	case T1: t1.run(); break;
+       	case T2: t2.run(); break;
+       	case T3: t3.run(); break;
        }       
-      // while(true);
       
        
         return 0;
 }
+
+
 
 

@@ -19,7 +19,7 @@ void Utility::initialisationInterruption( void ) {
         // sei permet de recevoir a nouveau des interruptions.
         sei ();
 }
-
+/*
 void Utility::ajustementTimer3(void)
 {
   //TCCR1A |= (1 << WGM10) | (1 << COM1A1)|(1 << COM1B1) ;
@@ -30,7 +30,7 @@ void Utility::ajustementTimer3(void)
   //PORTD &= 0xF3; //Reinitialiser la direction
   //PORTD |= direction << 2; //Nouvelle direction
 
-}
+}*/
 
 void Utility::initialisationUSART ( void ) 
 {
@@ -66,10 +66,10 @@ unsigned char Utility::usart_receive( void )
 
 bool Utility::button1IsPressed()
 {
-    if (!(bouton1PIN & bouton1ClearValue))
+    if (bouton1PIN & bouton1ClearValue)
     {
       _delay_ms(debounceTime);
-      if(!(bouton1PIN & bouton1ClearValue))
+      if(bouton1PIN & bouton1ClearValue)
        {
           return true;
        }
@@ -80,10 +80,10 @@ bool Utility::button1IsPressed()
 
 bool Utility::button2IsPressed()
 {
-    if (!(bouton2PIN & bouton2ClearValue))
+    if (bouton2PIN & bouton2ClearValue)
     {
       _delay_ms(debounceTime);
-      if(!(bouton2PIN & bouton2ClearValue))
+      if(bouton2PIN & bouton2ClearValue)
        {
           return true;
        }
@@ -96,6 +96,22 @@ void Utility::delay(uint16_t ms) {
   for (uint16_t i = 0 ; i < ms ; i++) {
     _delay_ms(1);
   }
+}
+
+
+uint8_t Utility::selectionTache(MENU *m)
+{
+	while(button2IsPressed())
+	{
+		if(!button1IsPressed())
+		{
+			while(!button1IsPressed());
+			m->changeState();
+		}
+		//_delay_ms(2000);
+	}
+	while(!button2IsPressed());
+	return m->activeTache();
 }
 
 

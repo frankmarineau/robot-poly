@@ -4,10 +4,11 @@
 #include <avr/interrupt.h>
 #define F_CPU 8000000UL
 #include <util/delay.h>
+#include "Menu.h"
 
-#define bouton1PIN PIND
-#define bouton1ClearValue 0x04
-#define bouton2PIN PIND
+#define bouton1PIN PINB
+#define bouton1ClearValue 0x01
+#define bouton2PIN PINB
 #define bouton2ClearValue 0x02
 #define debounceTime 10
 
@@ -23,12 +24,13 @@ public:
    void initialisationUSART (void);
    void transmissionUSART (uint8_t donnee);
    void USART_Flush(void);
+   uint8_t selectionTache(MENU *m);
    unsigned char usart_receive(void);
+   
 
    static void delay(uint16_t ms); // Précise une intervale de temps donnée
    
 };
-
 
 
 
