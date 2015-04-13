@@ -7,13 +7,11 @@
 
 class Sonar{
 
-   private:
-   	uint8_t distance_;
-   public:
-     Sonar();    
-     uint8_t getDistance();
-     void setDistance(uint8_t d) ;
-     uint8_t readDistance();
+    void initialisationTimer(void);     // initialisation of register for timer using
+    unsigned int getEcho(void);         // send trigger pulse for detect any obstacle
+    void setup(void);			// General  setup for port direction 
+    void startTimer(unsigned int time);	// Starts the timer running for a number of uS defined by value of time
+    void waitForTimer(void);		// Waits for the timer to stop
 };
 
 #endif
