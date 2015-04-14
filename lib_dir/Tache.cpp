@@ -23,7 +23,90 @@ Tache3::Tache3(LCM* d)
     
 void Tache1::run()
 {
-	
+	bool enTransition = false; // Indique si le robot est en transition
+	bool fin = false; // Indique si le robot est arrivé à la fin
+	uint8_t voie = 3; // Voie sur lequel le robot se trouve
+	uint8_t nouvelleVoie = 0; // Nouvelle voie vers laquel le robot doit aller
+	uint8_t nbChangements; // Nombres de changements effectue
+
+	Moteur moteur;
+	Captor captor(&DDRA, &PORTA);
+
+	//Commencer tache
+	moteur.avancer();
+
+	//Boucle de la tache
+	while (!fin){
+		if (!enTransition) {
+			
+
+			// Détecter coupure
+			if (captor.read() == VIDE) {
+				// Selectionner la prochaine voie
+				switch (voie) {
+					case 1:
+						nouvelleVoie = 2;
+						break;
+					case 2:
+						nouvelleVoie = 3;
+						break;
+					case 3:
+						if (nbChangements >= 2){ //Coupure de la fin
+							fin = true;
+						}
+						else {
+							nouvelleVoie = 2;
+						}
+						break;
+					case 4:
+						nouvelleVoie = 3;
+						break;
+					case 5:
+						nouvelleVoie = 4;
+						break;
+				}
+			}
+
+			// Détecter lumiere
+
+
+			// Initialiser transition
+			if (nouvelleVoie != 0) {
+				enTransition = true;
+				nbChangements++;
+
+				// Ajuster direction
+				if (nouvelleVoie < voie){ // Transition a Gauche
+					moteur.avancer(-75);
+				}
+				else if (nouvelleVoie > voie){ // Transition a Droite
+					moteur.avancer(75);
+				}
+			}
+
+		}
+
+		else { //En Transition
+
+			// Redresser direction
+			if (nouvelleVoie < voie && captor.read() == DROITE){ // Transition a gauche
+				moteur.avancer(50);
+			}
+			else if (nouvelleVoie > voie && captor.read() == GAUCHE){ // Transition a Droite
+				moteur.avancer(-50);
+			}
+			
+			// Terminer transition
+			else if (captor.read() == MILIEU) {
+				moteur.avancer(0);
+				voie = nouvelleVoie;
+				nouvelleVoie = 0;
+				enTransition = false;
+
+			}
+		}
+		
+	}
 }
 
 void Tache2::run()

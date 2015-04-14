@@ -8,7 +8,8 @@
 #include "Sound.h"
 #include "SFR05.h"
 #include "utility.h"
-
+#include "captor.h"
+#include "moteur.h"
 
 
 // Ici nous avons les trois taches que le robot devra executer

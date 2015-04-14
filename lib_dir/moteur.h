@@ -9,9 +9,9 @@ public:
 	Moteur(uint8_t vitesse = 150);
 
 	// Avance dans une certaine direction - entre -90 et 90
-	void avancer(uint8_t direction);
+	void avancer(uint8_t direction = 0);
 	// Recule dans une certaine direction - entre -90 et 90
-	void reculer(uint8_t direction);
+	void reculer(uint8_t direction = 0);
 	// Tourne sur place d'un certain nombre de degrée - négatif si anti-horaire
 	void tournerDroite(uint8_t vitesse);
 	void tournerGauche(uint8_t vitesse);
