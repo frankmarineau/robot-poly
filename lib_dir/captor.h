@@ -1,6 +1,6 @@
 #ifndef CAPTOR_H
 #define CAPTOR_H
-#include <avr/io.h>
+#include "setting.h"
 
 enum LECTURE_LIGNE {
 	GAUCHE,
