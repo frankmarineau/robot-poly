@@ -117,10 +117,10 @@ uint8_t Utility::selectionTache(MENU *m)
 
 void Utility::ajustementTimer2(uint8_t vitesseA, uint8_t vitesseB, uint8_t direction)
 {
-	TCCR2A = (1 << WGM22)| (1 << WGM20) | (1 << COM2A1)|(1 << COM2B1)  ;
-	TCCR2B = (1<< CS22) | (1<< CS21) | (1<< CS20) ;
-	OCR2A = vitesseA ; OCR2B = vitesseB;
-	PORTD &= 0xCF; //Reinitialiser la direction
- 	PORTD |= direction << 4; //Nouvelle direction
+  TCCR2A = (1 << WGM22)| (1 << WGM20) | (1 << COM2A1)|(1 << COM2B1)  ;
+  TCCR2B = (1<< CS22) | (1<< CS21) | (1<< CS20) ;
+  OCR2A = vitesseA ; OCR2B = vitesseB;
+  PORTD &= 0xCF; //Reinitialiser la direction
+  PORTD |= direction << 4; //Nouvelle direction
 }
 

@@ -24,7 +24,12 @@ Captor::~Captor()
 } 
 
     
-uint8_t Captor::read()
+LECTURE_LIGNE Captor::read()
 {
-      return ((*PORT) & 0x1F);  
+    if ((*PORT) & 0x04){
+    	return MILIEU;
+    }
+    else {
+    	return UNKNOWN;
+    }
 }

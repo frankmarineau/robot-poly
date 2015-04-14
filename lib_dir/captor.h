@@ -2,6 +2,15 @@
 #define CAPTOR_H
 #include <avr/io.h>
 
+enum LECTURE_LIGNE {
+	GAUCHE,
+	MILIEU,
+	DROITE,
+	VIDE,
+	FULL,
+	UNKNOWN
+};
+
 class Captor
 {
 private:
@@ -11,7 +20,7 @@ public:
      Captor();
      Captor(uint8_t *dataDirection, uint8_t *portIndex);
      ~Captor();     
-     uint8_t read();
+     LECTURE_LIGNE read();
 };
 
 #endif
