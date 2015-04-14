@@ -1,9 +1,12 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 //++++++++++++++++++++++++++++++ PROJET INTEGRATEUR 1ER ANNEE ++++++++++++++++++++++++++++++++++++//
 // Departement de Genie Informatique et Genie Logiciel - Ecole Polytechnique de Montreal- H 2015  //
-// Ecrit par : Foromo Daniel Soromou && Hermann Charbel Racine Codo                               //
+// Ecrit par : Foromo Daniel Soromou                                                              //
+//             Hermann Charbel Racine Codo                                                        //
+//             Esteban Sanchez                                                                    //
+//             Francis Marineau                                                                   //
 // Ecrit le Mardi 14 Avril 2015                                                                   //
-// Description : Ce fichier d'entete, fixe l'ensemble des fichiers d'entete necessaire pour la 
+// Description : Ce fichier d'entete, fixe l'ensemble des fichiers d'entete necessaire pour la    //
 //               la realisation du projet. En plus, il fixe aussi les entrees/sorties pour les    //
 //               differents composants utilises et autres constantes.                             //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
@@ -19,8 +22,9 @@
 #define F_CPU 8000000UL                  //Macro pour fixer la frequence du micro-controllleur    //
 #include <util/delay.h>                  //Fichier d'entete pour l'utilisation de _delay_xx       //
 #include "lcm_so1602dtr_m_fw.h"          //Fichier d'entete necessaire a l'utilisation de la LCD  //
-#include "customprocs.h"		 //Fichier d'entete necessaire a l'utilisation de la LCD  //	
-						
+#include "customprocs.h"		 //Fichier d'entete necessaire a l'utilisation de la LCD  //
+#include <stdlib.h>
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 //+++++++++++++++++++++ VALEUR DES DATA DIRECTIONS REGISTRER (DDR)++++++++++++++++++++++++++++++++//
@@ -46,5 +50,7 @@
 #define STOP_CLK 0x08                    //Constante d'arret de la clock                          //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
+#define  lcdPortDirection DDRC
+#define  lcdPort PORTC
 
 #endif

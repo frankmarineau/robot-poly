@@ -1,12 +1,16 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 //++++++++++++++++++++++++++++++ PROJET INTEGRATEUR 1ER ANNEE ++++++++++++++++++++++++++++++++++++//
 // Departement de Genie Informatique et Genie Logiciel - Ecole Polytechnique de Montreal- H 2015  //
-// Ecrit par : Foromo Daniel Soromou && Hermann Charbel Racine Codo                               //
+// Ecrit par : Foromo Daniel Soromou                                                              //
+//             Hermann Charbel Racine Codo                                                        //
+//             Esteban Sanchez                                                                    //
+//             Francis Marineau                                                                   //
 // Ecrit le Mardi 14 Avril 2015                                                                   //
-// Description : Ce fichier d'entete, fixe l'ensemble des fichiers d'entete necessaire pour la 
+// Description : Ce fichier d'entete, fixe l'ensemble des fichiers d'entete necessaire pour la    //
 //               la realisation du projet. En plus, il fixe aussi les entrees/sorties pour les    //
 //               differents composants utilises et autres constantes.                             //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
 #include "SFR05.h"
 
 
