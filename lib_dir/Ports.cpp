@@ -1,10 +1,10 @@
 #include "Ports.h"
 
 void Ports::initialiserPorts(volatile uint8_t *a,volatile uint8_t *b,volatile  uint8_t *c,volatile uint8_t *d) {
-	*a = 0x00; // Capteur de ligne et photoresistances (entrées)
-	*b= 0xfc; // Buzzer et sonar (sortie)
+	*a = DDRA_VALUE; // Capteur de ligne et photoresistances (entrées)
+	*b= DDRB_VALUE; // Buzzer et sonar (sortie)
 	//DDRC = 0xff; // LCD (sortie)
-	*d = 0xf3; // Boutons (entrée) et moteurs (sortie)
+	//*d = DDRD_VALUE; // Boutons (entrée) et moteurs (sortie)
 }
 
 uint8_t Ports::lireSonar() {

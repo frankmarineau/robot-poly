@@ -1,7 +1,7 @@
 #ifndef PORTS_H
 #define PORTS_H
 
-#include <avr/io.h>
+#include "setting.h"
 #include "can.h"
 class Ports {
 public:

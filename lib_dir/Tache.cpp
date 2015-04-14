@@ -34,6 +34,7 @@ void Tache2::run()
 //++++++++++++++++++++ REALIATION DE LA TACHE 3 ++++++++++++++++++++++++++++++//
 void Tache3::run()
 {
+	
 	//+++++++++++++Sound de demarrage de la tache 3+++++++++++++++++++++++//
 	Sound piezo;
 	piezo.jouerSound(); //Demarrer le son
@@ -43,9 +44,9 @@ void Tache3::run()
 	
 	Sonar sonar;
 	
+	sonar.setup();
 	
 	uint8_t range;    
-	display->clear();
 	int i =0, j =0, phase =0;
 	Utility mc;
 	for(phase = 1; phase <=2; ++phase)
@@ -55,8 +56,11 @@ void Tache3::run()
 			for(i =1; i<=15 ; ++i)
 			{
 			        display->clear();
+			        
 				sonar.startRange();			// Send a high on the trigger pin to start a ranging
+				
 				range = sonar.getEcho();		// Wait for the echo line to go high and then measure the length of this high
+				PORTD =0x08;
 				*display << "Tache 3         Dst: ";		
 				*display << range ;
 				*display << "inch";

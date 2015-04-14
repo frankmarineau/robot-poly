@@ -1,16 +1,8 @@
 #ifndef UTILITY_H
 #define UTILITY_H
 
-#include <avr/interrupt.h>
-#define F_CPU 8000000UL
-#include <util/delay.h>
+#include "setting.h"
 #include "Menu.h"
-
-#define bouton1PIN PINB
-#define bouton1ClearValue 0x01
-#define bouton2PIN PINB
-#define bouton2ClearValue 0x02
-#define debounceTime 10
 
 class Utility
 {
