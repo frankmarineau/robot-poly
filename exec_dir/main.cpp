@@ -1,52 +1,51 @@
-#include <avr/io.h>
-#include <avr/interrupt.h>
-#include <stdlib.h>
-#include "Menu.h"
-#include "utility.h"
-#include "Tache.h"
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//++++++++++++++++++++++++++++++ PROJET INTEGRATEUR 1ER ANNEE ++++++++++++++++++++++++++++++++++++//
+// Departement de Genie Informatique et Genie Logiciel - Ecole Polytechnique de Montreal- H 2015  //
+// Ecrit par : Foromo Daniel Soromou                                                              //
+//             Hermann Charbel Racine Codo                                                        //
+//             Esteban Sanchez                                                                    //
+//             Francis Marineau                                                                   //
+// Ecrit le Mardi 14 Avril 2015                                                                   //
+// Presentation : Charlie est une robot automne, qui executera 3 taches distinte suivant les      //
+//                indications du projet. Une fois qu'une tache est termine, elle continue a la    //
+//                prochaine.                                                                      //
+// Remarque : Pour les taches, les declarations sont faites dans les structures  pour une         //
+//            question d'optimisation , car nous travaillons avec un microcontroller              //
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+#include "setting.h"                    //Fichier d'entete indispensable a l'execution du main.cpp//
+#include "Menu.h"                                        //                                       //
+#include "Tache.h"                                                                                //
+#include "utility.h"                                                                              //
 #include "Ports.h"
-
-#define F_CPU 8000000UL
-#include <util/delay.h>
-#define  lcdPortDirection DDRC
-#define  lcdPort PORTC
-
-//---------------Variable qui representera la tache selectronner--------//
-volatile uint8_t selectedActionIndex=0 ;
-
-
-int main()
-{
-	
-       //----------------Configuration du Microcontrolleur------------//
-       //  L'objet microControlleur ici, sera utiliser tout au long   //
-       //  de l'application du parametre le microcontrolleur          //
-       //-------------------------------------------------------------//      
-       LCM disp(&(lcdPortDirection), &(lcdPort)); 
-       MENU tmpMenu(&disp); 
-     
-      
-    
-       Ports::initialiserPorts(&DDRA,&DDRB,&DDRC,&DDRD);
-       
-       Utility microControlleur;
-       selectedActionIndex =microControlleur.selectionTache(&tmpMenu);
-       
-       Tache1 t1(&disp);
-       Tache2 t2(&disp);
-       Tache3 t3(&disp);
-
-       switch(selectedActionIndex)
-       {
-       	case T1: t1.run(); break;
-       	case T2: t2.run(); break;
-       	case T3: t3.run(); break;
-       }       
-      
-       
-        return 0;
-}
-
-
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+int main()                                                                                        //
+{                                                                                                 //
+       LCM disp(&(lcdPortDirection), &(lcdPort)); //Intanciation d'un objet LCM, pour la LCD      //
+       MENU tmpMenu(&disp);                       //Intanciation d'un objet Menu                  //    
+       Ports::initialiserPorts(&DDRA,&DDRB,&DDRC,&DDRD); //Initialisation des ports               //
+       Utility microControlleur;            //Objet permettant de fixer les parametres du robot   //
+       uint8_t selectedActionIndex ;              //Stock la tache en cour d'execution            //
+       selectedActionIndex =microControlleur.selectionTache(&tmpMenu);//Execution du selecteur    //       
+       switch(selectedActionIndex)         //Evaluation de la valeur de la tache selectionner     //
+       {                                                                                          //
+	       	case T1:                                                                          //
+	       	{                                                                                 //
+	       		 Tache1 t1(&disp);      //Instanciation d'une tache1                      //                   
+	       		 t1.run();              //Execution de la tache1                          //
+	       	}                                                                                 //
+	       	case T2:                                                                          //
+	       	{                                                                                 //
+	       		Tache2 t2(&disp);      //Instanciation d'une tache2                       //                   
+	       		t2.run();              //Execution de la tache2                           //
+	       	 }                                                                                //
+	       	case T3:                                                                          //
+	       	{                                                                                 //
+	       		Tache3 t3(&disp);      //Instanciation d'une tache3                       //                   
+	       		t3.run();              //Execution de la tache3                           //
+	       	}                                                                                 //
+       }                                                                                          //                    
+        return 0;                                                                                 //
+}                                                                                                 //
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 

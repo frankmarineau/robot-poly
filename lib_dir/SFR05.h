@@ -3,8 +3,6 @@
 
 #include "setting.h"
 
-
-
 class Sonar
 {
 	public:

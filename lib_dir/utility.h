@@ -4,6 +4,7 @@
 #include "setting.h"
 #include "Menu.h"
 
+
 class Utility
 {
 private:
@@ -18,8 +19,6 @@ public:
    void USART_Flush(void);
    uint8_t selectionTache(MENU *m);
    unsigned char usart_receive(void);
-   
-
    static void delay(uint16_t ms); // Précise une intervale de temps donnée
    void ajustementTimer2(uint8_t vitesseA, uint8_t vitesseB, uint8_t direction);
    
