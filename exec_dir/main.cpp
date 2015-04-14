@@ -32,9 +32,9 @@ int main()
        Utility microControlleur;
        selectedActionIndex =microControlleur.selectionTache(&tmpMenu);
        
-       Tache1 t1;
-       Tache2 t2;
-       Tache3 t3;
+       Tache1 t1(&disp);
+       Tache2 t2(&disp);
+       Tache3 t3(&disp);
 
        switch(selectedActionIndex)
        {

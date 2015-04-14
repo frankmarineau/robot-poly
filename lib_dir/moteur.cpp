@@ -57,7 +57,6 @@ void Moteur::ajustementTimer1( uint8_t dureeA, uint8_t dureeB, uint8_t direction
   TCCR1A |= (1 << WGM10) | (1 << COM1A1)|(1 << COM1B1) ;
   TCCR1B |= (1<< CS11) ;
   OCR1A = dureeA ; OCR1B = dureeB;
-
   PORTD &= 0xF3; //Reinitialiser la direction
   PORTD |= direction << 2; //Nouvelle direction
 

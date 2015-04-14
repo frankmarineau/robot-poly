@@ -2,46 +2,42 @@
 #define TACHE_H
 
 #include <avr/io.h>
-
+#include "lcm_so1602dtr_m.h"
+#include "customprocs.h"
+#include "lcm_so1602dtr_m_fw.h"
 #include "Sound.h"
+#include "SFR05.h"
+#include "utility.h"
 
-class Tache {
 
- public :
-    Tache();
-   // virtual void run ();
-    void setStatus (bool );
-    bool getStatus (void );
-
- protected :
-   
-    bool status_;
-};
 
 // Ici nous avons les trois taches que le robot devra executer
 
-class Tache1 : public Tache {
-
+class Tache1 {
+ private:
+     LCM *display;
  public :
-   
+    Tache1(LCM* d);
     void run () ;
    
 };
 
 
-class Tache2 : public Tache {
-
+class Tache2 {
+ private:
+	LCM *display;
  public :
-   
+    Tache2(LCM* d);
     void run () ;
    
 };
 
 
-class Tache3 : public Tache {
-
+class Tache3 {
+ private:
+	LCM *display;
  public :
-   
+    Tache3(LCM* d);
     void run () ;
    
 };

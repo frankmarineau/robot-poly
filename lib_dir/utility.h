@@ -29,6 +29,7 @@ public:
    
 
    static void delay(uint16_t ms); // Précise une intervale de temps donnée
+   void ajustementTimer2(uint8_t vitesseA, uint8_t vitesseB, uint8_t direction);
    
 };
 
