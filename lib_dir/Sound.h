@@ -8,7 +8,7 @@ class Sound{
 
    public :
     
-     void jouerSound(uint16_t frequence, uint8_t tempsMs = 0);
+     void jouerSound(uint16_t frequence, uint16_t tempsMs = 0);
      void arreterSound();
 };
 

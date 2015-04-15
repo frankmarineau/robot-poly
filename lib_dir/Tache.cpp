@@ -112,9 +112,11 @@ void Tache3::run()
 
 	sonar.setup();
 
+	Moteur moteur;
+
 	uint8_t range;
 	int i = 0, j = 0, phase = 0;
-	Utility mc;
+
 	for(phase = 1; phase <= 2; ++phase)
 	{
 		for(j = 1; j <= 8; ++j)
