@@ -20,31 +20,31 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 int main()                                                                                        //
 {                                                                                                 //
-       LCM disp(&(lcdPortDirection), &(lcdPort)); //Intanciation d'un objet LCM, pour la LCD      //
-       MENU tmpMenu(&disp);                       //Intanciation d'un objet Menu                  //    
-       Ports::initialiserPorts(&DDRA,&DDRB,&DDRC,&DDRD); //Initialisation des ports               //
-       Utility microControlleur;            //Objet permettant de fixer les parametres du robot   //
-       uint8_t selectedActionIndex ;              //Stock la tache en cour d'execution            //
-       selectedActionIndex =microControlleur.selectionTache(&tmpMenu);//Execution du selecteur    //       
-       switch(selectedActionIndex)         //Evaluation de la valeur de la tache selectionner     //
-       {                                                                                          //
-	       	case T1:                                                                          //
-	       	{                                                                                 //
-	       		 Tache1 t1(&disp);      //Instanciation d'une tache1                      //                   
-	       		 t1.run();              //Execution de la tache1                          //
-	       	}                                                                                 //
-	       	case T2:                                                                          //
-	       	{                                                                                 //
-	       		Tache2 t2(&disp);      //Instanciation d'une tache2                       //                   
-	       		t2.run();              //Execution de la tache2                           //
-	       	 }                                                                                //
-	       	case T3:                                                                          //
-	       	{                                                                                 //
-	       		Tache3 t3(&disp);      //Instanciation d'une tache3                       //                   
-	       		t3.run();              //Execution de la tache3                           //
-	       	}                                                                                 //
-       }                                                                                          //                    
-        return 0;                                                                                 //
+  LCM disp(&(lcdPortDirection), &(lcdPort)); //Intanciation d'un objet LCM, pour la LCD      //
+  MENU tmpMenu(&disp);                       //Intanciation d'un objet Menu                  //
+  Ports::initialiserPorts(&DDRA,&DDRB,&DDRC,&DDRD); //Initialisation des ports               //
+  Utility microControlleur;            //Objet permettant de fixer les parametres du robot   //
+  uint8_t selectedActionIndex ;              //Stock la tache en cour d'execution            //
+  selectedActionIndex =microControlleur.selectionTache(&tmpMenu);//Execution du selecteur    //
+  switch(selectedActionIndex)         //Evaluation de la valeur de la tache selectionner     //
+  {                                                                                          //
+   	case T1:                                                                          //
+   	{                                                                                 //
+   		Tache1 t1(&disp);      //Instanciation d'une tache1                      //
+   		t1.run();              //Execution de la tache1                          //
+   	}                                                                                 //
+   	case T2:                                                                          //
+   	{                                                                                 //
+   		Tache2 t2(&disp);      //Instanciation d'une tache2                       //
+   		t2.run();              //Execution de la tache2                           //
+   	}                                                                                //
+   	case T3:                                                                          //
+   	{                                                                                 //
+   		Tache3 t3(&disp);      //Instanciation d'une tache3                       //
+   		t3.run();              //Execution de la tache3                           //
+   	}                                                                                 //
+  }                                                                                          //
+  return 0;                                                                                 //
 }                                                                                                 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 

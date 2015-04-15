@@ -2,7 +2,7 @@
 
 void Ports::initialiserPorts(volatile uint8_t *a,volatile uint8_t *b,volatile  uint8_t *c,volatile uint8_t *d) {
 	*a = DDRA_VALUE; // Capteur de ligne et photoresistances (entrées)
-	*b= DDRB_VALUE; // Buzzer et sonar (sortie)
+	*b = DDRB_VALUE; // Buzzer et sonar (sortie)
 	//DDRC = 0xff; // LCD (sortie)
 	//*d = DDRD_VALUE; // Boutons (entrée) et moteurs (sortie)
 }
@@ -11,15 +11,13 @@ uint8_t Ports::lireSonar() {
 	return PINB0;
 }
 
-/*
 uint8_t Ports::lirePhotoresistanceGauche() {
-	return this.capteur.lecture(0) >> 2;
+	return capteur.lecture(0) >> 2;
 }
 
 uint8_t Ports::lirePhotoresistanceDroite() {
-	return this.capteur.lecture(1) >> 2;
+	return capteur.lecture(1) >> 2;
 }
-*/
 
 uint8_t Ports::lireCapteur() {
 	return (PINA7 << 5) | (PINA6 << 4) | (PINA5 << 3) | (PINA4 << 2) | (PINA3 << 1) | PINA2;
@@ -42,7 +40,7 @@ void Ports::setDirectionMoteur(uint8_t val) {
 
 
 // Nous n'aurons pas besoin de cette fonction, car le sont est regenerer par pwm, donc nous avons rien a mofidier a la valeur  qui est communiquer au port
- 
+
 void Ports::setSon(uint8_t val) {
 	PORTB &= 0b11110011;
 	PORTB |= val << 2;
