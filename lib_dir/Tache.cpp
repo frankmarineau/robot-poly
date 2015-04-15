@@ -107,6 +107,9 @@ void Tache1::run()
 		}
 		
 	}
+
+	// Preparer tache 2
+
 }
 
 void Tache2::run()
@@ -131,7 +134,7 @@ void Tache3::run()
 	
 	uint8_t range;    
 	int i =0, j =0, phase =0;
-	Utility mc;
+	Moteur moteur;
 	for(phase = 1; phase <=2; ++phase)
 	{	
 		for(j =1; j<=8 ; ++j)
@@ -152,24 +155,24 @@ void Tache3::run()
 				
 				if (range >24)
 				{
-					mc.ajustementTimer2(0,0,0x00);
+					moteur.ajustementTimer1(0,0,0x00);
 				}
 				else
 				{
 					if (phase ==1)  
 					{
-						mc.ajustementTimer2(uint8_t(255-range*6.875),uint8_t(255-range*6.875),0x02);
+						moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),0x02);
 					}
 					else           
 					{
-						 mc.ajustementTimer2(uint8_t(255-range*6.875),uint8_t(255-range*6.875),0x01);
+						 moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),0x01);
 					}
 				}
 			}
 			_delay_ms(9);
 		}
 	}
-	mc.ajustementTimer2(0,0,0x00);
+	moteur.ajustementTimer1(0,0,0x00);
 	display->clear();
 	*display << "Terminer         Merci!";
 	

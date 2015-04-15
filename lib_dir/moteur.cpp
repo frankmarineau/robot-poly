@@ -16,7 +16,7 @@ void Moteur::avancer(uint8_t direction) {
 	}
 
 	//Ajuster PWM
-	ajustementTimer2(vitesseA, vitesseB, 0x00);
+	ajustementTimer1(vitesseA, vitesseB, 0x00);
 }
 
 void Moteur::reculer(uint8_t direction) {
@@ -31,27 +31,29 @@ void Moteur::reculer(uint8_t direction) {
 	}
 
 	//Ajuster PWM
-	ajustementTimer2(vitesseA, vitesseB, 0x03);
+	ajustementTimer1(vitesseA, vitesseB, 0x03);
 }
 
 void Moteur::tournerDroite(uint8_t vitesse) {
-	ajustementTimer2(vitesse,vitesse,0x02); //Droite
+	ajustementTimer1(vitesse,vitesse,0x02); //Droite
 }
 
 void Moteur::tournerGauche(uint8_t vitesse) {
-	ajustementTimer2(vitesse,vitesse,0x01); //Gauche
+	ajustementTimer1(vitesse,vitesse,0x01); //Gauche
 }
 
 void Moteur::arreter() {
-	ajustementTimer2(0,0,0x00);
+	ajustementTimer1(0,0,0x00);
 }
 
-void Moteur::ajustementTimer2(uint8_t vitesseA, uint8_t vitesseB, uint8_t direction)
+void Moteur::ajustementTimer1( uint8_t dureeA, uint8_t dureeB, uint8_t direction)
 {
-	TCCR2A = (1 << WGM22)| (1 << WGM20) | (1 << COM2A1)|(1 << COM2B1)  ;
-	TCCR2B = (1<< CS22) | (1<< CS21) | (1<< CS20) ;
-	OCR2A = vitesseA ; OCR2B = vitesseB;
-	PORTD &= 0xCF; //Reinitialiser la direction
- 	PORTD |= direction << 4; //Nouvelle direction
+  TCCR1A |= (1 << WGM10) | (1 << COM1A1)|(1 << COM1B1) ;
+  TCCR1B |= (1<< CS11) ;
+  OCR1A = dureeA ; OCR1B = dureeB;
+
+  PORTD &= 0x3F; //Reinitialiser la direction
+  PORTD |= direction << 6; //Nouvelle direction
+
 }
 

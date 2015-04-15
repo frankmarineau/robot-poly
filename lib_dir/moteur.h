@@ -18,9 +18,11 @@ public:
 	//Arrete de bouger
 	void arreter();
 
-private:
 	//Ajuster le timer pour générer le pwm du moteur
-	void ajustementTimer2(uint8_t vitesseA, uint8_t vitesseB, uint8_t direction);
+	void ajustementTimer1( uint8_t dureeA, uint8_t dureeB, uint8_t direction);
+
+private:
+	
 
 	const uint8_t VITESSE;
 };
