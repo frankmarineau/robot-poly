@@ -113,12 +113,12 @@ ASMFLAGS =-I. $(INC) -mmcu=$(MCU)        \
 	-x assembler-with-cpp            \
 	-Wa,-gstabs,-ahlms=$(firstword   \
 		$(<:.S=.lst) $(<.s=.lst))
-	
+
 # linker
 LDFLAGS=-Wl,-Map,$(TRG).map -mmcu=$(MCU)
- 		
+
 ##### executables ####
-CC=avr-gcc 
+CC=avr-gcc
 OBJCOPY=avr-objcopy
 OBJDUMP=avr-objdump
 SIZE=avr-size

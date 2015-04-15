@@ -16,30 +16,28 @@
 
 class Tache1 {
  private:
-     LCM *display;
- public :
+    LCM *display;
+ public:
     Tache1(LCM* d);
-    void run () ;
-   
+    void run();
 };
 
 
 class Tache2 {
- private:
-	LCM *display;
- public :
+  private:
+    LCM *display;
+  public:
     Tache2(LCM* d);
-    void run () ;
-   
+    void run();
 };
 
 
 class Tache3 {
- private:
-	LCM *display;
- public :
+  private:
+    LCM *display;
+  public:
     Tache3(LCM* d);
-    void run () ;
-   
+    void run();
 };
+
 #endif
