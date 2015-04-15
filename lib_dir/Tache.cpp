@@ -58,6 +58,14 @@ void Tache1::run() {
 				}
 			}
 
+			//Detecter photoresistance
+			if (Photoresistance::getEtatEclairage() == DROITE_ECLAIRE && voie < 5) { // Droite
+				nouvelleVoie = voie + 1;
+			}
+			else if (Photoresistance::getEtatEclairage() == GAUCHE_ECLAIRE && voie > 1) { // Gauche
+				nouvelleVoie = voie - 1;
+			}
+
 			// Initialiser transition
 			if (nouvelleVoie != 0) {
 				enTransition = true;
@@ -91,7 +99,22 @@ void Tache1::run() {
 		}
 	}
 
-	// Preparer tache 2
+	// Son de fin
+	Sound piezo;
+	piezo.jouerSound(250, 1000);
+
+	// Preparer TACHE 2
+	// Aligner le centre de rotation
+	moteur.avancer();
+	Utility::delay(500);
+	moteur.arreter();
+
+	// Tourner vers la tache
+	moteur.tournerGauche();
+	while (captor.read() != MILIEU) {
+		Utility::delay(10);
+	}
+	moteur.arreter();
 
 }
 
