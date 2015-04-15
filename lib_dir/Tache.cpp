@@ -1,5 +1,6 @@
 #include "Tache.h"
 
+
 Tache1::Tache1(LCM* d)
 {
 	display =d;
@@ -16,7 +17,7 @@ Tache3::Tache3(LCM* d)
 }
 
 void Tache1::run() {
-	bool enTransition = false; // Indique si le robot est en transition
+/*	bool enTransition = false; // Indique si le robot est en transition
 	bool fin = false; // Indique si le robot est arrivé à la fin
 	uint8_t voie = 3; // Voie sur lequel le robot se trouve
 	uint8_t nouvelleVoie = 0; // Nouvelle voie vers laquel le robot doit aller
@@ -114,7 +115,7 @@ void Tache1::run() {
 	while (captor.read() != MILIEU) {
 		Utility::delay(10);
 	}
-	moteur.arreter();
+	moteur.arreter();*/
 
 }
 
@@ -128,15 +129,14 @@ void Tache3::run()
 {
 	//+++++++++++++Sound de demarrage de la tache 3+++++++++++++++++++++++//
 	Sound piezo;
-	piezo.jouerSound(250, 2000); //Jouer le son 2 secondes
+	piezo.jouerSound(391); //Jouer le son 
+	Utility::delay(2000);
+	piezo.arreterSound();
 	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 	Sonar sonar;
-
-	sonar.setup();
-
 	Moteur moteur;
-
+	Captor capteur;
 	uint8_t range;
 	int i = 0, j = 0, phase = 0;
 
@@ -146,38 +146,43 @@ void Tache3::run()
 		{
 			for(i = 1; i <= 15; ++i)
 			{
-			  display->clear();
-
+			  	display->clear();
 				sonar.startRange();			// Send a high on the trigger pin to start a ranging
-
 				range = sonar.getEcho();		// Wait for the echo line to go high and then measure the length of this high
-				PORTD = 0x08;
 				*display << "Tache 3         Dst: ";
 				*display << range ;
 				*display << "inch";
 				_delay_ms(67);
-
-
 				if (range > 24)
 				{
-					moteur.ajustementTimer1(0,0,0x00);
+					moteur.ajustementTimer1(0,0,DIRECTION_AVANCE);
 				}
 				else
 				{
 					if (phase == 1)
 					{
-						moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),0x02);
+						moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),DIRECTION_DROITE);
 					}
 					else
 					{
-						 moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),0x01);
+						moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),DIRECTION_GAUCHE);
+					}
+					switch (capteur.readValue())
+					{
+					    case 0b10000: piezo.jouerSound(392); break;
+					    case 0b01000: piezo.jouerSound(349); break;
+					    case 0b00100: piezo.jouerSound(330); break;
+					    case 0b00010: piezo.jouerSound(294); break;
+					    case 0b00001: piezo.jouerSound(262); break;
+					    default : piezo.arreterSound();
 					}
 				}
 			}
 			_delay_ms(9);
 		}
 	}
-	moteur.ajustementTimer1(0,0,0x00);
+	moteur.ajustementTimer1(0,0,DIRECTION_AVANCE);
+	piezo.arreterSound();
 	display->clear();
-	*display << "Terminé         Merci!";
+	*display << "Termine         Merci!";
 }

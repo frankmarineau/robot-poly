@@ -45,3 +45,8 @@ LECTURE_LIGNE Captor::read()
     	return UNKNOWN;
     }
 }
+
+uint8_t Captor::readValue()
+{	
+     return ((*PORT) & 0x1f);
+}

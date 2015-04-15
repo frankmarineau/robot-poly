@@ -20,13 +20,14 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 int main()                                                                                        //
 {                                                                                                 //
-  LCM disp(&(lcdPortDirection), &(lcdPort)); //Intanciation d'un objet LCM, pour la LCD      //
-  MENU tmpMenu(&disp);                       //Intanciation d'un objet Menu                  //
-  Ports::initialiserPorts(&DDRA,&DDRB,&DDRC,&DDRD); //Initialisation des ports               //
-  Utility microControlleur;            //Objet permettant de fixer les parametres du robot   //
-  uint8_t selectedActionIndex ;              //Stock la tache en cour d'execution            //
-  selectedActionIndex =microControlleur.selectionTache(&tmpMenu);//Execution du selecteur    //
-  switch(selectedActionIndex)         //Evaluation de la valeur de la tache selectionner     //
+  LCM disp(&(lcdPortDirection), &(lcdPort));      //Intanciation d'un objet LCM, pour la LCD      //
+  MENU tmpMenu(&disp);                            //Intanciation d'un objet Menu                  //
+  Ports::initialiserPorts(&DDRA,&DDRB,&DDRC,&DDRD);      //Initialisation des ports               //
+  Utility microControlleur;                 //Objet permettant de fixer les parametres du robot   //
+  uint8_t selectedActionIndex ;                   //Stock la tache en cour d'execution            //
+  selectedActionIndex =microControlleur.selectionTache(&tmpMenu);     //Execution du selecteur    //
+  DDRD =0b11110001;
+  switch(selectedActionIndex)              //Evaluation de la valeur de la tache selectionner     //
   {                                                                                          //
    	case T1:                                                                          //
    	{                                                                                 //

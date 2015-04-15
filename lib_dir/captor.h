@@ -21,6 +21,7 @@ public:
      Captor(volatile uint8_t *dataDirection, volatile uint8_t *portIndex);
      ~Captor();     
      LECTURE_LIGNE read();
+     uint8_t readValue();
 };
 
 #endif

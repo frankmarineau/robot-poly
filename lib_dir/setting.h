@@ -36,10 +36,10 @@
 
 
 //++++++++++++++++++ PARAMETRE DES BOUTON POUSOIR POUR LE MENU ET DES TYPES ++++++++++++++++++++++//
-#define bouton1PIN PINB                  //La pin de connection pour le bouton 1 (Selecteur)      //
-#define bouton1ClearValue 0x01           //Valeur de comparaison pour le bouton 1                 //
-#define bouton2PIN PINB			 //La pin de connection pour le bouton 2 (Validateur)     //
-#define bouton2ClearValue 0x02		 //Valeur de comparaison pour le bouton 2                 //
+#define bouton1PIN PIND                  //La pin de connection pour le bouton 1 (Selecteur)      //
+#define bouton1ClearValue 0x04           //Valeur de comparaison pour le bouton 1                 //
+#define bouton2PIN PIND			 //La pin de connection pour le bouton 2 (Validateur)     //
+#define bouton2ClearValue 0x08		 //Valeur de comparaison pour le bouton 2                 //
 #define debounceTime 10			 //Temps d'anti rebond, fixer a 10ms                      //
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//

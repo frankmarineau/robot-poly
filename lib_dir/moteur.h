@@ -4,6 +4,10 @@
 #include <avr/io.h>
 #include "utility.h"
 
+#ifndef DIRECTION_MOTEUR
+#define DIRECTION_MOTEUR
+	enum DIRECTION {DIRECTION_AVANCE=0b00000000,DIRECTION_ARRIERE=0b00100100,DIRECTION_DROITE=0b00100000,DIRECTION_GAUCHE=0b00000100}; 
+#endif
 class Moteur {
 public:
 	Moteur(uint8_t vitesse = 150);

@@ -11,14 +11,14 @@ uint8_t Ports::lireSonar() {
 	return PINB0;
 }
 
-uint8_t Ports::lirePhotoresistanceGauche() {
+/*uint8_t Ports::lirePhotoresistanceGauche() {
 	return capteur.lecture(0) >> 2;
 }
 
 uint8_t Ports::lirePhotoresistanceDroite() {
 	return capteur.lecture(1) >> 2;
 }
-
+*/
 uint8_t Ports::lireCapteur() {
 	return (PINA7 << 5) | (PINA6 << 4) | (PINA5 << 3) | (PINA4 << 2) | (PINA3 << 1) | PINA2;
 }

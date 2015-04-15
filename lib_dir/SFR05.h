@@ -8,7 +8,6 @@ class Sonar
 	public:
 		Sonar();
 		unsigned int getEcho(void);
-		void setup(void);
 		void startTimer(unsigned int time);
 		void waitForTimer(void);   
 		void startRange(void);
