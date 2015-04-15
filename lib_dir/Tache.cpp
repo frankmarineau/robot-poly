@@ -27,7 +27,7 @@ void Tache1::run()
 	bool fin = false; // Indique si le robot est arrivé à la fin
 	uint8_t voie = 3; // Voie sur lequel le robot se trouve
 	uint8_t nouvelleVoie = 0; // Nouvelle voie vers laquel le robot doit aller
-	uint8_t nbChangements; // Nombres de changements effectue
+	uint8_t nbChangements = 0; // Nombres de changements effectue
 
 	Moteur moteur;
 	Captor captor(&DDRA, &PORTA);
@@ -123,9 +123,7 @@ void Tache3::run()
 	
 	//+++++++++++++Sound de demarrage de la tache 3+++++++++++++++++++++++//
 	Sound piezo;
-	piezo.jouerSound(); //Demarrer le son
-	_delay_ms(2000);// Attendre pendant 2 secondes sans rien faire
-	piezo.arreterSound(); //Arreter le son
+	piezo.jouerSound(250, 2000); //Jouer le son 2 secondes
 	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 	
 	Sonar sonar;

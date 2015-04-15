@@ -10,17 +10,17 @@ class Utility
 private:
 
 public:
-   void initialisationInterruption(void); 
-   void ajustementTimer3(void);
-   bool button1IsPressed();
-   bool button2IsPressed();
-   void initialisationUSART (void);
-   void transmissionUSART (uint8_t donnee);
-   void USART_Flush(void);
-   uint8_t selectionTache(MENU *m);
-   unsigned char usart_receive(void);
+   static void initialisationInterruption(void); 
+   static void ajustementTimer3(void);
+   static bool button1IsPressed();
+   static bool button2IsPressed();
+   static void initialisationUSART (void);
+   static void transmissionUSART (uint8_t donnee);
+   static void USART_Flush(void);
+   static uint8_t selectionTache(MENU *m);
+   static unsigned char usart_receive(void);
    static void delay(uint16_t ms); // Précise une intervale de temps donnée
-   void ajustementTimer2(uint8_t vitesseA, uint8_t vitesseB, uint8_t direction);
+   static void ajustementTimer2(uint8_t vitesseA, uint8_t vitesseB, uint8_t direction);
    
 };
 
