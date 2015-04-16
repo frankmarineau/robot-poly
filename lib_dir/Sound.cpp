@@ -18,11 +18,15 @@
 // Parametre(s)    : uint16_t frequence, frequence de la note a jouer                                     //
 // Valeur de retour: Aucune                                                                               //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
-void Sound::jouerSound(uint16_t frequence)                             //Entete de la fonction            //
-{                                                                                                         //            
+void Sound::jouerSound(uint16_t frequence, uint16_t duree)                             //Entete de la fonction            //
+{                                                                                                         //
      TCCR2A |= (1<<WGM21)|(1<<COM2A0) | (1 << COM2B0);                 //Activer le mode CTC              //
-     TCCR2B = (1<<CS22) | (1 << CS21) | (1 << CS20);                   //Fixer prescaler 1024             //	
-     OCR2A =  F_CPU /2048/frequence;                                   //Cacul de OCR2A correspondant     //    
+     TCCR2B = (1<<CS22) | (1 << CS21) | (1 << CS20);                   //Fixer prescaler 1024             //
+     OCR2A =  F_CPU /2048/frequence;                                   //Cacul de OCR2A correspondant     //
+     if (duree != 0) {
+      Utility::delay(duree);                                                                                                                           //
+      arreterSound();
+     }
 }                                                                                                         //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
                                                                                                           //

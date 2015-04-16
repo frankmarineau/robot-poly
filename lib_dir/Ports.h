@@ -3,6 +3,7 @@
 
 #include "setting.h"
 #include "can.h"
+
 class Ports {
 public:
 	static void initialiserPorts(volatile uint8_t *, volatile uint8_t *, volatile uint8_t *, volatile uint8_t *);
@@ -19,9 +20,6 @@ public:
 	static void setDirectionMoteur(uint8_t val);
 	static void setSon(uint8_t val);
 	static void setSonar(uint8_t val);
-
-private:
-	static can capteur;
 };
 
 #endif

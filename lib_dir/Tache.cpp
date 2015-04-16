@@ -29,7 +29,7 @@ Tache3::Tache3(LCM* d)
 }
 
 void Tache1::run() {
-/*	bool enTransition = false; // Indique si le robot est en transition
+	bool enTransition = false; // Indique si le robot est en transition
 	bool fin = false; // Indique si le robot est arrivé à la fin
 	uint8_t voie = 3; // Voie sur lequel le robot se trouve
 	uint8_t nouvelleVoie = 0; // Nouvelle voie vers laquel le robot doit aller
@@ -127,7 +127,7 @@ void Tache1::run() {
 	while (captor.read() != MILIEU) {
 		Utility::delay(10);
 	}
-	moteur.arreter();*/
+	moteur.arreter();
 
 }
 
