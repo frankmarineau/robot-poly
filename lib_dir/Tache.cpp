@@ -299,11 +299,16 @@ void Tache3::run()                                                              
 						moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),DIRECTION_GAUCHE);            //
 					}                                                                                                               //
 					switch (capteur.readValue())                                                                                    //
-					{                                                                                                               //
-					    case 0b10000: piezo.jouerSound(392); break;                                                                 //
-					    case 0b01000: piezo.jouerSound(349); break;                                                                 //
-					    case 0b00100: piezo.jouerSound(330); break;                                                                 //
+					{
+					   	                                                                                                               //
+					    case 0b10000: piezo.jouerSound(392); break; 
+					    case 0b11000:                                           //
+					    case 0b01000: piezo.jouerSound(349); break;
+					    case 0b01100: 					                                                    
+					    case 0b00100: piezo.jouerSound(330); break;  
+					    case 0b00110:                                                         //
 					    case 0b00010: piezo.jouerSound(294); break;                                                                 //
+					    case 0b00011:
 					    case 0b00001: piezo.jouerSound(262); break;                                                                 //
 					    default : piezo.arreterSound();                        //Ne pas jouer du son, s'il nya pas de significative //
 					}                                                                                                               //
