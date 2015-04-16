@@ -121,23 +121,11 @@ void Tache1::run() {
 		}
 
 		// En Transition
-<<<<<<< Updated upstream
 		else if (transitionState == T_IN_PROGRESS) {
 			if ((nouvelleVoie < voie && captor.read() == DROITE) ||
 				(nouvelleVoie > voie && captor.read() == GAUCHE)) {
 
 				transitionState = T_FINISH;
-=======
-		else if (transitionState == T_IN_PROGRESS) {
-			if (captor.read() != VIDE){ // Detecter nouvelle ligne
-				transitionState = T_NEW_LINE;
-			}
-		}
-		// Verifier quand commencer a redresser
-		else if (transitionState == T_NEW_LINE) {
-			if (captor.read() == VIDE){ // Detecter lorsque ligne dépassé
-				transitionState = T_STRAIGHTEN;
->>>>>>> Stashed changes
 			}
 		}
 
