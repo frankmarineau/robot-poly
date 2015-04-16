@@ -27,9 +27,13 @@ class Tache1 {
 class Tache2 {
   private:
     LCM *display;
+    Captor captor;
+    Moteur moteur;
   public:
     Tache2(LCM* d);
     void run();
+    void suivreLigne(uint16_t duree);
+    void attendreFinTournant();
 };
 
 

@@ -3,17 +3,18 @@
 
 Tache1::Tache1(LCM* d)
 {
-	display =d;
+	display = d;
 }
 
 Tache2::Tache2(LCM* d)
 {
-	display =d;
+	display = d;
+	captor = Captor(&DDRA, &PORTA);
 }
 
 Tache3::Tache3(LCM* d)
 {
-	display =d;
+	display = d;
 }
 
 void Tache1::run() {
@@ -30,7 +31,7 @@ void Tache1::run() {
 	moteur.avancer();
 
 	// Boucle de la tache
-	while (!fin){
+	while (!fin) {
 		if (!enTransition) {
 			// Détecter coupure
 			if (captor.read() == VIDE) {
@@ -73,20 +74,20 @@ void Tache1::run() {
 				nbChangements++;
 
 				// Ajuster direction
-				if (nouvelleVoie < voie){ // Transition a Gauche
+				if (nouvelleVoie < voie) { // Transition a Gauche
 					moteur.avancer(-75);
 				}
-				else if (nouvelleVoie > voie){ // Transition a Droite
+				else if (nouvelleVoie > voie) { // Transition a Droite
 					moteur.avancer(75);
 				}
 			}
 		}
 		else { //En Transition
 			// Redresser direction
-			if (nouvelleVoie < voie && captor.read() == DROITE){ // Transition a gauche
+			if (nouvelleVoie < voie && captor.read() == DROITE) { // Transition a gauche
 				moteur.avancer(50);
 			}
-			else if (nouvelleVoie > voie && captor.read() == GAUCHE){ // Transition a Droite
+			else if (nouvelleVoie > voie && captor.read() == GAUCHE) { // Transition a Droite
 				moteur.avancer(-50);
 			}
 
@@ -119,17 +120,133 @@ void Tache1::run() {
 
 }
 
-void Tache2::run()
-{
-
+void Tache2::attendreFinTournant() {
+	Utility::delay(200);
+	while (captor.read() != MILIEU) { Utility::delay(10); } // On attend d'avoir fini le tournant et d'être aligné avec le tape
 }
 
-//++++++++++++++++++++ REALIATION DE LA TACHE 3 ++++++++++++++++++++++++++++++//
+void Tache2::run()
+{
+	LECTURE_LIGNE derniereLectureLigne;
+
+	// Première ligne droite avec les pointillés
+	moteur.avancer();
+	uint8_t nbEspacesTraverses = 0; // Nombre de petites coupures traversées
+	while (nbEspacesTraverses < 3) {
+		if (derniereLectureLigne == VIDE && captor.read() == MILIEU) nbEspacesTraverses++;
+		Utility::delay(10);
+		derniereLectureLigne = captor.read();
+	}
+
+	// Ligne droite après les pointillés
+	while (captor.read() != VIDE) { Utility::delay(10); }
+	// Quand on arrive au coin, on commence le tournant de 90 degrés vers la gauche
+	moteur.arreter();
+	Utility::delay(50);
+
+	// Premier tournant de 90 degres
+	moteur.tournerGauche();
+	attendreFinTournant();
+	moteur.arreter();
+	Utility::delay(50);
+	moteur.avancer();
+	suivreLigne(1500);
+	moteur.arreter();
+	Utility::delay(50);
+
+	// Premier tournant sans ligne et ligne droite après
+	moteur.tournerGauche();
+	attendreFinTournant();
+	moteur.arreter();
+	Utility::delay(50);
+	moteur.avancer();
+	suivreLigne(2000);
+	moteur.arreter();
+	Utility::delay(50);
+
+	// Tournant a droite de 90 degres
+	moteur.tournerDroite();
+	attendreFinTournant();
+	moteur.arreter();
+	Utility::delay(50);
+	suivreLigne(2000);
+	moteur.arreter();
+	Utility::delay(50);
+
+	// Tournant à gauche sans ligne et ligne droite après
+	moteur.tournerGauche();
+	attendreFinTournant();
+	moteur.arreter();
+	Utility::delay(50);
+	suivreLigne(2000);
+	moteur.arreter();
+	Utility::delay(50);
+
+	// Tournant de 45 degrés à droite
+	// moteur.tournerDroite();
+	// attendreFinTournant();
+	// moteur.arreter();
+	// Utility::delay(50);
+	// moteur.avancer();
+
+	// Tournant de 90 degrés à la deuxième branche
+	bool tournantTraverse = false; // Nombre de petites coupures traversées
+	while (!tournantTraverse) {
+		if (derniereLectureLigne == MILIEU && captor.read() == DROITE)
+			tournantTraverse = true;
+		Utility::delay(10);
+		derniereLectureLigne = captor.read();
+	}
+	moteur.arreter();
+	Utility::delay(50);
+	moteur.tournerDroite();
+	attendreFinTournant();
+	moteur.arreter();
+	Utility::delay(50);
+
+	// Tournant de 135 degrés vers la gauche
+	moteur.tournerGauche();
+	attendreFinTournant();
+	moteur.arreter();
+	Utility::delay(50);
+	suivreLigne(1000);
+	moteur.avancer();
+
+	while (captor.read() != FULL) { Utility::delay(10); } // On attend d'arriver à la croix
+	Utility::delay(150);
+	moteur.arreter();
+
+} // Fin de la tâche 2
+
+// Suit la ligne pendant la durée en ms ou jusqu'à ce que la ligne s'arrête (un tournant de 90 degrés compte comme une "fin" de ligne)
+void Tache2::suivreLigne(uint16_t duree) {
+	uint16_t i = 0;
+	bool finLigne = false;
+	while (i < duree/10 && !finLigne) {
+		if (captor.read() == MILIEU) {
+			moteur.avancer();
+		}
+		else if (captor.read() == GAUCHE) {
+			moteur.avancer(-30);
+		}
+		else if (captor.read() == DROITE) {
+			moteur.avancer(30);
+		}
+		else if (captor.read() == VIDE) {
+			finLigne = true;
+		}
+
+		Utility::delay(10);
+		i++;
+	}
+}
+
+//++++++++++++++++++++ REALISATION DE LA TACHE 3 ++++++++++++++++++++++++++++++//
 void Tache3::run()
 {
 	//+++++++++++++Sound de demarrage de la tache 3+++++++++++++++++++++++//
 	Sound piezo;
-	piezo.jouerSound(391); //Jouer le son 
+	piezo.jouerSound(391); //Jouer le son
 	Utility::delay(2000);
 	piezo.arreterSound();
 	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
@@ -146,13 +263,14 @@ void Tache3::run()
 		{
 			for(i = 1; i <= 15; ++i)
 			{
-			  	display->clear();
+			  display->clear();
 				sonar.startRange();			// Send a high on the trigger pin to start a ranging
 				range = sonar.getEcho();		// Wait for the echo line to go high and then measure the length of this high
 				*display << "Tache 3         Dst: ";
 				*display << range ;
 				*display << "inch";
 				_delay_ms(67);
+
 				if (range > 24)
 				{
 					moteur.ajustementTimer1(0,0,DIRECTION_AVANCE);
