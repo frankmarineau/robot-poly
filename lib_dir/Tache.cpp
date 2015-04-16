@@ -28,7 +28,9 @@ Tache3::Tache3(LCM* d)
 }
 
 void Tache1::run() {
-	bool enTransition = false; // Indique si le robot est en transition
+	enum Transition {T_OFF, T_IN_PROGRESS, T_NEW_LINE, T_STRAIGHTEN};
+	
+	Transition transitionState = T_OFF; // Indique l'etat de la transition
 	bool fin = false; // Indique si le robot est arrivé à la fin
 	uint8_t voie = 3; // Voie sur lequel le robot se trouve
 	uint8_t nouvelleVoie = 0; // Nouvelle voie vers laquel le robot doit aller
@@ -40,13 +42,13 @@ void Tache1::run() {
 
 	// Commencer tache
 	moteur.avancer();
-	
+
 	// Boucle de la tache
 	while (!fin) {
-		if (!enTransition) {
+
+		if (transitionState == T_OFF) {
 			// Détecter coupure
 			if (captor.read() == VIDE) {
-				piezo.jouerSound(650, 500);
 				// Selectionner la prochaine voie
 				switch (voie) {
 					case 1:
@@ -82,44 +84,60 @@ void Tache1::run() {
 
 			// Initialiser transition
 			if (nouvelleVoie != 0) {
-				enTransition = true;
+				transitionState = T_IN_PROGRESS;
 				nbChangements++;
 
 				// Ajuster direction
-				if (true) { // Transition a Gauche
-					piezo.jouerSound(250, 500);
-					piezo.jouerSound(650, 500);
-					moteur.avancer(-60);
+				if (nouvelleVoie < voie) { // Commencer transition a Gauche
+					moteur.avancer(-50);
 				}
-				else if (nouvelleVoie > voie) { // Transition a Droite
-					piezo.jouerSound(250, 500);
-					piezo.jouerSound(650, 500);
-					piezo.jouerSound(250, 500);
-					piezo.jouerSound(650, 500);
-					moteur.avancer(60);
+				else if (nouvelleVoie > voie) { // Commencer transition a Droite
+					moteur.avancer(50);
 				}
+			}
+
+			// Suivre ligne
+			else {
+				if (captor.read() == DROITE) {
+					moteur.avancer(30);
+				}
+				else if (captor.read() == GAUCHE) {
+					moteur.avancer(-30);
+				}
+				 else if (captor.read() == MILIEU) {
+					moteur.avancer(0);
+				} 
+
 			}
 		}
-		else { //En Transition
-			// Redresser direction
+
+		// En Transition
+		else if (transitionState == T_IN_PROGRESS) { 
+			if (captor.read() != VIDE){ // Detecter nouvelle ligne
+				transitionState = T_NEW_LINE;
+			}
+		}
+		// Verifier quand commencer a redresser
+		else if (transitionState == T_NEW_LINE) {
+			if (captor.read() == VIDE){ // Detecter lorsque ligne dépassé
+				transitionState = T_STRAIGHTEN;
+			}
+		}
+		// Redresser robot
+		else if (transitionState == T_NEW_LINE) {
 			if (nouvelleVoie < voie && captor.read() == DROITE) { // Transition a gauche
-				moteur.avancer(60);
+				moteur.avancer(60); // redresser a droite
 			}
 			else if (nouvelleVoie > voie && captor.read() == GAUCHE) { // Transition a Droite
-				moteur.avancer(-60);
+				moteur.avancer(-60); // redresser a gauche
 			}
 
 			// Terminer transition
 			else if (captor.read() == MILIEU) {
-				// Son de fin
-				Sound piezo;
-				piezo.jouerSound(250, 500);
-				piezo.jouerSound(800, 2500);
-
 				moteur.avancer(0);
 				voie = nouvelleVoie;
 				nouvelleVoie = 0;
-				enTransition = false;
+				transitionState = T_OFF;
 			}
 		}
 	}
