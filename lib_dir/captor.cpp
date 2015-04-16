@@ -33,7 +33,7 @@ LECTURE_LIGNE Captor::read()
     else if (((*PIN) & 0x03) >= 1 && ((*PIN) & 0x18) == 0){
     	return DROITE;
     }
-    else if (((*PIN) & 0x03) == 0 && ((*PIN) & 0x18) > 1){
+    else if (((*PIN) & 0x03) == 0 && ((*PIN) & 0x18) >= 1){
     	return GAUCHE;
     }
     else if (((*PIN) & 0x1F) == 0){
