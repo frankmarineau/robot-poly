@@ -1,7 +1,7 @@
 #include "Photoresistance.h"
 #include "Ports.h"
 
-static const uint8_t SEUIL_ECLAIRAGE = 0x88;
+static const uint8_t SEUIL_ECLAIRAGE = 0xf0;
 static const uint8_t SEUIL_DIFFERENCE = 0x20;
 
 bool Photoresistance::estEclaireAGauche() {

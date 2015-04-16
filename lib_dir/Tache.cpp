@@ -28,6 +28,10 @@ Tache3::Tache3(LCM* d)
 }
 
 void Tache1::run() {
+	//Ajuster LCD
+	display->clear();
+	*display << "Tache 1";
+
 	enum Transition {T_OFF, T_IN_PROGRESS, T_NEW_LINE, T_FINISH};
 
 	Transition transitionState = T_OFF; // Indique l'etat de la transition
@@ -77,12 +81,12 @@ void Tache1::run() {
 			//Detecter photoresistance
 			if (Photoresistance::getEtatEclairage() == DROITE_ECLAIRE && voie < 5) { // Droite
 				nouvelleVoie = voie + 1;
-				piezo.jouerSound(200, 60);
+				piezo.jouerSound(200, 300);
 			}
 			else if (Photoresistance::getEtatEclairage() == GAUCHE_ECLAIRE && voie > 1) { // Gauche
 				nouvelleVoie = voie - 1;
-				piezo.jouerSound(200, 60);
-				piezo.jouerSound(800, 60);
+				piezo.jouerSound(200, 300);
+				piezo.jouerSound(800, 600);
 			}
 
 			// Initialiser transition
@@ -166,6 +170,11 @@ void Tache2::attendreFinTournant() {
 
 void Tache2::run()
 {
+	//Ajuster LCD
+	display->clear();
+	*display << "Tache 2";
+
+
 	LECTURE_LIGNE derniereLectureLigne;
 	Sound piezo;
 
@@ -300,7 +309,12 @@ void Tache2::suivreLigne(uint16_t duree, bool arreterSiVide) {
 // Valeur de retour: Aucune                                                                                                                             //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 void Tache3::run()                                                                                                                                      //
-{                                                                                                                                                       //
+{        
+	//Ajuster LCD
+	display->clear();
+	*display << "Tache 3";
+
+	                                                                                                                                               //
 	Sound piezo;                                                                                                                                    //
 	piezo.jouerSound(391);                                                                                                                          //
 	Utility::delay(2000);                                                                                                                           //
