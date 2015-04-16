@@ -41,16 +41,12 @@ void Tache1::run() {
 
 	// Commencer tache
 	moteur.avancer();
-
 	
 	// Boucle de la tache
 	while (!fin) {
 		if (!enTransition) {
 			// Détecter coupure
 			if (captor.read() == VIDE) {
-				
-				
-				piezo.jouerSound(650, 500);
 				// Selectionner la prochaine voie
 				switch (voie) {
 					case 1:
@@ -93,21 +89,24 @@ void Tache1::run() {
 				if (true) { // Transition a Gauche
 					piezo.jouerSound(250, 500);
 					piezo.jouerSound(650, 500);
-					moteur.avancer(-90);
+					moteur.avancer(-60);
 				}
 				else if (nouvelleVoie > voie) { // Transition a Droite
-					piezo.jouerSound(650, 1500);
-					moteur.avancer(90);
+					piezo.jouerSound(250, 500);
+					piezo.jouerSound(650, 500);
+					piezo.jouerSound(250, 500);
+					piezo.jouerSound(650, 500);
+					moteur.avancer(60);
 				}
 			}
 		}
 		else { //En Transition
 			// Redresser direction
-			/*if (nouvelleVoie < voie && captor.read() == DROITE) { // Transition a gauche
-				moteur.avancer(90);
+			if (nouvelleVoie < voie && captor.read() == DROITE) { // Transition a gauche
+				moteur.avancer(60);
 			}
 			else if (nouvelleVoie > voie && captor.read() == GAUCHE) { // Transition a Droite
-				moteur.avancer(-90);
+				moteur.avancer(-60);
 			}
 
 			// Terminer transition
@@ -115,13 +114,13 @@ void Tache1::run() {
 				// Son de fin
 				Sound piezo;
 				piezo.jouerSound(250, 500);
-				piezo.jouerSound(800, 1500);
+				piezo.jouerSound(800, 2500);
 
 				moteur.avancer(0);
 				voie = nouvelleVoie;
 				nouvelleVoie = 0;
 				enTransition = false;
-			}*/
+			}
 		}
 	}
 
