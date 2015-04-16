@@ -1,3 +1,14 @@
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//+++++++++++++++++++++++++++++++++++ PROJET INTEGRATEUR 1ER ANNEE +++++++++++++++++++++++++++++++++++++++//
+// Departement de Genie Informatique et Genie Logiciel - Ecole Polytechnique de Montreal- H 2015          //
+// Ecrit par : Foromo Daniel Soromou                                                                      //
+//             Hermann Charbel Racine Codo                                                                //
+//             Esteban Sanchez                                                                            //
+//             Francis Marineau                                                                           //
+// Ecrit le Mardi 14 Avril 2015                                                                           //
+// Description : Jouer un son avec une frequence fournir.                                                 //
+//                                                                                                        //
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 #include "Tache.h"
 
 
@@ -241,66 +252,68 @@ void Tache2::suivreLigne(uint16_t duree) {
 	}
 }
 
-//++++++++++++++++++++ REALISATION DE LA TACHE 3 ++++++++++++++++++++++++++++++//
-void Tache3::run()
-{
-	//+++++++++++++Sound de demarrage de la tache 3+++++++++++++++++++++++//
-	Sound piezo;
-	piezo.jouerSound(391); //Jouer le son
-	Utility::delay(2000);
-	piezo.arreterSound();
-	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//+++++++++++++++++++++++++++++++++++ Sound::arreterSound(void) ++++++++++++++++++++++++++++++++++++++++++//
+// Description     : Arreter le son en cour de lecteur                                                    //
+// Type de methode : Public                                                                               //
+// Parametre(s)    : Aucun                                                                                //
+// Valeur de retour: Aucune                                                                                                                             //
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+void Tache3::run()                                                                                                                                      //
+{                                                                                                                                                       //
+	Sound piezo;                                                                                                                                    //
+	piezo.jouerSound(391);                                                                                                                          //
+	Utility::delay(2000);                                                                                                                           //
+	piezo.arreterSound();                                                                                                                           //
+	Sonar sonar;                                                                                                                                    //
+	Moteur moteur;                                                                                                                                  //
+	Captor capteur;                                                                                                                                 //
+	uint8_t range;                                                                                                                                  //
+	int i = 0, j = 0, phase = 0;                                                                                                                    //
+	for(phase = 1; phase <= 2; ++phase)                                                                                                             //
+	{                                                                                                                                               //
+		for(j = 1; j <= 8; ++j)                                                                                                                 //
+		{                                                                                                                                       //
+			for(i = 1; i <= 15; ++i)                                                                                                        //
+			{                                                                                                                               //
+			  display->clear();                                                                                                             //
+				sonar.sendPulse();			                                                                                //
+				range = sonar.receivePulse();		                                                                                //
+				*display << "Tache 3         Dst: ";                                                                                    //
+				*display << range ;                                                                                                     //
+				*display << "inch";                                                                                                     //
+				_delay_ms(67);                                                                                                          //
+				if (range > 24)                                                                                                         //
+				{                                                                                                                       //
+					moteur.ajustementTimer1(0,0,DIRECTION_AVANCE);                                                                  //
+				}                                                                                                                       //
+				else                                                                                                                    //
+				{                                                                                                                       //
+					if (phase == 1)                                                                                                 //
+					{                                                                                                               //
+						moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),DIRECTION_DROITE);            //
+					}                                                                                                               //
+					else                                                                                                            //
+					{                                                                                                               //
+						moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),DIRECTION_GAUCHE);            //
+					}                                                                                                               //
+					switch (capteur.readValue())                                                                                    //
+					{                                                                                                               //
+					    case 0b10000: piezo.jouerSound(392); break;                                                                 //
+					    case 0b01000: piezo.jouerSound(349); break;                                                                 //
+					    case 0b00100: piezo.jouerSound(330); break;                                                                 //
+					    case 0b00010: piezo.jouerSound(294); break;                                                                 //
+					    case 0b00001: piezo.jouerSound(262); break;                                                                 //
+					    default : piezo.arreterSound();                        //Ne pas jouer du son, s'il nya pas de significative //
+					}                                                                                                               //
+				}                                                                                                                       //
+			}                                                                                                                               //
+			_delay_ms(9);                                                               //Attendre un delay de 9ms pour attiendre 1seconde  //
+		}                                                                                                                                       //
+	}                                                                                                                                               //
+	moteur.ajustementTimer1(0,0,DIRECTION_AVANCE);                                             //Arreter le robot a la fin du parcour               //
+	piezo.arreterSound();                                                                      //Arreter le son , s'il y en avait qui jouait        //
+	display->clear();                                                                          //Nettoyer la LCD                                    //
+	*display << "Termine         Merci!";                                                      //Fin d'execution des tache                          //
+}                                                                                                                                                       //
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
-	Sonar sonar;
-	Moteur moteur;
-	Captor capteur;
-	uint8_t range;
-	int i = 0, j = 0, phase = 0;
-
-	for(phase = 1; phase <= 2; ++phase)
-	{
-		for(j = 1; j <= 8; ++j)
-		{
-			for(i = 1; i <= 15; ++i)
-			{
-			  display->clear();
-				sonar.startRange();			// Send a high on the trigger pin to start a ranging
-				range = sonar.getEcho();		// Wait for the echo line to go high and then measure the length of this high
-				*display << "Tache 3         Dst: ";
-				*display << range ;
-				*display << "inch";
-				_delay_ms(67);
-
-				if (range > 24)
-				{
-					moteur.ajustementTimer1(0,0,DIRECTION_AVANCE);
-				}
-				else
-				{
-					if (phase == 1)
-					{
-						moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),DIRECTION_DROITE);
-					}
-					else
-					{
-						moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),DIRECTION_GAUCHE);
-					}
-					switch (capteur.readValue())
-					{
-					    case 0b10000: piezo.jouerSound(392); break;
-					    case 0b01000: piezo.jouerSound(349); break;
-					    case 0b00100: piezo.jouerSound(330); break;
-					    case 0b00010: piezo.jouerSound(294); break;
-					    case 0b00001: piezo.jouerSound(262); break;
-					    default : piezo.arreterSound();
-					}
-				}
-			}
-			_delay_ms(9);
-		}
-	}
-	moteur.ajustementTimer1(0,0,DIRECTION_AVANCE);
-	piezo.arreterSound();
-	display->clear();
-	*display << "Termine         Merci!";
-}

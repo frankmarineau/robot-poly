@@ -19,18 +19,7 @@ void Utility::initialisationInterruption( void ) {
         // sei permet de recevoir a nouveau des interruptions.
         sei ();
 }
-/*
-void Utility::ajustementTimer3(void)
-{
-  //TCCR1A |= (1 << WGM10) | (1 << COM1A1)|(1 << COM1B1) ;
-  TCCR3B |= (1<< CS31) ;
-  //OCR3A = dureeA ; 
-  // OCR3B = dureeB;
 
-  //PORTD &= 0xF3; //Reinitialiser la direction
-  //PORTD |= direction << 2; //Nouvelle direction
-
-}*/
 
 void Utility::initialisationUSART ( void ) 
 {
@@ -108,19 +97,10 @@ uint8_t Utility::selectionTache(MENU *m)
 			while(!button1IsPressed());
 			m->changeState();
 		}
-		//_delay_ms(2000);
 	}
 	while(!button2IsPressed());
 	return m->activeTache();
 }
 
 
-void Utility::ajustementTimer2(uint8_t vitesseA, uint8_t vitesseB, uint8_t direction)
-{
-  TCCR2A = (1 << WGM22)| (1 << WGM20) | (1 << COM2A1)|(1 << COM2B1)  ;
-  TCCR2B = (1<< CS22) | (1<< CS21) | (1<< CS20) ;
-  OCR2A = vitesseA ; OCR2B = vitesseB;
-  PORTD &= 0xCF; //Reinitialiser la direction
-  PORTD |= direction << 4; //Nouvelle direction
-}
 
