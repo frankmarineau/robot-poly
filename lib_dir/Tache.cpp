@@ -149,6 +149,9 @@ void Tache2::run()
 		derniereLectureLigne = captor.read();
 	}
 
+	Sound piezo;
+	piezo.jouerSound(250, 300);
+
 	// Ligne droite après les pointillés
 	while (captor.read() != VIDE) { Utility::delay(10); }
 	// Quand on arrive au coin, on commence le tournant de 90 degrés vers la gauche
@@ -239,9 +242,13 @@ void Tache2::suivreLigne(uint16_t duree) {
 		}
 		else if (captor.read() == GAUCHE) {
 			moteur.avancer(-30);
+			Sound piezo;
+			piezo.jouerSound(250, 1000);
 		}
 		else if (captor.read() == DROITE) {
 			moteur.avancer(30);
+			Sound piezo;
+			piezo.jouerSound(250, 1000);
 		}
 		else if (captor.read() == VIDE) {
 			finLigne = true;
