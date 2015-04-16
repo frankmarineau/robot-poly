@@ -4,7 +4,7 @@ Moteur::Moteur(uint8_t vitesse) : VITESSE(vitesse) {
 
 }
 
-void Moteur::avancer(uint8_t direction) {
+void Moteur::avancer(int8_t direction) {
 	//Calculer vitesse de chaque roue
 	uint8_t vitesseA = VITESSE;
 	uint8_t vitesseB = VITESSE;
@@ -19,7 +19,7 @@ void Moteur::avancer(uint8_t direction) {
 	ajustementTimer1(vitesseA, vitesseB, DIRECTION_AVANCE);
 }
 
-void Moteur::reculer(uint8_t direction) {
+void Moteur::reculer(int8_t direction) {
 	//Calculer vitesse de chaque roue
 	uint8_t vitesseA = VITESSE;
 	uint8_t vitesseB = VITESSE;

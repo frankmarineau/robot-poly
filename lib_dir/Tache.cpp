@@ -37,6 +37,7 @@ void Tache1::run() {
 
 	Moteur moteur;
 	Captor captor;
+	Sound piezo;
 
 	// Commencer tache
 	moteur.avancer();
@@ -48,6 +49,8 @@ void Tache1::run() {
 			// Détecter coupure
 			if (captor.read() == VIDE) {
 				
+				
+				piezo.jouerSound(650, 500);
 				// Selectionner la prochaine voie
 				switch (voie) {
 					case 1:
@@ -74,12 +77,12 @@ void Tache1::run() {
 			}
 
 			//Detecter photoresistance
-			if (Photoresistance::getEtatEclairage() == DROITE_ECLAIRE && voie < 5) { // Droite
+			/*if (Photoresistance::getEtatEclairage() == DROITE_ECLAIRE && voie < 5) { // Droite
 				nouvelleVoie = voie + 1;
 			}
 			else if (Photoresistance::getEtatEclairage() == GAUCHE_ECLAIRE && voie > 1) { // Gauche
 				nouvelleVoie = voie - 1;
-			}
+			}*/
 
 			// Initialiser transition
 			if (nouvelleVoie != 0) {
@@ -87,40 +90,47 @@ void Tache1::run() {
 				nbChangements++;
 
 				// Ajuster direction
-				if (nouvelleVoie < voie) { // Transition a Gauche
-					moteur.avancer(-75);
+				if (true) { // Transition a Gauche
+					piezo.jouerSound(250, 500);
+					piezo.jouerSound(650, 500);
+					moteur.avancer(-90);
 				}
 				else if (nouvelleVoie > voie) { // Transition a Droite
-					moteur.avancer(75);
+					piezo.jouerSound(650, 1500);
+					moteur.avancer(90);
 				}
 			}
 		}
 		else { //En Transition
 			// Redresser direction
-			if (nouvelleVoie < voie && captor.read() == DROITE) { // Transition a gauche
-				moteur.avancer(50);
+			/*if (nouvelleVoie < voie && captor.read() == DROITE) { // Transition a gauche
+				moteur.avancer(90);
 			}
 			else if (nouvelleVoie > voie && captor.read() == GAUCHE) { // Transition a Droite
-				moteur.avancer(-50);
+				moteur.avancer(-90);
 			}
 
 			// Terminer transition
 			else if (captor.read() == MILIEU) {
+				// Son de fin
+				Sound piezo;
+				piezo.jouerSound(250, 500);
+				piezo.jouerSound(800, 1500);
+
 				moteur.avancer(0);
 				voie = nouvelleVoie;
 				nouvelleVoie = 0;
 				enTransition = false;
-			}
+			}*/
 		}
 	}
 
 	// Son de fin
-	Sound piezo;
-	piezo.jouerSound(250, 1000);
+	piezo.jouerSound(250, 4000);
 
 	// Preparer TACHE 2
 	// Aligner le centre de rotation
-	moteur.avancer();
+	/*moteur.avancer();
 	Utility::delay(500);
 	moteur.arreter();
 
@@ -128,7 +138,7 @@ void Tache1::run() {
 	moteur.tournerGauche();
 	while (captor.read() != MILIEU) {
 		Utility::delay(10);
-	}
+	}*/
 	moteur.arreter();
 	
 }
