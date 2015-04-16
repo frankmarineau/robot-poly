@@ -169,34 +169,36 @@ void Tache2::run()
 	LECTURE_LIGNE derniereLectureLigne;
 	Sound piezo;
 
-	suivreLigne(50000);
-
 	// Première ligne droite avec les pointillés
 	// moteur.avancer();
 	// uint8_t nbEspacesTraverses = 0; // Nombre de petites coupures traversées
 	// while (nbEspacesTraverses < 3) {
-	// 	if (derniereLectureLigne == VIDE && captor.read() == MILIEU) nbEspacesTraverses++;
-	// 	Utility::delay(10);
+	// 	if (derniereLectureLigne == VIDE && captor.read() != VIDE) {
+	// 		nbEspacesTraverses++;
+	// 	}
 	// 	derniereLectureLigne = captor.read();
+	// 	Utility::delay(10);
 	// }
 
-	// piezo.jouerSound(250, 300);
+	suivreLigne(3000, false);
+	piezo.jouerSound(391, 300);
+	suivreLigne(5000);
+
+	piezo.jouerSound(800, 300);
 
 	// // Ligne droite après les pointillés
-	// while (captor.read() != VIDE) { Utility::delay(10); }
-	// // Quand on arrive au coin, on commence le tournant de 90 degrés vers la gauche
-	// moteur.arreter();
-	// Utility::delay(50);
+	// Quand on arrive au coin, on commence le tournant de 90 degrés vers la gauche
+	moteur.arreter();
+	Utility::delay(50);
 
 	// // Premier tournant de 90 degres
-	// moteur.tournerGauche();
-	// attendreFinTournant();
-	// moteur.arreter();
-	// Utility::delay(50);
-	// moteur.avancer();
-	// suivreLigne(1500);
-	// moteur.arreter();
-	// Utility::delay(50);
+	moteur.tournerGauche();
+	attendreFinTournant();
+	moteur.arreter();
+	Utility::delay(50);
+	suivreLigne(1500);
+	moteur.arreter();
+	Utility::delay(50);
 
 	// // Premier tournant sans ligne et ligne droite après
 	// moteur.tournerGauche();
@@ -263,7 +265,7 @@ void Tache2::run()
 } // Fin de la tâche 2
 
 // Suit la ligne pendant la durée en ms ou jusqu'à ce que la ligne s'arrête (un tournant de 90 degrés compte comme une "fin" de ligne)
-void Tache2::suivreLigne(uint16_t duree) {
+void Tache2::suivreLigne(uint16_t duree, bool arreterSiVide) {
 	Sound piezo;
 	uint16_t i = 0;
 	bool finLigne = false;
@@ -272,16 +274,18 @@ void Tache2::suivreLigne(uint16_t duree) {
 			moteur.avancer();
 		}
 		else if (captor.read() == GAUCHE) {
-			piezo.jouerSound(500);
-			moteur.avancer(-60);
+			moteur.avancer(-40);
 		}
 		else if (captor.read() == DROITE) {
-			piezo.jouerSound(800);
-			moteur.avancer(60);
+			moteur.avancer(40);
 		}
 		else if (captor.read() == VIDE) {
-			piezo.jouerSound(250, 10000);
-			finLigne = true;
+			if (arreterSiVide) {
+				finLigne = true;
+			}
+			else {
+				moteur.avancer();
+			}
 		}
 
 		Utility::delay(10);
