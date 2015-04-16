@@ -32,7 +32,7 @@ class Tache2 {
   public:
     Tache2(LCM* d);
     void run();
-    void suivreLigne(uint16_t duree);
+    void suivreLigne(uint16_t duree, bool arreterSiVide = true);
     void attendreFinTournant();
 };
 
