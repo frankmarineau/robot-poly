@@ -115,17 +115,29 @@ void Tache1::run() {
 				}
 				 else if (captor.read() == MILIEU) {
 					moteur.avancer(0);
-				} 
+				}
 
 			}
 		}
 
 		// En Transition
-		else if (transitionState == T_IN_PROGRESS) { 
+<<<<<<< Updated upstream
+		else if (transitionState == T_IN_PROGRESS) {
 			if ((nouvelleVoie < voie && captor.read() == DROITE) ||
 				(nouvelleVoie > voie && captor.read() == GAUCHE)) {
-				
+
 				transitionState = T_FINISH;
+=======
+		else if (transitionState == T_IN_PROGRESS) {
+			if (captor.read() != VIDE){ // Detecter nouvelle ligne
+				transitionState = T_NEW_LINE;
+			}
+		}
+		// Verifier quand commencer a redresser
+		else if (transitionState == T_NEW_LINE) {
+			if (captor.read() == VIDE){ // Detecter lorsque ligne dépassé
+				transitionState = T_STRAIGHTEN;
+>>>>>>> Stashed changes
 			}
 		}
 
@@ -189,35 +201,37 @@ void Tache2::run()
 	// 	Utility::delay(10);
 	// }
 
-	suivreLigne(3000, false);
-	piezo.jouerSound(391, 300);
+	suivreLigne(6400, false);
+	piezo.jouerSound(391, 200);
 	suivreLigne(5000);
+	Utility::delay(1100);
+	moteur.arreter();
+	Utility::delay(150);
 
 	piezo.jouerSound(800, 300);
 
-	// // Ligne droite après les pointillés
+	// Ligne droite après les pointillés
 	// Quand on arrive au coin, on commence le tournant de 90 degrés vers la gauche
-	moteur.arreter();
-	Utility::delay(50);
 
-	// // Premier tournant de 90 degres
+	// Premier tournant de 90 degres
 	moteur.tournerGauche();
 	attendreFinTournant();
 	moteur.arreter();
-	Utility::delay(50);
-	suivreLigne(1500);
+	Utility::delay(150);
+	piezo.jouerSound(800, 300);
+	suivreLigne(2500);
 	moteur.arreter();
-	Utility::delay(50);
+	Utility::delay(150);
 
-	// // Premier tournant sans ligne et ligne droite après
-	// moteur.tournerGauche();
-	// attendreFinTournant();
-	// moteur.arreter();
-	// Utility::delay(50);
-	// moteur.avancer();
-	// suivreLigne(2000);
-	// moteur.arreter();
-	// Utility::delay(50);
+	// Premier tournant sans ligne et ligne droite après
+	moteur.tournerGauche();
+	attendreFinTournant();
+	moteur.arreter();
+	Utility::delay(150);
+	suivreLigne(14000);
+	moteur.arreter();
+	//piezo.jouerSound(800, 300);
+	Utility::delay(150);
 
 	// // Tournant a droite de 90 degres
 	// moteur.tournerDroite();
@@ -309,7 +323,7 @@ void Tache2::suivreLigne(uint16_t duree, bool arreterSiVide) {
 // Valeur de retour: Aucune                                                                                                                             //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 void Tache3::run()                                                                                                                                      //
-{        
+{
 	//Ajuster LCD
 	display->clear();
 	*display << "Tache 3";
