@@ -40,7 +40,7 @@ void Tache1::run() {
 
 	// Commencer tache
 	moteur.avancer();
-	
+
 	// Boucle de la tache
 	while (!fin) {
 		if (!enTransition) {
@@ -152,24 +152,22 @@ void Tache2::run()
 	LECTURE_LIGNE derniereLectureLigne;
 	Sound piezo;
 
-	suivreLigne(50000);
-
 	// Première ligne droite avec les pointillés
-	// moteur.avancer();
-	// uint8_t nbEspacesTraverses = 0; // Nombre de petites coupures traversées
-	// while (nbEspacesTraverses < 3) {
-	// 	if (derniereLectureLigne == VIDE && captor.read() == MILIEU) nbEspacesTraverses++;
-	// 	Utility::delay(10);
-	// 	derniereLectureLigne = captor.read();
-	// }
+	moteur.avancer();
+	uint8_t nbEspacesTraverses = 0; // Nombre de petites coupures traversées
+	while (nbEspacesTraverses < 3) {
+		if (derniereLectureLigne == VIDE && captor.read() == MILIEU) nbEspacesTraverses++;
+		Utility::delay(10);
+		derniereLectureLigne = captor.read();
+	}
 
-	// piezo.jouerSound(250, 300);
+	piezo.jouerSound(250, 1000);
 
 	// // Ligne droite après les pointillés
-	// while (captor.read() != VIDE) { Utility::delay(10); }
-	// // Quand on arrive au coin, on commence le tournant de 90 degrés vers la gauche
-	// moteur.arreter();
-	// Utility::delay(50);
+	while (captor.read() != VIDE) { Utility::delay(10); }
+	// Quand on arrive au coin, on commence le tournant de 90 degrés vers la gauche
+	moteur.arreter();
+	Utility::delay(50);
 
 	// // Premier tournant de 90 degres
 	// moteur.tournerGauche();
