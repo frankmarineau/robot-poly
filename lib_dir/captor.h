@@ -23,12 +23,14 @@
 	{                                                                                                 //
 	private:                                                                                          //
 	     volatile uint8_t *DDR;                                                                       //
-	     volatile uint8_t *PORT;                                                                      //
+	     volatile uint8_t *PIN;                                                                      //
 	public:                                                                                           //
 	     Captor();                                                                                    //
-	     Captor(volatile uint8_t *dataDirection, volatile uint8_t *portIndex);                        //
+	     Captor(volatile uint8_t *dataDirection, volatile uint8_t *pinIndex);                        //
 	     LECTURE_LIGNE read();                                                                        //
-	     uint8_t readValue();                                                                         //
+	     uint8_t readValue();  
+
+	     bool C1();                                                                       //
 	};                                                                                                //
 #endif                                                                                                    //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//

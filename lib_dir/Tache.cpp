@@ -36,16 +36,18 @@ void Tache1::run() {
 	uint8_t nbChangements = 0; // Nombres de changements effectue
 
 	Moteur moteur;
-	Captor captor(&DDRA, &PORTA);
+	Captor captor;
 
 	// Commencer tache
 	moteur.avancer();
 
+	
 	// Boucle de la tache
 	while (!fin) {
 		if (!enTransition) {
 			// Détecter coupure
 			if (captor.read() == VIDE) {
+				
 				// Selectionner la prochaine voie
 				switch (voie) {
 					case 1:
@@ -128,7 +130,7 @@ void Tache1::run() {
 		Utility::delay(10);
 	}
 	moteur.arreter();
-
+	
 }
 
 void Tache2::attendreFinTournant() {
