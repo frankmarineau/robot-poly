@@ -13,10 +13,10 @@
 //            question d'optimisation , car nous travaillons avec un microcontroller              //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 #include "setting.h"                    //Fichier d'entete indispensable a l'execution du main.cpp//
-#include "Menu.h"                                        //                                       //
+#include "Menu.h"                                                                                 //
 #include "Tache.h"                                                                                //
 #include "utility.h"                                                                              //
-#include "Ports.h"
+#include "Ports.h"                                                                                //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 int main()                                                                                        //
 {                                                                                                 //
@@ -26,26 +26,26 @@ int main()                                                                      
   Utility microControlleur;                 //Objet permettant de fixer les parametres du robot   //
   uint8_t selectedActionIndex ;                   //Stock la tache en cour d'execution            //
   selectedActionIndex =microControlleur.selectionTache(&tmpMenu);     //Execution du selecteur    //
-  DDRD =0b11110001;
+  DDRD =0b11110001;                                                                               //
   switch(selectedActionIndex)              //Evaluation de la valeur de la tache selectionner     //
-  {                                                                                          //
-   	case T1:                                                                          //
-   	{                                                                                 //
-   		Tache1 t1(&disp);      //Instanciation d'une tache1                      //
-   		t1.run();              //Execution de la tache1                          //
-   	}                                                                                 //
-   	case T2:                                                                          //
-   	{                                                                                 //
-   		Tache2 t2(&disp);      //Instanciation d'une tache2                       //
-   		t2.run();              //Execution de la tache2                           //
-   	}                                                                                //
-   	case T3:                                                                          //
-   	{                                                                                 //
-   		Tache3 t3(&disp);      //Instanciation d'une tache3                       //
-   		t3.run();              //Execution de la tache3                           //
-   	}                                                                                 //
-  }                                                                                          //
-  return 0;                                                                                 //
+  {                                                                                               //
+   	case T1:                                                                                  //
+   	{                                                                                         //
+   		Tache1 t1(&disp);      //Instanciation d'une tache1                               //
+   		t1.run();              //Execution de la tache1                                   //
+   	}                                                                                         //
+   	case T2:                                                                                  //
+   	{                                                                                         //
+   		Tache2 t2(&disp);      //Instanciation d'une tache2                               //
+   		t2.run();              //Execution de la tache2                                   //
+   	}                                                                                         //
+   	case T3:                                                                                  //
+   	{                                                                                         //
+   		Tache3 t3(&disp);      //Instanciation d'une tache3                               //
+   		t3.run();              //Execution de la tache3                                   //
+   	}                                                                                         //
+  }                                                                                               //
+  return 0;                                                                                       //
 }                                                                                                 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
