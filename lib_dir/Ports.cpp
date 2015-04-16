@@ -13,12 +13,12 @@ uint8_t Ports::lireSonar() {
 
 uint8_t Ports::lirePhotoresistanceGauche() {
 	can capteur;
-	return capteur.lecture(0) >> 2;
+	return capteur.lecture(6) >> 2;
 }
 
 uint8_t Ports::lirePhotoresistanceDroite() {
 	can capteur;
-	return capteur.lecture(1) >> 2;
+	return capteur.lecture(7) >> 2;
 }
 
 uint8_t Ports::lireCapteur() {
