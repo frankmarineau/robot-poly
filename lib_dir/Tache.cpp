@@ -130,7 +130,7 @@ void Tache1::run() {
 		}
 
 		// Redresser robot
-		else if (transitionState = T_FINISH) {
+		else if (transitionState == T_FINISH) {
 			if (nouvelleVoie < voie) { // Transition a gauche
 				moteur.avancer(70); // redresser a droite
 			}
@@ -164,8 +164,9 @@ void Tache1::run() {
 }
 
 void Tache2::attendreFinTournant() {
-	Utility::delay(200);
-	while (captor.read() != MILIEU) { Utility::delay(10); } // On attend d'avoir fini le tournant et d'être aligné avec le tape
+	Sound piezo;
+	Utility::delay(500);
+	while (captor.read() != MILIEU) { Utility::delay(1); } // On attend d'avoir fini le tournant et d'être aligné avec le tape
 }
 
 void Tache2::run()
@@ -190,13 +191,8 @@ void Tache2::run()
 	// }
 
 	suivreLigne(6400, false);
-	piezo.jouerSound(391, 200);
 	suivreLigne(5000);
-	Utility::delay(1100);
-	moteur.arreter();
-	Utility::delay(150);
-
-	piezo.jouerSound(800, 300);
+	Utility::delay(850);
 
 	// Ligne droite après les pointillés
 	// Quand on arrive au coin, on commence le tournant de 90 degrés vers la gauche
@@ -206,72 +202,57 @@ void Tache2::run()
 	attendreFinTournant();
 	moteur.arreter();
 	Utility::delay(150);
-	piezo.jouerSound(800, 300);
 	suivreLigne(2500);
-	moteur.arreter();
-	Utility::delay(150);
 
-	// Premier tournant sans ligne et ligne droite après
+	piezo.jouerSound(400, 300);
+
+	// Premier tournant sans ligne
 	moteur.tournerGauche();
 	attendreFinTournant();
 	moteur.arreter();
-	Utility::delay(150);
-	suivreLigne(14000);
+	suivreLigne(10000);
 	moteur.arreter();
-	//piezo.jouerSound(800, 300);
-	Utility::delay(150);
+	Utility::delay(750);
 
-	// // Tournant a droite de 90 degres
-	// moteur.tournerDroite();
-	// attendreFinTournant();
-	// moteur.arreter();
-	// Utility::delay(50);
-	// suivreLigne(2000);
-	// moteur.arreter();
-	// Utility::delay(50);
+	// Tournant a droite de 90 degres
+	moteur.tournerDroite();
+	attendreFinTournant();
+	suivreLigne(10000);
+	Utility::delay(1400);
 
-	// // Tournant à gauche sans ligne et ligne droite après
-	// moteur.tournerGauche();
-	// attendreFinTournant();
-	// moteur.arreter();
-	// Utility::delay(50);
-	// suivreLigne(2000);
-	// moteur.arreter();
-	// Utility::delay(50);
+	// Tournant à gauche sans ligne et ligne droite après
+	moteur.tournerGauche();
+	attendreFinTournant();
+	suivreLigne(11300);
 
-	// // Tournant de 45 degrés à droite
-	// // moteur.tournerDroite();
-	// // attendreFinTournant();
-	// // moteur.arreter();
-	// // Utility::delay(50);
-	// // moteur.avancer();
-
-	// // Tournant de 90 degrés à la deuxième branche
-	// bool tournantTraverse = false; // Nombre de petites coupures traversées
-	// while (!tournantTraverse) {
-	// 	if (derniereLectureLigne == MILIEU && captor.read() == DROITE)
-	// 		tournantTraverse = true;
-	// 	Utility::delay(10);
-	// 	derniereLectureLigne = captor.read();
-	// }
-	// moteur.arreter();
-	// Utility::delay(50);
-	// moteur.tournerDroite();
-	// attendreFinTournant();
-	// moteur.arreter();
-	// Utility::delay(50);
+	// Tournant de 90 degrés à la deuxième branche
+	moteur.tournerDroite();
+	attendreFinTournant();
+	suivreLigne(10000);
+	moteur.avancer();
+	Utility::delay(1150);
 
 	// // Tournant de 135 degrés vers la gauche
-	// moteur.tournerGauche();
-	// attendreFinTournant();
-	// moteur.arreter();
-	// Utility::delay(50);
-	// suivreLigne(1000);
-	// moteur.avancer();
+	moteur.tournerGauche();
+	attendreFinTournant();
 
-	// while (captor.read() != FULL) { Utility::delay(10); } // On attend d'arriver à la croix
-	// Utility::delay(150);
-	// moteur.arreter();
+	moteur.avancer();
+
+	while (captor.read() != FULL) {
+		if (captor.read() == MILIEU) {
+			moteur.avancer();
+		}
+		else if (captor.read() == GAUCHE) {
+			moteur.avancer(-20);
+		}
+		else if (captor.read() == DROITE) {
+			moteur.avancer(20);
+		}
+	} // On attend d'arriver à la croix
+
+	moteur.avancer();
+	Utility::delay(850);
+	moteur.arreter();
 
 } // Fin de la tâche 2
 
@@ -292,7 +273,11 @@ void Tache2::suivreLigne(uint16_t duree, bool arreterSiVide) {
 		}
 		else if (captor.read() == VIDE) {
 			if (arreterSiVide) {
-				finLigne = true;
+				Utility::delay(150);
+				if (captor.read() == VIDE) {
+					finLigne = true;
+					piezo.jouerSound(800,100);
+				}
 			}
 			else {
 				moteur.avancer();
