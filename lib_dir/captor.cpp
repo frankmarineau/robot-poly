@@ -47,9 +47,6 @@ LECTURE_LIGNE Captor::read()
     }
 }
 
-bool Captor::C1(){
-	return (PINA & 0x01);
-}
 
 uint8_t Captor::readValue()
 {	

@@ -27,6 +27,9 @@ int main()                                                                      
   uint8_t selectedActionIndex ;                   //Stock la tache en cour d'execution            //
   selectedActionIndex =microControlleur.selectionTache(&tmpMenu);     //Execution du selecteur    //
   DDRD =0b11110001;                                                                               //
+
+  Utility::delay(1000);
+
   switch(selectedActionIndex)              //Evaluation de la valeur de la tache selectionner     //
   {                                                                                               //
    	case T1:                                                                                  //

@@ -42,7 +42,28 @@ void Tache1::run() {
 
 	Moteur moteur;
 	Captor captor;
+	Photoresistance photo;
 	Sound piezo;
+
+	// Calibrer photoresistance
+	photo.calibrer();
+	uint16_t valGauche = 0;
+    uint16_t valDroite = 0;
+	// Lecture des valeurs
+	display->clear();
+    for (uint8_t i = 0; i < 50; i++){
+      Utility::delay(2);
+      valGauche += Ports::lirePhotoresistanceGauche();
+      valDroite += Ports::lirePhotoresistanceDroite();
+    }
+
+    // Moyenne
+    valGauche = round(valGauche / 50);
+    valDroite = round(valDroite / 50);
+    *display << valGauche;
+    *display << " ";
+    *display << valDroite;
+    *display << " ";
 
 	// Commencer tache
 	moteur.avancer();
@@ -53,40 +74,47 @@ void Tache1::run() {
 		if (transitionState == T_OFF) {
 			// Détecter coupure
 			if (captor.read() == VIDE) {
-				// Selectionner la prochaine voie
-				switch (voie) {
-					case 1:
-						nouvelleVoie = 2;
-						break;
-					case 2:
-						nouvelleVoie = 3;
-						break;
-					case 3:
-						if (nbChangements >= 2) { //Coupure de la fin
-							fin = true;
-						}
-						else {
+				Utility::delay(30);
+				if (captor.read() == VIDE){ //ANTI REBOND
+					
+					// Selectionner la prochaine voie
+					switch (voie) {
+						case 1:
 							nouvelleVoie = 2;
-						}
-						break;
-					case 4:
-						nouvelleVoie = 3;
-						break;
-					case 5:
-						nouvelleVoie = 4;
-						break;
+							break;
+						case 2:
+							nouvelleVoie = 3;
+							break;
+						case 3:
+							if (nbChangements >= 2) { //Coupure de la fin
+								fin = true;
+							}
+							else {
+								nouvelleVoie = 2;
+							}
+							break;
+						case 4:
+							nouvelleVoie = 3;
+							break;
+						case 5:
+							nouvelleVoie = 4;
+							break;
+					}
 				}
+
 			}
 
 			//Detecter photoresistance
-			if (Photoresistance::getEtatEclairage() == DROITE_ECLAIRE && voie < 5) { // Droite
+			if (photo.getEtatEclairage() == DROITE_ECLAIRE && voie < 5) { // Droite
 				nouvelleVoie = voie + 1;
-				piezo.jouerSound(200, 300);
+				*display << photo.eclairageDroite();
+				piezo.jouerSound(200, 200);
 			}
-			else if (Photoresistance::getEtatEclairage() == GAUCHE_ECLAIRE && voie > 1) { // Gauche
+			else if (photo.getEtatEclairage() == GAUCHE_ECLAIRE && voie > 1) { // Gauche
 				nouvelleVoie = voie - 1;
-				piezo.jouerSound(200, 300);
-				piezo.jouerSound(800, 600);
+				*display << photo.eclairageGauche();
+				piezo.jouerSound(200, 100);
+				piezo.jouerSound(800, 200);
 			}
 
 			// Initialiser transition
@@ -96,12 +124,12 @@ void Tache1::run() {
 
 				// Ajuster direction
 				if (nouvelleVoie < voie) { // Commencer transition a Gauche
-					moteur.avancer(-45);
-					Utility::delay(200);
+					moteur.avancer(-75);
+					Utility::delay(800);
 				}
 				else if (nouvelleVoie > voie) { // Commencer transition a Droite
-					moteur.avancer(45);
-					Utility::delay(200);
+					moteur.avancer(75);
+					Utility::delay(800);
 				}
 			}
 
@@ -164,7 +192,6 @@ void Tache1::run() {
 }
 
 void Tache2::attendreFinTournant() {
-	Sound piezo;
 	Utility::delay(500);
 	while (captor.read() != MILIEU) { Utility::delay(1); } // On attend d'avoir fini le tournant et d'être aligné avec le tape
 }
@@ -177,20 +204,20 @@ void Tache2::run()
 
 
 	LECTURE_LIGNE derniereLectureLigne;
-	Sound piezo;
 
 	// Première ligne droite avec les pointillés
-	// moteur.avancer();
-	// uint8_t nbEspacesTraverses = 0; // Nombre de petites coupures traversées
-	// while (nbEspacesTraverses < 3) {
-	// 	if (derniereLectureLigne == VIDE && captor.read() != VIDE) {
-	// 		nbEspacesTraverses++;
-	// 	}
-	// 	derniereLectureLigne = captor.read();
-	// 	Utility::delay(10);
-	// }
+	/*moteur.avancer();
+	uint8_t nbEspacesTraverses = 0; // Nombre de petites coupures traversées
+	while (nbEspacesTraverses < 3) {
+	 	if (derniereLectureLigne == VIDE && captor.read() != VIDE) {
+	 		nbEspacesTraverses++;
+	 	}
+	 	derniereLectureLigne = captor.read();
+		Utility::delay(10);
+	}
+	Utility::delay(600);*/
 
-	suivreLigne(6400, false);
+	suivreLigne(6000, false);
 	suivreLigne(5000);
 	Utility::delay(850);
 
@@ -204,7 +231,7 @@ void Tache2::run()
 	Utility::delay(150);
 	suivreLigne(2500);
 
-	piezo.jouerSound(400, 300);
+	//piezo.jouerSound(400, 300);
 
 	// Premier tournant sans ligne
 	moteur.tournerGauche();
@@ -215,10 +242,11 @@ void Tache2::run()
 	Utility::delay(750);
 
 	// Tournant a droite de 90 degres
+	Utility::delay(400);
 	moteur.tournerDroite();
 	attendreFinTournant();
 	suivreLigne(10000);
-	Utility::delay(1400);
+	Utility::delay(1000);
 
 	// Tournant à gauche sans ligne et ligne droite après
 	moteur.tournerGauche();
@@ -228,7 +256,7 @@ void Tache2::run()
 	// Tournant de 90 degrés à la deuxième branche
 	moteur.tournerDroite();
 	attendreFinTournant();
-	suivreLigne(10000);
+	suivreLigne(12000);
 	moteur.avancer();
 	Utility::delay(1150);
 

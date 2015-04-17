@@ -29,8 +29,7 @@
 	     Captor(volatile uint8_t *dataDirection, volatile uint8_t *pinIndex);                        //
 	     LECTURE_LIGNE read();                                                                        //
 	     uint8_t readValue();  
-
-	     bool C1();                                                                       //
+                                                                    //
 	};                                                                                                //
 #endif                                                                                                    //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
