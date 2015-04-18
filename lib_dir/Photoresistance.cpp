@@ -23,17 +23,17 @@ void Photoresistance::calibrer() {
 
     // Ajuster seuils
     if (ajustementGauche < 155){
-      seuilGauche = 20;
+      seuilGauche = 25;
     }
     else {
-      seuilGauche = round(20 - (11 * (100 - ((255 - ajustementGauche) / 100))));
+      seuilGauche = round(25 - (17 * (100 - ((255 - ajustementGauche) / 100))));
     }
 
     if (ajustementDroite < 155){
-      seuilDroite = 20;
+      seuilDroite = 25;
     }
     else {
-      seuilDroite = round(20 - (11 * (100 - ((255 - ajustementDroite) / 100))));
+      seuilDroite = round(25 - (17 * (100 - ((255 - ajustementDroite) / 100))));
     }
 }
 

@@ -43,6 +43,7 @@ void Tache1::run() {
 	Moteur moteur;
 	Captor captor;
 	Photoresistance photo;
+	photo.calibrer();
 	Sound piezo;
 
 	// Commencer tache
@@ -91,6 +92,8 @@ void Tache1::run() {
 			}
 			else if (photo.getEtatEclairage() == GAUCHE_ECLAIRE && voie > 1) { // Gauche
 				nouvelleVoie = voie + 1;
+				piezo.jouerSound(200, 300);
+				piezo.jouerSound(800, 300);
 			}
 
 			// Initialiser transition
