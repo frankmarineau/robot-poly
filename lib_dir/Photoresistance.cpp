@@ -23,33 +23,39 @@ void Photoresistance::calibrer() {
 
     // Ajuster seuils
     if (ajustementGauche < 155){
-      seuilGauche = 30;
+      seuilGauche = 20;
     }
     else {
-      seuilGauche = 30 - (27 * (100 - (250 - ajustementGauche) / 100));
+      seuilGauche = round(20 - (11 * (100 - ((255 - ajustementGauche) / 100))));
     }
 
     if (ajustementDroite < 155){
-      seuilDroite = 30;
+      seuilDroite = 20;
     }
     else {
-      seuilDroite = 30 - (27 * (100 - (250 - ajustementDroite) / 100));
+      seuilDroite = round(20 - (11 * (100 - ((255 - ajustementDroite) / 100))));
     }
 }
 
-uint8_t Photoresistance::eclairageGauche() {
-  int16_t eclairage = Ports::lirePhotoresistanceGauche() - ajustementGauche;
-  if (eclairage < 0) {
+uint16_t Photoresistance::eclairageGauche() {
+  uint16_t eclairage = Ports::lirePhotoresistanceGauche();
+  if (ajustementGauche > eclairage) {
     eclairage = 0;
+  }
+  else {
+    eclairage - ajustementGauche;
   }
 
   return eclairage;
 }
 
-uint8_t Photoresistance::eclairageDroite() {
-  int16_t eclairage = Ports::lirePhotoresistanceDroite() - ajustementDroite;
-  if (eclairage < 0) {
+uint16_t Photoresistance::eclairageDroite() {
+  uint16_t eclairage = Ports::lirePhotoresistanceDroite();
+  if (ajustementDroite > eclairage) {
     eclairage = 0;
+  }
+  else {
+    eclairage - ajustementDroite;
   }
   
   return eclairage;
@@ -57,7 +63,7 @@ uint8_t Photoresistance::eclairageDroite() {
 
 DirectionPhotoresistance Photoresistance::getEtatEclairage() {
   // Si une photoresistance est eclairee
-  if (eclairageDroite() > 0x17 || eclairageGauche() > 0x17) {
+  if (eclairageDroite() > seuilDroite || eclairageGauche() > seuilGauche) {
     if (eclairageDroite() > eclairageGauche()){
       return DROITE_ECLAIRE;
     }

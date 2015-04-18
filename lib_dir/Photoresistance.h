@@ -13,14 +13,14 @@ public:
 Photoresistance();  
   void calibrer();
   DirectionPhotoresistance getEtatEclairage();
-  uint8_t eclairageGauche();
-  uint8_t eclairageDroite();
+  uint16_t eclairageGauche();
+  uint16_t eclairageDroite();
 
 private:
-	uint8_t ajustementGauche;
-	uint8_t ajustementDroite;
-	uint8_t seuilGauche;
-	uint8_t seuilDroite;
+	uint16_t ajustementGauche;
+	uint16_t ajustementDroite;
+	uint16_t seuilGauche;
+	uint16_t seuilDroite;
 
 };
 

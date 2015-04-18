@@ -45,26 +45,6 @@ void Tache1::run() {
 	Photoresistance photo;
 	Sound piezo;
 
-	// Calibrer photoresistance
-	photo.calibrer();
-	uint16_t valGauche = 0;
-    uint16_t valDroite = 0;
-	// Lecture des valeurs
-	display->clear();
-    for (uint8_t i = 0; i < 50; i++){
-      Utility::delay(2);
-      valGauche += Ports::lirePhotoresistanceGauche();
-      valDroite += Ports::lirePhotoresistanceDroite();
-    }
-
-    // Moyenne
-    valGauche = round(valGauche / 50);
-    valDroite = round(valDroite / 50);
-    *display << valGauche;
-    *display << " ";
-    *display << valDroite;
-    *display << " ";
-
 	// Commencer tache
 	moteur.avancer();
 
@@ -106,15 +86,11 @@ void Tache1::run() {
 
 			//Detecter photoresistance
 			if (photo.getEtatEclairage() == DROITE_ECLAIRE && voie < 5) { // Droite
-				nouvelleVoie = voie + 1;
-				*display << photo.eclairageDroite();
-				piezo.jouerSound(200, 200);
+				nouvelleVoie = voie - 1;
+				piezo.jouerSound(200, 300);
 			}
 			else if (photo.getEtatEclairage() == GAUCHE_ECLAIRE && voie > 1) { // Gauche
-				nouvelleVoie = voie - 1;
-				*display << photo.eclairageGauche();
-				piezo.jouerSound(200, 100);
-				piezo.jouerSound(800, 200);
+				nouvelleVoie = voie + 1;
 			}
 
 			// Initialiser transition
@@ -219,7 +195,7 @@ void Tache2::run()
 
 	suivreLigne(6000, false);
 	suivreLigne(5000);
-	Utility::delay(850);
+	Utility::delay(650);
 
 	// Ligne droite après les pointillés
 	// Quand on arrive au coin, on commence le tournant de 90 degrés vers la gauche
@@ -229,7 +205,7 @@ void Tache2::run()
 	attendreFinTournant();
 	moteur.arreter();
 	Utility::delay(150);
-	suivreLigne(2500);
+	suivreLigne(2400);
 
 	//piezo.jouerSound(400, 300);
 
@@ -238,15 +214,12 @@ void Tache2::run()
 	attendreFinTournant();
 	moteur.arreter();
 	suivreLigne(10000);
-	moteur.arreter();
-	Utility::delay(750);
 
 	// Tournant a droite de 90 degres
-	Utility::delay(400);
+	Utility::delay(1300);
 	moteur.tournerDroite();
 	attendreFinTournant();
-	suivreLigne(10000);
-	Utility::delay(1000);
+	suivreLigne(13200);
 
 	// Tournant à gauche sans ligne et ligne droite après
 	moteur.tournerGauche();
@@ -294,10 +267,10 @@ void Tache2::suivreLigne(uint16_t duree, bool arreterSiVide) {
 			moteur.avancer();
 		}
 		else if (captor.read() == GAUCHE) {
-			moteur.avancer(-40);
+			moteur.avancer(-35);
 		}
 		else if (captor.read() == DROITE) {
-			moteur.avancer(40);
+			moteur.avancer(35);
 		}
 		else if (captor.read() == VIDE) {
 			if (arreterSiVide) {
