@@ -51,7 +51,6 @@ void Tache1::run() {
 
 	// Boucle de la tache
 	while (!fin) {
-
 		if (transitionState == T_OFF) {
 			// Détecter coupure
 			if (captor.read() == VIDE) {
@@ -167,7 +166,6 @@ void Tache1::run() {
 		Utility::delay(10);
 	}
 	moteur.arreter();
-
 }
 
 void Tache2::attendreFinTournant() {

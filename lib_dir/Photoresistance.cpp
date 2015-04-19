@@ -7,6 +7,7 @@ Photoresistance::Photoresistance()
 }
 
 void Photoresistance::calibrer() {
+
     uint16_t valGauche = 0;
     uint16_t valDroite = 0;
 
@@ -20,20 +21,31 @@ void Photoresistance::calibrer() {
     ajustementGauche = round(valGauche / 50);
     ajustementDroite = round(valDroite / 50);
 
-
     // Ajuster seuils
-    if (ajustementGauche < 155){
-      seuilGauche = 25;
+    if (ajustementGauche < 160){
+      seuilGauche = 35;
+    }
+    else if (ajustementGauche < 210) {
+      seuilGauche = 20;
+    }
+    else if (ajustementGauche < 235) {
+      seuilGauche = 10;
     }
     else {
-      seuilGauche = round(25 - (17 * (100 - ((255 - ajustementGauche) / 100))));
+      seuilGauche = 5;
     }
 
-    if (ajustementDroite < 155){
-      seuilDroite = 25;
+    if (ajustementGauche < 160){
+      seuilDroite = 35;
+    }
+    else if (ajustementGauche < 210) {
+      seuilDroite = 20;
+    }
+    else if (ajustementGauche < 235) {
+      seuilDroite = 10;
     }
     else {
-      seuilDroite = round(25 - (17 * (100 - ((255 - ajustementDroite) / 100))));
+      seuilDroite = 5;
     }
 }
 
@@ -43,7 +55,7 @@ uint16_t Photoresistance::eclairageGauche() {
     eclairage = 0;
   }
   else {
-    eclairage - ajustementGauche;
+    eclairage -= ajustementGauche;
   }
 
   return eclairage;
@@ -55,7 +67,7 @@ uint16_t Photoresistance::eclairageDroite() {
     eclairage = 0;
   }
   else {
-    eclairage - ajustementDroite;
+    eclairage -= ajustementDroite;
   }
   
   return eclairage;
