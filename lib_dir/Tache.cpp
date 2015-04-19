@@ -57,7 +57,7 @@ void Tache1::run() {
 			if (captor.read() == VIDE) {
 				Utility::delay(30);
 				if (captor.read() == VIDE){ //ANTI REBOND
-					
+
 					// Selectionner la prochaine voie
 					switch (voie) {
 						case 1:
@@ -185,18 +185,17 @@ void Tache2::run()
 	LECTURE_LIGNE derniereLectureLigne;
 
 	// Première ligne droite avec les pointillés
-	/*moteur.avancer();
-	uint8_t nbEspacesTraverses = 0; // Nombre de petites coupures traversées
-	while (nbEspacesTraverses < 3) {
-	 	if (derniereLectureLigne == VIDE && captor.read() != VIDE) {
-	 		nbEspacesTraverses++;
-	 	}
-	 	derniereLectureLigne = captor.read();
-		Utility::delay(10);
-	}
-	Utility::delay(600);*/
+	// moteur.avancer();
+	// uint8_t nbEspacesTraverses = 0; // Nombre de petites coupures traversées
+	// while (nbEspacesTraverses < 3) {
+	// 	if (derniereLectureLigne == VIDE && captor.read() != VIDE) {
+	// 		nbEspacesTraverses++;
+	// 	}
+	// 	derniereLectureLigne = captor.read();
+	// 	Utility::delay(10);
+	// }
 
-	suivreLigne(6000, false);
+	suivreLigne(5000, false);
 	suivreLigne(5000);
 	Utility::delay(650);
 
@@ -207,8 +206,8 @@ void Tache2::run()
 	moteur.tournerGauche();
 	attendreFinTournant();
 	moteur.arreter();
-	Utility::delay(150);
-	suivreLigne(2400);
+	Utility::delay(650);
+	suivreLigne(2000);
 
 	//piezo.jouerSound(400, 300);
 
@@ -227,7 +226,7 @@ void Tache2::run()
 	// Tournant à gauche sans ligne et ligne droite après
 	moteur.tournerGauche();
 	attendreFinTournant();
-	suivreLigne(11300);
+	suivreLigne(10000);
 
 	// Tournant de 90 degrés à la deuxième branche
 	moteur.tournerDroite();
