@@ -54,9 +54,9 @@ void Tache1::run() {
 		if (transitionState == T_OFF) {
 			// Détecter coupure
 			if (captor.read() == VIDE) {
-				Utility::delay(80);
+				Utility::delay(40);
 				if (captor.read() == VIDE){ //ANTI REBOND
-					Utility::delay(80);
+					Utility::delay(40);
 					if (captor.read() == VIDE){ // DOUBLE ANTI REBOND
 						// Selectionner la prochaine voie
 						switch (voie) {
@@ -105,11 +105,11 @@ void Tache1::run() {
 
 				// Ajuster direction
 				if (nouvelleVoie < voie) { // Commencer transition a Gauche
-					moteur.avancer(-75);
+					moteur.avancer(-60);
 					Utility::delay(800);
 				}
 				else if (nouvelleVoie > voie) { // Commencer transition a Droite
-					moteur.avancer(75);
+					moteur.avancer(60);
 					Utility::delay(800);
 				}
 			}
@@ -117,10 +117,10 @@ void Tache1::run() {
 			// Suivre ligne
 			else {
 				if (captor.read() == DROITE) {
-					moteur.avancer(40);
+					moteur.avancer(20);
 				}
 				else if (captor.read() == GAUCHE) {
-					moteur.avancer(-40);
+					moteur.avancer(-20);
 				}
 				 else if (captor.read() == MILIEU) {
 					moteur.avancer(0);
@@ -141,15 +141,15 @@ void Tache1::run() {
 		// Redresser robot
 		else if (transitionState == T_FINISH) {
 			if (nouvelleVoie < voie) { // Transition a gauche
-				moteur.avancer(70); // redresser a droite
+				moteur.avancer(60); // redresser a droite
 			}
 			else if (nouvelleVoie > voie) { // Transition a Droite
-				moteur.avancer(-70); // redresser a gauche
+				moteur.avancer(-60); // redresser a gauche
 			}
 
 			// Terminer transition
 			if (captor.read() == MILIEU) {
-				moteur.avancer(0);
+				moteur.avancer(1);
 				voie = nouvelleVoie;
 				nouvelleVoie = 0;
 				transitionState = T_OFF;
