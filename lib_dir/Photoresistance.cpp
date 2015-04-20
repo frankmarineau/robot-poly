@@ -20,21 +20,34 @@ void Photoresistance::calibrer() {
     ajustementGauche = round(valGauche / 50);
     ajustementDroite = round(valDroite / 50);
 
-
+    
     // Ajuster seuils
-    if (ajustementGauche < 155){
-      seuilGauche = 25;
+    if (ajustementGauche < 160){
+      seuilGauche = 35;
+    }
+    else if (ajustementGauche < 210) {
+      seuilGauche = 20;
+    }
+    else if (ajustementGauche < 235) {
+      seuilGauche = 10;
     }
     else {
-      seuilGauche = round(25 - (17 * (100 - ((255 - ajustementGauche) / 100))));
+      seuilGauche = 5;
     }
 
-    if (ajustementDroite < 155){
-      seuilDroite = 25;
+    if (ajustementGauche < 160){
+      seuilDroite = 35;
+    }
+    else if (ajustementGauche < 210) {
+      seuilDroite = 20;
+    }
+    else if (ajustementGauche < 235) {
+      seuilDroite = 10;
     }
     else {
-      seuilDroite = round(25 - (17 * (100 - ((255 - ajustementDroite) / 100))));
+      seuilDroite = 5;
     }
+
 }
 
 uint16_t Photoresistance::eclairageGauche() {
@@ -43,7 +56,7 @@ uint16_t Photoresistance::eclairageGauche() {
     eclairage = 0;
   }
   else {
-    eclairage - ajustementGauche;
+    eclairage -= ajustementGauche;
   }
 
   return eclairage;
@@ -55,13 +68,14 @@ uint16_t Photoresistance::eclairageDroite() {
     eclairage = 0;
   }
   else {
-    eclairage - ajustementDroite;
+    eclairage -= ajustementDroite;
   }
   
   return eclairage;
 }
 
 DirectionPhotoresistance Photoresistance::getEtatEclairage() {
+    
   // Si une photoresistance est eclairee
   if (eclairageDroite() > seuilDroite || eclairageGauche() > seuilGauche) {
     if (eclairageDroite() > eclairageGauche()){
@@ -78,18 +92,20 @@ DirectionPhotoresistance Photoresistance::getEtatEclairage() {
     return RIEN_ECLAIRE;
   }
 
+    //DEBUGGAGE
+    /*d->clear();
+    *d << ajustementGauche;
+    *d << " ";
+    *d << ajustementDroite;
 
+    *d << " ";
+    *d << seuilGauche;
+    *d << "    ";
+    *d << seuilDroite;
 
-  /*if (!estEclaireADroite() && !estEclaireAGauche()) return RIEN_ECLAIRE;
+    *d << " E ";
+    *d << eclairageGauche();
+    *d << " ";
+    *d << eclairageDroite();*/
 
-  uint8_t differenceEclairage = Ports::lirePhotoresistanceDroite() - Ports::lirePhotoresistanceGauche();
-  differenceEclairage = (differenceEclairage < 0 ? -differenceEclairage : differenceEclairage);
-  if (differenceEclairage < SEUIL_DIFFERENCE) return RIEN_ECLAIRE;
-
-  if (Ports::lirePhotoresistanceDroite() > Ports::lirePhotoresistanceGauche()) {
-    return DROITE_ECLAIRE;
-  }
-  else {
-    return GAUCHE_ECLAIRE;
-  }*/
 }
