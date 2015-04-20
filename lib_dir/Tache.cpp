@@ -54,11 +54,12 @@ void Tache1::run() {
 		if (transitionState == T_OFF) {
 			// Détecter coupure
 			if (captor.read() == VIDE) {
-				Utility::delay(30);
+				Utility::delay(80);
 				if (captor.read() == VIDE){ //ANTI REBOND
-
-					// Selectionner la prochaine voie
-					switch (voie) {
+					Utility::delay(80);
+					if (captor.read() == VIDE){ // DOUBLE ANTI REBOND
+						// Selectionner la prochaine voie
+						switch (voie) {
 						case 1:
 							nouvelleVoie = 2;
 							break;
@@ -79,17 +80,19 @@ void Tache1::run() {
 						case 5:
 							nouvelleVoie = 4;
 							break;
+
+						}
 					}
 				}
 
 			}
 
 			//Detecter photoresistance
-			if (photo.getEtatEclairage() == DROITE_ECLAIRE && voie < 5) { // Droite
+			if (photo.getEtatEclairage() == DROITE_ECLAIRE && voie > 1) { // Droite
 				nouvelleVoie = voie - 1;
 				piezo.jouerSound(200, 300);
 			}
-			else if (photo.getEtatEclairage() == GAUCHE_ECLAIRE && voie > 1) { // Gauche
+			else if (photo.getEtatEclairage() == GAUCHE_ECLAIRE && voie < 5) { // Gauche
 				nouvelleVoie = voie + 1;
 				piezo.jouerSound(200, 300);
 				piezo.jouerSound(800, 300);
