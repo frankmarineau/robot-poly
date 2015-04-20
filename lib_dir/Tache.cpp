@@ -181,24 +181,14 @@ void Tache2::run()
 	//Ajuster LCD
 	display->clear();
 	*display << "Tache 2";
-
+	Sound piezo;
 
 	LECTURE_LIGNE derniereLectureLigne;
 
 	// Première ligne droite avec les pointillés
-	// moteur.avancer();
-	// uint8_t nbEspacesTraverses = 0; // Nombre de petites coupures traversées
-	// while (nbEspacesTraverses < 3) {
-	// 	if (derniereLectureLigne == VIDE && captor.read() != VIDE) {
-	// 		nbEspacesTraverses++;
-	// 	}
-	// 	derniereLectureLigne = captor.read();
-	// 	Utility::delay(10);
-	// }
-
-	suivreLigne(5000, false);
+	suivreLigne(6000, false);
 	suivreLigne(5000);
-	Utility::delay(650);
+	Utility::delay(300);
 
 	// Ligne droite après les pointillés
 	// Quand on arrive au coin, on commence le tournant de 90 degrés vers la gauche
@@ -207,7 +197,7 @@ void Tache2::run()
 	moteur.tournerGauche();
 	attendreFinTournant();
 	moteur.arreter();
-	Utility::delay(650);
+	Utility::delay(300);
 	suivreLigne(2000);
 
 	//piezo.jouerSound(400, 300);
@@ -219,24 +209,46 @@ void Tache2::run()
 	suivreLigne(10000);
 
 	// Tournant a droite de 90 degres
-	Utility::delay(1300);
+	Utility::delay(800);
 	moteur.tournerDroite();
 	attendreFinTournant();
-	suivreLigne(13200);
+	suivreLigne(8800);
+	Utility::delay(1200);
 
 	// Tournant à gauche sans ligne et ligne droite après
 	moteur.tournerGauche();
 	attendreFinTournant();
-	suivreLigne(10000);
+	suivreLigne(8000, false);
+
+	uint8_t tournantDroite = 0;
+	while (tournantDroite < 1) {
+		if (captor.read() == MILIEU) {
+			moteur.avancer();
+		}
+		else if (captor.read() == GAUCHE) {
+			moteur.avancer(-45);
+		}
+		else if (captor.read() == DROITE) {
+			moteur.avancer(45);
+		}
+
+		if (captor.readValue() == 0b11100 || captor.readValue() == 0b11110) {
+			moteur.avancer();
+			tournantDroite++;
+			piezo.jouerSound(800,300);
+		}
+	} // On attend d'arriver à la croix
+
+	piezo.jouerSound(400,300);
+
+	Utility::delay(150);
 
 	// Tournant de 90 degrés à la deuxième branche
 	moteur.tournerDroite();
 	attendreFinTournant();
-	suivreLigne(12000);
-	moteur.avancer();
-	Utility::delay(1150);
+	suivreLigne(8800);
 
-	// // Tournant de 135 degrés vers la gauche
+	// Tournant de 135 degrés vers la gauche
 	moteur.tournerGauche();
 	attendreFinTournant();
 
@@ -270,10 +282,10 @@ void Tache2::suivreLigne(uint16_t duree, bool arreterSiVide) {
 			moteur.avancer();
 		}
 		else if (captor.read() == GAUCHE) {
-			moteur.avancer(-35);
+			moteur.avancer(-45);
 		}
 		else if (captor.read() == DROITE) {
-			moteur.avancer(35);
+			moteur.avancer(45);
 		}
 		else if (captor.read() == VIDE) {
 			if (arreterSiVide) {

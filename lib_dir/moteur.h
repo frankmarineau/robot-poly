@@ -10,15 +10,15 @@
 #endif
 class Moteur {
 public:
-	Moteur(uint8_t vitesse = 120);
+	Moteur(uint8_t vitesse = 118);
 
 	// Avance dans une certaine direction - entre -90 et 90
 	void avancer(int8_t direction = 0);
 	// Recule dans une certaine direction - entre -90 et 90
 	void reculer(int8_t direction = 0);
 	// Tourne sur place d'un certain nombre de degrée - négatif si anti-horaire
-	void tournerDroite(uint8_t vitesse = 105);
-	void tournerGauche(uint8_t vitesse = 105);
+	void tournerDroite(uint8_t vitesse = 88);
+	void tournerGauche(uint8_t vitesse = 88);
 	//Arrete de bouger
 	void arreter();
 
