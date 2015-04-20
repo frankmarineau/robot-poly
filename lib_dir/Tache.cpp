@@ -213,7 +213,7 @@ void Tache2::run()
 	moteur.tournerDroite();
 	attendreFinTournant();
 	suivreLigne(8800);
-	Utility::delay(900);
+	Utility::delay(1200);
 
 	// Tournant à gauche sans ligne et ligne droite après
 	moteur.tournerGauche();
@@ -221,7 +221,7 @@ void Tache2::run()
 	suivreLigne(8000, false);
 
 	uint8_t tournantDroite = 0;
-	while (tournantDroite < 2) {
+	while (tournantDroite < 1) {
 		if (captor.read() == MILIEU) {
 			moteur.avancer();
 		}
@@ -235,15 +235,18 @@ void Tache2::run()
 		if (captor.readValue() == 0b11100 || captor.readValue() == 0b11110) {
 			moteur.avancer();
 			tournantDroite++;
-			Utility::delay(300);
+			piezo.jouerSound(800,300);
 		}
 	} // On attend d'arriver à la croix
 
-	Utility::delay(450);
+	piezo.jouerSound(400,300);
+
+	Utility::delay(150);
 
 	// Tournant de 90 degrés à la deuxième branche
 	moteur.tournerDroite();
 	attendreFinTournant();
+	suivreLigne(8800);
 
 	// Tournant de 135 degrés vers la gauche
 	moteur.tournerGauche();
