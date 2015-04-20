@@ -8,7 +8,9 @@
 // Ecrit le Mardi 14 Avril 2015                                                                           //
 // Description : Utilisation du suiveur de ligne de la detection des differentes positions du robot       //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
-#include "captor.h"                                                                                       //
+#include "captor.h"  
+
+//Constructeur par defautl du capteur                                                                                    
 Captor::Captor()
 {
     DDR = &(DDRA);
@@ -16,6 +18,8 @@ Captor::Captor()
     PIN = &(PINA);
 }
 
+
+//Contructeur par parametre du capteur
 Captor::Captor(volatile uint8_t *dataDirection, volatile uint8_t *pinIndex)
 {
     DDR = dataDirection;
@@ -25,6 +29,7 @@ Captor::Captor(volatile uint8_t *dataDirection, volatile uint8_t *pinIndex)
 
 
 
+//Detection des differents etat du capteur
 LECTURE_LIGNE Captor::read()
 {
     if (((*PIN) & 0x04) >= 1 && ((*PIN) & 0x1B) == 0){
@@ -48,7 +53,9 @@ LECTURE_LIGNE Captor::read()
 }
 
 
+//Retour de la valeur des capteur
 uint8_t Captor::readValue()
 {	
-     return ((*PIN) & 0x1f);
+     return ((*PIN) & 0x1f); //Prise en compte des  premier bit du port utiliser
+     
 }

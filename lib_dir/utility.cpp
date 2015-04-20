@@ -52,7 +52,7 @@ unsigned char Utility::usart_receive( void )
 }
 
 
-
+//Verification du boutton 1
 bool Utility::button1IsPressed()
 {
     if (bouton1PIN & bouton1ClearValue)
@@ -67,6 +67,7 @@ bool Utility::button1IsPressed()
 }
 
 
+//Verification du bouton 2
 bool Utility::button2IsPressed()
 {
     if (bouton2PIN & bouton2ClearValue)
@@ -88,6 +89,8 @@ void Utility::delay(uint16_t ms) {
 }
 
 
+
+//Le selecteur de tache
 uint8_t Utility::selectionTache(MENU *m)
 {
 	while(button2IsPressed())

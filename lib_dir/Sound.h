@@ -15,7 +15,7 @@
 	class Sound                                                                                       //
 	{                                                                                                 //
 	   public :                                                                                       //
-	     void jouerSound(uint16_t frequence, uint16_t duree = 0);                    //Jouer du son avec une frequence    //
+	     void jouerSound(uint16_t frequence, uint16_t duree = 0);//Jouer du son avec une frequence    //
 	     void arreterSound(void);                                //Arreter le son                     //
 	};                                                                                                //
 #endif                                                                                                    //

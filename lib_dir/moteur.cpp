@@ -48,17 +48,12 @@ void Moteur::arreter() {
 
 void Moteur::ajustementTimer1( uint8_t dureeA, uint8_t dureeB, uint8_t direction)
 {
- /* TCCR1A |= (1 << WGM10) | (1 << COM1A1)|(1 << COM1B1) ;
-  TCCR1B |= (1<< CS11) ;
-  OCR1A = dureeA ; OCR1B = dureeB;
 
-  PORTD &= 0x3F; //Reinitialiser la direction
-  PORTD |= direction << 6; //Nouvelle direction*/
-  TCCR0A =(1 << WGM00)| (1 << WGM01) | (1<<COM0A1)|(1<<COM0B1);     // CTC mode, toggle OC0 on compare match
-  TCCR0B = 0b101 ;                   // Start timer0 with prescaler 	
-  OCR0A = dureeA; OCR0B = dureeB;
-  PORTB &=0b11011011;
-  PORTB |=direction;
+  TCCR0A =(1 << WGM00)| (1 << WGM01) | (1<<COM0A1)|(1<<COM0B1);     //Activiation du mode CTC
+  TCCR0B = 0b101 ;                   // Activation du prescaler  1024
+  OCR0A = dureeA; OCR0B = dureeB;  //Affectation des differentes vitesse
+  PORTB &=0b11011011;              //Mise a zero des valeur de la direction
+  PORTB |=direction;               //Affectation des nouvelle valeur de la direction 
 
 }
 

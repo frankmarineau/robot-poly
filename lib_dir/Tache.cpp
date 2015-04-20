@@ -291,7 +291,7 @@ void Tache2::suivreLigne(uint16_t duree, bool arreterSiVide) {
 }
 
 //+++++++++++++++++++++++++++++++++++ Sound::arreterSound(void) ++++++++++++++++++++++++++++++++++++++++++//
-// Description     : Arreter le son en cour de lecteur                                                    //
+// Description     : Execution de la tache 3                                                              //
 // Type de methode : Public                                                                               //
 // Parametre(s)    : Aucun                                                                                //
 // Valeur de retour: Aucune                                                                                                                             //
@@ -305,7 +305,7 @@ void Tache3::run()                                                              
 	                                                                                                                                               //
 	Sound piezo;                                                                                                                                    //
 	piezo.jouerSound(391);                                                                                                                          //
-	Utility::delay(2000);                                                                                                                           //
+	Utility::delay(2000);  //Jouer du son pendant 2 seconde                                                                                         //
 	piezo.arreterSound();                                                                                                                           //
 	Sonar sonar;                                                                                                                                    //
 	Moteur moteur;                                                                                                                                  //
@@ -332,22 +332,24 @@ void Tache3::run()                                                              
 				else                                                                                                                    //
 				{                                                                                                                       //
 					if (phase == 1)                                                                                                 //
-					{                                                                                                               //
+					{     
+						//Ajustement de la frequene du timer1 en fonction de la distance de l'obstacle                          //
 						moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),DIRECTION_DROITE);            //
 					}                                                                                                               //
 					else                                                                                                            //
 					{                                                                                                               //
 						moteur.ajustementTimer1(uint8_t(255-range*6.875),uint8_t(255-range*6.875),DIRECTION_GAUCHE);            //
-					}                                                                                                               //
+					} 
+					//Jouer du son en fonction de la led allumer                                                                    //
 					switch (capteur.readValue())                                                                                    //
 					{
-					   	                                                                                                               //
+					   	                                                                                                        //
 					    case 0b10000: piezo.jouerSound(392); break;
-					    case 0b11000:                                           //
+					    case 0b11000:                                           
 					    case 0b01000: piezo.jouerSound(349); break;
 					    case 0b01100:
 					    case 0b00100: piezo.jouerSound(330); break;
-					    case 0b00110:                                                         //
+					    case 0b00110:                                                         
 					    case 0b00010: piezo.jouerSound(294); break;                                                                 //
 					    case 0b00011:
 					    case 0b00001: piezo.jouerSound(262); break;                                                                 //
