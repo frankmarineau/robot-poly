@@ -1,0 +1,56 @@
+****************************************************************************************
+* Fichier : LisezMoi.txt                                                                                     
+* Auteurs : Esteban Sanchez && Francis Marineau && Soromo Foromo Daniel && Codo Hermann 
+* Description : Ce fichier contient une description breve des differentes methodes et  
+*                astuces mises en oeuvre pour la realisation du projet
+*                                                                                    
+*                                                                                       
+****************************************************************************************
+                 ---- PROJET INTEGRATEUR PREMIERE 1ere ANNEE ----
+****************************************************************************************
+*                               -- Section Materielle --
+****************************************************************************************
+*         Notre Robot "Charlie est constitue des composants suivants :
+*
+* - Sonar : Ce constituant est relie au PORTB1 et au Timer1
+*
+* - Moteurs : Ils sont relies au PORTD2 et au Timer0 
+*
+* - LCD : Elle est reliee au PORTC
+*
+* - Photoresistances : Elle sont toutes connectees au PA7 et PA6
+*
+* - Piezo: Il est connectee au PIND7
+*
+* - Suiveur de Ligne : Il est connecte aux six premiers bits du PORTA
+*
+*****************************************************************************************
+*****************************************************************************************
+*                               -- Section Logicielle --
+*****************************************************************************************
+* Notre projet est structure en classes integrees et muni d'une bibliotheque puis de 
+* fonctions..........
+* Nous pouvons citer :
+*
+*  - Classe Sonar ->  Sonar qui emet des sons nous permettant de calculer la distance a 
+*                     l'obstacles
+*
+*  - Classe LCD   -> LCD permettant d'afficher les differentes informations comme la tache
+*                     en cours ..
+*
+*  - Classe Photoresistances -> Photoresistances qui detectent si il y a un eclairage
+*
+*  - Classe Moteurs -> Moteurs qui permettent a "Charlie" de se deplacer...
+*
+*  - Classe Son -> Piezo nous permettant d'emettre des sons a des frequences donnees
+*
+*  - Fonction Suiveur de Ligne -> Suiveur de ligne permettant a "Charlie" de suivre 
+*                                 la ligne...
+*
+*  - Classe Utility -> Librairie de notre projet regroupant un bon nombre de fonctions 
+*                      utiles dans la definition des autres classes
+*
+*  
+********************************************************************************************
+
+                     ****** Merci d'avoir pris le temps de bien lire et comprendre ******
